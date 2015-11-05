@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Learning Haskell - programming | Guido Luz Percú</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Programming,Haskell" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1>Guido Luz Percú</h1>
+					<ul class="icons">
+						<li><a href="http://www.guidopercu.com.br/blog/" class="icon alt fa-laptop"><span class="label">Blog</span></a></li>
+						<li><a href="http://www.twitter.com/oumguido/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://www.github.com/GuidoBR/" class="icon alt fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/pub/guido-luz-perc%C3%BA/5a/2b7/9b7" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://delicious.com/guidohp/" class="icon alt fa-delicious"><span class="label">Delicious</span></a></li>
+						<li><a href="https://plus.google.com/+GuidoLuzPerc%C3%BA/posts?hl=pt_br" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+					</ul>
+				</header>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main special">
+				<div class="container">
+					<div class="content">
+<h4 class="date">Nov 05, 2015</h4>
+            <article class="post">
+                <h2 class="title">
+                    <a href="/blog/learning-haskell.html" rel="bookmark" title="Permanent Link to &quot;Learning Haskell&quot;">Learning Haskell</a>
+                </h2>
+
+                <p><a href="https://www.haskell.org/" title="Haskell Language">Haskell</a> will change the way you think.</p>
+<blockquote>
+<p>It gives you a new toolset with which to solve programming problems, often yielding very clean and elegant solutions to otherwise complex problems. - <a href="https://acm.wustl.edu/functional/whyfp.php">Why Study Functional Programming?</a></p>
+<p>It is my belief that functional languages, almost by definition, are closer to the top of the power spectrum than imperative ones. So languages can actually limit a programmers frame of thought. - <a href="https://wiki.haskell.org/Why_Haskell_matters">Why Haskell Matters?</a></p>
+</blockquote>
+<p>This is the most comprehensive guide I've ever found on <a href="http://stackoverflow.com/questions/1012573/getting-started-with-haskell">how to learn Haskell</a>. Enjoy.</p>
+<h2>Instalation</h2>
+<p>To install the Haskell platform on Debian systems, install the haskell-platform package:</p>
+<div class="highlight"><pre>sudo apt-get install haskell-platform
+</pre></div>
+
+
+<p>For information about installing it in other systems, visit the <a href="http://www.haskell.org/platform/" title="Haskell platform installation guide">official documentation</a>.</p>
+<p>### Hello World!</p>
+<div class="highlight"><pre>main = putStrLn &quot;Hello World!&quot;
+</pre></div>
+
+
+<p>Read more about IO in Haskell: <a href="http://learnyouahaskell.com/input-and-output" title="Learn Yourself a Haskell - Input and Output">Input and Output</a> | <a href="https://stackoverflow.com/questions/19288652/difference-between-print-and-putstrln-in-haskell" title="Stackoverflow: Differences between Print and PutStrLn">Print x PutStrLn</a></p>
+<p>### Fibonnaci (recursive)</p>
+<div class="highlight"><pre>fib 0 = 0
+fib 1 = 1
+fib n = fib (n - 2) + fib (n - 1)
+</pre></div>
+
+
+<p>### Fatorial</p>
+<div class="highlight"><pre>fatorial n = product [1..n]
+</pre></div>
+
+
+<h3>Books:</h3>
+<ul>
+<li><a href="http://www.amazon.com/Haskell-Programming-Second-Edition-Computing/dp/0954300696">Haskell road to logic math and programming</a></li>
+<li><a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good</a></li>
+</ul>
+<h3>Tutorials</h3>
+<ul>
+<li><a href="http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/">Haskell the Hard Way</a></li>
+<li><a href="http://lisperati.com/haskell/">Picnic App</a></li>
+<li><a href="http://dev.stephendiehl.com/fun/">Write you a Haskell</a></li>
+<li><a href="http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/">Git clone in Haskell</a></li>
+</ul>
+<h3>Courses:</h3>
+<ul>
+<li><a href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0">Introduction to Functional Programming</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL8eBmR3QtPL3pDzQpwPYfWQ4NEPGu6j7z">Curso Haskell para iniciantes, por Marcos Castro (pt-BR)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLxj9UAX4Em-Ij4TKwKvo-SLp-Zbv-hB4B">Haskell From Scratch</a></li>
+<li><a href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x#.VDWTHFRdUsp">Introduction to Functional Programming - EDX</a></li>
+</ul>
+<h3>Tools</h3>
+<ul>
+<li><a href="http://www.haskell.org/hoogle/">Hoogle</a></li>
+<li><a href="https://hackage.haskell.org/package/HUnit">HUnit</a></li>
+<li><a href="http://hackage.haskell.org/package/QuickCheck">QucikCheck</a></li>
+<li><a href="http://www.haskell.org/cabal/">Cabal</a></li>
+<li><a href="http://hackage.haskell.org/">Hackage</a></li>
+</ul>
+<h3>Awesome</h3>
+<ul>
+<li><a href="https://github.com/krispo/awesome-haskell">Awesome Haskell</a></li>
+</ul>
+<h3>Web Frameworks</h3>
+<ul>
+<li><a href="http://happstack.com/page/view-page-slug/1/happstack">Happstack</a></li>
+<li><a href="http://snapframework.com/">Snap</a> | <a href="https://robots.thoughtbot.com/a-rest-api-with-haskell-and-snap">REST API with Haskell and Snap</a></li>
+<li><a href="http://www.yesodweb.com/">Yesod</a> | <a href="http://yannesposito.com/Scratch/en/blog/Yesod-tutorial-for-newbies/">Tutorial Yesod</a></li>
+<li><a href="http://www.haskell.org/haskellwiki/Web/Frameworks">Official List of Frameworks</a></li>
+</ul>
+<h3>Exercises</h3>
+<ul>
+<li><a href="http://www.hackerrank.com/">Hacker Rank</a></li>
+<li><a href="https://projecteuler.net/">Project Euler</a> | <a href="https://wiki.haskell.org/Euler_problems/1_to_10">Euler 1-10 Solutions in Haskell</a></li>
+</ul>
+<h3>More links</h3>
+<ul>
+<li><a href="https://www.fpcomplete.com/school">FP Complete School of Haskell</a></li>
+<li><a href="https://wiki.haskell.org/Functional_Reactive_Programming">Functional Reactive Programming</a></li>
+<li><a href="http://www.willamette.edu/~fruehr/haskell/evolution.html">Evolution of a Haskell Programmer</a></li>
+<li><a href="https://www.fpcomplete.com/school">FP Complete School of Haskell</a></li>
+<li><a href="http://c2.com/cgi/wiki?FunctionalProgrammingLanguage">C2 Wiki - Functional Programming Language</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="/blog/learning-haskell.html">posted at 13:10</a>
+                    &nbsp;&middot;&nbsp;<a href="/category/haskell.html" rel="tag">Haskell</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="/blog/tag/programming.html" class="tags">Programming</a>
+                    &nbsp;<a href="/blog/tag/haskell.html" class="tags">Haskell</a>
+                </div>
+            </article>
+
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+        <!--
+        <div class="container">
+            <header class="major">
+                <h2>Get in touch</h2>
+            </header>
+            <form method="post" action="#">
+                <div class="row uniform">
+                    <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                    <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                    <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                    <div class="12u$">
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="special" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        -->
+        <footer>
+            <ul class="icons">
+                <li><a href="http://www.guidopercu.com.br/blog/" class="icon alt fa-laptop"><span class="label">Blog</span></a></li>
+                <li><a href="http://www.twitter.com/oumguido/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="http://www.github.com/GuidoBR/" class="icon alt fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/pub/guido-luz-perc%C3%BA/5a/2b7/9b7" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://delicious.com/guidohp/" class="icon alt fa-delicious"><span class="label">Delicious</span></a></li>
+                <li><a href="https://plus.google.com/+GuidoLuzPerc%C3%BA/posts?hl=pt_br" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>Guido Percú</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+            </ul>
+        </footer>
+        </section>
+
+        <!-- Scripts -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrollex.min.js"></script>
+        <script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script src="../assets/js/skel.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="../assets/js/main.js"></script>
+
+        </body>
+        </html>
