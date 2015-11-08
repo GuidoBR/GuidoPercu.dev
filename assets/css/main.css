@@ -2239,6 +2239,10 @@
 		padding-left: 1em;
 	}
 
+    .content ul {
+        text-align: left;
+    }
+
 		ul li {
 			padding-left: 0.5em;
 		}
@@ -2281,6 +2285,7 @@
 			list-style: none;
 			padding: 0;
 			position: relative;
+            text-align: center;
 		}
 
 			ul.icons-grid li {
@@ -3038,4 +3043,3 @@
 				}
 
 	}
-
