@@ -1319,7 +1319,7 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/pic02-min.jpg");
+		background-image: url("images/overlay.png"), url("https://dl.dropboxusercontent.com/content_link/VlcKAOSo4njlSKE8F3s7t7R7l6GDmL8w139uFGFqUTbe6R3oHppUPKckVSlJXw7V/file");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
