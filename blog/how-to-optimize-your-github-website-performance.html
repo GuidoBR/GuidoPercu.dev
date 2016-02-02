@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+    Highlights by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-BR">
+<head>
+<title>How to optimize your Github Pages Website Performance | Guido Luz Percú</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Github Pages, Performance, Web" />
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="../assets/css/main-min.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Header -->
+<section id="header">
+        <header class="major">
+                <h1><a href="/">Guido Luz Percú</a></h1>
+                <ul class="icons">
+                        <li><a href="http://www.guidopercu.com.br/blog/" class="icon alt fa-laptop"><span class="label">Blog</span></a></li>
+                        <li><a href="http://www.twitter.com/oumguido/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="http://www.github.com/GuidoBR/" class="icon alt fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="https://www.linkedin.com/pub/guido-luz-perc%C3%BA/5a/2b7/9b7" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://delicious.com/guidohp/" class="icon alt fa-delicious"><span class="label">Delicious</span></a></li>
+                        <li><a href="https://plus.google.com/+GuidoLuzPerc%C3%BA/posts?hl=pt_br" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+                </ul>
+        </header>
+</section>
+
+<section id="one" class="main special">
+        <div class="container">
+                <div class="content">
+                        <h4 class="date">Feb 02, 2016</h4>
+                        <article class="post">
+                                <h2 class="title">
+                                        <a href="blog/how-to-optimize-your-github-website-performance.html" rel="bookmark">How to Optimize your Github Website Performance</a>
+                                </h2>
+
+                                <p>Last week I've decided to improve this site performance. It was taking too long to load for such a simple static site. <a href="https://blog.kissmetrics.com/loading-time/" title="Loading Time">Research says that every second matters on website performance</a></p>
+
+                                <p>I've improved the loading time of my website from 4.7s to 1.6s! Here is how I did it:</p>
+
+                                <h3>Measure</h3>
+
+                                <p>Use tools to help you understand your performance problems before you start. I used [WebPageTest](http://www.webpagetest.org/) and [Google Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights)</p>
+
+                                <p>Firefox and Google Chrome also have tools for this. Check them out.</p>
+
+                                <h3>Understand your server</h3>
+
+                                <p>I use Github Pages to host my site, so I need to understand the [Github Pages has Pros and Cons](http://www.kevinsweet.com/pros-cons-github-pages/) of it.</p>
+
+                                <p>The main problem here is about cache expire time. I don't change the assets too much, so I'ts really anoying to just have a 10 min max-age cache. Still looking for solutions on this (maybe moving the assets to Dropbox?).</p>
+
+
+                                <h3>Compress and minimize!</h3>
+
+                                <p>Compress your images, nobody needs to download a 1MB+ image that's going to be your background. I really liked using [TinyJPG](https://tinyjpg.com/) for this task</p>
+
+                                <p>This should also be done with JS and CSS, there are some great tools for it:</p>
+
+                                <ul>
+                                        <li><a href="http://www.cleancss.com/js-minify/">JS-Minify</a></li>
+                                        <li><a href="https://cssminifier.com/">CSS Minifier</a></li>
+                                </ul>
+
+                                <p>Depending on your workflow, you should try using task runners for this, like [GruntJS](http://gruntjs.com/) or [GulpJS](http://gulpjs.com/)</p>
+
+                                <h3>Test it</h3>
+
+                                <p>Use [Apache Benchmark tool](https://httpd.apache.org/docs/2.2/programs/ab.html) to [load test your web site](https://www.devside.net/wamp-server/load-testing-apache-with-ab-apache-bench). </p>
+
+                                <code>
+                                        ab -n 1000 -c 500 http://www.yourdomain.com.br/
+                                </code>
+
+
+                                <p>Want to know more? Check them out:</p>
+                                <ul>
+                                        <li> <a href="https://alexcican.com/post/guide-hosting-website-dropbox-github/">Guide: Hosting Website using Dropbox and Github</a></li>
+                                        <li><a href="http://www.webmonkey.com/2010/09/how-to-speed-up-your-site-with-yslow-and-page-speed">How to speed up your site with Yslow and Page Speed</a></li>
+                                </ul>
+
+                                <section id="footer">
+                                        <footer>
+                                                <ul class="icons">
+                                                        <li><a href="http://www.guidopercu.com.br/blog/" class="icon alt fa-laptop"><span class="label">Blog</span></a></li>
+                                                        <li><a href="http://www.twitter.com/oumguido/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                                                        <li><a href="http://www.github.com/GuidoBR/" class="icon alt fa-github"><span class="label">Github</span></a></li>
+                                                        <li><a href="https://www.linkedin.com/pub/guido-luz-perc%C3%BA/5a/2b7/9b7" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                                        <li><a href="https://delicious.com/guidohp/" class="icon alt fa-delicious"><span class="label">Delicious</span></a></li>
+                                                        <li><a href="https://plus.google.com/+GuidoLuzPerc%C3%BA/posts?hl=pt_br" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+                                                </ul>
+                                                <ul class="copyright">
+                                                        <li>Guido Percú</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+                                                </ul>
+                                        </footer>
+                                </section>
+
+                                <!-- Scripts -->
+                                <script src="../assets/js/jquery.min.js"></script>
+                                <script src="../assets/js/jquery.scrollex.min.js"></script>
+                                <script src="../assets/js/jquery.scrolly.min.js"></script>
+                                <script src="../assets/js/skel.min.js"></script>
+                                <script src="../assets/js/util.js"></script>
+                                <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                                <script src="../assets/js/main.js"></script>
+
+                                <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58821573-1', 'auto');
+ga('send', 'pageview');
+
+                                </script>
+                                </body>
+                                </html>
