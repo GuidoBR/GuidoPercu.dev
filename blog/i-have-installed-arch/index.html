@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-<title>Python collections.Counter Examples - Guido Luz Percú Blog</title>
+<title>I have installed Arch Linux - Guido Luz Percú Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Hi, I'm Guido Luz Percú, software developer and open source contributor, working with Python development. I write about software development, technology, Web and books on my personal blog. I work as a software engineer and my goal is to help improve people's lives.">
@@ -35,38 +35,46 @@
                         
   <div class="blog-post">
   
-    <h2>Python collections.Counter Examples</h2>
+    <h2>I have installed Arch Linux</h2>
   
   <p class="meta">
     written by
     
       <a href="https://twitter.com/@oumguido">Guido Percú</a>
     
-    on September 24, 2015
+    on March 8, 2016
   </p>
-  <p>From Luciano Ramalho <a href="http://shop.oreilly.com/product/0636920032519.do" title="Buy at O&#39;Reilly">"Fluent Python"</a> book:</p>
-<p><img src="http://akamaicovers.oreilly.com/images/0636920032519/lrg.jpg" alt="Fluent Python Book from O&#39;Reilly"></p>
-<blockquote><p><strong>collections.Counter</strong>
-A mapping that holds an integer count for each key. Updating an existing key adds to its count. This can be used to count instance of hashable objects (the keys) or as a multiset -- a set that can hold several occurences of each element. Counter implements + and - operators to combine tallies, and other useful methods such as most_common([n]), which returns an ordered list of tuples with the n most common items and their counts; see the documentation. Here is Counter used to count letters in words:</p>
-<p><script src="https://gist.github.com/GuidoBR/fbedd911fbc42bb8440a.js"></script></p>
-</blockquote>
-<p>We can use this data structure to check if two strings are anagrams:</p>
-<script src="https://gist.github.com/GuidoBR/af32e5bc3ebd70b789ef.js"></script>
-
-Want to know the most frequent words of a song? No problem!
-
-<script src="https://gist.github.com/GuidoBR/7a685ac92366b7785e72.js"></script><p>Computer biologist? How about get the frequency of nucleotides from a genome fasta file?</p>
-<p><script src="https://gist.github.com/GuidoBR/bf9d3a5fea086a502c59.js"></script></p>
-<p><strong>More information:</strong></p>
-<ul>
-<li><a href="https://docs.python.org/3/library/collections.html#collections.Counter">Python 3 - Collections Documentation</a></li>
-<li><a href="http://pymbook.readthedocs.org/en/latest/collections.html">PymBook - Collections</a></li>
-<li><a href="https://pymotw.com/2/collections/counter.html">Python Module of the week - Collections</a></li>
-<li><a href="https://gist.github.com/bradmontgomery/4717521">Playing with collections.Counter gist</a></li>
-<li><a href="http://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/">Python Dictionaries</a></li>
-<li><a href="http://chimera.labs.oreilly.com/books/1230000000393/ch01.html#_problem_12">Python Cookbook - most frequently occurring items in the sequence</a></li>
-<li><a href="http://treyhunner.com/2015/11/counting-things-in-python/">Counting things Pythonic way</a></li>
-</ul>
+  <p>I am a Linux user since early 2008, with the Ubuntu 8.04. I felt in love with it, a nice desktop interface,
+less security problems and headaches and headaches, and what for me the most important thing: more power over my computer.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Ubuntu-desktop-2-804-20080708.png" alt="Ubuntu 8.04 screenshot" width="100%"></p>
+<p>I've been using  Linux since them. I experienced some distros (Fedora, Debian, Backtrack, Mint ...) but
+I always come back to Ubuntu for daily activities. This year, I had some crashing and overheating issues 
+and was starting to blame my notebook (a not so powerfull Core i3 with 4GB of RAM), but a coworker 
+suggested giving Arch a try. So, I decided to install it and use <a href="men://i3wm.org/">i3 as my window manager</a> (I have never used it before, it's amazing!).</p>
+<p>I've followed the <a href="https://wiki.archlinux.org/index.php/beginners&#39;_guide">Beginner's guide</a> and after a lot
+of epic battles against configurations files (most of them was my fault as I had misunderstood some paragraphs on the guide) and with help from the internet I now write this text from a fully 
+functional Arch machinne. It's impressive how fast and well behaved everything is, there is no crash nor overheating
+. I think it's a farewell to Ubuntu.</p>
+<p>If you would like to try i3, check out <a href="http://joaquinlp.me/blog/your-guide-to-a-damn-light-arch-linux-with-i3-and-text-apps/">Your guide to a damm light Arch Linux with i3 and text apps</a></p>
+<p><img src="https://c2.staticflickr.com/8/7467/15518901357_03461749be_b.jpg" alt="Arch with i3 screenshot" width="100%"></p>
+<h3>Updating the system (once a day)</h3>
+<pre><code>pacman -Syu
+</code></pre>
+<h3>Installing a package</h3>
+<pre><code>pacman -S &lt;package_name&gt;
+</code></pre>
+<h3>Uninstalling a package</h3>
+<pre><code>pacman -Rsn &lt;package_name&gt;
+</code></pre>
+<h3>Setting the keyboard layout to Brazilian ABNT</h3>
+<pre><code>setxkbmap -layout br
+</code></pre>
+<h3>Configuring sound</h3>
+<pre><code>$ alsamixer
+$ speaker-test -c2
+</code></pre>
+<p>More information on <a href="http://unix.stackexchange.com/questions/104270/how-do-i-enable-sound-in-this-fresh-arch-install">audio configuration for arch at Unix Stack Exchange</a>:</p>
+<p>If you have any tip or sugestion, leave a comment :)</p>
 
   </div>
 
@@ -75,7 +83,7 @@ Want to know the most frequent words of a song? No problem!
                         
 <div id="disqus_thread"></div>
 <script>
-  var disqus_config = function() { this.page.identifier = "/blog/python-collections-counter-examples"; };
+  var disqus_config = function() { this.page.identifier = "/blog/i-have-installed-arch"; };
   (function() {
     var d = document, s = d.createElement('script');
     s.src = '//guidopercu.disqus.com/embed.js';
@@ -113,11 +121,11 @@ Want to know the most frequent words of a song? No problem!
 
 <!-- Scripts -->
 <script src="../../static/js/jquery.min.js"></script>
-<script src="../../blog/python-collections-counter-examples/static/js/jquery.scrollex.min.js"></script>
-<script src="../../blog/python-collections-counter-examples/static/js/jquery.scrolly.min.js"></script>
-<script src="../../blog/python-collections-counter-examples/static/js/skel.min.js"></script>
-<script src="../../blog/python-collections-counter-examples/static/js/util-min.js"></script>
-<script src="../../blog/python-collections-counter-examples/static/js/main-min.js"></script>
+<script src="../../blog/i-have-installed-arch/static/js/jquery.scrollex.min.js"></script>
+<script src="../../blog/i-have-installed-arch/static/js/jquery.scrolly.min.js"></script>
+<script src="../../blog/i-have-installed-arch/static/js/skel.min.js"></script>
+<script src="../../blog/i-have-installed-arch/static/js/util-min.js"></script>
+<script src="../../blog/i-have-installed-arch/static/js/main-min.js"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
