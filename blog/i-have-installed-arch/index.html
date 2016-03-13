@@ -73,6 +73,16 @@ functional Arch machinne. It's impressive how fast and well behaved everything i
 <pre><code>$ alsamixer
 $ speaker-test -c2
 </code></pre>
+<h3>Connecting to the internet (wi-fi)</h3>
+<pre><code># ip link set down wlo1
+# wifi-menu
+</code></pre>
+<h3>Getting date time from the internet</h3>
+<pre><code># ntpd -qg
+</code></pre>
+<h3>Setting second monitor</h3>
+<pre><code># xrandr --output HDMI1 --auto --left-of LVDS1
+</code></pre>
 <p>More information on <a href="http://unix.stackexchange.com/questions/104270/how-do-i-enable-sound-in-this-fresh-arch-install">audio configuration for arch at Unix Stack Exchange</a>:</p>
 <p>If you have any tip or sugestion, leave a comment :)</p>
 
