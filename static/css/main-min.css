@@ -155,3 +155,17 @@ opacity:0.9;
 .progress-meter > .meter.meter-right > .meter-text {
     text-align: right;
 }
+pre {
+    background-color: #051e30;
+    border-color: #289ff4;
+    border-style: solid;
+    border-width: 1px 1px 1px 4px;
+    color: #ffffff;
+    font-family: "Courier 10 Pitch",Courier,monospace;
+    line-height: 19px;
+    margin: 30px 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 10px 10px 18px;
+    word-wrap: break-word;
+}
