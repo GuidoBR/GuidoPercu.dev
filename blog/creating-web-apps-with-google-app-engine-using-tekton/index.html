@@ -68,12 +68,12 @@ $ mv tekton-master projeto_appengine &amp;&amp; cd projeto_appengine
 $ source ./bin/activate
 </code></pre>
 <p>With the virtual enviroment ready, everything should be working. To test it, let's use the own server that comes with the GAE SDK before deploying our project.</p>
-<pre><code>cd ../appengine
-dev_appserver.py .
+<pre><code>$ cd ../appengine
+$ dev_appserver.py .
 </code></pre>
-<p>It works! You should be seeing the template project at <a href="localhost:8000">localhost:8000</a></p>
+<p>It works! You should be seeing the template project at <a href="../../blog/creating-web-apps-with-google-app-engine-using-tekton/localhost:8000">localhost:8000</a></p>
 <p>To deploy it to GAE:</p>
-<pre><code>appcfg.py update . --oauth2
+<pre><code>$ appcfg.py update . --oauth2
 </code></pre>
 <p>You can know more about the project at <a href="https://github.com/renzon/tekton">Github</a> and the <a href="https://groups.google.com/forum/#!forum/tekton-web">e-mail list</a></p>
 

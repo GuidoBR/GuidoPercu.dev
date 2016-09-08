@@ -169,3 +169,9 @@ pre {
     padding: 10px 10px 10px 18px;
     word-wrap: break-word;
 }
+.content {
+    text-align: left;
+}
+h2 {
+    text-align: center;
+}
