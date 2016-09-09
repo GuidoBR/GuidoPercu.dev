@@ -44,9 +44,9 @@
     on February 1, 2016
   </p>
   <p>Last week I've decided to improve this site performance. It was taking too long to load for such a simple static site. <a href="https://blog.kissmetrics.com/loading-time/">Research says that every second matters on website performance</a></p>
-<p>I've improved the loading time of my website from 4.7s to 1.6s! Here is how I did it:</p>
+<p>I've improved the loading time of my website from 4.7s to <del>1.6s</del> <ins>1.43s</ins>! Here is how I did it:</p>
 <h2>Measure</h2>
-<p>Use tools to help you understand your performance problems before you start. I used <a href="http://www.webpagetest.org/">WebPageTest</a> and <a href="https://developers.google.com/speed/pagespeed/insights">Google Pagespeed Insights</a></p>
+<p>Use tools to help you understand your performance problems before you start. I used <a href="http://www.webpagetest.org/">WebPageTest</a>, <a href="https://varvy.com/pagespeed/">Varvy Page Speed Optimization</a> and <a href="https://developers.google.com/speed/pagespeed/insights">Google Pagespeed Insights</a></p>
 <p>Firefox and Google Chrome also have tools for this. Check them out.</p>
 <h2>Understand your server</h2>
 <p>I use Github Pages to host my site, so I need to understand the <a href="http://www.kevinsweet.com/pros-cons-github-pages/">Github Pages has Pros and Cons</a> of it.</p>
@@ -61,8 +61,9 @@
 <p>Depending on your workflow, you should try using task runners for this, like <a href="http://gruntjs.com/">GruntJS</a> or <a href="http://gulpjs.com/">GulpJS</a></p>
 <h2>Test it</h2>
 <p>Use <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">Apache Benchmark tool</a> to <a href="https://www.devside.net/wamp-server/load-testing-apache-with-ab-apache-bench">load test your web site</a>.</p>
-<p>ab -n 1000 -c 500 <a href="http://www.yourdomain.com.br/">http://www.yourdomain.com.br/</a></p>
-<p>Want to know more? Check them out:</p>
+<pre>
+ab -n 1000 -c 500 http://www.yourdomain.com.br/
+</pre><p>Want to know more? Check them out:</p>
 <ul>
 <li><a href="https://alexcican.com/post/guide-hosting-website-dropbox-github/">Guide: Hosting Website using Dropbox and Github</a></li>
 <li><a href="http://www.webmonkey.com/2010/09/how-to-speed-up-your-site-with-yslow-and-page-speed/">How to speed up your site with Yslow and Page Speed</a></li>
