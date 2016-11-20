@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+    Highlights by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<title>Learning Go - Guido Luz Percú Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hi, I'm Guido Luz Percú, software developer and open source contributor, working with Python development. I write about software development, technology, Web and books on my personal blog. I work as a software engineer and my goal is to help improve people's lives.">
+<link rel="stylesheet" href="../../static/css/styles-min.css">
+</head>
+<body>
+<section id="header">
+        <header class="major">
+                <h1><a href="/">Guido Luz Percú</a></h1>
+                <ul class="icons">
+                        <li><a href="/blog/" class="icon alt fa-laptop"><span class="label">Blog</span></a></li>
+                        <li><a href="http://www.twitter.com/oumguido/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="http://www.github.com/GuidoBR/" class="icon alt fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="https://www.linkedin.com/pub/guido-luz-perc%C3%BA/5a/2b7/9b7" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://delicious.com/guidohp/" class="icon alt fa-delicious"><span class="label">Delicious</span></a></li>
+                        <li><a href="https://plus.google.com/+GuidoLuzPerc%C3%BA/posts?hl=pt_br" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+                </ul>
+        </header>
+</section>
+
+
+<section id="one" class="main special">
+        <div class="container">
+                <div class="content">
+                        
+  <div class="blog-post">
+  
+    <h2>Learning Go</h2>
+  
+  <p class="meta">
+    written by
+    
+      <a href="https://twitter.com/oumguido">Guido Percú</a>
+    
+    on November 20, 2016
+  </p>
+  <p>Why <a href="https://golang.org/doc/faq#What_is_the_purpose_of_the_project" title="FAQ Go - What is the purpose of the project?">Go</a>?</p>
+<blockquote><p>We believe it's worth trying again with a new language, a concurrent, garbage-collected language with fast compilation. Regarding the points above:</p>
+<ul>
+<li>It is possible to compile a large Go program in a few seconds on a single computer.</li>
+<li>Go provides a model for software construction that makes dependency analysis easy and avoids much of the overhead of C-style include files and libraries.</li>
+<li>Go's type system has no hierarchy, so no time is spent defining the relationships between types. Also, although Go has static types the language attempts to make types feel lighter weight than in typical OO languages.</li>
+<li>Go is fully garbage-collected and provides fundamental support for concurrent execution and communication.</li>
+<li>By its design, Go proposes an approach for the construction of system software on multicore machines.  - <a href="https://golang.org/doc/faq#What_is_the_purpose_of_the_project" title="FAQ Go - What is the purpose of the project?">Go Doc - What is the purpose of the project?</a></li>
+</ul>
+</blockquote>
+<h2>Instalation</h2>
+<p>On Arch Linux:</p>
+<pre><code>pacman -S go
+</code></pre>
+<p>For information about installing it in other systems, visit the <a href="https://golang.org/dl/" title="Go download page">official documentation</a>.</p>
+<h3>Hello World!</h3>
+<pre><code>package main
+import "fmt"
+
+func main() {
+    fmt.Println("hello world")
+}
+</code></pre>
+<p><a href="https://gobyexample.com/hello-world" title="Go By Example - Hello World in Go">Go By Example - Hello world</a></p>
+<h3>Fibonnaci (recursive)</h3>
+<pre><code>func fibbRecc(number int) (numValue int){
+if number == 0 || number == 1 {
+    return number
+}
+
+return fibbRecc(number - 2) + fibbRecc(number -1)
+}
+</code></pre>
+<h3>Fatorial</h3>
+<pre><code>func Factorial(n uint64)(result uint64) {
+if (n &gt; 0) {
+    result = n * Factorial(n-1)
+    return result
+}
+return 1
+}
+</code></pre>
+<h3>Books:</h3>
+<ul>
+<li><a href="http://buff.ly/2fw1tv0">The Little Book of Go - By Karl Seguin</a></li>
+<li><a href="http://buff.ly/2fw2Rhb">An introduction to Programming in Go</a></li>
+<li><a href="http://buff.ly/2fodKnB">Go Doc</a> </li>
+</ul>
+<h3>Tutorials</h3>
+<ul>
+<li><a href="http://buff.ly/2fw0zyq">Go by Example</a></li>
+</ul>
+<h3>Courses:</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLSak_q1UXfPp2VwUQ4ZdUVJdMO6pfi5v_">Build Web Apps with Golang</a> - Youtube Playlist by Todd McLeod</li>
+<li><a href="https://www.youtube.com/playlist?list=PLSak_q1UXfPrI6D67NF8ajfeJ6f7MH83S">Learn To Code - Golang Training</a> - Youtube Playlist by Todd McLeod</li>
+</ul>
+<h3>Awesome</h3>
+<ul>
+<li><a href="http://awesome-go.com/">Awesome Go</a></li>
+</ul>
+
+  </div>
+
+                </div>
+                <div class="comments">
+                        
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/learning-go"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//guidopercu.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+                </div>
+        </div>
+</section>
+
+
+
+<!-- Footer -->
+<section id="footer">
+        <footer>
+                <ul class="icons">
+                        <li><a href="/blog/" class="icon alt fa-laptop"><span class="label">Blog</span></a></li>
+                        <li><a href="http://www.twitter.com/oumguido/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="http://www.github.com/GuidoBR/" class="icon alt fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="https://www.linkedin.com/pub/guido-luz-perc%C3%BA/5a/2b7/9b7" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://delicious.com/guidohp/" class="icon alt fa-delicious"><span class="label">Delicious</span></a></li>
+                        <li><a href="https://plus.google.com/+GuidoLuzPerc%C3%BA/posts?hl=pt_br" class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+                </ul>
+                <ul class="copyright">
+                        <li>Guido Percú</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+                </ul>
+        </footer>
+</section>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58821573-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</body>
+</html>
