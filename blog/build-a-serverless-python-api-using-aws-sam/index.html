@@ -49,14 +49,11 @@
   <blockquote><p>As it’s used today, serverless computing means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.</p>
 <p>by Lucas Still on <a href="https://moduscreate.com/blog/serverless-allthethings-1/">Modus Create - Serverless All the things</a></p>
 </blockquote>
-<p>Since Amazon launched <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, Microsoft has <a href="https://azure.microsoft.com/en-us/services/functions/">Azure Functions</a> and Google with <a href="https://cloud.google.com/functions/">Cloud Functions</a>  Serverless architecture is becoming more popular. With that you don't need to worry:</p>
-<ul>
-<li>No servers to provision, manage, or upgrade</li>
-<li>Automatically scale based on the load</li>
-<li>Pay only for what you use</li>
-</ul>
+<p>Serverless architecture is becoming more and more popular: Amazon launched <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>, Microsoft has 
+<a href="https://azure.microsoft.com/en-us/services/functions/">Azure Functions</a> and Google has <a href="https://cloud.google.com/functions/">Cloud Functions</a>. Now not only can you stop worrying about manually 
+provisioning, managing and upgrading servers, but also pay only for what you use.</p>
 <h2>Why you don't need to worry about managing a server</h2>
-<p>You may be already familiar with traditional cloud usage model: provisioning servers, deploying code to the cloud and manage resources usage and scaling. This is still the right thing to do in most scenarios, but there's a different way to do it.</p>
+<p>You may be already familiar with traditional cloud usage model: provisioning servers, deploying code to the cloud and manage resources usage and scaling. This is still the right thing to do in most scenarios, but there's a new way to do it.</p>
 <p>For example, if you have an application that allow users to upload profile pictures and you need to resize those images and store them on Amazon S3, you can handle this by using a AWS Lambda.</p>
 <p>Using a serverless architecture can also help reducing costs, since with Lambda you only pay for execution costs.</p>
 <p>The AWS Lambda free usage tier includes 1M free request per month and 400.000 GB-seconds of compute time per month.</p>
@@ -64,13 +61,13 @@
 <p><img src="../../blog/build-a-serverless-python-api-using-aws-sam/sam-logo.png" alt="sam-logo"></p>
 <p>SAM is an open-source framework for building serverless applications. It provides syntax to express APIs, databases, functions,  and event source mappings. Writing a few lines of YAML, you can create IAM roles, define resources and create your application.</p>
 <h3>Instalation</h3>
-<p>To learn how to install sam cli, check the <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html">official docs</a> (there are different process for Windows and Linux systems).</p>
+<p>To learn how to install <code>sam cli</code>, check the <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html">official docs</a> (there are different processes for Windows and Linux systems).</p>
 <p>And you should also have <code>aws cli</code> installed to configure your credentials so <code>sam cli</code> knows about it.</p>
 <p><code>pip install awscli --upgrade --user</code></p>
 <p><code>aws configure</code></p>
 <p>To get your AWS (Access/Secret) Keys go to your <a href="https://console.aws.amazon.com/iam/home?#/security_credentials">AWS account &gt; My Security Credentials</a></p>
 <h3>Using SAM command line interface</h3>
-<p>You can create a new project using the command <code>sam init</code> and following it's instructions. Here I'm creating a Python 3.8 Lambda function.</p>
+<p>You can create a new project using the command <code>sam init</code> and following its instructions. Here I'm creating a Python 3.8 Lambda function.</p>
 <h4>SAM Template</h4>
 <pre><code class="lang-yaml">AWSTemplateFormatVersion: &#39;2010-09-09&#39;
 Transform: AWS::Serverless-2016-10-31
@@ -118,7 +115,7 @@ Outputs:
     }
 </code></pre>
 <h3>Validate the template file</h3>
-<p><code>sam validate</code> will take a look at your <code>template.yaml</code> file and see if it looks correct. It's useful to check for removed references and wrong indentation.</p>
+<p><code>sam validate</code> will take a look at your <code>template.yaml</code> file and see if it looks correct. This command is very useful because it checks for removed references and wrong indentation.</p>
 <h3>Build and deploy</h3>
 <p>To deploy, let's first build it using <code>sam build --use-container</code> This will build the source of your application and prepare it to run locally (with <code>sam local invoke</code>) or to ship it to AWS.</p>
 <p><img src="../../blog/build-a-serverless-python-api-using-aws-sam/build-success.png" alt="image-20200216173603258"></p>
@@ -131,27 +128,33 @@ Outputs:
 <li><strong>Allow SAM CLI IAM role creation</strong>: Many AWS SAM templates, including this example, create AWS IAM roles required for the AWS Lambda function(s) included to access AWS services. By default, these are scoped down to minimum required permissions.</li>
 <li><strong>Save arguments to samconfig.toml</strong>: In the future you can just re-run <code>sam deploy</code> without parameters to deploy changes to your application, because your choices will be saved in a <code>samconfig.toml</code> file.</li>
 </ul>
-<p>At the end of your process, you should see a URL with the Production environment of your API. If all went well, you can just access it to get your Hello World using SAM.</p>
+<p>At the end of your process, you should see a URL with the production environment of your API. If all went well, you can just access it to get your Hello World using SAM.</p>
 <p><img src="../../blog/build-a-serverless-python-api-using-aws-sam/image-20200216182833524.png" alt="image-20200216182833524"></p>
 <p>Have fun!</p>
 <h2>References</h2>
 <h3>Articles:</h3>
-<p><a href="https://medium.com/@edjgeek/meet-aws-sam-cli-sam-init-bab68b4cc0d4">Meet AWS SAM CLI: sam init</a>
-<a href="https://stackify.com/aws-lambda-with-python-a-complete-getting-started-guide/">AWS Lambda with Python: A complete getting started guide</a>
-<a href="https://aws.amazon.com/getting-started/projects/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/">Build a Serverless Web Application
-with AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, and Amazon Cognito</a>
-<a href="https://aws.amazon.com/blogs/aws/aws-serverless-application-model-sam-command-line-interface-build-test-and-debug-serverless-apps-locally/">AWS Serverless Application Model SAM Command Line interface build, test and debug</a></p>
+<ul>
+<li><a href="https://medium.com/@edjgeek/meet-aws-sam-cli-sam-init-bab68b4cc0d4">Meet AWS SAM CLI: sam init</a></li>
+<li><a href="https://stackify.com/aws-lambda-with-python-a-complete-getting-started-guide/">AWS Lambda with Python: A complete getting started guide</a></li>
+<li><a href="https://aws.amazon.com/getting-started/projects/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/">Build a Serverless Web Application
+with AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, and Amazon Cognito</a></li>
+<li><a href="https://aws.amazon.com/blogs/aws/aws-serverless-application-model-sam-command-line-interface-build-test-and-debug-serverless-apps-locally/">AWS Serverless Application Model SAM Command Line interface build, test and debug</a></li>
+</ul>
 <h3>Videos:</h3>
-<p><a href="https://www.youtube.com/watch?v=CIdUU6rNdk4">Deep Dive into AWS SAM</a>
-<a href="https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d">Learn AWS Lambda from scratch</a>
-<a href="https://www.youtube.com/watch?v=DA0MtJkUVaY">Start Right Using AWS SAM: Treat Your Infrastructure the Way You Treat Your Code</a>
-<a href="https://pages.awscloud.com/Managing-Serverless-Applications-with-SAM-Templates_2019_1020-SRV_OD.html">Managing Serverless Applications with SAM Templates</a>
-<a href="https://egghead.io/playlists/learn-aws-serverless-application-model-aws-sam-framework-from-scratch-baf9">Build serverless applications with AWS Serverless Application Model (AWS SAM)</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CIdUU6rNdk4">Deep Dive into AWS SAM</a></li>
+<li><a href="https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d">Learn AWS Lambda from scratch</a></li>
+<li><a href="https://www.youtube.com/watch?v=DA0MtJkUVaY">Start Right Using AWS SAM: Treat Your Infrastructure the Way You Treat Your Code</a></li>
+<li><a href="https://pages.awscloud.com/Managing-Serverless-Applications-with-SAM-Templates_2019_1020-SRV_OD.html">Managing Serverless Applications with SAM Templates</a></li>
+<li><a href="https://egghead.io/playlists/learn-aws-serverless-application-model-aws-sam-framework-from-scratch-baf9">Build serverless applications with AWS Serverless Application Model (AWS SAM)</a></li>
+</ul>
 <h3>Code example:</h3>
-<p><a href="https://github.com/aws-samples/cookiecutter-aws-sam-s3-rekognition-dynamodb-python">Cookiecutter AWS SAM S3 Rekognition DynamoDB Python</a>
-<a href="https://github.com/aws-samples/serverless-app-examples/tree/master/python/hello-world-python3">Hello World Python 3</a>
-<a href="https://github.com/marekq/serverless-cognito">Serverless Cognito</a>
-<a href="https://github.com/awslabs/serverless-application-model/tree/master">SAM Serverless Application Framework</a></p>
+<ul>
+<li><a href="https://github.com/aws-samples/cookiecutter-aws-sam-s3-rekognition-dynamodb-python">Cookiecutter AWS SAM S3 Rekognition DynamoDB Python</a></li>
+<li><a href="https://github.com/aws-samples/serverless-app-examples/tree/master/python/hello-world-python3">Hello World Python 3</a></li>
+<li><a href="https://github.com/marekq/serverless-cognito">Serverless Cognito</a></li>
+<li><a href="https://github.com/awslabs/serverless-application-model/tree/master">SAM Serverless Application Framework</a></li>
+</ul>
 
   </div>
 
