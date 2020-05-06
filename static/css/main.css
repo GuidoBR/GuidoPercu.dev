@@ -33,10 +33,6 @@ body {
 	line-height: 1;
 }
 
-.blog-post img {
-   max-width: 100%;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -120,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #7f888f;
+		color: #000;
 		font-family: "Open Sans", sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
@@ -1788,7 +1784,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: left;
+		text-align: center;
 	}
 
 	header p {
