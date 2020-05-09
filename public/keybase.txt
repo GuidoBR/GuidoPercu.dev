@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/guidopercu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.guidopercu.dev
+  * I am guidopercu (https://keybase.io/guidopercu) on keybase.
+  * I have a public key ASADDYEZ-6dQQPubWFyWcslSpn5HOeJiaRQixbrJ-_uiWQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120030d8119fba75040fb9b585c9672c952a67e4739e262691422c5bac9fbfba2590a",
+      "host": "keybase.io",
+      "kid": "0120030d8119fba75040fb9b585c9672c952a67e4739e262691422c5bac9fbfba2590a",
+      "uid": "cd6f4dc2f99f589aba0e9ae8ef653719",
+      "username": "guidopercu"
+    },
+    "merkle_root": {
+      "ctime": 1578663051,
+      "hash": "e3ab50d84117d3105099c1825b571f0bed6b316cee11a3748bcce92f6849836cd09ca508f58d343af7135db0023031b64f73c4a79445104648f43a94d7910822",
+      "hash_meta": "3783984c7fbf6cc528b26edabfbfe8a5959ab98121f45c7b41fe8aec6940240e",
+      "seqno": 14169062
+    },
+    "service": {
+      "entropy": "7YmQtUnkn0z1YvbTgNX67GMi",
+      "hostname": "www.guidopercu.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1578663070,
+  "expire_in": 504576000,
+  "prev": "0939b5941acc7f1b90645b745cd08cbc79d99a6b964ae2ef59a4112ee16f4184",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAw2BGfunUED7m1hclnLJUqZ+RzniYmkUIsW6yfv7olkKp3BheWxvYWTESpcCBsQgCTm1lBrMfxuQZFt0XNCMvHnZmmuWSuLvWaQRLuFvQYTEIOVRXSLMqlqLkUi/1sVyJl0DRhXCTgNkVSkeadxTtaXXAgHCo3NpZ8RA/5olLjDps09K8fR1RmG113Er7IZJsf1P4zfBXuo0e6Xs1fw9aFpLU9Ds1ubiObe91I8PEUwLJR8HpxShwMTEC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB1xpIEVJcH7gz/yYF7RTj//4dvei8OWAXfmJg+zhSTuo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/guidopercu
+
+==================================================================

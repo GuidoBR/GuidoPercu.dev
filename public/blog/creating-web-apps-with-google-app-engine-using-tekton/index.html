@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+        <head>
+                <title>Creating web apps with Google App Engine and Tekton - Guido Luz Percú Blog</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+                <meta name="description" content="Hi, I'm Guido Luz Percú, software developer and open source contributor, working with Python development. I write about software development, technology, Web and books on my personal blog. I work as a software engineer and my goal is to help improve people's lives.">
+                <link rel="stylesheet" href="../../static/css/main.css" />
+        </head>
+<body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+                <!-- Main -->
+                <div id="main">
+                        <div class="inner">
+
+                                <!-- Header -->
+                                <header id="header">
+                                        <a href="index.html" class="logo"><strong>Software Engineer</strong> based on Brazil</a>
+                                        <ul class="icons">
+                                                <li><a href="http://www.twitter.com/oumguido/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                                <li><a href="http://www.github.com/GuidoBR/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/guidopercu/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                        </ul>
+                                </header>
+
+                                
+<section id="one" class="main special">
+        <div class="container">
+                <div class="content">
+                        
+  <div class="blog-post">
+  
+    <h2>Creating web apps with Google App Engine and Tekton</h2>
+  
+  <p class="meta">
+    written by
+    
+      <a href="https://twitter.com/@oumguido">Guido Percú</a>
+    
+    on May 11, 2016
+  </p>
+  <p>Google App Engine (GAE) is the cloud computing platform from Google, that enables you to host and develop applications using Python (2.7 only unfortunately) that easily scales, and cost <a href="https://cloud.google.com/appengine/pricing">just a few dollars</a>.</p>
+<h3>Tekton</h3>
+<p><a href="https://github.com/renzon/tekton/">Tekton</a> is a framework for web development, specially made to be used with Google App Engine.
+Using it, we can enjoy the best of Django (code scaffold, form validation from models, isolated apps) without losing the 
+scalability that GAE provides.</p>
+<p>The first step is to download the <a href="https://cloud.google.com/appengine/downloads">Google App Engine SDK</a>, and then we are ready to know Tekton.</p>
+<p>After that, we will get to download the Tekton template application.</p>
+<pre><code>$ wget https://github.com/renzon/tekton/archive/master.zip
+$ unzip master &amp;&amp; rm master.zip
+$ mv tekton-master projeto_appengine &amp;&amp; cd projeto_appengine
+</code></pre>
+<p>What it looks like:</p>
+<pre><code>└── backend
+ ├── appengine
+ ├── apps
+ ├── build_scripts
+ ├── test
+ └── venv
+</code></pre>
+<p>I like to create a separate directory to hold frontend files, and use symlinks to get everything working. It's up to you.</p>
+<pre><code>$ cd backend/venv/ &amp;&amp; ./venv.sh
+$ source ./bin/activate
+</code></pre>
+<p>With the virtual enviroment ready, everything should be working. To test it, let's use the own server that comes with the GAE SDK before deploying our project.</p>
+<pre><code>$ cd ../appengine
+$ dev_appserver.py .
+</code></pre>
+<p>It works! You should be seeing the template project at <a href="../../blog/creating-web-apps-with-google-app-engine-using-tekton/localhost:8000">localhost:8000</a></p>
+<p>To deploy it to GAE:</p>
+<pre><code>$ appcfg.py update . --oauth2
+</code></pre>
+<p>You can know more about the project at <a href="https://github.com/renzon/tekton">Github</a> and the <a href="https://groups.google.com/forum/#!forum/tekton-web">e-mail list</a></p>
+
+  </div>
+
+                </div>
+                <div class="comments">
+                        
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/creating-web-apps-with-google-app-engine-using-tekton"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//guidopercu.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+                </div>
+        </div>
+</section>
+
+
+                        </div>
+                </div>
+
+
+                <!-- Sidebar -->
+                <div id="sidebar">
+                        <div class="inner">
+
+                                <!-- Menu -->
+                                <nav id="menu">
+                                        <header class="major">
+                                                <h2>Menu</h2>
+                                        </header>
+                                        <ul>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/blog/">Blog</a></li>
+                                                <li><a href="/resume/">Resume</a></li>
+                                        </ul>
+                                </nav>
+
+                                <!-- Section -->
+                                <section>
+                                        <header class="major">
+                                                <h2>Get in touch</h2>
+                                        </header>
+                                        <ul class="contact">
+                                                <li class="icon solid fa-envelope">guidopercu [@] gmail.com</li>
+                                                <li class="icon brands fa-skype">guido.percu</li>
+                                                <li class="icon brands fa-twitter"><a href="https://www.twitter.com/oumguido/">Twitter</a></li>
+                                                <li class="icon brands fa-github"><a href="http://www.github.com/GuidoBR/">Github</a></li>
+                                                <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/guidopercu/">LinkedIn</a></li>
+                                        </ul>
+                                </section>
+
+                                <!-- Footer -->
+                                <footer id="footer">
+                                        <p class="copyright">&copy; <a href="/">Guido Percú.</a> All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>
+
+                        </div>
+                </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../static/js/jquery.min.js"></script>
+        <script src="../../static/js/browser.min.js"></script>
+        <script src="../../static/js/breakpoints.min.js"></script>
+        <script src="../../static/js/util.js"></script>
+        <script src="../../static/js/main.js"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58821573-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</body>
+</html>

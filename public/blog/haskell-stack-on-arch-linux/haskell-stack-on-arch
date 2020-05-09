@@ -1,0 +1,40 @@
+# Instalation
+
+$ yaourt --m-arg "--skippgpcheck" -Sb ncurses5-compat-libs 
+$ yaourt -S haskell-stack
+
+# Usage
+
+Create a new project using the stack new command
+
+$ stack new project_name
+
+We now have a Haskell project inside project_name. We should stack setup to install a GHC (the most common Haskell compiler) for your project.
+
+$ stack setup
+
+Go ahead, explore your new project. Take a peek at how it looks inside:
+
+$ tree
+
+Play with Haskell on ghci
+
+$ stack ghci
+
+It already loads your Lib file. You can modify it at src/Lib
+
+Main Lib> someFunc
+
+The most important step in any project is the build:
+
+$ stack build
+
+*Note: if stack build don't print any information on the screen, try removing .stack-work directory.
+
+$ rm .stack-work
+
+To see a nice little "Hello World" message on our screen, execute your project:
+
+$ stack exec project_name-exe
+
+To get more information, check out the user guide: https://docs.haskellstack.org/en/stable/GUIDE/
