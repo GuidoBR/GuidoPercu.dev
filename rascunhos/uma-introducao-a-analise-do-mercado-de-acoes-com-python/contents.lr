@@ -1,0 +1,119 @@
+title:
+
+Uma introdução à análise do mercado de ações com Python
+---
+author: Guido Percú
+
+---
+pub_date: 2017-06-18
+---
+twitter_handle: oumguido
+
+---
+body:
+
+Este post é uma tradução adaptada de uma série de dois artigos sobre análise de dados de ações usando Python chamado [An introduction to Stock Market Data Analysis with Python](https://ntguardian.wordpress.com/2016/09/19/introduction-stock-market-data-python-1/) de Curtis Miller. É um texto informativo, não deve ser usado como recomendação de investimento!
+
+## Introdução
+
+Matemática avançada e estatística está presente nas finanças por bastante tempo. Antes da década de 1980, bancos e finanças eram bem conhecidos por serem "entendiantes"; bancos de investimento são distintos de bancos comerciais e a função principal da indústria era de gerenciar "simples" (ao menos em comparação com as de hoje) instrumentos financeiros como empréstimos. A desregulamentação sob a administração de Reagan, junto com um fluxo de talentos matemáticos, transformou a industria de "entendiante" para o que é hoje, e desde então, finanças se uniu com outras ciências como uma motivação para pesquisa matemática. Por exemplo, uma das maiores realizações recentes da matemática foi a derivação da fórmula Black-Scholes, que facilitou atribuir preço a opções (um contrato que permite ao portador o direito de compra ou venda de uma ação num determinado preço ao emissor da opção). Dito isso, modelos estatísticos ruins, incluindo a fórmula Black-Scholes, são partes da culpa pela crise financeira de 2008.
+
+Em anos recentes, a ciência da computação se uniu à matemática avançada para revolucionar as finanças e especulação, prática de comprar e vender ativos financeiros com o propósito de conseguir lucro. Recentemente, especulação se tornou uma atividade dominada por computadores; algoritmos são responsáveis por tomar decisões em frações de segundo, muito mais rápido que qualquer humano poderia fazer (tão rápido que a velocidade da luz é uma limitação ao desenvolver tais sistemas).
+
+Adicionalmente, técnicas de machine learning e data mining estão crescendo em popularidade no setor financeiro, e provavelmente vão continuar populares. Na verdade, uma grande parte de negociações feitas por algoritmos são negociações de alta frequência (HFT - high-frequency trading na sigla em inglês). Enquanto algoritmos podem ser melhores que humanos, a tecnologia ainda está numa fase turbulenta, com altos riscos. HFT foi responsável por ocorrências de crashes em 2010 (flash crash) e em 2013 que foi disparado por um tweet hackeado da Associated Press sobre um ataque na Casa Branca.
+
+Nesta lição, entretanto, não irá ser como quebrar o mercado financeiro com modelos matemáticos ruins ou com algoritmos de negociação. Ao invés disso, eu pretendo te passar algumas ferramentas básicas para tratar e analisar o mercado de ações com Python. Eu também irei discutir médias móveis, e como construir estratégias de especulação as utilizando, como formular estratégias de saida e de entrada em uma posição, e como avaliar sua estratégia através de backtesting (testar sua estratégia em dados históricos).
+
+## Obtendo e visualizando dados de ações
+
+### Obtendo dados do Google Finance com o Pandas
+
+Antes de brincarmos com os dados, nós precisamos obtê-los num formato em que possamos trabalhar. Dados financeiros podem ser obtidos do Yahoo! Finance, Google Finance, dentre outras fontes, e o pacote pandas facilita o acesso à esses dados. Nesse artigo, usaremos o Google Finance.
+
+O código abaixo demonstra como criar um objeto DataFrame contendo informações de uma ação. (Você pode ler mais sobre acesso remoto à dados [aqui.](http://pandas.pydata.org/pandas-docs/stable/remote_data.html))
+
+<!-- Inserir código aqui -->
+
+Vamos discutir brevemente isto. Open é o preço da ação no começo do dia de negociação (não é necessário que seja o preço de fechamento do dia anterior), High é o preço mais alto de uma ação naquele dia, Low é o menor preço, e Close é o preço daquela ação no fechamento de mercado, Volume indica quantas ações foram negociadas. Adjusted Close é o preço da ação ajustada por eventos corporativos. Enquanto os preços de ações são consideradas basicamente por traders, splits de ações (quando a companhia faz cada açao valer duas e o preço fica pela metade) e proventos (dividendos e JSCP, distribuição do lucro da companhia para os detentores de ações) também afetam o preço da ação e devem ser levados em conta.
+
+### Visualizando dados
+
+Agora que temos os dados, gostaríamos de visualiza-los. Primeiro demonstro como fazer isso usando o pacote matplotlib. Repare que o objeto DataFrame tem um método chamado plot() torna mais fácil a tarefa de criar gráficos.
+
+<!-- Inserir código aqui -->
+
+Um gráfico de linha é bom, mas temos ao menos duas variáveis envolvidas para cada data (open, high, low, e close), e nós gostariamos de ter uma forma visual de ver todas as quatros variáveis e não requerem desenhar quatro linhas diferentes. Dados financeiros são frequentemente grafados com candlesticks Japoneses, com esse nome porque foram criados no Japão do século 18 por especuladores de arroz. Este gráfico pode ser criado com matplotlib, embora isso requeira um esforço considerável.
+
+Eu criei uma função e você sinta-se a vontade de usar para criar gráficos candlestick mais facilmente de DataFrames do Pandas, e use para fazer o gráfico dos dados de ações.
+
+<!-- Inserir código aqui -->
+
+With a candlestick chart, a black candlestick indicates a day where the closing price was higher than the open (a gain), while a red candlestick indicates a day where the open was higher than the close (a loss). The wicks indicate the high and the low, and the body the open and close (hue is used to determine which end of the body is the open and which the close). Candlestick charts are popular in finance and some strategies in technical analysis use them to make trading decisions, depending on the shape, color, and position of the candles. I will not cover such strategies today.
+
+We may wish to plot multiple financial instruments together; we may want to compare stocks, compare them to the market, or look at other securities such as exchange-traded funds (ETFs). Later, we will also want to see how to plot a financial instrument against some indicator, like a moving average. For this you would rather use a line chart than a candlestick chart. (How would you plot multiple candlestick charts on top of one another without cluttering the chart?)
+
+A seguir, eu pego dados para outras empresas de tecnologia e crio um gráfico com seus preços ajustados de fechamento.
+
+<!-- Inserir código aqui -->
+
+O que há de errado com esse gráfico? Enquanto o preço absoluto é importante (ações mais caras são difíceis de comprar, o que afeta não apenas sua volatilidade como também sua facilidade de operar com aquela ação), ao operar, estamos mais preocupados com a diferença relativa de um ativo do que o seu preço absoluto. Ações da Google são muito mais caras que da Apple ou da Microsoft, esta diferença faz as ações da Apple e Microsoft parecerem ser muito menos voláteis do que realmente são.
+
+Uma solução seria usar duas escalas diferentes ao desenhar o gráfico dos dados; uma escala seria usada para ações da Apple e Microsoft, e a outra pela ação do Google.
+
+<!-- Inserir código aqui -->
+
+A “better” solution, though, would be to plot the information we actually want: the stock’s returns. This involves transforming the data into something more useful for our purposes. There are multiple transformations we could apply.
+
+One transformation would be to consider the stock’s return since the beginning of the period of interest. In other words, we plot:
+
+<!-- Inserir código aqui -->
+
+This will require transforming the data in the stocks object, which I do next.
+
+<!-- Inserir código aqui -->
+
+This is a much more useful plot. We can now see how profitable each stock was since the beginning of the period. Furthermore, we see that these stocks are highly correlated; they generally move in the same direction, a fact that was difficult to see in the other charts.
+
+Alternatively, we could plot the change of each stock per day. One way to do so would be to plot the percentage increase of a stock when comparing day $t$ to day $t + 1$, with the formula:
+
+<!-- Inserir código aqui -->
+
+But change could be thought of differently as:
+
+<!-- Inserir código aqui -->
+
+These formulas are not the same and can lead to differing conclusions, but there is another way to model the growth of a stock: with log differences.
+
+<!-- Inserir código aqui -->
+
+(Here, \log is the natural log, and our definition does not depend as strongly on whether we use \log(\text{price}_{t}) - \log(\text{price}_{t - 1}) or \log(\text{price}_{t+1}) - \log(\text{price}_{t}).) The advantage of using log differences is that this difference can be interpreted as the percentage change in a stock but does not depend on the denominator of a fraction.
+
+We can obtain and plot the log differences of the data in stocks as follows:
+
+Which transformation do you prefer? Looking at returns since the beginning of the period make the overall trend of the securities in question much more apparent. Changes between days, though, are what more advanced methods actually consider when modelling the behavior of a stock. so they should not be ignored.
+
+## Médias Móveis
+
+Charts are very useful. In fact, some traders base their strategies almost entirely off charts (these are the “technicians”, since trading strategies based off finding patterns in charts is a part of the trading doctrine known as technical analysis). Let’s now consider how we can find trends in stocks.
+
+A q-day moving average is, for a series x_t and a point in time t, the average of the past $q$ days: that is, if MA^q_t denotes a moving average process, then:
+
+<!-- Inserir código aqui -->
+
+Moving averages smooth a series and helps identify trends. The larger q is, the less responsive a moving average process is to short-term fluctuations in the series x_t. The idea is that moving average processes help identify trends from “noise”. Fast moving averages have smaller q and more closely follow the stock, while slow moving averages have larger q, resulting in them responding less to the fluctuations of the stock and being more stable.
+
+pandas provides functionality for easily computing moving averages. I demonstrate its use by creating a 20-day (one month) moving average for the Apple data, and plotting it alongside the stock.
+
+<!-- Inserir código aqui -->
+
+Notice how late the rolling average begins. It cannot be computed until 20 days have passed. This limitation becomes more severe for longer moving averages. Because I would like to be able to compute 200-day moving averages, I’m going to extend out how much AAPL data we have. That said, we will still largely focus on 2016.
+
+<!-- Inserir código aqui -->
+
+You will notice that a moving average is much smoother than the actua stock data. Additionally, it’s a stubborn indicator; a stock needs to be above or below the moving average line in order for the line to change direction. Thus, crossing a moving average signals a possible change in trend, and should draw attention.
+
+Traders are usually interested in multiple moving averages, such as the 20-day, 50-day, and 200-day moving averages. It’s easy to examine multiple moving averages at once.
+
+<!-- Inserir código aqui -->
+
+The 20-day moving average is the most sensitive to local changes, and the 200-day moving average the least. Here, the 200-day moving average indicates an overall bearish trend: the stock is trending downward over time. The 20-day moving average is at times bearish and at other times bullish, where a positive swing is expected. You can also see that the crossing of moving average lines indicate changes in trend. These crossings are what we can use as trading signals, or indications that a financial security is changing direction and a profitable trade might be made.
