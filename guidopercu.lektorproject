@@ -1,0 +1,5 @@
+[project]
+name = guidopercu
+
+[packages]
+lektor-disqus-comments = 0.1
