@@ -1,0 +1,71 @@
+title:
+Creating web apps with Google App Engine and Tekton
+---
+pub_date:
+
+2016-05-11
+---
+author:
+
+Guido Percú
+
+---
+twitter_handle:
+
+@oumguido
+---
+body:
+
+Google App Engine (GAE) is the cloud computing platform from Google, that enables you to host and develop applications using Python (2.7 only unfortunately) that easily scales, and cost [just a few dollars](https://cloud.google.com/appengine/pricing).
+
+
+### Tekton
+
+[Tekton](https://github.com/renzon/tekton/) is a framework for web development, specially made to be used with Google App Engine.
+Using it, we can enjoy the best of Django (code scaffold, form validation from models, isolated apps) without losing the 
+scalability that GAE provides.
+
+The first step is to download the [Google App Engine SDK](https://cloud.google.com/appengine/downloads), and then we are ready to know Tekton.
+
+After that, we will get to download the Tekton template application.
+
+```
+$ wget https://github.com/renzon/tekton/archive/master.zip
+$ unzip master && rm master.zip
+$ mv tekton-master projeto_appengine && cd projeto_appengine     
+```
+
+What it looks like:
+
+```
+└── backend
+ ├── appengine
+ ├── apps
+ ├── build_scripts
+ ├── test
+ └── venv
+```
+
+I like to create a separate directory to hold frontend files, and use symlinks to get everything working. It's up to you.
+
+```
+$ cd backend/venv/ && ./venv.sh
+$ source ./bin/activate         
+```
+
+With the virtual enviroment ready, everything should be working. To test it, let's use the own server that comes with the GAE SDK before deploying our project.
+
+```
+$ cd ../appengine
+$ dev_appserver.py . 
+```
+
+It works! You should be seeing the template project at [localhost:8000](localhost:8000)
+
+To deploy it to GAE:
+
+```
+$ appcfg.py update . --oauth2
+```
+
+You can know more about the project at [Github](https://github.com/renzon/tekton) and the [e-mail list](https://groups.google.com/forum/#!forum/tekton-web)

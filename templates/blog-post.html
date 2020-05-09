@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% from "macros/blog.html" import render_blog_post %}
+{% block title %}{{ this.title }} - Guido Luz Percú Blog{% endblock %}
+{% block body %}
+<section id="one" class="main special">
+        <div class="container">
+                <div class="content">
+                        {{ render_blog_post(this) }}
+                </div>
+                <div class="comments">
+                        {{ render_disqus_comments() }}
+                </div>
+        </div>
+</section>
+
+{% endblock %}

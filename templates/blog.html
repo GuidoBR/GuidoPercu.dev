@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% from "macros/blog.html" import render_blog_post, render_blog_post_summary %}
+{% from "macros/pagination.html" import render_pagination %}
+{% block title %}Blog - Guido Luz Percú{% endblock %}
+{% block body %}
+<section class="main special">
+        <div class="container">
+                <div class="content">
+                        <header class="major">
+                                <h2> Blog: </h2>
+                        </header>
+
+                {% for child in this.pagination.items %}
+                {{ render_blog_post_summary(child, from_index=true) }}
+                {% endfor %}
+
+                {{ render_pagination(this.pagination) }}
+        </div>
+</section>
+{% endblock %}

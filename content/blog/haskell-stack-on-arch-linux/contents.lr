@@ -1,0 +1,75 @@
+title:
+Haskell Stack on Arch Linux
+---
+pub_date:
+2016-09-06
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+
+@oumguido
+---
+body:
+
+### Instalation
+
+<pre>
+$ yaourt --m-arg "--skippgpcheck" -Sb ncurses5-compat-libs 
+$ yaourt -S haskell-stack
+</pre>
+
+### Usage
+
+Create a new project using the stack new command
+
+<pre>
+$ stack new project_name
+</pre>
+
+We now have a Haskell project inside project_name. We should stack setup to install a GHC (the most common Haskell compiler) for your project.
+
+<pre>
+$ stack setup
+</pre>
+
+Go ahead, explore your new project. Take a peek at how it looks inside:
+
+<pre>
+$ tree
+</pre>
+
+Play with Haskell on ghci
+
+<pre>
+$ stack ghci
+</pre>
+
+It already loads your Lib file. You can modify it at src/Lib
+
+<pre>
+Main Lib> someFunc
+</pre>
+
+The most important step in any project is the build:
+
+<pre>
+$ stack build
+</pre>
+
+*Note: if stack build don't print any information on the screen, try removing .stack-work directory.
+
+<pre>
+$ rm .stack-work
+</pre>
+
+To see a nice little "Hello World" message on our screen, execute your project:
+
+<pre>
+$ stack exec project_name-exe
+</pre>
+
+To get more information, check out the [user guide](https://docs.haskellstack.org/en/stable/GUIDE/). [Guide to 
+Learn Haskell](/blog/learning-haskell/)

@@ -1,0 +1,89 @@
+title:
+I have installed Arch Linux
+---
+pub_date:
+
+2016-03-08
+---
+author:
+
+Guido Percú
+
+---
+twitter_handle:
+
+@oumguido
+---
+body:
+
+
+I am a Linux user since early 2008, with the Ubuntu 8.04. I fell in love with it, a nice desktop interface,
+less security problems and headaches, and what for me is the most important thing: more power over my computer.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Ubuntu-desktop-2-804-20080708.png" alt="Ubuntu 8.04 screenshot" width="100%">
+
+I've been using  Linux since then. I experienced some distros (Fedora, Debian, Backtrack, Mint ...) but
+I always come back to Ubuntu for daily activities. This year, I had some crashing and overheating issues 
+and was starting to blame my notebook (a not so powerfull Core i3 with 4GB of RAM), but a coworker 
+suggested giving Arch a try. So, I decided to install it and use [i3 as my window manager](men://i3wm.org/) (I have never used it before, it's amazing!).
+
+I've followed the [Beginner's guide](https://wiki.archlinux.org/index.php/beginners'_guide) and after a lot
+of epic battles against configurations files (most of them was my fault as I had misunderstood some paragraphs on the guide) and with help from the internet I now write this text from a fully 
+functional Arch machinne. It's impressive how fast and well behaved everything is, there is no crash nor overheating
+. I think it's a farewell to Ubuntu.
+
+If you would like to try i3, check out [Your guide to a damm light Arch Linux with i3 and text apps](http://joaquinlp.me/blog/your-guide-to-a-damn-light-arch-linux-with-i3-and-text-apps/)
+
+<img src="https://c2.staticflickr.com/8/7467/15518901357_03461749be_b.jpg" alt="Arch with i3 screenshot" width="100%">
+
+### Updating the system (once a day)
+
+```
+$ pacman -Syu
+```
+
+### Installing a package
+
+```
+$ pacman -S <package_name>
+```
+
+### Uninstalling a package
+
+```
+$ pacman -Rsn <package_name>
+```
+
+### Setting the keyboard layout to Brazilian ABNT
+
+```
+$ setxkbmap -layout br
+```
+### Configuring sound
+```
+$ alsamixer
+$ speaker-test -c2
+```
+
+### Connecting to the internet (wi-fi)
+```
+# ip link set down wlo1
+# wifi-menu
+```
+
+### Getting date time from the internet
+```
+# ntpd -qg
+```
+
+### Setting second monitor
+```
+# xrandr --output HDMI1 --auto --left-of LVDS1
+```
+
+
+More information on [audio configuration for arch at Unix Stack Exchange](http://unix.stackexchange.com/questions/104270/how-do-i-enable-sound-in-this-fresh-arch-install): 
+
+If you have any tip or sugestion, leave a comment :)
+
+

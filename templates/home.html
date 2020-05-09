@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<!-- Banner -->
+<section id="banner">
+        <div class="content">
+                <header>
+                        <h1>Hi, I’m Guido Percú</h1>
+                        <!--<p>Software Engineer with 6+ years of experience</p>-->
+                </header>
+                <p> I have 6+ years of experience creating web applications both locally and remotely for companies that are leaders on their sectors and for small startups.</p>
+                <ul>
+                        <li>Web applications</li>
+                        <li>REST APIs</li>
+                        <li>Web crawlers</li>
+                        <li>CLI scripts</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul>
+                        <li><span title="Python" class="fab fa-python"> Python</span> with Django, Pyramid and Flask</li>
+                        <li><span title="PHP" class="fab fa-php"> PHP</span> with Yii or Laravel</li>
+                        <li><span title="HTML" class="fab fa-html5"> HTML</span>, <span title="CSS" class="fab fa-css3-alt"> CSS</span></li>
+                        <li>
+                                <span title="Javascript" class="fab fa-js"> JavaScript</span>,
+                                <span title="NodeJS" class="fab fa-node"> NodeJS</span>,
+                                <span title="Angular" class="fab fa-angular"> Angular</span>,
+                                <span title="VueJS" class="fab fa-vuejs"> VueJS</span>
+                        </li>
+                        <li><span title="Database" class="fas fa-database"></span> MySQL, MS SQL, PostgresSQL, MongoDB</li>
+                </ul>
+
+                <ul class="actions">
+                        <li><a href="/resume/" class="button big">Learn More</a></li>
+                </ul>
+        </div>
+        <span class="image object">
+                <img src="static/images/guido-red.jpg" alt="Photo of Guido Luz Percú" />
+        </span>
+</section>
+
+
+<!-- Projects -->
+<section>
+        <header class="major">
+                <h2>Projects</h2>
+        </header>
+        <div class="features">
+                {% for project in [
+                        {'url': 'https://github.com/GuidoBR/python-for-finance', 'title': 'Python for Finance', 'description': 'Stock analysis using Python / Jupyter / Pandas', 'icon': 'solid fa-signal'},
+                        {'url': 'https://github.com/GuidoBR/investment-letters', 'title': 'Investment Letters', 'description': 'Crawler that gets investment letters from major financial institutions', 'icon': 'solid fa-money-bill'},
+                        {'url': 'http://www.heroisdenovigrath.com.br/', 'title': 'Heróis de Novigrath', 'description': 'Fantasy book web site', 'icon': 'solid fa-mask'},
+                        {'url': 'http://www.philigretimobiliaria.com.br/', 'title': 'Philigret Imobiliária', 'description': 'Building management web site', 'icon': 'fa-building'},
+                ] %}
+                        <article>
+                                <span class="icon {{ project.icon }}"></span>
+                                <div class="content">
+                                        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+                                        <p>{{ project.description }}</p>
+                                </div>
+                        </article>
+                {% endfor %}
+        </div>
+</section>
+
+
+<!-- Blog -->
+<section>
+        <header class="major">
+                <h2>Blog</h2>
+        </header>
+        <div class="posts">
+                {% for post in [
+                        {'url': '/blog/6-books-I-loved-in-2018/', 'title': '6 Books that I loved reading in 2018', 'description': 'List of the best of the year, including Sapiens', 'image': 'ed-robertson-eeSdJfLfx1A-unsplash.jpg', 'alt': 'Image of an used bookstore, full of books' },
+                        {'url': '/blog/markowitz-efficient-frontier-introduction-with-python/', 'title': 'Drawing Markowitz Efficient Frontier with Python', 'description': 'Learning how to discover the set of optimal portfolions in Python', 'image': 'chris-liverani-NDfqqq_7QWM-unsplash.jpg', 'alt': 'Image of a man in front of a screen studying the stock market'},
+                        {'url': '/blog/python-for-finance/', 'title': 'Python for Finance', 'description': 'Here are some resources that are helping me on this journey.', 'image': 'roberto-junior-4fsCBcZt9H8-unsplash.jpg', 'alt': 'Image of Wall Street'},
+                        {'url': '/blog/python-collections-counter-examples/', 'title': 'Python collections.counter', 'description': 'What is the most frequent word on Shakespeare complete works?.', 'image': 'shakespeare.jpg', 'alt': 'Image of Shakespeare'},
+                        {'url': '/blog/learning-haskell/', 'title': 'A Guide to Learning Haskell', 'description': 'A guide to the world of functional programming with this marvelous language', 'image': 'haskell-logo.svg', 'alt': 'Haskell Logo'},
+                ] %}
+                        <article>
+                                <a href="{{ post.url }}" class="image"><img src="static/images/{{ post.image }}" alt="{{ post.alt }}" /></a>
+                                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                <p>{{ post.description }}</p>
+                                <ul class="actions">
+                                        <li><a href="{{ post.url }}" class="button">More</a></li>
+                                </ul>
+                        </article>
+                {% endfor %}
+        </div>
+</section>
+
+{% endblock %}
