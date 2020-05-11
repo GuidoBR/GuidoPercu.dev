@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}Reading List - Guido Luz Percú{% endblock %}
+{% block body %}
+<section>
+        <header class="major">
+                <h2><a href="/reading/"> {{ this.title }}</a></h2>
+        </header>
+        <div class="features">
+                <article>
+                        <div class="content">
+                                {% for book in [
+                                        {'url': 'https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/', 'title': 'Meditations', "notes": "https://twitter.com/oUmGuido/status/1256593809250627584"},
+                                        {'url': 'https://www.netlify.com/oreilly-jamstack/', 'title': 'Modern Web Development on the JAMstack', 'notes': 'blog/jamstack-static-websites-on-modern-web/'},
+                                        {'url': 'https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/', 'title': 'Accelerate: The Science of Lean Software and DevOps'},
+                                        {'url': 'https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/', 'title': 'An Astronaut\'s Guide to Life on Earth', 'notes': "https://twitter.com/oUmGuido/status/1227702268063100929"}
+                                ] %}
+                                        <p>
+                                                <span class="fa fa-book"></span>
+                                                <a href="{{ book.url }}">{{ book.title }}</a>
+                                                {% if book.notes %} - <em><a href="{{ book.notes }}">(my notes)</a></em>{% endif %}
+                                        </p>
+                                {% endfor %}
+                        </div>
+                </article>
+        </div>
+</section>
+{% endblock %}
