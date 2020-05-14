@@ -1,0 +1,3 @@
+[submodule "content/playlist-ciencia"]
+	path = content/playlist-ciencia
+	url = git@github.com:GuidoBR/playlist-ciencia.git
