@@ -78,7 +78,7 @@
                         {'url': '/blog/python-collections-counter-examples/', 'title': 'Python collections.counter', 'description': 'What is the most frequent word on Shakespeare complete works?.', 'image': 'shakespeare.svg', 'alt': 'Image of Shakespeare'},
                 ] %}
                         <article>
-                                <a href="{{ post.url }}" class="image"><img src="static/images/{{ post.image }}" alt="{{ post.alt }}" /></a>
+                                <a href="{{ post.url }}" class="image"><img data-src="static/images/{{ post.image }}" class="lazyload" alt="{{ post.alt }}" /></a>
                                 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                                 <p>{{ post.description }}</p>
                                 <ul class="actions">
