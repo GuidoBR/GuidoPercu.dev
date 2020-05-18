@@ -2,6 +2,26 @@
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }} - Guido Luz Percú Blog{% endblock %}
 {% block body %}
+<script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": "{{ this.title }}",
+          "image": [
+            {{ this.image }}
+           ],
+          "datePublished": "{{ this.pub_date|dateformat('long') }}",
+          "dateModified": "{{ this.pub_date|dateformat('long') }}",
+          "author": {
+            "@type": "Person",
+            "name": "Guido Percú"
+          },
+        }
+</script>
 <section id="one" class="main special">
         <div class="container">
                 <div class="content">
