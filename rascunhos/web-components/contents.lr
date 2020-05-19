@@ -18,12 +18,13 @@ body:
 
 
 
-- - Web Component
-    - Custom HTML elements
-    - Shadow DOM
-    - Templates & Slots
-    - HTML Imports (discontinued)
-    - ![image-20200517110913499](/home/guido/Downloads/image-20200517110913499.png)
+- Web Component
+  - Custom HTML elements
+  - Shadow DOM
+  - Templates & Slots
+  - HTML Imports (discontinued)
+  - ![image-20200517110913499](/home/guido/Downloads/image-20200517110913499.png)
+
   - Why web components?
     - Encapsulate Logic + UI
       - Easy to understand
@@ -38,14 +39,53 @@ body:
       - Re-use core UI elements across projects
       - DRY logic and UI code
       - The web components can be published as a package (npm) 
-  - https://developer.mozilla.org/pt-BR/docs/Web/Web_Components
-  - https://www.webcomponents.org/
-  - https://tableless.com.br/web-components-introducao/
-  - https://www.devmedia.com.br/web-components-na-pratica/32476
-  - https://medium.com/@dudousxd/chega-de-frameworks-vamos-ao-natural-com-web-components-d19db2717e84
-  - https://medium.com/@patrickporto/guia-geral-sobre-web-components-1974c7e5b1d9
-  - https://andreasbm.github.io/web-skills/ - Web Components
-  - ![image-20200517111850480](/home/guido/Downloads/image-20200517111850480.png)
+
+- ```javascript
+  class Navigation extends HTMLElement {
+      constructor() {
+          super()
+          console.log('Web Component Navigation created!')
+      }
+  
+  }
+  
+  customElements.define('wc-navigation', Navigation);
+  ```
+
+- ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Web Component</title>
+  </head>
+  <body>
+      <wc-navigation></wc-navigation>
+      <script src="navigation.js"></script>
+  </body>
+  </html>
+  ```
+
+- 
+
+- https://www.webcomponents.org/
+
+- https://developer.mozilla.org/pt-BR/docs/Web/Web_Components
+
+- https://www.webcomponents.org/
+
+- https://tableless.com.br/web-components-introducao/
+
+- https://www.devmedia.com.br/web-components-na-pratica/32476
+
+- https://medium.com/@dudousxd/chega-de-frameworks-vamos-ao-natural-com-web-components-d19db2717e84
+
+- https://medium.com/@patrickporto/guia-geral-sobre-web-components-1974c7e5b1d9
+
+- https://andreasbm.github.io/web-skills/ - Web Components
+
+- ![image-20200517111850480](/home/guido/Projects/GuidoPercu.dev/rascunhos/web-components/image-20200517111850480.png)
 
 
 
