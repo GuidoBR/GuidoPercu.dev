@@ -748,10 +748,14 @@ ul.courses li:hover {
                                                         Frontend
                                                 </h3>
                                                 <ul class="keywords">
-                                                        <li>Javascript</li>
-                                                        <li>AngularJS</li>
-                                                        <li>VueJS</li>
-                                                        <li>React</li>
+                                                    {% for skill in [
+                                                        {'name': 'Javascript'},
+                                                        {'name': 'Angular'},
+                                                        {'name': 'VueJS'},
+                                                        {'name': 'React'},
+                                                    ] %}
+                                                        <li>{{ skill.name }}</li>
+                                                    {% endfor %}
                                                 </ul>
                                         </div>
                                         <div class="item">
@@ -759,11 +763,14 @@ ul.courses li:hover {
                                                         Backend
                                                 </h3>
                                                 <ul class="keywords">
-                                                        <li>Python</li>
-                                                        <li>Django</li>
-                                                        <li>PHP</li>
-                                                        <li>Go</li>
-                                                        <li>NodeJS</li>
+                                                        {% for skill in [
+                                                            {'name': 'Python'},
+                                                            {'name': 'PHP'},
+                                                            {'name': 'Go'},
+                                                            {'name': 'NodeJS'},
+                                                        ] %}
+                                                            <li>{{ skill.name }}</li>
+                                                        {% endfor %}
                                                 </ul>
                                         </div>
                                         <div class="item">
@@ -771,8 +778,12 @@ ul.courses li:hover {
                                                         Cloud
                                                 </h3>
                                                 <ul class="keywords">
-                                                        <li>AWS</li>
-                                                        <li>Google App Engine</li>
+                                                        {% for skill in [
+                                                            {'name': 'AWS'},
+                                                            {'name': 'Serverless'},
+                                                        ] %}
+                                                            <li>{{ skill.name }}</li>
+                                                        {% endfor %}
                                                 </ul>
                                         </div>
                                 </section>
