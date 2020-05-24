@@ -10,6 +10,10 @@ pub_date: 2017-07-23
 twitter_handle: oumguido
 
 ---
+image:
+/static/images/markowitz-python.png
+
+---
 body:
 
 According to Investopedia, [Efficient Frontier](http://www.investopedia.com/terms/e/efficientfrontier.asp#ixzz4nCcwvdHC) is:
