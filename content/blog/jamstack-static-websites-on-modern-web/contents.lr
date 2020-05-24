@@ -12,6 +12,10 @@ twitter_handle:
 @oumguido
 
 ---
+image:
+/static/images/jamstack-html-css-javascript-statics-on-modern-web.png
+
+---
 body:
 
 [**JAM**Stack](https://jamstack.org/) is a way to create sites and apps focused on performance, security and scaling. It was a term created by [Matt Biilmann](https://twitter.com/biilmann) to describe a modern development architecture based on Javascript, reusable APIs and pre-built Markup.
