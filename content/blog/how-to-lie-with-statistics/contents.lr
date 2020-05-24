@@ -12,6 +12,10 @@ twitter_handle:
 @oumguido
 
 ---
+image:
+/static/images/how-to-lie-with-statistics-on-python.png
+
+---
 body:
 
 Be careful when you read news about "average wage". As we learn from the classic book *[How to Lie with Statistics](https://www.amazon.com/How-Lie-Statistics-Darrell-Huff-ebook/dp/B00351DSX2)*, there are different types of averages and their different meanings can be used to mislead and deceive.
