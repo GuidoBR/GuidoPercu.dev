@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+        <head>
+                <title>Connect a Serverless AWS SAM application to DynamoDB - Guido Luz Percú Blog</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="I'm a Full Stack Engineer at Modus Create, where I create software projects using Python, PHP and AWS solutions. In my free time I enjoy reading books, learning about stock markets and practicing Karate.">
+                <link rel="stylesheet" href="../../static/css/main.css" />
+        </head>
+<body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+                <!-- Main -->
+                <div id="main">
+                        <div class="inner">
+
+                                <!-- Header -->
+                                <header id="header">
+                                        <a href="index.html" class="logo"><strong>Software Engineer</strong> based on Brazil</a>
+                                        <ul class="icons">
+                                                <li><a title="Contact me at Twitter" href="http://www.twitter.com/oumguido/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                                <li><a title="My code at Github " href="http://www.github.com/GuidoBR/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                                                <li><a title="Contact me at LinkedIn" href="https://www.linkedin.com/in/guidopercu/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                        </ul>
+                                </header>
+
+                                
+<script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": "Connect a Serverless AWS SAM application to DynamoDB",
+          "image": "/static/images/dynamodb-using-aws-sam.png",
+          "datePublished": "June 7, 2020",
+          "dateModified": "June 7, 2020",
+          "author": {
+            "@type": "Person",
+            "name": "Guido Percú"
+          }
+        }
+</script>
+<section id="one" class="main special">
+        <div class="container">
+                <div class="content">
+                        
+  <div class="blog-post">
+  
+    <h2>Connect a Serverless AWS SAM application to DynamoDB</h2>
+  
+  <p class="meta">
+    written by
+    
+      <a href="https://twitter.com/@oumguido">Guido Percú</a>
+    
+    on June 7, 2020
+  </p>
+  <p><img src="../../static/images/sam-logo.png" alt="sam-logo"></p>
+<ul>
+<li><a href="../../blog/dynamodb-on-aws-sam/blog/build-a-serverless-python-api-using-aws-sam/">Build a Serverless Python API using AWS SAM</a></li>
+<li><a href="https://dynobase.dev/dynamodb-cost-optimization/">10 Tips to Optimize Your DynamoDB Costs</a></li>
+<li><a href="https://www.tutorialspoint.com/dynamodb/dynamodb_quick_guide.htm">DynamoDB - Quick Guide</a></li>
+<li><a href="https://dev.to/exampro/dynamodb-cheatsheet-everything-you-need-to-know-about-dynamo-db-for-the-2020-aws-certified-developer-associate-certification-5ag">DynamoDB Cheatsheet – Everything you need to know about Dynamo DB for the 2020 AWS Certified Developer Associate Certification </a></li>
+<li><a href="https://medium.com/swlh/data-modeling-in-aws-dynamodb-dcec6798e955">Data Modeling in AWS DynamoDB</a></li>
+<li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html">Boto3 DynamoDB</a></li>
+<li><a href="https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3">Learn AWS DynamoDB from scratch</a></li>
+</ul>
+<h4>SAM Template for minimal application using DynamoDB</h4>
+<pre><code class="lang-yaml">AWSTemplateFormatVersion: &#39;2010-09-09&#39;
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  ProcessDynamoDBStream:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler
+      Runtime: runtime
+      Policies: AWSLambdaDynamoDBExecutionRole
+      Events:
+        Stream:
+          Type: DynamoDB
+          Properties:
+            Stream: !GetAtt DynamoDBTable.StreamArn
+            BatchSize: 100
+            StartingPosition: TRIM_HORIZON
+
+  DynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties: 
+      AttributeDefinitions: 
+        - AttributeName: id
+          AttributeType: S
+      KeySchema: 
+        - AttributeName: id
+          KeyType: HASH
+</code></pre>
+<h3>Validate the template file</h3>
+<p><code>sam validate</code> will take a look at your <code>template.yaml</code> file and see if it looks correct. This command is very useful because it checks for removed references and wrong indentation.</p>
+<h3>Build and deploy</h3>
+<p>To deploy, let's first build it using <code>sam build --use-container</code> This will build the source of your application and prepare it to run locally (with <code>sam local invoke</code>) or to ship it to AWS.</p>
+<p>Then it's time to package and deploy your application to AWS, with a series of prompts:</p>
+<p><code>sam deploy --guided</code></p>
+<ul>
+<li><strong>Stack Name</strong>: The name of the stack to deploy to CloudFormation. This should be your project name.</li>
+<li><strong>AWS Region</strong>: The AWS region you want to deploy your app to.</li>
+<li><strong>Confirm changes before deploy</strong>: If set to yes, any change sets will be shown to you before execution for manual review. If set to no, the AWS SAM CLI will automatically deploy application changes.</li>
+<li><strong>Allow SAM CLI IAM role creation</strong>: Many AWS SAM templates, including this example, create AWS IAM roles required for the AWS Lambda function(s) included to access AWS services. By default, these are scoped down to minimum required permissions.</li>
+<li><strong>Save arguments to samconfig.toml</strong>: In the future you can just re-run <code>sam deploy</code> without parameters to deploy changes to your application, because your choices will be saved in a <code>samconfig.toml</code> file.</li>
+</ul>
+<p>Have fun!</p>
+
+  </div>
+
+                </div>
+                <div class="comments">
+                        
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/dynamodb-on-aws-sam"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//guidopercu.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+                </div>
+        </div>
+</section>
+
+
+                        </div>
+                </div>
+
+
+                <!-- Sidebar -->
+                <div id="sidebar">
+                        <div class="inner">
+
+                                <!-- Menu -->
+                                <nav id="menu">
+                                        <header class="major">
+                                                <h2>Menu</h2>
+                                        </header>
+                                        <ul>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/blog/">Blog</a></li>
+                                                <li><a href="/projects/">Projects</a></li>
+                                                <li><a href="/resume/">Resume</a></li>
+                                                <li><a href="/reading/">Reading List</a></li>
+                                        </ul>
+                                </nav>
+
+                                <!-- Section -->
+                                <section>
+                                        <header class="major">
+                                                <h2>Get in touch</h2>
+                                        </header>
+                                        <ul class="contact">
+                                                <li class="icon solid fa-envelope">guidopercu [@] gmail.com</li>
+                                                <li class="icon brands fa-skype">guido.percu</li>
+                                                <li class="icon brands fa-twitter"><a title="Find me on Twitter" href="https://www.twitter.com/oumguido/">Twitter</a></li>
+                                                <li class="icon brands fa-github"><a title="My Code at Github" href="http://www.github.com/GuidoBR/">Github</a></li>
+                                                <li class="icon brands fa-linkedin"><a title="Contact me at LinkedIn" href="https://www.linkedin.com/in/guidopercu/">LinkedIn</a></li>
+                                        </ul>
+                                </section>
+
+                                <!-- Footer -->
+                                <footer id="footer">
+                                        <p class="copyright">&copy; <a href="/">Guido Percú.</a> All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>
+
+                        </div>
+                </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../static/js/jquery.min.js"></script>
+        <script src="../../static/js/browser.min.js"></script>
+        <script src="../../static/js/breakpoints.min.js"></script>
+        <script src="../../static/js/util.js"></script>
+        <script src="../../static/js/main.js"></script>
+        <script src="../../static/js/lazysizes.min.js" async></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58821573-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</body>
+</html>
