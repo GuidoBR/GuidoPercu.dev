@@ -35,7 +35,7 @@
             "@id": "https://google.com/article"
           },
           "headline": "Build a Serverless Python API using AWS SAM",
-          "image": "/static/images/python-for-finance-share.png",
+          "image": "/static/images/build-a-serverless-python-api-using-aws-sam.png",
           "datePublished": "February 19, 2020",
           "dateModified": "February 19, 2020",
           "author": {
@@ -118,7 +118,7 @@ Outputs:
     Description: &quot;Implicit IAM Role created for Hello World function&quot;
     Value: !GetAtt HelloWorldFunctionRole.Arn
 </code></pre>
-<p>This should be your SAM <code>template.yaml</code> file if you're following the <code>sam init</code> proccess. It's a bit confusing and there's a lot of room for error (extra attention to indentation).</p>
+<p>This should be your SAM <code>template.yaml</code> file if you're following the <code>sam init</code> process. It's a bit confusing and there's a lot of room for error (extra attention to indentation).</p>
 <p>So it will look in your  <code>hello_world</code> folder for <code>app.py</code>file with the <code>lambda_handler</code> method.</p>
 <pre><code class="lang-python">def lambda_handler(event, context):
     &quot;&quot;&quot;Example Function and Handler&quot;&quot;&quot;

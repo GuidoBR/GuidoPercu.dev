@@ -19,7 +19,7 @@ twitter_handle:
 
 ---
 image:
-/static/images/python-for-finance-share.png
+/static/images/build-a-serverless-python-api-using-aws-sam.png
 ---
 
 body:
@@ -107,7 +107,7 @@ Outputs:
 
 ```
 
-This should be your SAM `template.yaml` file if you're following the `sam init` proccess. It's a bit confusing and there's a lot of room for error (extra attention to indentation).
+This should be your SAM `template.yaml` file if you're following the `sam init` process. It's a bit confusing and there's a lot of room for error (extra attention to indentation).
 
 So it will look in your  `hello_world` folder for `app.py`file with the `lambda_handler` method.
 
