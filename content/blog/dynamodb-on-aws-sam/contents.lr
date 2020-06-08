@@ -26,7 +26,7 @@ body:
 
 ![sam-logo](/static/images/sam-logo.png)
 
-- [Build a Serverless Python API using AWS SAM](blog/build-a-serverless-python-api-using-aws-sam/)
+- [Build a Serverless Python API using AWS SAM](/blog/build-a-serverless-python-api-using-aws-sam/)
 - [10 Tips to Optimize Your DynamoDB Costs](https://dynobase.dev/dynamodb-cost-optimization/)
 - [DynamoDB - Quick Guide](https://www.tutorialspoint.com/dynamodb/dynamodb_quick_guide.htm)
 - [DynamoDB Cheatsheet – Everything you need to know about Dynamo DB for the 2020 AWS Certified Developer Associate Certification ](https://dev.to/exampro/dynamodb-cheatsheet-everything-you-need-to-know-about-dynamo-db-for-the-2020-aws-certified-developer-associate-certification-5ag)
