@@ -1,0 +1,154 @@
+title:
+Bioinformatics Algorithms - an introduction
+---
+pub_date:
+2020-06-14
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+@oumguido
+
+---
+image:
+
+/static/images/bioinformatics-algorithms.png
+
+---
+body:
+
+> “Three profoundly destabilizing scientific ideas ricochet through the twentieth century, trisecting it into three unequal parts: the atom, the byte, the gene.” 
+>
+> — Siddhartha Mukherjee, quote from The Gene: An Intimate History
+
+## Discovery of DNA Double Helix
+
+The double helix model was proposed by [James Watson](https://en.wikipedia.org/wiki/James_D._Watson) and [Francis Crick](https://en.wikipedia.org/wiki/Francis_Crick), based on the X-ray crystallography work by [Rosalind Franklin](https://en.wikipedia.org/wiki/Rosalind_Franklin) and [Maurice Wilkins](https://en.wikipedia.org/wiki/Maurice_Wilkins). There was also crucial work done by [Erwin Chargaff](https://en.wikipedia.org/wiki/Erwin_Chargaff), an biochemist that realized that there is the amount of **A**denine = **T**hymine, and **C**ytosine = **G**uanine.
+
+The paper describing the double helix structure of the DNA molecule was published on 1953. On 1962, Watson, Crick and Wilkins were awarded the [Nobel Prize in Physiology or Medice](https://www.nobelprize.org/prizes/medicine/1962/summary/). Unfortunately [Rosalind Franklin died without recognition for her vital work in discovering the structure of DNA](https://www.forbes.com/sites/kionasmith/2018/04/16/rosalind-franklin-died-60-years-ago-today-without-the-nobel-prize-she-deserved/).
+
+### Courses
+
+![bioinformatics-specialization-ucsandiego](bioinformatics-specialization-ucsandiego.png)
+
+#### [Bioinformatics specialization](https://www.coursera.org/specializations/bioinformatics) - UC San Diego
+
+Professor Pavel Pevzner, Philip Compeau and Nikolay Vyahhi. There's a [Bioinformatics Algorithms book](https://www.bioinformaticsalgorithms.org/bioinformatics-chapter-1) by the same professors of the UC San Diego course, a fun and interactive way to learn bioinformatics algorithms.
+
+- Finding Hidden Messages in DNA
+- Genome Sequencing
+- Comparing Genes, Proteins, and Genomes
+- Molecular Evolution
+
+--------------------
+
+![image-20200613192420506](./genomic-data-science-johns-hopkins-university.png)
+
+#### [Genomic Data Science](https://www.coursera.org/specializations/genomic-data-science) - Johns Hopkins University
+
+This Specialization covers the concepts and tools to understand, analyze, and interpret data from next generation sequencing experiments. It teaches the most common tools used in genomic data science including how to use the command line, along with a variety of software implementation tools like Python, R, Bioconductor, and Galaxy. 
+
+- Introduction to Genomic Technologies
+- Genomic Data Science with Galaxy
+- Python for Genomic Data Science
+- Algorithms for DNA Sequencing
+
+-------------
+
+![image-20200613192723295](./bioinformatics-micromasters-university-of-maryland.png)
+
+#### [Bioinformatics MicroMasters](https://www.edx.org/micromasters/usmx-umgc-bioinformatics) - University of Maryland
+
+- How to align DNA/RNA and protein sequences and the theory behind the algorithms that make them possible
+- The effects of mutations on cellular processes and the structure of proteins
+- How to generate model structure of proteins
+- Basic R programming to analyze biological data
+- How to apply packages in the R environment to typical problems in bioinformatics
+
+------------------
+
+![image-20200613193323780](./plant-bioinformatic-methods-university-toronto.png)
+
+#### [Plant Bioinformatic Methods Specialization](https://www.coursera.org/specializations/plant-bioinformatic-methods) - University of Toronto
+
+- Bioinformatic Methods I
+- Bioinformatic Methods II
+- Plant Bioinformatics
+- Plant Bioinformatics Capstone
+
+-----------
+
+![image-20200613193500153](./harvard-bioinformatics.png)
+
+#### [Bioinformatics Certificate](https://www.extension.harvard.edu/academics/professional-graduate-certificates/bioinformatics-certificate) - Harvard
+
+- Understand the latest bioinformatics tools and topics, such as information DNA sequencing and assembly; BLAST output; probability and statistics; sequence alignment; ORF prediction; functional genomics; phylogenetics; sequence, gene, and protein databases; and social and ethical considerations.
+- Enhance skills in computer science and programming through use of algorithms, data structures, string manipulation, encapsulation, resource management, security, software engineering, and web development.
+- Develop competency with programming languages such as Java, Python, R, C++, and SQL.
+- Acquire knowledge in a focused topic area, such as bioinformatic algorithms, genomics, medical informatics, and proteomics.
+
+--------------
+
+#### [Fundamental Algorithms in Bioinformatics](https://www.youtube.com/playlist?list=PL_w_qWAQZtAbh8bHfzXYpdnVKCGCDmmoL)
+
+This course covers fundamental algorithms for efficient analysis of biological sequences and for building evolutionary trees. This is an undergraduate course taught by UC Davis computer science professor Dan Gusfield focusing on the ideas and concepts behind the most central algorithms in biological sequence analysis. Dynamic Programming, Alignment, Hidden Markov Models, Statistical Analysis are emphasized.
+
+----------------
+
+### What is DNA and how it's represented on a computer?
+
+> “Our ability to read out this sequence of our own genome has the makings of a philosophical paradox. Can an intelligent being comprehend the instructions to make itself? —John Sulston. Quote from The Gene: An intimate history”
+
+One class of macromolecules contained in chromosomes inside the cells nucleus are called nucleic acids. The chemical identity of those macromolecules are polymers of repeating chains of smaller molecules known as monomers. Because they tend to be long and thin, those polymers are called strands.
+
+The nucleic acid monomer is called a nucleotide, formed of three parts: a sugar molecule, a negatively charged ion (called phosphate) and a compound called nucleobase. A key point is that the nucleotides of a specific type of nucleic acid always contain the same sugar and phosphate molecule, and they differ only on the nucleobase.
+
+DNA molecule is made up of two strands, running in opposite directions. Each nucleobase bonds to a base in the opposite strand. **A**denine bonds with **T**hymine, **C**ytosine bonds with **G**uanine. Those two strands are twisted together into a long spiral staircase structure called double helix.
+
+A DNA string consists on the symbols A, T, C, G. We can use this representation to study and solve bioinformatics problems. 
+
+## Bioinformatics Algorithm problems on Rosalind
+
+### [Rosalind - Reverse Complement Problem](http://rosalind.info/problems/revc/)
+
+Find the reverse complement of a DNA string
+
+Given: A DNA String of length at most 1000.
+
+Return: The reverse complement of the DNA String
+
+<script src="https://gist.github.com/GuidoBR/5145ebbd10041259978505e518d27d50.js"></script>
+
+---------------------
+
+### [Rosalind - Counting DNA Nucleotides](http://rosalind.info/problems/dna/)
+
+Given: A DNA String of length at most 1000
+
+Return: Four integers (separated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G' and 'T' occurs on the DNA string.
+
+<script src="https://gist.github.com/GuidoBR/11be35854c6d44e5ba28fd374b0d9e9b.js"></script>
+
+## Podcasts:
+
+- [Bioninformatics Chat](https://bioinformatics.chat/)
+- [Fundamental Algorithms in Bioinformatics](https://podcasts.apple.com/us/podcast/fundamental-algorithms-in-bioinformatics/id956889622)
+- [Learning Bayesian Statistics #1 Bayes, open-source and bioinformatics with Osvaldo Martin](https://player.fm/series/learning-bayesian-statistics/ep-1-bayes-open-source-and-bioinformatics-with-osvaldo-martin)
+- [Python Podcast.__init__ Building the Seq Language for Bioinformatics](https://player.fm/series/the-python-podcast-init/building-the-seq-language-for-bioinformatics)
+
+## References:
+
+- [Nature: Discovery of DNA Structure and function](https://www.nature.com/scitable/topicpage/discovery-of-dna-structure-and-function-watson-397/)
+- [The Gene: An Intimate History](https://www.amazon.com/Gene-Intimate-History-Siddhartha-Mukherjee/dp/147673352X/) -  Siddhartha Mukherjee
+- [DNA: The Secret of Life](https://www.amazon.com/DNA-Secret-James-D-Watson-ebook/dp/B001PSEQAG/) - James D. Watson and Andrew Berry
+- [Bioinformatics Algorithms: An Active Learning Approach](https://www.amazon.com/Bioinformatics-Algorithms-Active-Learning-Approach/dp/0990374602/) - Philip Compeau  and Pavel Pevzner
+- [Wikipedia: Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics)
+- [4273π](https://4273pi.org/)  - Software for teaching and learning computational biology. It is a freely available, customized distribution of Raspbian GNU/Linux for the Raspberry Pi computer.
+
+## Papers 
+
+- [Gregor Mendel - Experiments in Plant Hybridization (1865)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiQhfucmvrpAhVfK7kGHRxUDz8QFjADegQIARAB&url=http%3A%2F%2Fwww.esp.org%2Ffoundations%2Fgenetics%2Fclassical%2Fgm-65.pdf&usg=AOvVaw3ZsM9ZW1zvmH4A4Gf8wZmL)
+- [Watson and Crick - Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleid Acid (1953)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwuNywmvrpAhVPFbkGHTJrD3sQFjADegQIARAB&url=http%3A%2F%2Fdosequis.colorado.edu%2FCourses%2FMethodsLogic%2Fpapers%2FWatsonCrick1953.pdf&usg=AOvVaw1pBmxh1Ze5IEdp6S_ncl5H)
+
