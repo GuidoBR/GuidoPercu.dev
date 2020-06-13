@@ -2417,6 +2417,10 @@ input, select, textarea {
 				padding-right: 0;
 			}
 
+			.blog-post img, .gist {
+				max-width: 300px;
+			}
+
 		}
 
 /* Table */
@@ -2735,6 +2739,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			.blog-post img, .gist {
+				max-width: 600px;
+			}
+
 			.features {
 				margin: 0 0 2em 0;
 				width: 100%;
@@ -2908,7 +2916,15 @@ input, select, textarea {
 
 		}
 
+		.blog-post img, .gist {
+			max-width: 1250px;
+		}
+
 		@media screen and (max-width: 1680px) {
+
+			.blog-post img, .gist {
+				max-width: 1250px;
+			}
 
 			.posts article {
 				width: calc(50% - 6em);
