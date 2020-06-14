@@ -17,9 +17,9 @@ image:
 body:
 
 According to Investopedia, [Efficient Frontier](http://www.investopedia.com/terms/e/efficientfrontier.asp#ixzz4nCcwvdHC) is:
-> The efficient frontier is the set of optimal portfolios that offers the highest expected return for a defined level of risk or the lowest risk for a given level of expected return. Portfolios that
-> lie below the efficient frontier are sub-optimal, because they do not provide enough return for the level of risk. Portfolios that cluster to the right of the efficient frontier are also
-> sub-optimal, because they have a higher level of risk for the defined rate of return.
+> ### The **efficient frontier** is the set of optimal portfolios that offers the **highest expected return** for a defined **level of risk** or the lowest risk for a given level of expected return. Portfolios that lie below the efficient frontier are sub-optimal, because they do not provide enough return for the level of risk. Portfolios that cluster to the right of the efficient frontier are also sub-optimal, because they have a higher level of risk for the defined rate of return.
+> 
+> #### [Investopedia](http://www.investopedia.com/terms/e/efficientfrontier.asp#ixzz4nCcwvdHC) 
 
 It's described on [Harry Markowitz paper](https://www.math.ust.hk/~maykwok/courses/ma362/07F/markowitz_JF.pdf) from 1952.
 

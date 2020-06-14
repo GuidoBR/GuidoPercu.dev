@@ -24,9 +24,9 @@ image:
 
 body:
 
-> As it’s used today, serverless computing means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.
+> ### As it’s used today, serverless computing means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.
 >
-> by Lucas Still on [Modus Create - Serverless All the things](https://moduscreate.com/blog/serverless-allthethings-1/)
+> #### Lucas Still on [Modus Create - Serverless All the things](https://moduscreate.com/blog/serverless-allthethings-1/)
 
 Serverless architecture is becoming more and more popular: Amazon launched [AWS Lambda](https://aws.amazon.com/lambda/), Microsoft has 
 [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) and Google has [Cloud Functions](https://cloud.google.com/functions/). Now not only can you stop worrying about manually 

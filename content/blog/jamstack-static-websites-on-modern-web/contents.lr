@@ -20,9 +20,11 @@ body:
 
 [**JAM**Stack](https://jamstack.org/) is a way to create sites and apps focused on performance, security and scaling. It was a term created by [Matt Biilmann](https://twitter.com/biilmann) to describe a modern development architecture based on Javascript, reusable APIs and pre-built Markup.
 
-> "**J**avaScript in the browser as the runtime; Reusable HTTP **A**PIs rather than app-specific databases; Prebuilt **m**arkup as the delivery mechanism." - [*Modern Web Development on the JAM Stack*](https://www.netlify.com/oreilly-jamstack/)
+> ### **J**avaScript in the browser as the runtime; Reusable HTTP **A**PIs rather than app-specific databases; Prebuilt **m**arkup as the delivery mechanism. 
+>
+> #### [*Modern Web Development on the JAM Stack*](https://www.netlify.com/oreilly-jamstack/)
 
-![](/static/images/jamstack.png)
+![JAMStack](/static/images/jamstack.png)
 
 **JAM**Stack embraces continuous delivery, with atomic deploys and version control. The deployment process should be easy so it can be done by developers as well as content editors. 
 
@@ -39,7 +41,9 @@ body:
 
 ![static-site-generators](/static/images/static-site-generators.png)
 
-> "The tools brought back a feeling of simplicity and control from the complex database-based Content Management Systems (CMS) that they replaced." - [*Modern Web Development on the JAM Stack*](https://www.netlify.com/oreilly-jamstack/)
+> ### The tools brought back a feeling of simplicity and control from the complex database-based Content Management Systems (CMS) that they replaced.
+>
+> #### [*Modern Web Development on the JAM Stack*](https://www.netlify.com/oreilly-jamstack/)
 
 There are plenty of [static site generators](https://www.staticgen.com/) and [Headless CMS](https://headlesscms.org/) to choose from. When we use a traditional CMS like Wordpress, Dupral or Joomla, the same tool is responsible for managing the content and building the HTML that will be rendered at the client's browser. When using static generators and Headless CMS we're able to separate those concerns, attaining all the benefits of JAMStack without loosing the flexibility of CMS.
 
