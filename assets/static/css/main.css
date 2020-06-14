@@ -2892,6 +2892,12 @@ input, select, textarea {
 					width: 100%;
 				}
 
+img[src*="#float-left"] {
+	width: 50%;
+	float: left;
+    margin-right: 5%;
+}
+
  /* Blockquote main style */
  blockquote {
 	 position: relative;
