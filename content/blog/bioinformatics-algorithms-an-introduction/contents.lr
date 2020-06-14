@@ -19,9 +19,8 @@ image:
 ---
 body:
 
-> “Three profoundly destabilizing scientific ideas ricochet through the twentieth century, trisecting it into three unequal parts: the atom, the byte, the gene.” 
->
-> — Siddhartha Mukherjee, quote from The Gene: An Intimate History
+> ### Three profoundly destabilizing scientific ideas ricochet through the twentieth century, trisecting it into three unequal parts: the **atom**, the **byte**, the **gene**.
+> #### Siddhartha Mukherjee on *The Gene: An Intimate History*
 
 ## Discovery of DNA Double Helix
 
@@ -99,9 +98,8 @@ This course covers fundamental algorithms for efficient analysis of biological s
 
 ### What is DNA and how it's represented on a computer?
 
-> “Our ability to read out this sequence of our own genome has the makings of a philosophical paradox. Can an intelligent being comprehend the instructions to make itself? — John Sulston. 
->
-> Quote from The Gene: An intimate history”
+> ### Our ability to read out this sequence of our own genome has the makings of a philosophical paradox. **Can an intelligent being comprehend the instructions to make itself?**
+> #### John Sulston on *The Common Thread: A Story of Science, Politics, Ethics and the Human Genome*
 
 One class of macromolecules contained in chromosomes inside the cells nucleus are called nucleic acids. The chemical identity of those macromolecules are polymers of repeating chains of smaller molecules known as monomers. Because they tend to be long and thin, those polymers are called strands.
 
