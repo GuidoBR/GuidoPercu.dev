@@ -115,6 +115,8 @@ A DNA string consists on the symbols A, T, C, G. We can use this representation 
 
 ## Bioinformatics Algorithm problems on Rosalind
 
+[Rosalind](http://rosalind.info) is a platform for learning bioinformatics through problem solving. It's inspired on [Project Euler](https://projecteuler.net/) and it's name is a celebrates Rosalind Franklin -- the scientist whose work facilitated the discovery of the DNA double helix.
+
 ### [Rosalind - Reverse Complement Problem](http://rosalind.info/problems/revc/)
 
 Find the reverse complement of a DNA string
