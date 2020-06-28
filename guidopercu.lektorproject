@@ -1,5 +1,7 @@
 [project]
 name = guidopercu
+url = https://guidopercu.dev
 
 [packages]
 lektor-disqus-comments = 0.1
+lektor-atom = 0.3.1
