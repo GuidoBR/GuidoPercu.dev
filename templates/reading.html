@@ -1,25 +1,52 @@
 {% extends "layout.html" %}
 {% block title %}Reading List - Guido Luz Percú{% endblock %}
 {% block body %}
+<style>
+.grid-item a { color: #fff;}
+.grid-container { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+.grid-item { max-width: 200px; height: 250px; border-bottom: 10px solid black; }
+.book-image { width: 168px; height: 230px; }
+.book-description { display: none;}
+.grid-item:hover .book-image { display: none;}
+.grid-item:hover .book-description {
+        color: #fff;
+        display: block;
+        padding: 5px;
+        width: 168px;
+        height: 230px;
+        background-color: #000000;
+}
+</style>
 <section>
         <header class="major">
                 <h2><a href="/reading/"> {{ this.title }}</a></h2>
         </header>
         <div class="features">
                 <article>
-                        <div class="content">
-                                {% for book in [
-                                        {'url': 'https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/', 'title': 'Meditations', "notes": "https://twitter.com/oUmGuido/status/1256593809250627584"},
-                                        {'url': 'https://www.netlify.com/oreilly-jamstack/', 'title': 'Modern Web Development on the JAMstack', 'notes': 'blog/jamstack-static-websites-on-modern-web/'},
-                                        {'url': 'https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/', 'title': 'Accelerate: The Science of Lean Software and DevOps'},
-                                        {'url': 'https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/', 'title': 'An Astronaut\'s Guide to Life on Earth', 'notes': "https://twitter.com/oUmGuido/status/1227702268063100929"}
-                                ] %}
-                                        <p>
-                                                <span class="fa fa-book"></span>
-                                                <a href="{{ book.url }}">{{ book.title }}</a>
-                                                {% if book.notes %} - <em><a href="{{ book.notes }}">(my notes)</a></em>{% endif %}
-                                        </p>
-                                {% endfor %}
+                        <div class="content grid-container">
+                                        {% for book in [
+                                                {'image': 'book-how-democracies-die.jpg','title': 'How Democracies Die', 'url': 'https://www.amazon.com/How-Democracies-Die-Steven-Levitsky-ebook/dp/B071L5C5HG/'},
+                                                {'image': 'book-elastic.jpg','title': 'Elastic', 'url': 'https://www.amazon.com/Elastic-Flexible-Thinking-Time-Change-ebook/dp/B06X17WVGR/'},
+                                                {'image': 'book-mere-christianism.jpg','title': 'Mere Christianism', 'url': 'https://www.amazon.com/gp/product/B002BD2UR0/'},
+                                                {'image': 'book-meditations.jpg', 'title': 'Meditations','url': 'https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/',"notes": "https://twitter.com/oUmGuido/status/1256593809250627584"},
+                                                {'image': 'book-jamstack.png', 'title': 'Modern Web Development on the JAMstack', 'url': 'https://www.netlify.com/oreilly-jamstack/', 'notes': 'blog/jamstack-static-websites-on-modern-web/'},
+                                                {'image': 'book-accelerate.jpg','title': 'Accelerate: The Science of Lean Software and DevOps', 'url': 'https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/',},
+                                                {'image': 'book-astronaut.jpg','title': 'An Astronaut\'s Guide to Life on Earth', 'url': 'https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/', 'notes': "https://twitter.com/oUmGuido/status/1227702268063100929"},
+                                                {'image': 'book-flush.jpg','title': 'Flush: A Biography', 'url': 'https://www.amazon.com/dp/B08CBL6QY4/'},
+                                                {'image': 'book-global-economic-history.jpg','title': 'Global Economic History: A Very Short Introduction - Robert C. Allen', 'url': 'https://www.amazon.com/Global-Economic-History-Introduction-Introductions-ebook-dp-B005JC0QNA/dp/B005JC0QNA/'}
+                                        ] %}
+                                        
+                                                <div class="grid-item">
+                                                        <a href="{{ book.url }}">
+                                                                <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
+                                                        </a>
+
+                                                        <p class="book-description">
+                                                                <a href="{{ book.url }}">{{ book.title }}</a>
+                                                                {% if book.notes %} - <em><a href="{{ book.notes }}">(my notes)</a></em>{% endif %}
+                                                        </p>
+                                                </div>
+                                        {% endfor %}
                         </div>
                 </article>
         </div>
