@@ -27,40 +27,130 @@
                                 </header>
 
                                 
+<style>
+article { width: 100% !important; }        
+.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
+.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
+.book-grid ul li {  padding-left: 1.5em; }
+.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
+}
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
+
+</style>
 <section>
-        <header class="major">
-                <h2><a href="/reading/"> <p>Reading List</p>
-</a></h2>
-        </header>
         <div class="features">
                 <article>
-                        <div class="content">
-                                
-                                        <p>
-                                                <span class="fa fa-book"></span>
-                                                <a href="https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/">Meditations</a>
-                                                 - <em><a href="https://twitter.com/oUmGuido/status/1256593809250627584">(my notes)</a></em>
-                                        </p>
-                                
-                                        <p>
-                                                <span class="fa fa-book"></span>
-                                                <a href="https://www.netlify.com/oreilly-jamstack/">Modern Web Development on the JAMstack</a>
-                                                 - <em><a href="blog/jamstack-static-websites-on-modern-web/">(my notes)</a></em>
-                                        </p>
-                                
-                                        <p>
-                                                <span class="fa fa-book"></span>
-                                                <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/">Accelerate: The Science of Lean Software and DevOps</a>
-                                                
-                                        </p>
-                                
-                                        <p>
-                                                <span class="fa fa-book"></span>
-                                                <a href="https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/">An Astronaut&#39;s Guide to Life on Earth</a>
-                                                 - <em><a href="https://twitter.com/oUmGuido/status/1227702268063100929">(my notes)</a></em>
-                                        </p>
-                                
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/How-Democracies-Die-Steven-Levitsky-ebook/dp/B071L5C5HG/">
+                                                        <img src="/static/images/book-how-democracies-die.jpg" alt="How Democracies Die" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Elastic-Flexible-Thinking-Time-Change-ebook/dp/B06X17WVGR/">
+                                                        <img src="/static/images/book-elastic.jpg" alt="Elastic" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/gp/product/B002BD2UR0/">
+                                                        <img src="/static/images/book-mere-christianism.jpg" alt="Mere Christianism" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/">
+                                                        <img src="/static/images/book-astronaut.jpg" alt="An Astronaut&#39;s Guide to Life on Earth" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/dp/B08CBL6QY4/">
+                                                        <img src="/static/images/book-flush.jpg" alt="Flush: A Biography" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        </ul>
+                                </div>
                         </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
+                </article>
+                <article>
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/">
+                                                        <img src="/static/images/book-meditations.jpg" alt="Meditations" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.netlify.com/oreilly-jamstack/">
+                                                        <img src="/static/images/book-jamstack.png" alt="Modern Web Development on the JAMstack" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/">
+                                                        <img src="/static/images/book-accelerate.jpg" alt="Accelerate: The Science of Lean Software and DevOps" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Global-Economic-History-Introduction-Introductions-ebook-dp-B005JC0QNA/dp/B005JC0QNA/">
+                                                        <img src="/static/images/book-global-economic-history.jpg" alt="Global Economic History: A Very Short Introduction - Robert C. Allen" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Ego-Enemy-Master-Greatest-Opponent-ebook/dp/B01AWUTMB0/">
+                                                        <img src="/static/images/book-ego-is-the-enemy.jpg" alt="Ego is the Enemy" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
+                </article>
+                <article>
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
+                                        
+                                        
+                                                <li>
+                                                <a href="https://www.amazon.com/Fire-Blood-Thrones-Targaryen-History-ebook/dp/B07C6TBTV3/">
+                                                        <img src="/static/images/book-fire-and-blood.jpg" alt="Fire and Blood" class="book-image">
+                                                </a>
+                                                </li>
+                                        
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
                 </article>
         </div>
 </section>
