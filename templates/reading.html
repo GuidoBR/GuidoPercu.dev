@@ -2,48 +2,87 @@
 {% block title %}Reading List - Guido Luz Percú{% endblock %}
 {% block body %}
 <style>
-.grid-item a { color: #fff;}
-.grid-container { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-column-gap: 25px; grid-row-gap: 25px; }
-.grid-item { max-width: 200px; height: 250px; border-bottom: 10px solid black; }
-.book-image { width: 168px; height: 230px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
-.book-description { display: none; padding: 5px; width: 168px; height: 230px; background-color: #000; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+article { width: 100% !important; }        
+.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
+.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
+.book-grid ul li {  padding-left: 1.5em; }
+.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
+}
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
 
-.grid-item:hover .book-image { display: none;}
-.grid-item:hover .book-description { display: block;}
 </style>
 <section>
-        <header class="major">
-                <h2><a href="/reading/"> {{ this.title }}</a></h2>
-        </header>
         <div class="features">
                 <article>
-                        <div class="content grid-container">
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
                                         {% for book in [
                                                 {'image': 'book-how-democracies-die.jpg','title': 'How Democracies Die', 'url': 'https://www.amazon.com/How-Democracies-Die-Steven-Levitsky-ebook/dp/B071L5C5HG/'},
                                                 {'image': 'book-elastic.jpg','title': 'Elastic', 'url': 'https://www.amazon.com/Elastic-Flexible-Thinking-Time-Change-ebook/dp/B06X17WVGR/'},
                                                 {'image': 'book-mere-christianism.jpg','title': 'Mere Christianism', 'url': 'https://www.amazon.com/gp/product/B002BD2UR0/'},
+                                                {'image': 'book-astronaut.jpg','title': 'An Astronaut\'s Guide to Life on Earth', 'url': 'https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/', 'notes': "https://twitter.com/oUmGuido/status/1227702268063100929"},
+                                                {'image': 'book-flush.jpg','title': 'Flush: A Biography', 'url': 'https://www.amazon.com/dp/B08CBL6QY4/'},
+                                        ] %}
+                                        
+                                                <li>
+                                                <a href="{{ book.url }}">
+                                                        <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
+                                                </a>
+                                                </li>
+                                        {% endfor %}
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
+                </article>
+                <article>
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
+                                        {% for book in [
                                                 {'image': 'book-meditations.jpg', 'title': 'Meditations','url': 'https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/',"notes": "https://twitter.com/oUmGuido/status/1256593809250627584"},
                                                 {'image': 'book-jamstack.png', 'title': 'Modern Web Development on the JAMstack', 'url': 'https://www.netlify.com/oreilly-jamstack/', 'notes': 'blog/jamstack-static-websites-on-modern-web/'},
                                                 {'image': 'book-accelerate.jpg','title': 'Accelerate: The Science of Lean Software and DevOps', 'url': 'https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/',},
-                                                {'image': 'book-astronaut.jpg','title': 'An Astronaut\'s Guide to Life on Earth', 'url': 'https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/', 'notes': "https://twitter.com/oUmGuido/status/1227702268063100929"},
-                                                {'image': 'book-flush.jpg','title': 'Flush: A Biography', 'url': 'https://www.amazon.com/dp/B08CBL6QY4/'},
                                                 {'image': 'book-global-economic-history.jpg','title': 'Global Economic History: A Very Short Introduction - Robert C. Allen', 'url': 'https://www.amazon.com/Global-Economic-History-Introduction-Introductions-ebook-dp-B005JC0QNA/dp/B005JC0QNA/'},
                                                 {'image': 'book-ego-is-the-enemy.jpg','title': 'Ego is the Enemy', 'url': 'https://www.amazon.com/Ego-Enemy-Master-Greatest-Opponent-ebook/dp/B01AWUTMB0/'},
+                                        ] %}
+                                        
+                                                <li>
+                                                <a href="{{ book.url }}">
+                                                        <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
+                                                </a>
+                                                </li>
+                                        {% endfor %}
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
+                </article>
+                <article>
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
+                                        {% for book in [
                                                 {'image': 'book-fire-and-blood.jpg','title': 'Fire and Blood', 'url': 'https://www.amazon.com/Fire-Blood-Thrones-Targaryen-History-ebook/dp/B07C6TBTV3/'}
                                         ] %}
                                         
-                                                <div class="grid-item">
-                                                        <a href="{{ book.url }}">
-                                                                <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
-                                                        </a>
-
-                                                        <p class="book-description">
-                                                                <a href="{{ book.url }}">{{ book.title }}</a>
-                                                                {% if book.notes %} - <em><a href="{{ book.notes }}">(my notes)</a></em>{% endif %}
-                                                        </p>
-                                                </div>
+                                                <li>
+                                                <a href="{{ book.url }}">
+                                                        <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
+                                                </a>
+                                                </li>
                                         {% endfor %}
+                                        </ul>
+                                </div>
                         </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
                 </article>
         </div>
 </section>
