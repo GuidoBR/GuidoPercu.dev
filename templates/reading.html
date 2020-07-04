@@ -8,10 +8,18 @@ article { width: 100% !important; }
 .book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
 .book-grid ul li {  padding-left: 1.5em; }
 .book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1.5em; padding: 5px;}
+.book-description a { color: #fff; }
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
 .shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
   box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
 }
-.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
+
+.book-grid ul li .book-description { display: none; }
+.book-grid ul li:hover img { display: none; }
+.book-grid ul li:hover { margin-bottom: -3em !important; }
+.book-grid ul li:hover .book-description { display: block; }
+
 @media screen and (max-width: 1024px) {
         .book-grid ul { grid-template-columns: repeat(3, 1fr); }
         .book-grid ul li {  padding-left: 1.0em; }
@@ -21,7 +29,7 @@ article { width: 100% !important; }
         .book-grid ul { grid-template-columns: repeat(1, 1fr); }
         .book-grid ul li {  padding-bottom: 1.5em; }
         .shelf-shadows, .shelf { display: none;}
-        article { margin-bottom: 0 !important; }
+        article { margin-bottom: -5em !important; }
 }
 </style>
 <section>
@@ -42,6 +50,9 @@ article { width: 100% !important; }
                                                 <a href="{{ book.url }}">
                                                         <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="{{ book.url }}">{{ book.title }}</a> {% if book.notes %} <br> <em><a href="{{ book.notes }}">(my notes)</a></em> {% endif %}
+                                                </p>
                                                 </li>
                                         {% endfor %}
                                         </ul>
@@ -66,6 +77,9 @@ article { width: 100% !important; }
                                                 <a href="{{ book.url }}">
                                                         <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="{{ book.url }}">{{ book.title }}</a> {% if book.notes %} <br> <em><a href="{{ book.notes }}">(my notes)</a></em> {% endif %}
+                                                </p>
                                                 </li>
                                         {% endfor %}
                                         </ul>
@@ -90,6 +104,9 @@ article { width: 100% !important; }
                                                 <a href="{{ book.url }}">
                                                         <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="{{ book.url }}">{{ book.title }}</a> {% if book.notes %} <br> <em><a href="{{ book.notes }}">(my notes)</a></em> {% endif %}
+                                                </p>
                                                 </li>
                                         {% endfor %}
                                         </ul>
