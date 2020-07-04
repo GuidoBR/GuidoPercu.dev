@@ -34,10 +34,18 @@ article { width: 100% !important; }
 .book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
 .book-grid ul li {  padding-left: 1.5em; }
 .book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1.5em; padding: 5px;}
+.book-description a { color: #fff; }
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
 .shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
   box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
 }
-.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
+
+.book-grid ul li .book-description { display: none; }
+.book-grid ul li:hover img { display: none; }
+.book-grid ul li:hover { margin-bottom: -3em !important; }
+.book-grid ul li:hover .book-description { display: block; }
+
 @media screen and (max-width: 1024px) {
         .book-grid ul { grid-template-columns: repeat(3, 1fr); }
         .book-grid ul li {  padding-left: 1.0em; }
@@ -47,7 +55,7 @@ article { width: 100% !important; }
         .book-grid ul { grid-template-columns: repeat(1, 1fr); }
         .book-grid ul li {  padding-bottom: 1.5em; }
         .shelf-shadows, .shelf { display: none;}
-        article { margin-bottom: 0 !important; }
+        article { margin-bottom: -5em !important; }
 }
 </style>
 <section>
@@ -62,6 +70,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/How-Democracies-Die-Steven-Levitsky-ebook/dp/B071L5C5HG/">
                                                         <img src="/static/images/book-how-democracies-die.jpg" alt="How Democracies Die" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/How-Democracies-Die-Steven-Levitsky-ebook/dp/B071L5C5HG/">How Democracies Die</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -69,6 +80,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Elastic-Flexible-Thinking-Time-Change-ebook/dp/B06X17WVGR/">
                                                         <img src="/static/images/book-elastic.jpg" alt="Elastic" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Elastic-Flexible-Thinking-Time-Change-ebook/dp/B06X17WVGR/">Elastic</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -76,6 +90,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/gp/product/B002BD2UR0/">
                                                         <img src="/static/images/book-mere-christianism.jpg" alt="Mere Christianism" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/gp/product/B002BD2UR0/">Mere Christianism</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -83,6 +100,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/">
                                                         <img src="/static/images/book-astronaut.jpg" alt="An Astronaut&#39;s Guide to Life on Earth" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Astronauts-Guide-Life-Earth/dp/B00G9EPB1E/">An Astronaut&#39;s Guide to Life on Earth</a>  <br> <em><a href="https://twitter.com/oUmGuido/status/1227702268063100929">(my notes)</a></em> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -90,6 +110,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/dp/B08CBL6QY4/">
                                                         <img src="/static/images/book-flush.jpg" alt="Flush: A Biography" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/dp/B08CBL6QY4/">Flush: A Biography</a> 
+                                                </p>
                                                 </li>
                                         
                                         </ul>
@@ -108,6 +131,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/">
                                                         <img src="/static/images/book-meditations.jpg" alt="Meditations" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Meditations-New-Translation-Modern-Library-ebook/dp/B000FC1JAI/">Meditations</a>  <br> <em><a href="https://twitter.com/oUmGuido/status/1256593809250627584">(my notes)</a></em> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -115,6 +141,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.netlify.com/oreilly-jamstack/">
                                                         <img src="/static/images/book-jamstack.png" alt="Modern Web Development on the JAMstack" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.netlify.com/oreilly-jamstack/">Modern Web Development on the JAMstack</a>  <br> <em><a href="blog/jamstack-static-websites-on-modern-web/">(my notes)</a></em> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -122,6 +151,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/">
                                                         <img src="/static/images/book-accelerate.jpg" alt="Accelerate: The Science of Lean Software and DevOps" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/">Accelerate: The Science of Lean Software and DevOps</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -129,6 +161,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Global-Economic-History-Introduction-Introductions-ebook-dp-B005JC0QNA/dp/B005JC0QNA/">
                                                         <img src="/static/images/book-global-economic-history.jpg" alt="Global Economic History: A Very Short Introduction - Robert C. Allen" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Global-Economic-History-Introduction-Introductions-ebook-dp-B005JC0QNA/dp/B005JC0QNA/">Global Economic History: A Very Short Introduction - Robert C. Allen</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -136,6 +171,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Ego-Enemy-Master-Greatest-Opponent-ebook/dp/B01AWUTMB0/">
                                                         <img src="/static/images/book-ego-is-the-enemy.jpg" alt="Ego is the Enemy" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Ego-Enemy-Master-Greatest-Opponent-ebook/dp/B01AWUTMB0/">Ego is the Enemy</a> 
+                                                </p>
                                                 </li>
                                         
                                         </ul>
@@ -154,6 +192,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/How-Lie-Statistics-Darrell-Huff-ebook-dp-B00351DSX2/dp/B00351DSX2/">
                                                         <img src="/static/images/book-how-to-lie-with-statistics.jpg" alt="How to lie with Statistics" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/How-Lie-Statistics-Darrell-Huff-ebook-dp-B00351DSX2/dp/B00351DSX2/">How to lie with Statistics</a>  <br> <em><a href="/blog/how-to-lie-with-statistics/">(my notes)</a></em> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -161,6 +202,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/1400067820/">
                                                         <img src="/static/images/book-antifragile.jpg" alt="Antifragile" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/1400067820/">Antifragile</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -168,6 +212,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219/">
                                                         <img src="/static/images/book-fooled-by-randomness.jpg" alt="Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219/">Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -175,6 +222,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Risk-Savvy-Make-Good-Decisions/dp/0670025658/">
                                                         <img src="/static/images/book-risk-savy.jpg" alt="Risk Savvy: How to Make Good Decisions" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Risk-Savvy-Make-Good-Decisions/dp/0670025658/">Risk Savvy: How to Make Good Decisions</a> 
+                                                </p>
                                                 </li>
                                         
                                         
@@ -182,6 +232,9 @@ article { width: 100% !important; }
                                                 <a href="https://www.amazon.com/Fire-Blood-Thrones-Targaryen-History-ebook/dp/B07C6TBTV3/">
                                                         <img src="/static/images/book-fire-and-blood.jpg" alt="Fire and Blood" class="book-image">
                                                 </a>
+                                                <p class="book-description">
+                                                        <a href="https://www.amazon.com/Fire-Blood-Thrones-Targaryen-History-ebook/dp/B07C6TBTV3/">Fire and Blood</a> 
+                                                </p>
                                                 </li>
                                         
                                         </ul>
