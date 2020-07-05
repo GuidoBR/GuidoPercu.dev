@@ -16,6 +16,10 @@ image:
 /static/images/how-to-lie-with-statistics-on-python.png
 
 ---
+description:
+Be careful when you read news about "average wage". As we learn from the classic book How to Lie with Statistics, there are different types of averages and their different meanings can be used to mislead and deceive.
+
+---
 body:
 
 > ### The **average** dog owner spends $500 a year on dog food. But the **typical** dog pamperer spends $5,000 a year (all numbers invented).  The reason the numbers are different is that the samples are different. We chop off the outliers in the second set, homing in on the kind of person we’re talking about. 

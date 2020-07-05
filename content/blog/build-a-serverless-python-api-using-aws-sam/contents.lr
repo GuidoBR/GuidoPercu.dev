@@ -20,6 +20,11 @@ twitter_handle:
 ---
 image:
 /static/images/build-a-serverless-python-api-using-aws-sam.png
+
+---
+description:
+Serverless architecture is becoming more and more popular: Amazon launched AWS Lambda, Microsoft has Azure Functions and Google has Cloud Functions. Now not only can you stop worrying about manually provisioning, managing and upgrading servers, but also pay only for what you use.
+
 ---
 
 body:

@@ -16,6 +16,10 @@ image:
 /static/images/Rapid-prototyping-a-REST-API-with-json-server.png
 
 ---
+description:
+Sometimes we need a full fake REST API to prototype new products and mock new functionalities. The json-server package provides a quick and easy way to do that.
+
+---
 body:
 
 Sometimes we need a full fake REST API to prototype new products and mock new functionalities. The [json-server](https://github.com/typicode/json-server) package provides a quick and easy way to do that.

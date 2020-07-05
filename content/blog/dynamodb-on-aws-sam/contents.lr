@@ -22,6 +22,10 @@ image:
 /static/images/dynamodb-using-aws-sam.png
 
 ---
+description:
+Resources on getting DynamoDB to work with your Serverless application.
+
+---
 body:
 
 ![sam-logo](/static/images/sam-logo.png)

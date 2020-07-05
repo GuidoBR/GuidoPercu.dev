@@ -16,6 +16,10 @@ image:
 /static/images/jamstack-html-css-javascript-statics-on-modern-web.png
 
 ---
+description:
+JavaScript in the browser as the runtime; Reusable HTTP APIs rather than app-specific databases; Prebuilt markup as the delivery mechanism.
+
+---
 body:
 
 [**JAM**Stack](https://jamstack.org/) is a way to create sites and apps focused on performance, security and scaling. It was a term created by [Matt Biilmann](https://twitter.com/biilmann) to describe a modern development architecture based on Javascript, reusable APIs and pre-built Markup.
