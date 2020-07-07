@@ -29,7 +29,7 @@ Serverless architecture is becoming more and more popular: Amazon launched AWS L
 
 body:
 
-> ### As it’s used today, serverless computing means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.
+> ### As it’s used today, **serverless computing** means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.
 >
 > #### Lucas Still on [Modus Create - Serverless All the things](https://moduscreate.com/blog/serverless-allthethings-1/)
 

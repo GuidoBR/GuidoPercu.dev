@@ -16,26 +16,67 @@ image:
 /static/images/amazon-aws-serverless.png
 
 ---
+
+description:
+
+
+
+---
 body:
 
 ![amazon-aws-serverless](../../assets/static/images/amazon-aws-serverless.png)
 
-https://en.wikipedia.org/wiki/Serverless_computing
+Serverless is a architecture that let you delegate to the cloud provider ([AWS](https://aws.amazon.com/serverless/), Azure, GCP) the task of running and managing the infrastructure, which let you focus on your code itself. Pricing is based on resources consumed on the execution of the code, rather than pre-purchased units of computing. I've already covered about [how to build a serverless API using AWS SAM](/blog/build-a-serverless-python-api-using-aws-sam/) and in this article I want to explain how the main AWS services can be combined to create powerful serverless apps.
 
-https://www.serverless.com/
+> ### Serverless architectures are application designs that incorporate third-party *“Backend as a Service” (BaaS)* services, and/or that include custom code run in managed, ephemeral containers on a *“Functions as a Service” (FaaS)* platform. By using these ideas, and related ones like single-page applications, such architectures remove much of the need for a traditional always-on server component. Serverless architectures may benefit from significantly reduced operational cost, complexity, and engineering lead time, at a cost of increased reliance on vendor dependencies and comparatively immature supporting services.
+>
+> #### Mike Roberts at [Serverless Architecture](https://martinfowler.com/articles/serverless.html)
 
-https://martinfowler.com/articles/serverless.html
+### Serverless Computation on AWS
 
-https://hackernoon.com/what-is-serverless-architecture-what-are-its-pros-and-cons-cc4b804022e9
+#### [Lambda Functions](https://aws.amazon.com/lambda/)
 
-https://aws.amazon.com/serverless/
+Let you run code without dealing with infrastructure configuration, provisioning or managing servers. You pay for the time it's running. It natively supports Python, Go, NodeJS, Ruby, C# and Java. It also provides built-in fault tolerance (its built to compute across multiple availability zone, to protect you against data center failures).
 
-https://www.cloudflare.com/learning/serverless/what-is-serverless/
+#### [Lambda@Edge](https://aws.amazon.com/lambda/edge/)
 
-https://serverless-stack.com/
+It runs your code in response to events on your [Amazon CloudFront (CDN)](https://aws.amazon.com/cloudfront/), that helps you to run and scale your [frontend globally, with high availability](https://moduscreate.com/blog/serverless-allthethings-2/).
 
-https://www.guidopercu.dev/blog/dynamodb-on-aws-sam/
+### Databases
 
-https://www.guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/
+#### [DynamoDB](https://aws.amazon.com/dynamodb/)
 
-https://github.com/100DaysOfCloud/100DaysOfCloudApp/issues/2#issuecomment-653703277
+A fast and flexible NoSQL database, ready to be integrated with [Lambda functions](blog/dynamodb-on-aws-sam/).
+
+#### [Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/)
+
+This is Amazon version of MySQL, where the database will automatically start up and shut down based on your application need.
+
+> ### Focus on your **application**, not the **infrastructure**.
+
+### SAM - Serverless Application Model
+
+[SAM](https://github.com/awslabs/serverless-application-model) is the framework from Amazon to help you [build Serverless application on AWS](https://www.guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/). Combining [sam-cli](https://github.com/awslabs/aws-sam-cli) with [boto3 (Python library)](https://github.com/boto/boto3), you have a powerful environment to build Serverless applications.
+
+#### [CloudFormation](https://aws.amazon.com/pt/cloudformation/)
+
+![CloudFormation example](../../assets/static/images/cloudformation.png)
+
+CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a `template.yaml` file and it has an good [documentation on how to use it](https://docs.aws.amazon.com/cloudformation/).
+
+#### SNS
+
+#### API Gateway
+
+#### Cognito
+
+### References
+
+- [AWS Well Architected Patterns](https://cdkpatterns.com/patterns/well-architected/)
+- [Serverless Lens Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Serverless-Applications-Lens.pdf)
+- 
+
+
+
+
+
