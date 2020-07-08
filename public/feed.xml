@@ -2,13 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Guido Percu</title>
   <id>urn:uuid:a55e93b9-4d3e-374b-98d0-6266da7407f3</id>
-  <updated>2020-06-14T00:00:00Z</updated>
+  <updated>2020-07-15T00:00:00Z</updated>
   <link href="https://guidopercu.dev/blog/" />
   <link href="https://guidopercu.dev/feed.xml" rel="self" />
   <author>
     <name></name>
   </author>
   <generator uri="https://github.com/ajdavis/lektor-atom" version="0.3.1">Lektor Atom Plugin</generator>
+  <entry xml:base="https://guidopercu.dev/blog/serverless-on-amazon-aws/">
+    <title type="text">Serverless Applications on Amazon AWS</title>
+    <id>urn:uuid:cc0dea24-9f97-37f7-93f2-9eec349b86ec</id>
+    <updated>2020-07-15T00:00:00Z</updated>
+    <link href="https://guidopercu.dev/blog/serverless-on-amazon-aws/" />
+    <author>
+      <name>Guido Percú</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;../../static/images/amazon-aws-serverless.png&quot; alt=&quot;amazon-aws-serverless&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Serverless is a architecture that let you delegate to the cloud provider (&lt;a href=&quot;https://aws.amazon.com/serverless/&quot;&gt;AWS&lt;/a&gt;, Azure, GCP) the task of running and managing the infrastructure, which let you focus on your code itself. Pricing is based on resources consumed on the execution of the code, rather than pre-purchased units of computing. I've already covered about &lt;a href=&quot;../../blog/build-a-serverless-python-api-using-aws-sam/&quot;&gt;how to build a serverless API using AWS SAM&lt;/a&gt; and in this article I want to explain how the main AWS services can be combined to create powerful serverless apps.&lt;/p&gt;
+&lt;blockquote&gt;&lt;h3&gt;Serverless architectures may &lt;strong&gt;benefit&lt;/strong&gt; from significantly reduced operational cost, complexity, and engineering lead time, at a &lt;strong&gt;cost&lt;/strong&gt; of increased reliance on vendor dependencies and comparatively immature supporting services.&lt;/h3&gt;
+&lt;h4&gt;Mike Roberts at &lt;a href=&quot;https://martinfowler.com/articles/serverless.html&quot;&gt;Serverless Architecture&lt;/a&gt;&lt;/h4&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Serverless Computation on AWS&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/lambda/&quot;&gt;Lambda Functions&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Let you run code without dealing with infrastructure configuration, provisioning or managing servers. You pay for the time it's running. It natively supports Python, Go, NodeJS, Ruby, C# and Java. It also provides built-in fault tolerance (its built to compute across multiple availability zone, to protect you against data center failures).&lt;/p&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/lambda/edge/&quot;&gt;Lambda@Edge&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;It runs your code in response to events on your &lt;a href=&quot;https://aws.amazon.com/cloudfront/&quot;&gt;Amazon CloudFront (CDN)&lt;/a&gt;, that helps you to run and scale your &lt;a href=&quot;https://moduscreate.com/blog/serverless-allthethings-2/&quot;&gt;frontend globally, with high availability&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Databases&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/dynamodb/&quot;&gt;DynamoDB&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A fast and flexible NoSQL database, ready to be integrated with &lt;a href=&quot;../../blog/serverless-on-amazon-aws/blog/dynamodb-on-aws-sam/&quot;&gt;Lambda functions&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/rds/aurora/serverless/&quot;&gt;Aurora Serverless&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;This is Amazon version of MySQL, where the database will automatically start up and shut down based on your application need.&lt;/p&gt;
+&lt;blockquote&gt;&lt;h3&gt;Focus on your &lt;strong&gt;application&lt;/strong&gt;, not the &lt;strong&gt;infrastructure&lt;/strong&gt;.&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;SAM - Serverless Application Model&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/awslabs/serverless-application-model&quot;&gt;SAM&lt;/a&gt; is the framework from Amazon to help you &lt;a href=&quot;https://www.guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/&quot;&gt;build Serverless application on AWS&lt;/a&gt;. Combining &lt;a href=&quot;https://github.com/awslabs/aws-sam-cli&quot;&gt;sam-cli&lt;/a&gt; with &lt;a href=&quot;https://github.com/boto/boto3&quot;&gt;boto3 (Python library)&lt;/a&gt;, you have a powerful environment to build Serverless applications.&lt;/p&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/pt/cloudformation/&quot;&gt;CloudFormation&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../static/images/cloudformation.png&quot; alt=&quot;CloudFormation example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a &lt;code&gt;template.yaml&lt;/code&gt; file and it has an good &lt;a href=&quot;https://docs.aws.amazon.com/cloudformation/&quot;&gt;documentation on how to use it&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/sns/&quot;&gt;SNS&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../static/images/aws-topic.png&quot; alt=&quot;Create SNS Topic on CloudFormation example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Amazon Simple Notification Service provides a fully managed service using emails and mobile push notifications.&lt;/p&gt;
+&lt;p&gt;And with a simple Python function, using &lt;code&gt;boto3&lt;/code&gt; library, you'll be able to send message to the topic you just created (triggering emails or push notifications):&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/GuidoBR/7bda377a36de6d82aa8c7d34588e6f71.js&quot;&gt;&lt;/script&gt;&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/en/s3/&quot;&gt;S3&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../static/images/aws-s3.png&quot; alt=&quot;S3 Bucket on CloudFormation example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Hosts web application static assets, and can be configured to be served through CloudFront. It can also be used to store user uploaded content, and can be accessed through your Lambda functions code using &lt;code&gt;boto3&lt;/code&gt; Python library.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/GuidoBR/fe55eff6d09e022abcaa08a2314e6d1d.js&quot;&gt;&lt;/script&gt;&lt;h4&gt;API Gateway&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../static/images/api-gateway.png&quot; alt=&quot;API Gateway on CloudFormation example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You can run and manage an REST API that integrates with your Lambda functions to execute business logic, send and retrieve data to the database, includes traffic management, monitoring and API versioning.&lt;/p&gt;
+&lt;p&gt;The API Gateway is also used to &lt;a href=&quot;https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-api-corsconfiguration.html&quot;&gt;manage cross-origin resource sharing (CORS)&lt;/a&gt; for your API, configure custom &lt;a href=&quot;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html&quot;&gt;error responses&lt;/a&gt; and restrict access to your app to only some IP address (useful when you're developing an internal application that will going to be used only via VPN access).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../static/images/api-gateway-restrict-access-ip.png&quot; alt=&quot;API Gateway IP restriction on CloudFormation example&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/en/cognito/&quot;&gt;Cognito&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;AWS Cognito is used for user management and as a identity provider. This tool can be used to manage user sign-up, sign-in, authorization, user groups and also provide built-in sign-in screens and federations (Facebook, Google, Amazon, SAML).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=nBtWCjKd72M&amp;amp;&quot;&gt;Sessions With SAM (S1E2): Cognito and HTTP API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tenmilesquare.com/aws-sam-api-with-cognito/&quot;&gt;AWS SAM API with Cognito&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a href=&quot;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html&quot;&gt;CloudFormation Designer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;After a while building your application, you will be able to create a diagram describing it. To do that, you'll need to upload your &lt;code&gt;template.yaml&lt;/code&gt; file into &lt;a href=&quot;https://console.aws.amazon.com/cloudformation/designer&quot;&gt;AWS CloudFormation Designer&lt;/a&gt;. It's a nice way to demonstrate how your application work for the stakeholders of the project.&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cdkpatterns.com/patterns/well-architected/&quot;&gt;AWS Well Architected Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://d1.awsstatic.com/whitepapers/architecture/AWS-Serverless-Applications-Lens.pdf&quot;&gt;Serverless Lens Whitepaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://boto3.amazonaws.com/v1/documentation/api/latest/index.html&quot;&gt;Boto3 Python Library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry xml:base="https://guidopercu.dev/blog/bioinformatics-algorithms-an-introduction/">
     <title type="text">Bioinformatics Algorithms - an introduction</title>
     <id>urn:uuid:2d634133-aaf4-35a5-ba6e-bf506c872ecf</id>
@@ -315,7 +373,7 @@ Mode: R$ 2.000,00
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;blockquote&gt;&lt;h3&gt;As it’s used today, serverless computing means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.&lt;/h3&gt;
+    <content type="html">&lt;blockquote&gt;&lt;h3&gt;As it’s used today, &lt;strong&gt;serverless computing&lt;/strong&gt; means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.&lt;/h3&gt;
 &lt;h4&gt;Lucas Still on &lt;a href=&quot;https://moduscreate.com/blog/serverless-allthethings-1/&quot;&gt;Modus Create - Serverless All the things&lt;/a&gt;&lt;/h4&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Serverless architecture is becoming more and more popular: Amazon launched &lt;a href=&quot;https://aws.amazon.com/lambda/&quot;&gt;AWS Lambda&lt;/a&gt;, Microsoft has 
