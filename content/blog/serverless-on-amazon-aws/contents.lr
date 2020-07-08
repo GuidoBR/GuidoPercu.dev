@@ -24,11 +24,11 @@ AWS Serverless study notes for helping you build your Serverless app.
 ---
 body:
 
-![amazon-aws-serverless](../../assets/static/images/amazon-aws-serverless.png)
+![amazon-aws-serverless](../../../static/images/amazon-aws-serverless.png)
 
 Serverless is a architecture that let you delegate to the cloud provider ([AWS](https://aws.amazon.com/serverless/), Azure, GCP) the task of running and managing the infrastructure, which let you focus on your code itself. Pricing is based on resources consumed on the execution of the code, rather than pre-purchased units of computing. I've already covered about [how to build a serverless API using AWS SAM](/blog/build-a-serverless-python-api-using-aws-sam/) and in this article I want to explain how the main AWS services can be combined to create powerful serverless apps.
 
-> ### Serverless architectures are application designs that incorporate third-party *“Backend as a Service” (BaaS)* services, and/or that include custom code run in managed, ephemeral containers on a *“Functions as a Service” (FaaS)* platform. By using these ideas, and related ones like single-page applications, such architectures remove much of the need for a traditional always-on server component. Serverless architectures may benefit from significantly reduced operational cost, complexity, and engineering lead time, at a cost of increased reliance on vendor dependencies and comparatively immature supporting services.
+> ### Serverless architectures may **benefit** from significantly reduced operational cost, complexity, and engineering lead time, at a **cost** of increased reliance on vendor dependencies and comparatively immature supporting services.
 >
 > #### Mike Roberts at [Serverless Architecture](https://martinfowler.com/articles/serverless.html)
 
@@ -60,76 +60,39 @@ This is Amazon version of MySQL, where the database will automatically start up 
 
 #### [CloudFormation](https://aws.amazon.com/pt/cloudformation/)
 
-![CloudFormation example](../../assets/static/images/cloudformation.png)
+![CloudFormation example](../../../static/images/cloudformation.png)
 
 CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a `template.yaml` file and it has an good [documentation on how to use it](https://docs.aws.amazon.com/cloudformation/).
 
 #### [SNS](https://aws.amazon.com/sns/)
 
-![Create SNS Topic on CloudFormation example](../../assets/static/images/aws-topic.png)
+![Create SNS Topic on CloudFormation example](../../../static/images/aws-topic.png)
 
 Amazon Simple Notification Service provides a fully managed service using emails and mobile push notifications.
 
 And with a simple Python function, using `boto3` library, you'll be able to send message to the topic you just created (triggering emails or push notifications):
 
-```python
-def publish_to_sns(message, details):
-    try:
-        client = boto3.client('sns')
-        topicName = 'EmailTopic'
-
-        return client.publish(
-            TopicArn=topicName,
-            Message=f'{message} - {details}',
-        )
-    except Exception as e:
-        print(f"Failed to publish to sns {e}")
-```
-
-
+<script src="https://gist.github.com/GuidoBR/7bda377a36de6d82aa8c7d34588e6f71.js"></script>
 
 #### [S3](https://aws.amazon.com/en/s3/)
 
-![API Gateway on CloudFormation example](../../assets/static/images/aws-s3.png)
+![S3 Bucket on CloudFormation example](../../../static/images/aws-s3.png)
 
 Hosts web application static assets, and can be configured to be served through CloudFront. It can also be used to store user uploaded content, and can be accessed through your Lambda functions code using `boto3` Python library.
 
-```python
-def create_file(filename, content, bucket = 'S3-Bucket'):
-        return = self.s3.put_object(
-            Bucket= 'S3-Bucket',
-            Key=filename,
-            Body=bytes(str(content), "utf-8"),
-        )
-```
-
-```python
-def get_file(self, filename, bucket = 'S3-Bucket'):
-    return self.s3.get_object(Bucket='S3-Bucket', Key=filename)["Body"]
-        .read()
-        .decode("utf-8")
-```
-
-```python
-    def create_presigned_url(self, filename, bucket = 'S3-Bucket', expiration=3600):        
-        return self.s3.generate_presigned_url(
-            "get_object",
-            Params={"Bucket": 'S3-Bucket', "Key": filename},
-            ExpiresIn=expiration,
-        )
-```
+<script src="https://gist.github.com/GuidoBR/fe55eff6d09e022abcaa08a2314e6d1d.js"></script>
 
 
 
 #### API Gateway
 
-![API Gateway on CloudFormation example](../../assets/static/images/api-gateway.png)
+![API Gateway on CloudFormation example](../../../static/images/api-gateway.png)
 
 You can run and manage an REST API that integrates with your Lambda functions to execute business logic, send and retrieve data to the database, includes traffic management, monitoring and API versioning. 
 
 The API Gateway is also used to [manage cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-api-corsconfiguration.html) for your API, configure custom [error responses](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html) and restrict access to your app to only some IP address (useful when you're developing an internal application that will going to be used only via VPN access).
 
-![API Gateway IP restriction on CloudFormation example](../../assets/static/images/api-gateway-restrict-access-ip.png)
+![API Gateway IP restriction on CloudFormation example](../../../static/images/api-gateway-restrict-access-ip.png)
 
 #### [Cognito](https://aws.amazon.com/en/cognito/)
 
@@ -146,6 +109,7 @@ After a while building your application, you will be able to create a diagram de
 
 - [AWS Well Architected Patterns](https://cdkpatterns.com/patterns/well-architected/)
 - [Serverless Lens Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Serverless-Applications-Lens.pdf)
+- [Boto3 Python Library](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 
 
 
