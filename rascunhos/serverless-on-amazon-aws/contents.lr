@@ -2,7 +2,7 @@ title:
 Serverless Applications on Amazon AWS
 ---
 pub_date:
-2020-07-31
+2020-07-15
 ---
 author:
 Guido Percú
@@ -19,7 +19,7 @@ image:
 
 description:
 
-
+AWS Serverless study notes for helping you build your Serverless app.
 
 ---
 body:
@@ -64,17 +64,88 @@ This is Amazon version of MySQL, where the database will automatically start up 
 
 CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a `template.yaml` file and it has an good [documentation on how to use it](https://docs.aws.amazon.com/cloudformation/).
 
-#### SNS
+#### [SNS](https://aws.amazon.com/sns/)
+
+![Create SNS Topic on CloudFormation example](../../assets/static/images/aws-topic.png)
+
+Amazon Simple Notification Service provides a fully managed service using emails and mobile push notifications.
+
+And with a simple Python function, using `boto3` library, you'll be able to send message to the topic you just created (triggering emails or push notifications):
+
+```python
+def publish_to_sns(message, details):
+    try:
+        client = boto3.client('sns')
+        topicName = 'EmailTopic'
+
+        return client.publish(
+            TopicArn=topicName,
+            Message=f'{message} - {details}',
+        )
+    except Exception as e:
+        print(f"Failed to publish to sns {e}")
+```
+
+
+
+#### [S3](https://aws.amazon.com/en/s3/)
+
+![API Gateway on CloudFormation example](../../assets/static/images/aws-s3.png)
+
+Hosts web application static assets, and can be configured to be served through CloudFront. It can also be used to store user uploaded content, and can be accessed through your Lambda functions code using `boto3` Python library.
+
+```python
+def create_file(filename, content, bucket = 'S3-Bucket'):
+        return = self.s3.put_object(
+            Bucket= 'S3-Bucket',
+            Key=filename,
+            Body=bytes(str(content), "utf-8"),
+        )
+```
+
+```python
+def get_file(self, filename, bucket = 'S3-Bucket'):
+    return self.s3.get_object(Bucket='S3-Bucket', Key=filename)["Body"]
+        .read()
+        .decode("utf-8")
+```
+
+```python
+    def create_presigned_url(self, filename, bucket = 'S3-Bucket', expiration=3600):        
+        return self.s3.generate_presigned_url(
+            "get_object",
+            Params={"Bucket": 'S3-Bucket', "Key": filename},
+            ExpiresIn=expiration,
+        )
+```
+
+
 
 #### API Gateway
 
-#### Cognito
+![API Gateway on CloudFormation example](../../assets/static/images/api-gateway.png)
+
+You can run and manage an REST API that integrates with your Lambda functions to execute business logic, send and retrieve data to the database, includes traffic management, monitoring and API versioning. 
+
+The API Gateway is also used to [manage cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-api-corsconfiguration.html) for your API, configure custom [error responses](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html) and restrict access to your app to only some IP address (useful when you're developing an internal application that will going to be used only via VPN access).
+
+![API Gateway IP restriction on CloudFormation example](../../assets/static/images/api-gateway-restrict-access-ip.png)
+
+#### [Cognito](https://aws.amazon.com/en/cognito/)
+
+AWS Cognito is used for user management and as a identity provider. This tool can be used to manage user sign-up, sign-in, authorization, user groups and also provide built-in sign-in screens and federations (Facebook, Google, Amazon, SAML).
+
+- [Sessions With SAM (S1E2): Cognito and HTTP API](https://www.youtube.com/watch?v=nBtWCjKd72M&)
+- [AWS SAM API with Cognito](https://tenmilesquare.com/aws-sam-api-with-cognito/)
+
+### [CloudFormation Designer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html)
+
+After a while building your application, you will be able to create a diagram describing it. To do that, you'll need to upload your `template.yaml` file into [AWS CloudFormation Designer](https://console.aws.amazon.com/cloudformation/designer). It's a nice way to demonstrate how your application work for the stakeholders of the project.
 
 ### References
 
 - [AWS Well Architected Patterns](https://cdkpatterns.com/patterns/well-architected/)
 - [Serverless Lens Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Serverless-Applications-Lens.pdf)
-- 
 
 
 
