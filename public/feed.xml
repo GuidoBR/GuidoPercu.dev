@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Guido Percu</title>
   <id>urn:uuid:a55e93b9-4d3e-374b-98d0-6266da7407f3</id>
-  <updated>2020-07-15T00:00:00Z</updated>
+  <updated>2020-07-08T00:00:00Z</updated>
   <link href="https://guidopercu.dev/blog/" />
   <link href="https://guidopercu.dev/feed.xml" rel="self" />
   <author>
@@ -12,7 +12,7 @@
   <entry xml:base="https://guidopercu.dev/blog/serverless-on-amazon-aws/">
     <title type="text">Serverless Applications on Amazon AWS</title>
     <id>urn:uuid:cc0dea24-9f97-37f7-93f2-9eec349b86ec</id>
-    <updated>2020-07-15T00:00:00Z</updated>
+    <updated>2020-07-08T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/serverless-on-amazon-aws/" />
     <author>
       <name>Guido Percú</name>
