@@ -3009,7 +3009,7 @@ img[src*="#float-left"] {
 		@media screen and (max-width: 1680px) {
 
 			.blog-post img, .gist {
-				max-width: 1250px;
+				max-width: 100%;
 			}
 
 			.posts article {
