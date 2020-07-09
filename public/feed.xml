@@ -37,7 +37,7 @@
 &lt;h3&gt;SAM - Serverless Application Model&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/awslabs/serverless-application-model&quot;&gt;SAM&lt;/a&gt; is the framework from Amazon to help you &lt;a href=&quot;https://www.guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/&quot;&gt;build Serverless application on AWS&lt;/a&gt;. Combining &lt;a href=&quot;https://github.com/awslabs/aws-sam-cli&quot;&gt;sam-cli&lt;/a&gt; with &lt;a href=&quot;https://github.com/boto/boto3&quot;&gt;boto3 (Python library)&lt;/a&gt;, you have a powerful environment to build Serverless applications.&lt;/p&gt;
 &lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/pt/cloudformation/&quot;&gt;CloudFormation&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;../../static/images/cloudformation.png&quot; alt=&quot;CloudFormation example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/GuidoBR/aws-sam-hello-world/blob/master/template.yaml&quot;&gt;&lt;img src=&quot;../../static/images/cloudformation.png&quot; alt=&quot;CloudFormation example&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a &lt;code&gt;template.yaml&lt;/code&gt; file and it has an good &lt;a href=&quot;https://docs.aws.amazon.com/cloudformation/&quot;&gt;documentation on how to use it&lt;/a&gt;.&lt;/p&gt;
 &lt;h4&gt;&lt;a href=&quot;https://aws.amazon.com/sns/&quot;&gt;SNS&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;../../static/images/aws-topic.png&quot; alt=&quot;Create SNS Topic on CloudFormation example&quot;&gt;&lt;/p&gt;

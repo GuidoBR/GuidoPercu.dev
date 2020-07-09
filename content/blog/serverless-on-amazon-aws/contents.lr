@@ -60,7 +60,7 @@ This is Amazon version of MySQL, where the database will automatically start up 
 
 #### [CloudFormation](https://aws.amazon.com/pt/cloudformation/)
 
-![CloudFormation example](../../../static/images/cloudformation.png)
+[![CloudFormation example](../../../static/images/cloudformation.png)](https://github.com/GuidoBR/aws-sam-hello-world/blob/master/template.yaml)
 
 CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a `template.yaml` file and it has an good [documentation on how to use it](https://docs.aws.amazon.com/cloudformation/).
 
