@@ -115,6 +115,29 @@ article { width: 100% !important; }
                         <div class="shelf-shadows"></div>
                         <div class="shelf"></div>
                 </article>
+                <article>
+                        <div class="bookshelf">
+                                <div class="book-grid">
+                                        <ul>
+                                        {% for book in [
+                                                {'image': 'book-nudge.jpg','title': 'Nudge: Improving Decisions About Health, Wealth, and Happinesss', 'url': 'https://www.amazon.com/Nudge-Improving-Decisions-Health-Happiness-ebook/dp/B00A5DCALY/'},
+                                                {'image': 'book-thinking-fast-and-slow.jpg','title': 'Thinking, Fast and Slow', 'url': 'https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman-ebook/dp/B00555X8OA/'},
+                                        ] %}
+                                        <li>
+                                                <a href="{{ book.url }}">
+                                                        <img src="/static/images/{{ book.image }}" alt="{{ book.title }}" class="book-image">
+                                                </a>
+                                                <p class="book-description">
+                                                        <a href="{{ book.url }}">{{ book.title }}</a> {% if book.notes %} <br> <em><a href="{{ book.notes }}">(my notes)</a></em> {% endif %}
+                                                </p>
+                                        </li>
+                                        {% endfor %}
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="shelf-shadows"></div>
+                        <div class="shelf"></div>
+                </article>
         </div>
 </section>
 {% endblock %}
