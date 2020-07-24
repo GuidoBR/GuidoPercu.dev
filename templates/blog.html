@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post, render_blog_post_summary, render_blog_post_with_images %}
+{% from "macros/blog.html" import render_blog_post, render_blog_post_summary, render_blog_post_grid %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}Blog - Guido Luz Percú{% endblock %}
 {% block body %}
@@ -10,9 +10,13 @@
                                 <h2> Blog: </h2>
                         </header>
 
+                <section>
+                        <div class="posts">
                 {% for child in this.pagination.items %}
-                {{ render_blog_post_with_images(child, from_index=true) }}
+                        {{ render_blog_post_grid(child, from_index=true) }}
                 {% endfor %}
+                        </div>
+                </section>
 
                 {{ render_pagination(this.pagination) }}
         </div>
