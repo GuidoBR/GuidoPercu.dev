@@ -42,7 +42,9 @@
 
 {% macro render_blog_post_grid(post, from_index=false) %}
   <article class="blog-post">
-    <a href="{{ post|url }}" class="image"><img width="300px" data-src="{{ post.image }}" class="lazyload" alt="{{ post.title }}" /></a>
+    {% if post.image %}
+      <a href="{{ post|url }}" class="image"><img width="300px" data-src="{{ post.image }}" class="lazyload" alt="{{ post.title }}" /></a>
+    {% endif %}
     <h3><a href="{{ post|url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
     <h6 class="meta"><a href="https://twitter.com/{{ post.twitter_handle }}">{{ post.author or post.twitter_handle }}</a> | {{ post.pub_date|dateformat('long') }}</h6>
     <p>{{ post.description }}</p>
