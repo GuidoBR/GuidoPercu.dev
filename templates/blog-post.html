@@ -4,11 +4,13 @@
 
 {% block meta %}
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="@oumguido" />
-<!--<meta property="og:url" content="{{ ''|url }}" />-->
+<meta name="twitter:creator" content="{{ this.twitter_handle }}" />
+<meta name="author" content="{{ this.author }}"> 
+<meta property="og:url" content="{{ ''|url }}" />
 <meta property="og:title" content="{{ this.title }}" />
 <meta property="og:description" content="{{ this.description }}" />
 <meta property="og:image" content="{{ this.image }}" />
+<meta name='date' content='{{ this.pub_date }}'>
 {% endblock %}
 
 {% block body %}
