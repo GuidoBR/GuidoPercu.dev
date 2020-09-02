@@ -2,13 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Guido Percu</title>
   <id>urn:uuid:a55e93b9-4d3e-374b-98d0-6266da7407f3</id>
-  <updated>2020-07-31T00:00:00Z</updated>
+  <updated>2020-09-05T00:00:00Z</updated>
   <link href="https://guidopercu.dev/blog/" />
   <link href="https://guidopercu.dev/feed.xml" rel="self" />
   <author>
     <name></name>
   </author>
   <generator uri="https://github.com/ajdavis/lektor-atom" version="0.3.1">Lektor Atom Plugin</generator>
+  <entry xml:base="https://guidopercu.dev/blog/5-newsletters-for-software-engineers/">
+    <title type="text">5 Newsletters Every Software Engineer Should Subscribe</title>
+    <id>urn:uuid:72daf9e9-0ff4-3c4b-a2d9-54d767e95589</id>
+    <updated>2020-09-05T00:00:00Z</updated>
+    <link href="https://guidopercu.dev/blog/5-newsletters-for-software-engineers/" />
+    <author>
+      <name>Guido Percú</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;../../static/images/newsletters.jpg&quot; alt=&quot;Newsletters&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Newsletter that always provide high value when it reaches my email box.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://hackernewsletter.com/&quot;&gt;Hacker Newsletter&lt;/a&gt; - Curated links from Hackernews&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.blog/newsletter/&quot;&gt;The Overflow&lt;/a&gt; - A newsletter by developers, for developers, curated by &lt;a href=&quot;https://cassidoo.co/&quot;&gt;Cassidy Williams&lt;/a&gt; and the &lt;a href=&quot;https://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; team.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://programmingdigest.net/&quot;&gt;Programming Digest&lt;/a&gt; - Weekly news for busy techies with the five most interesting stories in programming 👩‍💻, data 💾, and technology 📱.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pointer.io/&quot;&gt;Pointer&lt;/a&gt; - A Reading Club For Software Developers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://insights.toshotrajanov.com/&quot;&gt;CTO Insights&lt;/a&gt; - CTOs weekly readings on software engineering&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   <entry xml:base="https://guidopercu.dev/blog/8-best-reads-of-2019/">
     <title type="text">8 Best Books I have Read in 2019</title>
     <id>urn:uuid:a7dac897-05a9-3b60-8280-2c8adf083fda</id>
