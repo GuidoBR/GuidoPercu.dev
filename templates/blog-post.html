@@ -3,10 +3,11 @@
 {% block title %}{{ this.title }} - Guido Luz Percú Blog{% endblock %}
 
 {% block meta %}
+<link rel="canonical" href="{{ 'https://www.guidopercu.dev' + this.url_path }}" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="{{ this.twitter_handle }}" />
 <meta name="author" content="{{ this.author }}"> 
-<meta property="og:url" content="{{ ''|url }}" />
+<meta property="og:url" content="{{ 'https://www.guidopercu.dev' + this.url_path }}" />
 <meta property="og:title" content="{{ this.title }}" />
 <meta property="og:description" content="{{ this.description }}" />
 <meta property="og:image" content="{{ this.image }}" />
