@@ -1,8 +1,8 @@
 title:
-Essays Every Programmer Should Know
+Essays for Programmers
 ---
 pub_date:
-2020-08-31
+2020-11-10
 ---
 author:
 Guido Percú
@@ -18,7 +18,7 @@ image:
 
 ---
 description:
-Essays are very powerful ways of transmitting profound ideas. Those are some of the essays that had more impact on my career.
+Essays are very powerful ways of transmitting profound ideas. Those are books, articles and essays that had the most impact on my career.
 
 ---
 body:
@@ -70,11 +70,9 @@ More essays like this can be found on [Awesome Falsehood](https://github.com/kde
 
 ------
 
-*Considered harmful* was popularized among computer scientists by [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)'s letter "Go To Statement Considered Harmful", published in the March 1968 *Communications of the [ACM](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery)* (CACM), in which he criticized the excessive use of the [GOTO](https://en.wikipedia.org/wiki/GOTO) [statement](https://en.wikipedia.org/wiki/Statement_(programming)) in [programming languages](https://en.wikipedia.org/wiki/Programming_language) of the day and advocated [structured programming](https://en.wikipedia.org/wiki/Structured_programming) instead.[[5\]](https://en.wikipedia.org/wiki/Considered_harmful#cite_note-5) The original title of the letter, as submitted to CACM, was "A Case Against the Goto Statement", but CACM editor [Niklaus Wirth](https://en.wikipedia.org/wiki/Niklaus_Wirth) changed the title to "Go To Statement Considered Harmful". Regarding this new title, [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) quipped that "[Dr. Goto](https://en.wikipedia.org/wiki/Eiichi_Goto) cheerfully complained that he was always being eliminated."
+<blockquote class="otro-blockquote"> For a number of years I have been familiar with the observation that the quality of programmers is a decreasing function of the density of go to statements in the programs they produce.</blockquote>
 
-Frank Rubin published a criticism of Dijkstra's letter in the March 1987 CACM where it appeared under the title "'GOTO Considered Harmful' Considered Harmful". The May 1987 CACM printed further replies, both for and against, under the title "'"GOTO Considered Harmful" Considered Harmful' Considered Harmful?". Dijkstra's own response to this controversy was titled *On a Somewhat Disappointing Correspondence*
-
-Original essay can be read on [Edgar Dijkstra: Go To Statement Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf). Meyer explains why ["Considered Harmful" Essays are Considered Harmful](https://meyerweb.com/eric/comment/chech.html).
+[Edgar Dijkstra: Go To Statement Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf). Meyer explains why ["Considered Harmful" Essays are Considered Harmful](https://meyerweb.com/eric/comment/chech.html).
 
 ------
 
@@ -85,6 +83,20 @@ Joel Spolsky on his "[12 Steps to Better Code](https://www.joelonsoftware.com/20
 I also recommend reading "[Can Your Programming Language do this](https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/)", "[Getting your resume read](https://www.joelonsoftware.com/2004/01/26/getting-your-resume-read/)", "[Advice for Computer Science College Students](https://www.joelonsoftware.com/2005/01/02/advice-for-computer-science-college-students/)", "[Things you should never do](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)" and "[The Absolute Minimum Every Sofware Developer Absolutely Positively Must Know About Unicode and Character Sets: No Excuses](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)"
 
 ------
+
+[How to Build a Strong Career in Tech](https://www.linkedin.com/pulse/how-build-strong-career-tech-thiago-ghisi/) by [Thiago Ghisi](https://twitter.com/thiagoghisi/), this article is based on a excellent [talk at The Conf](https://www.youtube.com/watch?v=qoqkrLLIvyI). There is some great advice on how to manage your career that can be learned from this article.
+
+<blockquote class="otro-blockquote">You will be good at everything that you put the effort into.<br><br>
+
+Do you want to be a better leader? Put the effort into it. How? Do the  work that nobody is doing but that is critical for success.<br><br>
+
+The more meetings you facilitate, the better you will be at it.<br><br>
+
+The more critical communication you do, the better you will be at it.<br><br>
+
+The more feedback you give, the more comfortable and skilled you will be next time you need to give feedback to someone.</blockquote>
+
+----------
 
 [Paul Graham](https://twitter.com/paulg) is a programmer and investor who writes some of my favorite [essays](http://paulgraham.com/articles.html). A short list of the most influentional on my way of thinking:
 
@@ -103,11 +115,13 @@ I also recommend reading "[Can Your Programming Language do this](https://www.jo
 
 ------
 
-On *[Why the next language you learn should be functional](http://queue.acm.org/detail.cfm?id=2038036) Y*aron Minsky argues in favor of functional programming.
+On *[Why the next language you learn should be functional](http://queue.acm.org/detail.cfm?id=2038036) Yaron Minsky argues in favor of functional programming.
 
 <blockquote class="otro-blockquote">"I've been using OCaml in a production environment for nearly a decade, and over that time I have become convinced that functional languages, and in particular, statically typed ones such as OCaml and Haskell, are excellent general-purpose programming tools—better than any existing mainstream language. They also have an enormous range, being well suited for small scripting tasks as well as large-scale high-performance applications. They are not the right tool for every job, but they come surprisingly close."</blockquote>
 
 ------
+
+[Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) is considered the father of Computer Science and a personal hero.
 
 <article>
   <div class="bookshelf">
@@ -130,7 +144,7 @@ On *[Why the next language you learn should be functional](http://queue.acm.org/
                                     <a href="http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf" target="_blank">On computable numbers, with an application to the Entscheidungsproblem</a>
                             </p>
                     </li>
-
+    
                     <li>
                             <a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055" target="_blank">
                                     <img src="/static/images/book-turing.jpg" alt="The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine" class="book-image">
