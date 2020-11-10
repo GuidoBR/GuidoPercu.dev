@@ -2,13 +2,120 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Guido Percu</title>
   <id>urn:uuid:a55e93b9-4d3e-374b-98d0-6266da7407f3</id>
-  <updated>2020-09-29T00:00:00Z</updated>
+  <updated>2020-11-10T00:00:00Z</updated>
   <link href="https://guidopercu.dev/blog/" />
   <link href="https://guidopercu.dev/feed.xml" rel="self" />
   <author>
     <name></name>
   </author>
   <generator uri="https://github.com/ajdavis/lektor-atom" version="0.3.1">Lektor Atom Plugin</generator>
+  <entry xml:base="https://guidopercu.dev/blog/essays-for-programmers/">
+    <title type="text">Essays for Programmers</title>
+    <id>urn:uuid:af4a7ea9-436e-30c0-81a2-d1763ac867a4</id>
+    <updated>2020-11-10T00:00:00Z</updated>
+    <link href="https://guidopercu.dev/blog/essays-for-programmers/" />
+    <author>
+      <name>Guido Percú</name>
+    </author>
+    <content type="html">&lt;style&gt;
+article { width: 100% !important; }        
+.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
+.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
+.book-grid ul li {  padding-left: 1.5em; }
+.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1.0em; padding: 5px;}
+.book-description a { color: #fff; }
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
+.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
+}
+
+.book-grid ul li .book-description { display: none; }
+.book-grid ul li:hover img { display: none; }
+.book-grid ul li:hover { margin-bottom: -3em !important; }
+.book-grid ul li:hover .book-description { display: block; }
+
+@media screen and (max-width: 1024px) {
+        .book-grid ul { grid-template-columns: repeat(3, 1fr); }
+        .book-grid ul li {  padding-left: 1.0em; }
+}
+
+@media screen and (max-width: 800px) {
+        .book-grid ul { grid-template-columns: repeat(1, 1fr); }
+        .book-grid ul li {  padding-bottom: 1.5em; }
+        .shelf-shadows, .shelf { display: none;}
+        article { margin-bottom: -5em !important; }
+}
+&lt;/style&gt;&lt;p&gt;&lt;img src=&quot;/static/images/essays-on-programming-large.png&quot; alt=&quot;Essays on Programming&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Peter Norvig &quot;&lt;a href=&quot;https://norvig.com/21-days.html&quot;&gt;Teach Yourself Programming in Ten Years&lt;/a&gt;&quot; is a classic. Read it if you ever found yourself in a hurry to learn a new language or the most hyped Javascript framework.&lt;/p&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt; &quot;Get interested in programming, and do some because it is fun. Make sure that it keeps being enough fun so that you will be willing to put in your ten years&quot;&lt;/blockquote&gt;&lt;hr&gt;
+&lt;p&gt;Patrick Mckenzie on &quot;&lt;a href=&quot;https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/&quot;&gt;Falsehoods Programmers Believe About Names&lt;/a&gt;&quot;.&lt;/p&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt;I have lived in Japan for several years, programming in a professional capacity, and I have broken many systems by the simple expedient of being introduced into them. (Most people call me Patrick McKenzie, but I’ll acknowledge as correct any of six different “full” names, any many systems I deal with will accept precisely none of them.) Similarly, I’ve worked with Big Freaking Enterprises which, by dint of doing business globally, have theoretically designed their systems to allow all names to work in them. I have never seen a computer system which handles names properly and doubt one exists, anywhere.&lt;/blockquote&gt;&lt;p&gt;More essays like this can be found on &lt;a href=&quot;https://github.com/kdeldycke/awesome-falsehood&quot;&gt;Awesome Falsehood&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt; For a number of years I have been familiar with the observation that the quality of programmers is a decreasing function of the density of go to statements in the programs they produce.&lt;/blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf&quot;&gt;Edgar Dijkstra: Go To Statement Considered Harmful&lt;/a&gt;. Meyer explains why &lt;a href=&quot;https://meyerweb.com/eric/comment/chech.html&quot;&gt;&quot;Considered Harmful&quot; Essays are Considered Harmful&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Joel Spolsky on his &quot;&lt;a href=&quot;https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/&quot;&gt;12 Steps to Better Code&lt;/a&gt;&quot; shares his experiences on what we should measure to improve the quality of our own software team.&lt;/p&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt;Of course, these are not the only factors that determine success or failure: in particular, if you have a great software team working on a product that nobody wants, well, people aren’t going to want it. And it’s possible to imagine a team of “gunslingers” that doesn’t do any of this stuff that still manages to produce incredible software that changes the world. But, all else being equal, if you get these 12 things right, you’ll have a disciplined team that can consistently deliver.&lt;/blockquote&gt;&lt;p&gt;I also recommend reading &quot;&lt;a href=&quot;https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/&quot;&gt;Can Your Programming Language do this&lt;/a&gt;&quot;, &quot;&lt;a href=&quot;https://www.joelonsoftware.com/2004/01/26/getting-your-resume-read/&quot;&gt;Getting your resume read&lt;/a&gt;&quot;, &quot;&lt;a href=&quot;https://www.joelonsoftware.com/2005/01/02/advice-for-computer-science-college-students/&quot;&gt;Advice for Computer Science College Students&lt;/a&gt;&quot;, &quot;&lt;a href=&quot;https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/&quot;&gt;Things you should never do&lt;/a&gt;&quot; and &quot;&lt;a href=&quot;https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/&quot;&gt;The Absolute Minimum Every Sofware Developer Absolutely Positively Must Know About Unicode and Character Sets: No Excuses&lt;/a&gt;&quot;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/how-build-strong-career-tech-thiago-ghisi/&quot;&gt;How to Build a Strong Career in Tech&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/thiagoghisi/&quot;&gt;Thiago Ghisi&lt;/a&gt;, this article is based on a excellent &lt;a href=&quot;https://www.youtube.com/watch?v=qoqkrLLIvyI&quot;&gt;talk at The Conf&lt;/a&gt;. There is some great advice on how to manage your career that can be learned from this article.&lt;/p&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt;You will be good at everything that you put the effort into.&lt;br&gt;&lt;br&gt;
+
+Do you want to be a better leader? Put the effort into it. How? Do the  work that nobody is doing but that is critical for success.&lt;br&gt;&lt;br&gt;
+
+The more meetings you facilitate, the better you will be at it.&lt;br&gt;&lt;br&gt;
+
+The more critical communication you do, the better you will be at it.&lt;br&gt;&lt;br&gt;
+
+The more feedback you give, the more comfortable and skilled you will be next time you need to give feedback to someone.&lt;/blockquote&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/paulg&quot;&gt;Paul Graham&lt;/a&gt; is a programmer and investor who writes some of my favorite &lt;a href=&quot;http://paulgraham.com/articles.html&quot;&gt;essays&lt;/a&gt;. A short list of the most influentional on my way of thinking:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://paulgraham.com/hp.html&quot;&gt;Hackers and Painters&lt;/a&gt; - that is also the title of &lt;a href=&quot;http://paulgraham.com/hackpaint.html&quot;&gt;his book&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;&lt;h3&gt;&lt;strong&gt;Hacking&lt;/strong&gt; and &lt;strong&gt;painting&lt;/strong&gt; have a lot in common. In fact, of all the different types of people I've known, hackers and painters are among the most alike.&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://paulgraham.com/makersschedule.html&quot;&gt;Maker's Schedule, Manager's Schedule&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt;One reason programmers dislike meetings so much is that they're on a different type of schedule from other people. Meetings cost them more.
+&lt;br&gt;There are two types of schedule, which I'll call the manager's schedule and the maker's schedule. The manager's schedule is for bosses. It's embodied in the traditional appointment book, with each day cut into one hour intervals. You can block off several hours for a single task if you need to, but by default you change what you're doing every hour.&lt;/blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://paulgraham.com/writing44.html&quot;&gt;Writing, Briefly&lt;/a&gt; and &lt;a href=&quot;http://paulgraham.com/useful.html&quot;&gt;How to Write Usefully&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;h3&gt;I think it's far more important to write well than most people realize. &lt;strong&gt;Writing doesn't just communicate ideas; it generates them.&lt;/strong&gt; If you're bad at writing and don't like to do it, you'll miss out on most of the ideas writing would have generated.&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;On *&lt;a href=&quot;http://queue.acm.org/detail.cfm?id=2038036&quot;&gt;Why the next language you learn should be functional&lt;/a&gt; Yaron Minsky argues in favor of functional programming.&lt;/p&gt;
+&lt;blockquote class=&quot;otro-blockquote&quot;&gt;&quot;I've been using OCaml in a production environment for nearly a decade, and over that time I have become convinced that functional languages, and in particular, statically typed ones such as OCaml and Haskell, are excellent general-purpose programming tools—better than any existing mainstream language. They also have an enormous range, being well suited for small scripting tasks as well as large-scale high-performance applications. They are not the right tool for every job, but they come surprisingly close.&quot;&lt;/blockquote&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Alan_Turing&quot;&gt;Alan Turing&lt;/a&gt; is considered the father of Computer Science and a personal hero.&lt;/p&gt;
+&lt;article&gt;
+  &lt;div class=&quot;bookshelf&quot;&gt;
+          &lt;div class=&quot;book-grid&quot;&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;
+                            &lt;a href=&quot;http://www.abelard.org/turpap/turpap.htm&quot; target=&quot;_blank&quot;&gt;
+                                    &lt;img src=&quot;/static/images/paper-turing-1.png&quot; alt=&quot;Computing Machinery and Intelligence&quot; class=&quot;book-image&quot;&gt;
+                            &lt;/a&gt;
+                            &lt;p class=&quot;book-description&quot;&gt;
+                                    &lt;a href=&quot;http://www.abelard.org/turpap/turpap.htm&quot; target=&quot;_blank&quot;&gt;Computing Machinery and Intelligence&lt;/a&gt;
+                            &lt;/p&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                            &lt;a href=&quot;http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf&quot; target=&quot;_blank&quot;&gt;
+                                    &lt;img src=&quot;/static/images/paper-turing-2.jpg&quot; alt=&quot;On computable numbers, with an application to the Entscheidungsproblem&quot; class=&quot;book-image&quot;&gt;
+                            &lt;/a&gt;
+                            &lt;p class=&quot;book-description&quot;&gt;
+                                    &lt;a href=&quot;http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf&quot; target=&quot;_blank&quot;&gt;On computable numbers, with an application to the Entscheidungsproblem&lt;/a&gt;
+                            &lt;/p&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                            &lt;a href=&quot;https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055&quot; target=&quot;_blank&quot;&gt;
+                                    &lt;img src=&quot;/static/images/book-turing.jpg&quot; alt=&quot;The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine&quot; class=&quot;book-image&quot;&gt;
+                            &lt;/a&gt;
+                            &lt;p class=&quot;book-description&quot;&gt;
+                                    &lt;a href=&quot;https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055&quot; target=&quot;_blank&quot;&gt;The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine&lt;/a&gt;
+                            &lt;/p&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+          &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</content>
+  </entry>
   <entry xml:base="https://guidopercu.dev/blog/notes-on-the-almanack-of-naval-ravikant/">
     <title type="text">Notes on The Almanack of Naval Ravikant</title>
     <id>urn:uuid:02310593-856b-3f75-af8d-def3f42c5c7e</id>
