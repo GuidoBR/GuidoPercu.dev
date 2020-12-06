@@ -14,13 +14,12 @@
 <meta property="og:title" content="A Guide to Learnning Haskell" />
 <meta property="og:description" content="" />
 <meta itemprop="headline" content=""/>
-<meta property="og:image" content="" />
-<meta itemprop="thumbnailUrl" content="">
-<meta itemprop="thumbnailUrl" content="">
+<meta property="og:image" content="https://www.guidopercu.dev/static/images/computer.png" />
+<meta itemprop="thumbnailUrl" content="https://www.guidopercu.dev/static/images/computer.png">
 <meta name='date' content='2015-11-05'>
 <meta itemprop="datePublished" content='2015-11-05'/>
 <meta name="twitter:title" content="A Guide to Learnning Haskell"/>
-<meta name="twitter:image" content=""/>
+<meta name="twitter:image" content="https://www.guidopercu.dev/static/images/computer.png"/>
 <meta name="twitter:url" content="https://www.guidopercu.dev/blog/learning-haskell/"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:description" content=""/>
@@ -57,7 +56,7 @@
             "@id": "https://google.com/article"
           },
           "headline": "A Guide to Learnning Haskell",
-          "image": "",
+          "image": "/static/images/computer.png",
           "datePublished": "November 5, 2015",
           "dateModified": "November 5, 2015",
           "author": {
@@ -81,82 +80,7 @@
     
     on November 5, 2015
   </p>
-  <p><a href="https://www.haskell.org/" title="Haskell Language">Haskell</a> will change the way you think.</p>
-<blockquote><p>It gives you a new toolset with which to solve programming problems, often yielding very clean and elegant solutions to otherwise complex problems. - <a href="https://acm.wustl.edu/functional/whyfp.php">Why Study Functional Programming?</a></p>
-<p>It is my belief that functional languages, almost by definition, are closer to the top of the power spectrum than imperative ones. So languages can actually limit a programmers frame of thought. - <a href="https://wiki.haskell.org/Why_Haskell_matters">Why Haskell Matters?</a></p>
-</blockquote>
-<p>This is the most comprehensive guide I've ever found on <a href="http://stackoverflow.com/questions/1012573/getting-started-with-haskell">how to learn Haskell</a>. Enjoy.</p>
-<h2>Instalation</h2>
-<p>I have explained how to <a href="../../blog/haskell-stack-on-arch-linux/">install it in Arch in a recent article</a>. To install the Haskell platform on Debian systems, install the haskell-platform 
-package:</p>
-<pre><code>sudo apt-get install haskell-platform
-</code></pre>
-<p>For information about installing it in other systems, visit the <a href="http://www.haskell.org/platform/" title="Haskell platform installation guide">official documentation</a>.</p>
-<h3>Hello World!</h3>
-<pre><code>main = putStrLn "Hello World!"
-</code></pre>
-<p>Read more about IO in Haskell: <a href="http://learnyouahaskell.com/input-and-output" title="Learn Yourself a Haskell - Input and Output">Input and Output</a> | <a href="https://stackoverflow.com/questions/19288652/difference-between-print-and-putstrln-in-haskell" title="Stackoverflow: Differences between Print and PutStrLn">Print x PutStrLn</a></p>
-<h3>Fibonnaci (recursive)</h3>
-<pre><code>fib 0 = 0
-fib 1 = 1
-fib n = fib (n - 2) + fib (n - 1)
-</code></pre>
-<h3>Fatorial</h3>
-<pre><code>fatorial n = product [1..n]
-</code></pre>
-<h3>Books:</h3>
-<ul>
-<li><a href="http://www.amazon.com/Haskell-Programming-Second-Edition-Computing/dp/0954300696">Haskell road to logic math and programming</a></li>
-<li><a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good</a></li>
-</ul>
-<h3>Tutorials</h3>
-<ul>
-<li><a href="http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/">Haskell the Hard Way</a></li>
-<li><a href="http://lisperati.com/haskell/">Picnic App</a></li>
-<li><a href="http://dev.stephendiehl.com/fun/">Write you a Haskell</a></li>
-<li><a href="http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/">Git clone in Haskell</a></li>
-</ul>
-<h3>Courses:</h3>
-<ul>
-<li><a href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0">Introduction to Functional Programming</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL8eBmR3QtPL3pDzQpwPYfWQ4NEPGu6j7z">Curso Haskell para iniciantes, por Marcos Castro (pt-BR)</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLxj9UAX4Em-Ij4TKwKvo-SLp-Zbv-hB4B">Haskell From Scratch</a></li>
-<li><a href="https://www.edx.org/course/introduction-functional-programming-delftx-fp101x#.VDWTHFRdUsp">Introduction to Functional Programming - EDX</a></li>
-</ul>
-<h3>Tools</h3>
-<ul>
-<li><a href="http://www.haskell.org/hoogle/">Hoogle</a></li>
-<li><a href="https://hackage.haskell.org/package/HUnit">HUnit</a></li>
-<li><a href="http://hackage.haskell.org/package/QuickCheck">QucikCheck</a></li>
-<li><a href="http://www.haskell.org/cabal/">Cabal</a></li>
-<li><a href="http://hackage.haskell.org/">Hackage</a></li>
-</ul>
-<h3>Awesome</h3>
-<ul>
-<li><a href="https://github.com/krispo/awesome-haskell">Awesome Haskell</a></li>
-<li><a href="https://www.fpcasts.com/">FP Casts</a> - Your source for Functional Programing Related Podcasts</li>
-</ul>
-<h3>Web Frameworks</h3>
-<ul>
-<li><a href="http://happstack.com/page/view-page-slug/1/happstack">Happstack</a></li>
-<li><a href="http://snapframework.com/">Snap</a> | <a href="https://robots.thoughtbot.com/a-rest-api-with-haskell-and-snap">REST API with Haskell and Snap</a></li>
-<li><a href="http://www.yesodweb.com/">Yesod</a> | <a href="http://yannesposito.com/Scratch/en/blog/Yesod-tutorial-for-newbies/">Tutorial Yesod</a></li>
-<li><a href="http://www.haskell.org/haskellwiki/Web/Frameworks">Official List of Frameworks</a></li>
-</ul>
-<h3>Exercises</h3>
-<ul>
-<li><a href="http://www.hackerrank.com/">Hacker Rank</a></li>
-<li><a href="https://projecteuler.net/">Project Euler</a> | <a href="https://wiki.haskell.org/Euler_problems/1_to_10">Euler 1-10 Solutions in Haskell</a></li>
-</ul>
-<h3>More links</h3>
-<ul>
-<li><a href="https://www.fpcomplete.com/school">FP Complete School of Haskell</a></li>
-<li><a href="https://wiki.haskell.org/Functional_Reactive_Programming">Functional Reactive Programming</a></li>
-<li><a href="http://www.willamette.edu/~fruehr/haskell/evolution.html">Evolution of a Haskell Programmer</a></li>
-<li><a href="https://www.fpcomplete.com/school">FP Complete School of Haskell</a></li>
-<li><a href="http://c2.com/cgi/wiki?FunctionalProgrammingLanguage">C2 Wiki - Functional Programming Language</a></li>
-</ul>
-
+  
   </div>
 
                 </div>

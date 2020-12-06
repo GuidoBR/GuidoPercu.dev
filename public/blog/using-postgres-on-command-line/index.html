@@ -14,13 +14,12 @@
 <meta property="og:title" content="Using Postgres on command line" />
 <meta property="og:description" content="" />
 <meta itemprop="headline" content=""/>
-<meta property="og:image" content="" />
-<meta itemprop="thumbnailUrl" content="">
-<meta itemprop="thumbnailUrl" content="">
+<meta property="og:image" content="https://www.guidopercu.dev/static/images/computer.png" />
+<meta itemprop="thumbnailUrl" content="https://www.guidopercu.dev/static/images/computer.png">
 <meta name='date' content='2015-11-04'>
 <meta itemprop="datePublished" content='2015-11-04'/>
 <meta name="twitter:title" content="Using Postgres on command line"/>
-<meta name="twitter:image" content=""/>
+<meta name="twitter:image" content="https://www.guidopercu.dev/static/images/computer.png"/>
 <meta name="twitter:url" content="https://www.guidopercu.dev/blog/using-postgres-on-command-line/"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:description" content=""/>
@@ -57,7 +56,7 @@
             "@id": "https://google.com/article"
           },
           "headline": "Using Postgres on command line",
-          "image": "",
+          "image": "/static/images/computer.png",
           "datePublished": "November 4, 2015",
           "dateModified": "November 4, 2015",
           "author": {
@@ -81,22 +80,7 @@
     
     on November 4, 2015
   </p>
-  <p>Learn how to be productive in psql, Postgres command line interface.</p>
-<p>Postgres has a nice utility to work with database. You can modify the default behavior in your <em>~/.psqlrc</em> file.</p>
-<p><img src="../../static/images/psql-example.png" alt="Example of a customized PSQL Shell"></p>
-<pre><code>-- By default NULL displays an invisible character on the string.
--- Make it say "[NULL]"
-\pset null '[NULL]'
--- Ignore duplicated rows in the history log
-\set HISTCONTROL ignoredups
--- Autocomplete keywords in uppercase (SELECT, WHERE, ...)
-\set COMP_KEYWORD_CASE upper
--- Shows how much time it took to run the last query
-\timing
--- Formats the results of the query according to the width of your screen.
-\x auto'
-</code></pre>
-
+  
   </div>
 
                 </div>

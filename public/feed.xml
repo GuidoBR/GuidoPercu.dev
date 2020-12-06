@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Guido Percu</title>
-  <id>urn:uuid:a55e93b9-4d3e-374b-98d0-6266da7407f3</id>
+  <id>urn:uuid:d74313de-c66d-3e00-aaa7-1da976565563</id>
   <updated>2020-11-10T00:00:00Z</updated>
   <link href="https://guidopercu.dev/blog/" />
   <link href="https://guidopercu.dev/feed.xml" rel="self" />
@@ -11,7 +11,7 @@
   <generator uri="https://github.com/ajdavis/lektor-atom" version="0.3.1">Lektor Atom Plugin</generator>
   <entry xml:base="https://guidopercu.dev/blog/essays-for-programmers/">
     <title type="text">Essays for Programmers</title>
-    <id>urn:uuid:af4a7ea9-436e-30c0-81a2-d1763ac867a4</id>
+    <id>urn:uuid:351a0b2c-a206-386a-9102-aa601a75cad9</id>
     <updated>2020-11-10T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/essays-for-programmers/" />
     <author>
@@ -120,7 +120,7 @@ The more feedback you give, the more comfortable and skilled you will be next ti
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/notes-on-the-almanack-of-naval-ravikant/">
     <title type="text">Notes on The Almanack of Naval Ravikant</title>
-    <id>urn:uuid:02310593-856b-3f75-af8d-def3f42c5c7e</id>
+    <id>urn:uuid:60601185-2b22-3a7d-ba6e-0aaf12b7e59a</id>
     <updated>2020-09-29T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/notes-on-the-almanack-of-naval-ravikant/" />
     <author>
@@ -478,7 +478,7 @@ them.
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/5-newsletters-for-software-engineers/">
     <title type="text">5 Newsletters Every Software Engineer Should Subscribe</title>
-    <id>urn:uuid:72daf9e9-0ff4-3c4b-a2d9-54d767e95589</id>
+    <id>urn:uuid:862e60a6-de08-37ac-bb8d-1fb8d6168979</id>
     <updated>2020-09-05T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/5-newsletters-for-software-engineers/" />
     <author>
@@ -497,7 +497,7 @@ them.
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/8-best-reads-of-2019/">
     <title type="text">8 Best Books I have Read in 2019</title>
-    <id>urn:uuid:a7dac897-05a9-3b60-8280-2c8adf083fda</id>
+    <id>urn:uuid:9613caed-4177-3609-a7fd-26f671c9ebdd</id>
     <updated>2020-07-31T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/8-best-reads-of-2019/" />
     <author>
@@ -573,7 +573,7 @@ Half a century after the Doomsday Battle, the uneasy balance of Dark Forest Dete
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/notes-on-the-essential-hayek/">
     <title type="text">Notes on The Essential Hayek</title>
-    <id>urn:uuid:416e1aa5-0a41-3cbb-a322-d30c7691a83c</id>
+    <id>urn:uuid:048c826e-d8c9-3d14-800d-02561173d2f1</id>
     <updated>2020-07-12T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/notes-on-the-essential-hayek/" />
     <author>
@@ -731,7 +731,7 @@ make the economy appear to be healthier than it really is, while the costs of cr
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/serverless-on-amazon-aws/">
     <title type="text">Serverless Applications on Amazon AWS</title>
-    <id>urn:uuid:cc0dea24-9f97-37f7-93f2-9eec349b86ec</id>
+    <id>urn:uuid:aacbd4d0-cb61-3a05-b7b1-fa2e4e313436</id>
     <updated>2020-07-08T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/serverless-on-amazon-aws/" />
     <author>
@@ -789,7 +789,7 @@ make the economy appear to be healthier than it really is, while the costs of cr
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/bioinformatics-algorithms-an-introduction/">
     <title type="text">Bioinformatics Algorithms - an introduction</title>
-    <id>urn:uuid:2d634133-aaf4-35a5-ba6e-bf506c872ecf</id>
+    <id>urn:uuid:05a46470-1bba-3a91-aeb5-8e3a46475972</id>
     <updated>2020-06-14T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/bioinformatics-algorithms-an-introduction/" />
     <author>
@@ -898,7 +898,7 @@ make the economy appear to be healthier than it really is, while the costs of cr
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/dynamodb-on-aws-sam/">
     <title type="text">Connect a Serverless AWS SAM application to DynamoDB</title>
-    <id>urn:uuid:19b95927-4fe1-3a4c-aeea-95a2a6fb30ad</id>
+    <id>urn:uuid:f8b1628a-c3c3-3d26-a600-f4cdc66b0270</id>
     <updated>2020-06-07T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/dynamodb-on-aws-sam/" />
     <author>
@@ -960,7 +960,7 @@ Resources:
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/rapid-prototyping-a-rest-api/">
     <title type="text">Rapid prototyping a REST API with json-server</title>
-    <id>urn:uuid:5dd37eef-0d23-33ae-a725-9cc2c7b25613</id>
+    <id>urn:uuid:a1aacb58-0781-3c76-a891-65badecc34b1</id>
     <updated>2020-05-24T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/rapid-prototyping-a-rest-api/" />
     <author>
@@ -999,7 +999,7 @@ npm i json-server
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/how-to-lie-with-statistics/">
     <title type="text">How to Lie with Statistics - The Well-Chosen Average explained with Python</title>
-    <id>urn:uuid:0976f1b3-a2ac-3d5d-8e36-82aff3d31566</id>
+    <id>urn:uuid:21113c9e-18b3-304c-803b-ce90990f4f44</id>
     <updated>2020-05-17T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/how-to-lie-with-statistics/" />
     <author>
@@ -1047,7 +1047,7 @@ Mode: R$ 2.000,00
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/jamstack-static-websites-on-modern-web/">
     <title type="text">JAM Stack: HTML/CSS/JS static websites on modern web</title>
-    <id>urn:uuid:2d20595f-34e0-320c-823a-29762e49053c</id>
+    <id>urn:uuid:53a84070-e6ab-3249-9750-0bcae9d88d79</id>
     <updated>2020-04-18T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/jamstack-static-websites-on-modern-web/" />
     <author>
@@ -1089,7 +1089,7 @@ Mode: R$ 2.000,00
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/">
     <title type="text">Build a Serverless Python API using AWS SAM</title>
-    <id>urn:uuid:ebdcbc5d-e4cc-31ac-a10a-6df193818a06</id>
+    <id>urn:uuid:e2c793f9-b6d0-3d71-9ae5-cd74d61f746a</id>
     <updated>2020-02-19T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/" />
     <author>
@@ -1208,7 +1208,7 @@ with AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, and Amazon Cogn
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/3-books-I-loved-in-2017/">
     <title type="text">3 Books I Loved in 2017</title>
-    <id>urn:uuid:5814db88-17c0-394a-a402-3a2df84c7ee0</id>
+    <id>urn:uuid:6b8b64a0-9cc9-384f-958d-98b7e12c46bb</id>
     <updated>2019-01-04T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/3-books-I-loved-in-2017/" />
     <author>
@@ -1240,7 +1240,7 @@ with AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, and Amazon Cogn
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/10-books-I-loved-in-2016/">
     <title type="text">10 Books I Loved in 2016</title>
-    <id>urn:uuid:ee15eec6-a567-3367-979b-ec70dc3d984a</id>
+    <id>urn:uuid:179c1efb-2c85-3a60-8d2b-9df7f8612226</id>
     <updated>2019-01-01T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/10-books-I-loved-in-2016/" />
     <author>
@@ -1330,7 +1330,7 @@ The greatest investment advisor of the twentieth century, Benjamin Graham, taugh
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/6-books-I-loved-in-2018/">
     <title type="text">6 Books I loved in 2018</title>
-    <id>urn:uuid:ef4404af-d40a-3f7c-80d8-2922cfbb1d4f</id>
+    <id>urn:uuid:b800f5c6-f978-3dde-b5af-c78ac845747b</id>
     <updated>2018-12-31T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/6-books-I-loved-in-2018/" />
     <author>
@@ -1377,34 +1377,16 @@ The greatest investment advisor of the twentieth century, Benjamin Graham, taugh
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/guia-investimentos-no-brasil/">
     <title type="text">Como começar a investir no Brasil: Uma introdução ao Tesouro Direto</title>
-    <id>urn:uuid:3972561b-0f50-3ba8-b048-fad25d3f499c</id>
+    <id>urn:uuid:23a5a433-6d8c-3440-b55e-6943913603dc</id>
     <updated>2018-04-08T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/guia-investimentos-no-brasil/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img src=&quot;../../static/images/piggy-2889042_640.jpg&quot; alt=&quot;Cofre porquinho&quot;&gt;&lt;/p&gt;
-&lt;p&gt;O que você precisa saber para começar a investir.&lt;/p&gt;
-&lt;h3&gt;Playlist - para quem gosta de aprender com vídeos&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=W1lqBLtZZpA&amp;amp;list=PL5vSn8ej1b0tpVDU7KempTPdW_QAPv4Dk&quot;&gt;TESOURO DIRETO! Entenda esta trolha da riqueza! - Me Poupe!&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Leituras - para quem quer ir mais a fundo.&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://queroficarrico.com/blog/tesouro-direto/&quot;&gt;Quero ficar Rico! - Tesouro Direto - O Guia Absolutamente Completo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.clubedospoupadores.com/tesouro-direto/como-comprar-titulos-publicos-passo-a-passo.html&quot;&gt;Clube dos Poupadores - Como comprar títulos públicos passo a passo: Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.clubedospoupadores.com/tesouro-direto/como-investir-no-tesouro-selic-lft.html&quot;&gt;Clube dos Poupadores - Como investir no tesouro direto Selic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.clubedospoupadores.com/tesouro-direto/taxa-semestral-tesouro-direto.html&quot;&gt;Clube dos Poupadores - Cobrança Semestral Taxa Tesouro Direto BMFBOVESPA&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Para ir além do Tesouro Direto...&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://rendafixa.rocks/&quot;&gt;App Renda Fixa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://bancodata.com.br/&quot;&gt;Banco Data&lt;/a&gt; - &lt;a href=&quot;http://www.clubedospoupadores.com/ferramentas/banco-confiavel.html&quot;&gt;Como usar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://bastter.com/mercado/iniciante.aspx#artigo_7&quot;&gt;Roteiro de Iniciante&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/markowitz-efficient-frontier-introduction-with-python/">
     <title type="text">Markowitz Efficient Frontier - An introduction with Python</title>
-    <id>urn:uuid:8c63b1ad-552b-3e95-b943-521918611df9</id>
+    <id>urn:uuid:0cd6f164-6d8b-309b-bc1f-6855a5b65424</id>
     <updated>2017-07-23T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/markowitz-efficient-frontier-introduction-with-python/" />
     <author>
@@ -1465,7 +1447,7 @@ plt.ylabel(&amp;#39;Expected Return&amp;#39;)
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/python-for-finance/">
     <title type="text">Python for Finance</title>
-    <id>urn:uuid:a13b645a-464e-3770-bcb7-a24a900d4291</id>
+    <id>urn:uuid:e86d59ee-f502-384a-86e2-795ad1631767</id>
     <updated>2017-07-08T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/python-for-finance/" />
     <author>
@@ -1489,78 +1471,16 @@ repository to download reports letters of great fund managers (Brazil and USA), 
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/learning-go/">
     <title type="text">Learning Go</title>
-    <id>urn:uuid:ffe69e68-68ac-3177-b65a-f7edd463be91</id>
+    <id>urn:uuid:61bef089-c432-3878-840b-8d5d71e72781</id>
     <updated>2016-11-20T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/learning-go/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;Why &lt;a href=&quot;https://golang.org/doc/faq#What_is_the_purpose_of_the_project&quot; title=&quot;FAQ Go - What is the purpose of the project?&quot;&gt;Go&lt;/a&gt;?&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;We believe it's worth trying again with a new language, a concurrent, garbage-collected language with fast compilation. Regarding the points above:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It is possible to compile a large Go program in a few seconds on a single computer.&lt;/li&gt;
-&lt;li&gt;Go provides a model for software construction that makes dependency analysis easy and avoids much of the overhead of C-style include files and libraries.&lt;/li&gt;
-&lt;li&gt;Go's type system has no hierarchy, so no time is spent defining the relationships between types. Also, although Go has static types the language attempts to make types feel lighter weight than in typical OO languages.&lt;/li&gt;
-&lt;li&gt;Go is fully garbage-collected and provides fundamental support for concurrent execution and communication.&lt;/li&gt;
-&lt;li&gt;By its design, Go proposes an approach for the construction of system software on multicore machines.  - &lt;a href=&quot;https://golang.org/doc/faq#What_is_the_purpose_of_the_project&quot; title=&quot;FAQ Go - What is the purpose of the project?&quot;&gt;Go Doc - What is the purpose of the project?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;Instalation&lt;/h2&gt;
-&lt;p&gt;On Arch Linux:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pacman -S go
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For information about installing it in other systems, visit the &lt;a href=&quot;https://golang.org/dl/&quot; title=&quot;Go download page&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Hello World!&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;package main
-import &quot;fmt&quot;
-
-func main() {
-    fmt.Println(&quot;hello world&quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&quot;https://gobyexample.com/hello-world&quot; title=&quot;Go By Example - Hello World in Go&quot;&gt;Go By Example - Hello world&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Fibonnaci (recursive)&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;func fibbRecc(number int) (numValue int){
-if number == 0 || number == 1 {
-    return number
-}
-
-return fibbRecc(number - 2) + fibbRecc(number -1)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Fatorial&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;func Factorial(n uint64)(result uint64) {
-if (n &amp;gt; 0) {
-    result = n * Factorial(n-1)
-    return result
-}
-return 1
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Books:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://buff.ly/2fw1tv0&quot;&gt;The Little Book of Go - By Karl Seguin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://buff.ly/2fw2Rhb&quot;&gt;An introduction to Programming in Go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://buff.ly/2fodKnB&quot;&gt;Go Doc&lt;/a&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Tutorials&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://buff.ly/2fw0zyq&quot;&gt;Go by Example&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Courses:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLSak_q1UXfPp2VwUQ4ZdUVJdMO6pfi5v_&quot;&gt;Build Web Apps with Golang&lt;/a&gt; - Youtube Playlist by Todd McLeod&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLSak_q1UXfPrI6D67NF8ajfeJ6f7MH83S&quot;&gt;Learn To Code - Golang Training&lt;/a&gt; - Youtube Playlist by Todd McLeod&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Awesome&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://awesome-go.com/&quot;&gt;Awesome Go&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/haskell-stack-on-arch-linux/">
     <title type="text">Haskell Stack on Arch Linux</title>
-    <id>urn:uuid:f853fde2-1b11-3896-8125-6d508f88efbe</id>
+    <id>urn:uuid:666f5ef2-2718-3297-93b4-ae89dd9533dd</id>
     <updated>2016-09-06T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/haskell-stack-on-arch-linux/" />
     <author>
@@ -1601,22 +1521,16 @@ Learn Haskell&lt;/a&gt;&lt;/p&gt;
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/installing-java-development-enviroment-arch-linux/">
     <title type="text">Instaling Java with JavaFX Development Enviroment on Arch Linux</title>
-    <id>urn:uuid:63d3df08-748e-3a79-978a-6c5aa5055154</id>
+    <id>urn:uuid:aa35b5a7-1ad2-3705-9d98-7bf76f1d9491</id>
     <updated>2016-08-18T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/installing-java-development-enviroment-arch-linux/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.jetbrains.com/help/idea/2016.1/preparing-for-javafx-application-development.html&quot;&gt;Steps to install Java JDK + Java FX Scenebuilder + InteliJ IDE&lt;/a&gt; on Arch Linux (with yaourt to access AUR):&lt;/p&gt;
-&lt;pre&gt;
-$ yaourt -S jdk
-$ yaourt -S javafx-scenebuilder-bin
-# pacman -S intellij-idea-community-edition
-&lt;/pre&gt;</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/introduction-to-programming/">
     <title type="text">Introduction to programming</title>
-    <id>urn:uuid:0ffb390a-9634-34f9-a492-9dd59c8200ba</id>
+    <id>urn:uuid:9896adb6-6f29-3e63-868f-fa44952473dc</id>
     <updated>2016-05-12T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/introduction-to-programming/" />
     <author>
@@ -1647,49 +1561,16 @@ build back-end support, and implement a fully functional application.&lt;/li&gt;
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/creating-web-apps-with-google-app-engine-using-tekton/">
     <title type="text">Creating web apps with Google App Engine and Tekton</title>
-    <id>urn:uuid:c959986b-f0f4-3ad5-9f7e-d15438faa02a</id>
+    <id>urn:uuid:5ff2d970-2206-37fc-8379-f1a2bd0d0ade</id>
     <updated>2016-05-11T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/creating-web-apps-with-google-app-engine-using-tekton/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;Google App Engine (GAE) is the cloud computing platform from Google, that enables you to host and develop applications using Python (2.7 only unfortunately) that easily scales, and cost &lt;a href=&quot;https://cloud.google.com/appengine/pricing&quot;&gt;just a few dollars&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Tekton&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/renzon/tekton/&quot;&gt;Tekton&lt;/a&gt; is a framework for web development, specially made to be used with Google App Engine.
-Using it, we can enjoy the best of Django (code scaffold, form validation from models, isolated apps) without losing the 
-scalability that GAE provides.&lt;/p&gt;
-&lt;p&gt;The first step is to download the &lt;a href=&quot;https://cloud.google.com/appengine/downloads&quot;&gt;Google App Engine SDK&lt;/a&gt;, and then we are ready to know Tekton.&lt;/p&gt;
-&lt;p&gt;After that, we will get to download the Tekton template application.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://github.com/renzon/tekton/archive/master.zip
-$ unzip master &amp;amp;&amp;amp; rm master.zip
-$ mv tekton-master projeto_appengine &amp;amp;&amp;amp; cd projeto_appengine
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;What it looks like:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;└── backend
- ├── appengine
- ├── apps
- ├── build_scripts
- ├── test
- └── venv
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I like to create a separate directory to hold frontend files, and use symlinks to get everything working. It's up to you.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ cd backend/venv/ &amp;amp;&amp;amp; ./venv.sh
-$ source ./bin/activate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;With the virtual enviroment ready, everything should be working. To test it, let's use the own server that comes with the GAE SDK before deploying our project.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ cd ../appengine
-$ dev_appserver.py .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It works! You should be seeing the template project at &lt;a href=&quot;../../blog/creating-web-apps-with-google-app-engine-using-tekton/localhost:8000&quot;&gt;localhost:8000&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To deploy it to GAE:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ appcfg.py update . --oauth2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can know more about the project at &lt;a href=&quot;https://github.com/renzon/tekton&quot;&gt;Github&lt;/a&gt; and the &lt;a href=&quot;https://groups.google.com/forum/#!forum/tekton-web&quot;&gt;e-mail list&lt;/a&gt;&lt;/p&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/i-have-installed-arch/">
     <title type="text">I have installed Arch Linux</title>
-    <id>urn:uuid:42240111-003f-390b-a6e2-97aeffae8a14</id>
+    <id>urn:uuid:4b5919b8-d7cd-3a5e-bcbb-92281c6870e8</id>
     <updated>2016-03-08T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/i-have-installed-arch/" />
     <author>
@@ -1740,7 +1621,7 @@ $ speaker-test -c2
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/how-to-optimize-your-static-github-page/">
     <title type="text">How to optimize your Github Page static site</title>
-    <id>urn:uuid:70d811cd-ed3c-3711-970e-0340e79d3f60</id>
+    <id>urn:uuid:9cf21ba2-767d-3f76-a833-f50684877bfe</id>
     <updated>2016-02-01T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/how-to-optimize-your-static-github-page/" />
     <author>
@@ -1775,273 +1656,70 @@ ab -n 1000 -c 500 http://www.yourdomain.com.br/
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/10-best-books-i-read-in-2015/">
     <title type="text">10 Best Books I have Read in 2015</title>
-    <id>urn:uuid:9b16068c-ce36-32be-9707-83276b521845</id>
+    <id>urn:uuid:b5e3cf72-542f-3315-8869-0bf8d4a86fda</id>
     <updated>2015-12-31T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/10-best-books-i-read-in-2015/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;../../blog/10-best-books-i-read-in-2015&quot;&gt;2015&lt;/a&gt; - &lt;a href=&quot;../../blog/10-books-I-loved-in-2016&quot;&gt;2016&lt;/a&gt; - &lt;a href=&quot;../../blog/3-books-i-loved-in-2017&quot;&gt;2017&lt;/a&gt; - &lt;a href=&quot;../../blog/6-books-I-loved-in-2018&quot;&gt;2018&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Favorite books read in 2015&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Side-World-Aubrey-Maturin-Novels/dp/0393308626&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/51URJ4Tky%2BL._SX329_BO1,204,203,200_.jpg&quot; alt=&quot;The Far Side of The World book cover&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Side-World-Aubrey-Maturin-Novels/dp/0393308626&quot;&gt;1- The Far Side of the World, by Patrick O Brian&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Tenth book from the series, the last book from the Master and Commander series by Patrick O Brian published in Brazil. I really enjoyed
-reading this series, it is like a old friend. This is not the best book, but it made me feel kinda sad when it finished.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454634696&amp;amp;sr=1-1&amp;amp;keywords=business+model+generation&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/61hdwArEEXL._SY392_BO1,204,203,200_.jpg&quot; alt=&quot;Business Model Generation&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454634696&amp;amp;sr=1-1&amp;amp;keywords=business+model+generation&quot;&gt;2- Business Model Generation&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;This book open my mind. I started seeing ideas and looking at business with a new perspective.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Innovators-Hackers-Geniuses-Created-Revolution/dp/147670869X/ref=sr_1_1?ie=UTF8&amp;amp;qid=1454675859&amp;amp;sr=8-1&amp;amp;keywords=THE+INNOVATORS%3A+HOW+A+GROUP+OF+INVENTORS%2C+HACKERS%2C+GENIUSES+AND+GEEKS+CREATED+THE+DIGITAL+REVOLUTION&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/519KsxAU05L._SX332_BO1,204,203,200_.jpg&quot; alt=&quot;The Innovators by Walter Isaacson&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Innovators-Hackers-Geniuses-Created-Revolution/dp/147670869X/ref=sr_1_1?ie=UTF8&amp;amp;qid=1454675859&amp;amp;sr=8-1&amp;amp;keywords=THE+INNOVATORS%3A+HOW+A+GROUP+OF+INVENTORS%2C+HACKERS%2C+GENIUSES+AND+GEEKS+CREATED+THE+DIGITAL+REVOLUTION&quot;&gt;3- The Innovators: How a Group of Inventors, Hackers, Geniuses and Geeks Created the Digital Revolution&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;I find it very important to know the history of the field we are working on. In this excellent book, Walter Isaacson tells the history of
-the digital revolution. From Ada Lovelace first programmer to Google and Wikipedia. Fascinating read.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/How-Create-Mind-Thought-Revealed/dp/0143124048/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676007&amp;amp;sr=1-1&amp;amp;keywords=how+to+create+a+mind&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/41PvWdPSBYL._SX324_BO1,204,203,200_.jpg&quot; alt=&quot;How to Create a Mind - Ray Kurzweil &quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/How-Create-Mind-Thought-Revealed/dp/0143124048/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676007&amp;amp;sr=1-1&amp;amp;keywords=how+to+create+a+mind&quot;&gt;4- How to Create a mind&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;From Ray Kurzweil, an inventor and engineer who works at Google and at his own AI company, it presents the &quot;Pattern Recognition Theory of 
-Mind&quot; (PRTM), which is according to him the basic algorithm of the neocortex. It covers both AI and Neuroscience fields.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/My-Father-Bleeds-History-Maus/dp/0394747232/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676126&amp;amp;sr=1-1&amp;amp;keywords=MAUS%3A+A+SURVIVORS+TALE&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/511P7Afzw8L._SX349_BO1,204,203,200_.jpg&quot; alt=&quot;Maus&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/My-Father-Bleeds-History-Maus/dp/0394747232/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676126&amp;amp;sr=1-1&amp;amp;keywords=MAUS%3A+A+SURVIVORS+TALE&quot;&gt;5- Maus: A Survivors Tale&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Is a graphic novel by Art Spiegelman about a Polish Jew on Holocaust. It is the first graphic novel to win the Pulitzer Prize.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Art-Asking-Learned-Worrying-People/dp/1455581097/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676416&amp;amp;sr=1-1&amp;amp;keywords=the+art+of+asking&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/51Fb1XXABdL._SX326_BO1,204,203,200_.jpg&quot; alt=&quot;The Art of Asking - by Amanda Palmer&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Art-Asking-Learned-Worrying-People/dp/1455581097/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676416&amp;amp;sr=1-1&amp;amp;keywords=the+art+of+asking&quot;&gt;6- The art of asking&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;From Amanda Palmer famous TED talk, this book tells Amanda s history as an artist, and why we should learn to ask and be grateful for 
-receiving.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/V-Vendetta-Alan-Moore/dp/140120841X/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676500&amp;amp;sr=1-1&amp;amp;keywords=v+for+vendetta&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/51cVJz0NHbL._SX332_BO1,204,203,200_.jpg&quot; alt=&quot;V for Vendetta - by Alan Moore&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/V-Vendetta-Alan-Moore/dp/140120841X/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676500&amp;amp;sr=1-1&amp;amp;keywords=v+for+vendetta&quot;&gt;7- V for Vendetta&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Is a graphic novel by Alan Moore (the same author of Watchmen) in a post-apocalyptic distopian United Kingdom where the main chacter tries
-to destroy the state and free the people.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Art-Thinking-Clearly-Rolf-Dobelli/dp/0062219693/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676519&amp;amp;sr=1-1&amp;amp;keywords=The+Art+of+Thinking+Clearly&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/41079pBDabL._SX331_BO1,204,203,200_.jpg&quot; alt=&quot;The Art of Thinking Clearly - by Rolf Dobelli&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Art-Thinking-Clearly-Rolf-Dobelli/dp/0062219693/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676519&amp;amp;sr=1-1&amp;amp;keywords=The+Art+of+Thinking+Clearly&quot;&gt;8- The Art of Thinking Clearly&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;This books helped me understand a lot of mistakes we does when we make decisions. Why should I fear terrorism if car accidents are much
-more likely? How to measure the performance of an investment fund without being biased? In summary, it is a good book with a list of 
-mistakes and cognitive biases to which we are prone.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Character-Physical-Messenger-Lectures-1964/dp/0262560038/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676597&amp;amp;sr=1-1&amp;amp;keywords=THE+CHARACTER+OF+PHYSICAL+LAWS+-+RICHARD+FEYNMAN&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/4128X39XDVL._SX320_BO1,204,203,200_.jpg&quot; alt=&quot;The Character of Physical Laws- by Richard Feynman&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Character-Physical-Messenger-Lectures-1964/dp/0262560038/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676597&amp;amp;sr=1-1&amp;amp;keywords=THE+CHARACTER+OF+PHYSICAL+LAWS+-+RICHARD+FEYNMAN&quot;&gt;9- The Character of Physical Laws - Richard Feynman&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;The essence of Physics to common people. It is not an easy read, but it is totally worth it. Based on a series of lectures from Richard
-Feynman. Best to read this book while watching the lectures online at &lt;a href=&quot;http://research.microsoft.com/apps/tools/tuva/&quot;&gt;Project Tuva&lt;/a&gt;
-(warnning: it requires Silverlight plugin)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/Economic-Policy-Thoughts-Today-Tomorrow/dp/1933550015/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676611&amp;amp;sr=1-1&amp;amp;keywords=ECONOMIC+POLICY%3A+THOUGHTS+FOR+TODAY+AND+TOMORROW+-+LUDWIG+VON+MISES&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/51c051trVtL._SX322_BO1,204,203,200_.jpg&quot; alt=&quot;Economic Policy- by Ludwig Von Mises&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a href=&quot;http://www.amazon.com/Economic-Policy-Thoughts-Today-Tomorrow/dp/1933550015/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1454676611&amp;amp;sr=1-1&amp;amp;keywords=ECONOMIC+POLICY%3A+THOUGHTS+FOR+TODAY+AND+TOMORROW+-+LUDWIG+VON+MISES&quot;&gt;10-Economic Policy: Thoughts for Today and Tomorrow - Ludwig Von Mises&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Another book based on a series of lectures, this time about economy. It is easy and joyful to read, and it changed the way I think about
-economy and state. You can download it for free at &lt;a href=&quot;https://mises.org/library/economic-policy-thoughts-today-and-tomorrow&quot;&gt;Mises Institute&lt;/a&gt;.&lt;/p&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/introduction-to-data-analysis-using-python/">
     <title type="text">Introduction to Data Analysis using Python</title>
-    <id>urn:uuid:bae29d88-4a67-3570-9ee4-5db3b1797eb8</id>
+    <id>urn:uuid:39da8de2-e881-3732-b817-f7c44d5f39ec</id>
     <updated>2015-11-09T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/introduction-to-data-analysis-using-python/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;Using Python tools (jupyter, numpy, pandas...) to do Data Analysis.&lt;/p&gt;
-&lt;iframe src=&quot;http://pt.slideshare.net/guidopercu/slideshelf&quot; width=&quot;490px&quot; height=&quot;470px&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:none;&quot; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/learning-haskell/">
     <title type="text">A Guide to Learnning Haskell</title>
-    <id>urn:uuid:d86ede81-add3-394f-acf4-bdd72a7d078e</id>
+    <id>urn:uuid:7db70125-9707-3da3-993a-df6fb695b24c</id>
     <updated>2015-11-05T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/learning-haskell/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.haskell.org/&quot; title=&quot;Haskell Language&quot;&gt;Haskell&lt;/a&gt; will change the way you think.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;It gives you a new toolset with which to solve programming problems, often yielding very clean and elegant solutions to otherwise complex problems. - &lt;a href=&quot;https://acm.wustl.edu/functional/whyfp.php&quot;&gt;Why Study Functional Programming?&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It is my belief that functional languages, almost by definition, are closer to the top of the power spectrum than imperative ones. So languages can actually limit a programmers frame of thought. - &lt;a href=&quot;https://wiki.haskell.org/Why_Haskell_matters&quot;&gt;Why Haskell Matters?&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is the most comprehensive guide I've ever found on &lt;a href=&quot;http://stackoverflow.com/questions/1012573/getting-started-with-haskell&quot;&gt;how to learn Haskell&lt;/a&gt;. Enjoy.&lt;/p&gt;
-&lt;h2&gt;Instalation&lt;/h2&gt;
-&lt;p&gt;I have explained how to &lt;a href=&quot;../../blog/haskell-stack-on-arch-linux/&quot;&gt;install it in Arch in a recent article&lt;/a&gt;. To install the Haskell platform on Debian systems, install the haskell-platform 
-package:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt-get install haskell-platform
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For information about installing it in other systems, visit the &lt;a href=&quot;http://www.haskell.org/platform/&quot; title=&quot;Haskell platform installation guide&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Hello World!&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;main = putStrLn &quot;Hello World!&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Read more about IO in Haskell: &lt;a href=&quot;http://learnyouahaskell.com/input-and-output&quot; title=&quot;Learn Yourself a Haskell - Input and Output&quot;&gt;Input and Output&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/19288652/difference-between-print-and-putstrln-in-haskell&quot; title=&quot;Stackoverflow: Differences between Print and PutStrLn&quot;&gt;Print x PutStrLn&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Fibonnaci (recursive)&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;fib 0 = 0
-fib 1 = 1
-fib n = fib (n - 2) + fib (n - 1)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Fatorial&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;fatorial n = product [1..n]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Books:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Haskell-Programming-Second-Edition-Computing/dp/0954300696&quot;&gt;Haskell road to logic math and programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://learnyouahaskell.com/&quot;&gt;Learn You a Haskell for Great Good&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Tutorials&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/&quot;&gt;Haskell the Hard Way&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lisperati.com/haskell/&quot;&gt;Picnic App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://dev.stephendiehl.com/fun/&quot;&gt;Write you a Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/&quot;&gt;Git clone in Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Courses:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0&quot;&gt;Introduction to Functional Programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PL8eBmR3QtPL3pDzQpwPYfWQ4NEPGu6j7z&quot;&gt;Curso Haskell para iniciantes, por Marcos Castro (pt-BR)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLxj9UAX4Em-Ij4TKwKvo-SLp-Zbv-hB4B&quot;&gt;Haskell From Scratch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.edx.org/course/introduction-functional-programming-delftx-fp101x#.VDWTHFRdUsp&quot;&gt;Introduction to Functional Programming - EDX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Tools&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.haskell.org/hoogle/&quot;&gt;Hoogle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://hackage.haskell.org/package/HUnit&quot;&gt;HUnit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://hackage.haskell.org/package/QuickCheck&quot;&gt;QucikCheck&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.haskell.org/cabal/&quot;&gt;Cabal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://hackage.haskell.org/&quot;&gt;Hackage&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Awesome&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/krispo/awesome-haskell&quot;&gt;Awesome Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.fpcasts.com/&quot;&gt;FP Casts&lt;/a&gt; - Your source for Functional Programing Related Podcasts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Web Frameworks&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://happstack.com/page/view-page-slug/1/happstack&quot;&gt;Happstack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://snapframework.com/&quot;&gt;Snap&lt;/a&gt; | &lt;a href=&quot;https://robots.thoughtbot.com/a-rest-api-with-haskell-and-snap&quot;&gt;REST API with Haskell and Snap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.yesodweb.com/&quot;&gt;Yesod&lt;/a&gt; | &lt;a href=&quot;http://yannesposito.com/Scratch/en/blog/Yesod-tutorial-for-newbies/&quot;&gt;Tutorial Yesod&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.haskell.org/haskellwiki/Web/Frameworks&quot;&gt;Official List of Frameworks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Exercises&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.hackerrank.com/&quot;&gt;Hacker Rank&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://projecteuler.net/&quot;&gt;Project Euler&lt;/a&gt; | &lt;a href=&quot;https://wiki.haskell.org/Euler_problems/1_to_10&quot;&gt;Euler 1-10 Solutions in Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;More links&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.fpcomplete.com/school&quot;&gt;FP Complete School of Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://wiki.haskell.org/Functional_Reactive_Programming&quot;&gt;Functional Reactive Programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.willamette.edu/~fruehr/haskell/evolution.html&quot;&gt;Evolution of a Haskell Programmer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.fpcomplete.com/school&quot;&gt;FP Complete School of Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://c2.com/cgi/wiki?FunctionalProgrammingLanguage&quot;&gt;C2 Wiki - Functional Programming Language&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/using-postgres-on-command-line/">
     <title type="text">Using Postgres on command line</title>
-    <id>urn:uuid:4b482229-d895-3968-ab63-3669934c3636</id>
+    <id>urn:uuid:9548fd3a-8285-3e95-835a-770e72f3c6e2</id>
     <updated>2015-11-04T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/using-postgres-on-command-line/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;Learn how to be productive in psql, Postgres command line interface.&lt;/p&gt;
-&lt;p&gt;Postgres has a nice utility to work with database. You can modify the default behavior in your &lt;em&gt;~/.psqlrc&lt;/em&gt; file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../../static/images/psql-example.png&quot; alt=&quot;Example of a customized PSQL Shell&quot;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;-- By default NULL displays an invisible character on the string.
--- Make it say &quot;[NULL]&quot;
-\pset null '[NULL]'
--- Ignore duplicated rows in the history log
-\set HISTCONTROL ignoredups
--- Autocomplete keywords in uppercase (SELECT, WHERE, ...)
-\set COMP_KEYWORD_CASE upper
--- Shows how much time it took to run the last query
-\timing
--- Formats the results of the query according to the width of your screen.
-\x auto'
-&lt;/code&gt;&lt;/pre&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/python-collections-counter-examples/">
     <title type="text">Python collections.Counter Examples</title>
-    <id>urn:uuid:7835c51c-8d50-3f90-84d1-5b222248a93b</id>
+    <id>urn:uuid:893927a7-2062-31aa-b63d-9e3ee139782c</id>
     <updated>2015-09-24T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/python-collections-counter-examples/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;From Luciano Ramalho &lt;a href=&quot;http://shop.oreilly.com/product/0636920032519.do&quot; title=&quot;Buy at O&amp;#39;Reilly&quot;&gt;&quot;Fluent Python&quot;&lt;/a&gt; book:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://akamaicovers.oreilly.com/images/0636920032519/lrg.jpg&quot; alt=&quot;Fluent Python Book from O&amp;#39;Reilly&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;collections.Counter&lt;/strong&gt;
-A mapping that holds an integer count for each key. Updating an existing key adds to its count. This can be used to count instance of hashable objects (the keys) or as a multiset -- a set that can hold several occurences of each element. Counter implements + and - operators to combine tallies, and other useful methods such as most_common([n]), which returns an ordered list of tuples with the n most common items and their counts; see the documentation. Here is Counter used to count letters in words:&lt;/p&gt;
-&lt;script src=&quot;https://gist.github.com/GuidoBR/fbedd911fbc42bb8440a.js&quot;&gt;&lt;/script&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;We can use this data structure to check if two strings are anagrams:&lt;/p&gt;
-&lt;script src=&quot;https://gist.github.com/GuidoBR/af32e5bc3ebd70b789ef.js&quot;&gt;&lt;/script&gt;&lt;p&gt;Want to know the most frequent words of a song? No problem!&lt;/p&gt;
-&lt;script src=&quot;https://gist.github.com/GuidoBR/7a685ac92366b7785e72.js&quot;&gt;&lt;/script&gt;&lt;p&gt;Computer biologist? How about get the frequency of nucleotides from a genome fasta file?&lt;/p&gt;
-&lt;script src=&quot;https://gist.github.com/GuidoBR/bf9d3a5fea086a502c59.js&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;More information:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/collections.html#collections.Counter&quot;&gt;Python 3 - Collections Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://pymbook.readthedocs.org/en/latest/collections.html&quot;&gt;PymBook - Collections&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pymotw.com/2/collections/counter.html&quot;&gt;Python Module of the week - Collections&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://gist.github.com/bradmontgomery/4717521&quot;&gt;Playing with collections.Counter gist&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/&quot;&gt;Python Dictionaries&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://chimera.labs.oreilly.com/books/1230000000393/ch01.html#_problem_12&quot;&gt;Python Cookbook - most frequently occurring items in the sequence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://treyhunner.com/2015/11/counting-things-in-python/&quot;&gt;Counting things Pythonic way&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry xml:base="https://guidopercu.dev/blog/colecao-julio-verne-rba/">
-    <title type="text">Coleção Júlio Verne</title>
-    <id>urn:uuid:4defaeea-c33d-38b7-a197-0ab2ed2efcd9</id>
-    <updated>2014-10-03T00:00:00Z</updated>
-    <link href="https://guidopercu.dev/blog/colecao-julio-verne-rba/" />
-    <author>
-      <name>Guido Percú</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img src=&quot;../../static/images/jules_verne.jpg&quot; alt=&quot;Jules Verne photography&quot;&gt;&lt;/p&gt;
-&lt;p&gt;No inicio desse ano, saiu nas bancas do Rio de Janeiro uma bela coleção com os maiores clássicos do Júlio Verne.&lt;/p&gt;
-&lt;p&gt;Essa coleção, da editora espanhola RBA, é em capa dura e ilustrada e a preço popular. Cada volume sai a R$20, e há conjuntos especiais com dois volumes custando apenas R$15.&lt;/p&gt;
-&lt;p&gt;Conversando com jornaleiros e pesquisando pela internet, descobri que essa coleção já havia sido publicada anos atrás. Infelizmente não há garantia que todas os volumes serão lançados. Não há informações no site da editora sobre essa coleção.&lt;/p&gt;
-&lt;p&gt;Quem perdeu algum volume deve procurar em sebos ou na internet.
-A Lista&lt;/p&gt;
-&lt;p&gt;Esse foram os volumes lançados até agora. Atualizarei essa lista conforme chegarem novas edições às bancas.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. A Volta ao Mundo em Oitenta Dias
-2. Vinte Mil Léguas Submarinas
-3. Cinco Semanas em Balão
-4. Viagem ao Centro da Terra
-5. Da Terra a Lua
-6. Os Filhos do Capitão Grant: Na América do Sul
-7. Os Filhos do Capitão Grant: Na Austrália Meridional
-8. Os Filhos do Capitão Grant: No Oceano Pacífico
-9. Miguel Strogoff
-10. A Escola dos Robinsons
-11. A Roda da Lua
-12. Um Herói de Quinze Anos
-13. A Ilha Misteriosa: Os Náufragos do Ar
-14. A Ilha Misteriosa: O Abandonado
-15. A Ilha Misteriosa: O Segredo da Ilha
-16. Atribulações de um Chinês Na China
-17. Os Quinhentos Milhões da BEGUN
-18. Aventuras do Capitão Hatteras: Os Ingleses No Pólo Norte
-19. Aventuras do Capitão Hatteras: O Deserto de Gelo
-20. Dois Anos de Férias
-21. As Índias Negras
-22. Heitor Servadac: O Cataclismo Cósmico
-23. Heitor Servadac: Os Habitantes do Cometa
-24. Os Navegadores do Século XVIII – 2ª Parte
-25. O bilhete de loteria numero 9672
-26. Fora dos eixos
-27. Os Náufragos do Jonathan – 1ª Parte
-28. Martim Paz
-29. Uma cidade flutuante
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Mais produtos Vernianos&lt;/p&gt;
-&lt;p&gt;A editora Landmark tem uma &lt;a href=&quot;http://www.editoralandmark.com.br/obr-shw.asp?k=141&quot;&gt;edição bilingue (francês/português) de Da Terra à Lua&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;A segunda edição dos Relógios Históricos, da Planeta de Agostinni, é um &lt;a href=&quot;http://www.planetadeagostini.com.br/colecionavel/relogios-historicos.html&quot;&gt;lindo relógio inspirado no Verne&lt;/a&gt;.&lt;/p&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/using-sed-to-substitute-strings-in-multiple-files/">
     <title type="text">Using SED to substitute strings in multiple files</title>
-    <id>urn:uuid:ceb64c07-707d-3108-aa17-7773f8cf8d66</id>
+    <id>urn:uuid:3fb56186-6570-3df4-a2c7-5a2f9a40d377</id>
     <updated>2014-10-03T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/using-sed-to-substitute-strings-in-multiple-files/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;A useful sed one-liner&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../../static/images/grep-awk-sed.gif&quot; alt=&quot;Evolution of language through the ages - comic image&quot;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sed -i “s/OriginalString/SubstitutionString” *.*
-&lt;/code&gt;&lt;/pre&gt;
-</content>
+  </entry>
+  <entry xml:base="https://guidopercu.dev/blog/colecao-julio-verne-rba/">
+    <title type="text">Coleção Júlio Verne</title>
+    <id>urn:uuid:01d95dcc-a192-3d42-9a46-1e969505b5f9</id>
+    <updated>2014-10-03T00:00:00Z</updated>
+    <link href="https://guidopercu.dev/blog/colecao-julio-verne-rba/" />
+    <author>
+      <name>Guido Percú</name>
+    </author>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/visualize-3d-dom-elements-using-css/">
     <title type="text">Visualize 3D DOM elements using CSS</title>
-    <id>urn:uuid:5bc141ab-4dc2-3ba4-8ed0-10ffb98cf329</id>
+    <id>urn:uuid:3f539fd2-693d-391d-a095-c58ddfd5ce50</id>
     <updated>2014-08-21T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/visualize-3d-dom-elements-using-css/" />
     <author>
@@ -2055,90 +1733,38 @@ A Lista&lt;/p&gt;
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/a-magia-dos-sebos/">
     <title type="text">A magia dos sebos</title>
-    <id>urn:uuid:a553c684-b2e7-335d-939e-d69d22eac6dd</id>
+    <id>urn:uuid:bfef011e-0495-374b-9c18-2de4d738ff30</id>
     <updated>2014-07-28T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/a-magia-dos-sebos/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img src=&quot;../../staitc/images/bookstore.jpg&quot; alt=&quot;Livraria em Santa Barbara, CA, EUA.&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Sebos são lugares mágicos. Além de oferecerem a possibilidade de conseguir grandes descontos em livros recentes, os sebos são os principais lugares em que os bibliófilos podem encontrar livros raros e fora de catalogo.  Ótima opção para quem quer passar algumas horas cercado de livros, descobrindo antigos clássicos e comprando pequenos tesouros.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://vimeo.com/18460358&quot;&gt;Sebos e Sábios – Documentário&lt;/a&gt; de &lt;a href=&quot;http://vimeo.com/user1743200&quot;&gt;Marcelo Ferraz&lt;/a&gt; em Vimeo.&lt;/p&gt;
-&lt;h2&gt;De onde veio a palavra sebo? O que significa alfarrabista?&lt;/h2&gt;
-&lt;p&gt;Há uma certa discórdia sobre a origem da palavra sebo. Alguns dizem que vem de “sebenta”, palavra usada em portugal para apostilas feitas de material litografado utilizadas por estudantes universitários. Outros estudiosos acreditam numa história mais simples: sebo surgiu como um termo para designar lojas que vendiam livros usados e engordurados, ou seja, ensebados.&lt;/p&gt;
-&lt;p&gt;Já o termo alfarrabista, sinônimo de livreiro, é mais fácil de entender a origem. Vem de um erudito árabe (Al-Farrabi), que possuía uma grande biblioteca de livros antigos e tinha interesse por diversos assuntos.&lt;/p&gt;
-&lt;h2&gt;Sebos no centro do Rio de Janeiro&lt;/h2&gt;
-&lt;p&gt;Para quem não quer sair de casa, existem diversas opções de livrarias e agregadores de sebos na internet:&lt;/p&gt;
-&lt;p&gt;Estante Virtual
-Livronauta
-Sebos Online
-Traça
-Livros Difíceis&lt;/p&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/python-birds/">
     <title type="text">Curso Python Birds</title>
-    <id>urn:uuid:909f02a9-c179-3c41-9e7e-44515989869d</id>
+    <id>urn:uuid:702c5796-8bad-3981-a811-291c33d4b580</id>
     <updated>2014-07-28T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/python-birds/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;content:encoded&quot;&gt;content:encoded&lt;/a&gt;&amp;lt;![CDATA[[caption id=&quot;attachment_85&quot; align=&quot;aligncenter&quot; width=&quot;795&quot;]&lt;a href=&quot;http://www.guidopercu.com/wordpress/wp-content/uploads/2015/05/python-birds1.png&quot;&gt;&lt;img class=&quot;wp-image-85 size-full&quot; src=&quot;http://www.guidopercu.com/wordpress/wp-content/uploads/2015/05/python-birds1.png&quot; alt=&quot;Tela do jogo ao final da implementação&quot; width=&quot;795&quot; height=&quot;592&quot; /&gt;&lt;/a&gt; Satisfação de ver o Python Birds funcionando![/caption]&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://adm.python.pro.br/cursos/python-birds&quot; target=&quot;_blank&quot;&gt;Curso de Python&lt;/a&gt; para aprender conceitos de Orientação a Objeto de forma divertida e prática. Recomendado para quem sabe pouco de Python e para quem quer reforçar os conceitos da OO trabalhando em um projeto prático.&lt;/p&gt;
-&lt;p&gt;Nesse curso constrói-se um clone simplificado do game Flappy Bird, com interface gráfica ou direto no terminal.&lt;/p&gt;
-&lt;p&gt;O processo é bem simples:&lt;/p&gt;
-&lt;p&gt;&lt;ol&gt;&lt;/p&gt;
-&lt;p&gt;&lt;li&gt;Rode os testes (python3 executor_de_testes.py).&lt;/li&gt;&lt;/p&gt;
-&lt;p&gt;&lt;li&gt;Implemente um método que está quebrando um teste.&lt;/li&gt;&lt;/p&gt;
-&lt;p&gt;&lt;li&gt;Repita até todos os testes passarem.&lt;/li&gt;
-&amp;lt;/ol&amp;gt;
-O código original está no &lt;a href=&quot;https://github.com/pythonprobr/pythonbirds&quot; target=&quot;_blank&quot;&gt;Github da PythonPro&lt;/a&gt;, você também pode &lt;a href=&quot;https://github.com/GuidoBR/pythonbirds&quot; target=&quot;_blank&quot;&gt;conferir minha implementação aqui&lt;/a&gt;.]]&amp;gt;&lt;a href=&quot;/content:encoded&quot;&gt;/content:encoded&lt;/a&gt;&lt;/p&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/arthur-c-clarke/">
     <title type="text">Arthur C. Clarke</title>
-    <id>urn:uuid:cfe85e5c-1ce6-3b23-9935-c738a7ac2edd</id>
+    <id>urn:uuid:085e9b87-1032-3c49-af38-4643382c4e80</id>
     <updated>2014-06-07T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/arthur-c-clarke/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;Citações de Arthur C. Clarke&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;E no entanto, são nossas emoções que nos tornam humanos; quem iria abandoná-las, mesmo sabendo que cada novo amor é outro refém a ser tomado por aquele par de terroristas, o Tempo e o Destino?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Arthur C. Clarke&lt;/strong&gt; em “&lt;em&gt;As canções da Terra distante&lt;/em&gt;“&lt;/p&gt;
-</content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/cavernas-de-aco-isaac-asimov/">
     <title type="text">As Cavernas de Aço</title>
-    <id>urn:uuid:f87c81c2-7814-3b06-8a33-797aa45757ae</id>
+    <id>urn:uuid:be1bf701-c864-3fa2-b4b1-9b0b20e45f0f</id>
     <updated>2014-05-18T00:00:00Z</updated>
     <link href="https://guidopercu.dev/blog/cavernas-de-aco-isaac-asimov/" />
     <author>
       <name>Guido Percú</name>
     </author>
-    <content type="html">&lt;p&gt;Resenha do livro As Cavernas de Aço&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../../static/images/cavernas-de-aco-capa-aleph.jpg&quot; alt=&quot;Isaac Asimov - As Cavernas de Aço da editora Aleph&quot;&gt;
-&lt;strong&gt;Tradução&lt;/strong&gt;: &lt;em&gt;Aline Storto Pereira&lt;/em&gt; – Aleph, 1a Edição, 2013&lt;/p&gt;
-&lt;p&gt;Publicado originalmente em 1954, Cavernas de Aço foi reeditado e lançado no Brasil pela Aleph, que acrescentou ao livro um texto em que o próprio Asimov fala sobre sua obra. O autor conta como foi escrever sobre robôs e construir um universo no qual várias de suas histórias estão interligadas, inclusive Cavernas de Aço, que mistura ficção cientifica e romance policial.&lt;/p&gt;
-&lt;p&gt;Numa Terra superpovoada, onde a população enfrenta graves problemas sociais e nutre um forte sentimento de aversão à robôs e estrangeiros planetários, um embaixador dos mundos siderais é assassinado.&lt;/p&gt;
-&lt;p&gt;Muitos anos antes, a humanidade deu inicio à exploração espacial e colonizou diversos planetas, que são os chamados Mundos Siderias. Neles, os seres humanos prosperaram: construíram robôs para realizar os trabalhos manuais, erradicaram doenças causadas por micro-organismos e conquistaram uma vida muito duradoura.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../../static/images/cavernas-de-aco-capa-hemus.jpg&quot; alt=&quot;Caça aos Robôs - capa da edição do &amp;#34;Cavernas de Aço&amp;#34; pela editora Hemus&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Na tradução da editora Hemus, o título ficou “Caça aos Robôs”&lt;/p&gt;
-&lt;p&gt;Os que continuaram na Terra, entretanto, formam uma população de 8 bilhões de habitantes (estamos “quase” lá, Asimov, hoje já somos 7 bilhões!) e cultivam o ódios àqueles que são considerados causadores de seus problemas: robôs e siderais. E é em meio a esse clima que somos apresentados ao investigador de polícia Elijah Baley e seu parceiro R. Daneel Oliwaw, um robô que veio dos mundos siderais e com o qual Elijah está sendo forçado a trabalhar.&lt;/p&gt;
-&lt;p&gt;Uma surpresa positiva foi o papel da Bíblia nesse livro. Apesar de ateu, Asimov soube tratar o livro sagrado de forma respeitosa e coerente. Além de alguns personagens importantes terem nomes bíblicos, como Elijah e Jezebel,  há um momento na história em que Elijah tenta explicar ao seu parceiro robô a importância da Bíblia como código moral na vida dos humanos:&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;– O que é a Bíblia?&lt;/p&gt;
-&lt;p&gt;– É o livro sagrado para mais ou menos metade da população da Terra.&lt;/p&gt;
-&lt;p&gt;– Não compreendo o significado do adjetivo nesse caso.&lt;/p&gt;
-&lt;p&gt;– Quero dizer que é muito respeitado. Várias partes dele, quando interpretado de modo apropriado, contêm um código de conduta que muitos homens consideram adequado à felicidade suprema do ser humano.&lt;/p&gt;
-&lt;p&gt;– Esse código foi incorporado às leis?&lt;/p&gt;
-&lt;p&gt;– Infelizmente não. O código não se presta à obrigatoriedade legal. Ele deve ser obedecido de maneira espontânea pelo indivíduo por vontade de fazê-lo. De certa forma, é maior do que qualquer lei pode chegar a ser.&lt;/p&gt;
-&lt;p&gt;Página 236&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Mesmo tendo sido escrito nos anos 50, Cavernas de aço trata de diversos temas que continuam relevantes hoje em dia, como os desafios de viver num mundo superpopuloso e com recursos escassos, a vida nas grandes cidades, o pouco contato com a natureza e a substituição da mão de obra humana por máquinas.&lt;/p&gt;
-&lt;p&gt;O autor conseguiu criar uma narrativa envolvente, e a união de gêneros diferentes resultou em uma história muito agradável de ler. Além disso, os que já são fãs de Asimov com certeza vão notar e adorar a forma magnífica com que ele agrupou, em um mesmo universo ficcional, todas as histórias de Robôs e da saga Fundação.&lt;/p&gt;
-</content>
   </entry>
 </feed>
