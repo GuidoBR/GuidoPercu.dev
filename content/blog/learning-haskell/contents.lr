@@ -14,6 +14,15 @@ twitter_handle:
 
 @oumguido
 ---
+
+---
+
+---
+
+image:
+
+/static/images/computer.png
+
 body:
 
 [Haskell][22d3c8cd] will change the way you think.
@@ -93,8 +102,8 @@ package:
  - [FP Complete School of Haskell](https://www.fpcomplete.com/school)
  - [C2 Wiki - Functional Programming Language](http://c2.com/cgi/wiki?FunctionalProgrammingLanguage)
 
-  [22d3c8cd]: https://www.haskell.org/ "Haskell Language"
-  [5ad2a93d]: http://www.haskell.org/platform/ "Haskell platform installation guide"
+[22d3c8cd]: https://www.haskell.org/ "Haskell Language"
+[5ad2a93d]: http://www.haskell.org/platform/ "Haskell platform installation guide"
 
-  [457a6d0d]: http://learnyouahaskell.com/input-and-output "Learn Yourself a Haskell - Input and Output"
-  [f3155ad0]: https://stackoverflow.com/questions/19288652/difference-between-print-and-putstrln-in-haskell "Stackoverflow: Differences between Print and PutStrLn"
+[457a6d0d]: http://learnyouahaskell.com/input-and-output "Learn Yourself a Haskell - Input and Output"
+[f3155ad0]: https://stackoverflow.com/questions/19288652/difference-between-print-and-putstrln-in-haskell "Stackoverflow: Differences between Print and PutStrLn"

@@ -14,17 +14,27 @@ twitter_handle:
 
 @oumguido
 ---
+
+---
+
+---
+
+image:
+
+/static/images/computer.png
+
 body:
 
 From Luciano Ramalho ["Fluent Python"][0fc19ccf] book:
 
 ![Fluent Python Book from O'Reilly](http://akamaicovers.oreilly.com/images/0636920032519/lrg.jpg)
 
-  [0fc19ccf]: http://shop.oreilly.com/product/0636920032519.do "Buy at O'Reilly"
+[0fc19ccf]: http://shop.oreilly.com/product/0636920032519.do "Buy at O'Reilly"
 
 
 > **collections.Counter**
 > A mapping that holds an integer count for each key. Updating an existing key adds to its count. This can be used to count instance of hashable objects (the keys) or as a multiset -- a set that can hold several occurences of each element. Counter implements + and - operators to combine tallies, and other useful methods such as most_common([n]), which returns an ordered list of tuples with the n most common items and their counts; see the documentation. Here is Counter used to count letters in words:
+>
 > <script src="https://gist.github.com/GuidoBR/fbedd911fbc42bb8440a.js"></script>
 
 We can use this data structure to check if two strings are anagrams:

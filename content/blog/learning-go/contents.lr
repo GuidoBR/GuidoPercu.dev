@@ -10,6 +10,11 @@ pub_date: 2016-11-20
 twitter_handle: oumguido
 
 ---
+
+image:
+
+/static/images/computer.png
+
 body:
 
 
@@ -35,7 +40,7 @@ For information about installing it in other systems, visit the [official docume
 
     package main
     import "fmt"
- 
+     
     func main() {
         fmt.Println("hello world")
     }
@@ -49,7 +54,7 @@ For information about installing it in other systems, visit the [official docume
     if number == 0 || number == 1 {
         return number
     }
-
+    
     return fibbRecc(number - 2) + fibbRecc(number -1)
     }
 
@@ -79,6 +84,6 @@ For information about installing it in other systems, visit the [official docume
 ### Awesome
  - [Awesome Go](http://awesome-go.com/)
 
-  [22d3c8cd]: https://golang.org/doc/faq#What_is_the_purpose_of_the_project "FAQ Go - What is the purpose of the project?"
-  [5ad2a93d]: https://golang.org/dl/ "Go download page"
-  [457a6d0d]: https://gobyexample.com/hello-world "Go By Example - Hello World in Go"
+[22d3c8cd]: https://golang.org/doc/faq#What_is_the_purpose_of_the_project "FAQ Go - What is the purpose of the project?"
+[5ad2a93d]: https://golang.org/dl/ "Go download page"
+[457a6d0d]: https://gobyexample.com/hello-world "Go By Example - Hello World in Go"

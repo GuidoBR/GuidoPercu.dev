@@ -14,6 +14,15 @@ twitter_handle:
 
 @oumguido
 ---
+
+---
+
+---
+
+image:
+
+/static/images/computer.png
+
 body:
 
 Google App Engine (GAE) is the cloud computing platform from Google, that enables you to host and develop applications using Python (2.7 only unfortunately) that easily scales, and cost [just a few dollars](https://cloud.google.com/appengine/pricing).

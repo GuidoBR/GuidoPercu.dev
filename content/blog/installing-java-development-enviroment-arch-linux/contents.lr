@@ -12,6 +12,15 @@ twitter_handle:
 
 @oumguido
 ---
+
+---
+
+---
+
+image:
+
+/static/images/computer.png
+
 body:
 
 [Steps to install Java JDK + Java FX Scenebuilder + InteliJ IDE](https://www.jetbrains.com/help/idea/2016.1/preparing-for-javafx-application-development.html) on Arch Linux (with yaourt to access AUR):
