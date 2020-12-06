@@ -14,7 +14,7 @@ twitter_handle:
 ---
 image:
 
-/static/images/resenha-uma-breve-historia-da-riqueza.jpg
+/static/images/resenha-uma-breve-hisitoria-da-riqueza.jpg
 
 ---
 description:
@@ -23,15 +23,17 @@ Resenha de "Uma Breve História da Riqueza", William Bernstein (The Birth of Ple
 ---
 body:
 
-![uma-breve-historia-riqueza](./static/images/uma-breve-historia-riqueza.jpg)
+![uma-breve-historia-riqueza](/static/images/uma-breve-historia-riqueza.jpg)
 
-[The Birth of Plenty | William Bernstein | Talks at Google](https://www.youtube.com/watch?v=fTUZXwQwUJM)
+<blockquote class="otro-blockquote">
+William Bernstein's The Birth of Plenty is based upon the premise that mankind experienced virtually zero economic growth from the dawn of time until 1820. This provocative book identifies the four conditions necessary for sustained economic progress--property rights, scientific rationalism, capital markets, and communications and transportation technology--and then analyzes their gradual appearance and impact throughout every corner of the globe. The Birth of Plenty explores where the world economy could be headed next; implications of the book's thesis for today's society; and how the absence of one or more of the conditions continues to threaten beleaguered regions of the world. 20.09.2007
 
-> William Bernstein's The Birth of Plenty is based upon the premise that mankind experienced virtually zero economic growth from the dawn of time until 1820. This provocative book identifies the four conditions necessary for sustained economic progress--property rights, scientific rationalism, capital markets, and communications and transportation technology--and then analyzes their gradual appearance and impact throughout every corner of the globe. The Birth of Plenty explores where the world economy could be headed next; implications of the book's thesis for today's society; and how the absence of one or more of the conditions continues to threaten beleaguered regions of the world. 20.09.2007
+<br><br><a href="https://www.youtube.com/watch?v=fTUZXwQwUJM"> The Birth of Plenty | William Bernstein | Talks at Google</a>
+</blockquote>
 
 Livro interessantíssimo, que conta como nasceu a riqueza moderna.
 
-![uma-breve-historia-riqueza-armas-germes-aco](./static/images/uma-breve-historia-riqueza-armas-germes-aco.jpg)
+![uma-breve-historia-riqueza-armas-germes-aco](/static/images/uma-breve-historia-riqueza-armas-germes-aco.jpg)
 
 Começa citando "Armas, Germes e Aço", e a grande pergunta de porquê os europeus que conquistaram o mundo. Aqui ele não usa uma abordagem tão macro (fatores geográficos), mas cita uma visão mais à nivel da cultura humana e elenca 4 fatores fundamentais para o atual desenvolvimento:
 
@@ -40,7 +42,7 @@ Começa citando "Armas, Germes e Aço", e a grande pergunta de porquê os europe
 - Mercados de capitais
 - Tecnologia (transporte e energia)
 
-![uma-breve-historia-riqueza-4-fatores](./static/images/uma-breve-historia-riqueza-4-fatores.jpg)
+![uma-breve-historia-riqueza-4-fatores](/static/images/uma-breve-historia-riqueza-4-fatores.jpg)
 
 Na primeira parte da obra, o autor explica em detalhes os 4 fatores e como eles surgiram e se desenvolveram principalmente na europa ocidental. Achei bem interessante o capítulo sobre direitos de propriedade, onde ele explica como surgiu a ideia de separação de poderes, o surgimento de um judiciário independente, e a importância do estado de direito para garantir os direitos sobre a propriedade.
 
