@@ -18,7 +18,20 @@
       <name>Guido Percú</name>
     </author>
     <content type="html">&lt;p&gt;&lt;img src=&quot;../../static/images/2020-best-books.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&quot;Melhores livros lidos em 2020. \&quot;O monge e o pastor\&quot;, \&quot;Cristianismo puro e  simples\&quot;, \&quot;O guia de um astronauta para viver bem na Terra\&quot;, \&quot;Your  money or your life\&quot;, \&quot;Kobane Calling\&quot;, \&quot;Corpos Secos\&quot;, \&quot;Primavera  da Pontuação\&quot;, \&quot;A Faca Sutil\&quot;, \&quot;Misbehaving\&quot;, \&quot;História do  Futuro\&quot;, \&quot;Guns, germs and steel&quot;&lt;/p&gt;
+&lt;p&gt;Melhores livros lidos em 2020.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&quot;O monge e o pastor&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Cristianismo puro e  simples&quot;&lt;/li&gt;
+&lt;li&gt;&quot;O guia de um astronauta para viver bem na Terra&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Your  money or your life&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Kobane Calling&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Corpos Secos&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Primavera  da Pontuação&quot;&lt;/li&gt;
+&lt;li&gt;&quot;A Faca Sutil&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Misbehaving&quot;&lt;/li&gt;
+&lt;li&gt;&quot;História do  Futuro&quot;&lt;/li&gt;
+&lt;li&gt;&quot;Guns, germs and steel&quot;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/uma-breve-historia-da-riqueza/">
@@ -1248,6 +1261,21 @@ with AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, and Amazon Cogn
 &lt;li&gt;&lt;a href=&quot;https://github.com/marekq/serverless-cognito&quot;&gt;Serverless Cognito&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/awslabs/serverless-application-model/tree/master&quot;&gt;SAM Serverless Application Framework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+  </entry>
+  <entry xml:base="https://guidopercu.dev/blog/a-amizade-em-senhor-dos-aneis/">
+    <title type="text">Resenha: A Amizade em Senhor dos Anéis</title>
+    <id>urn:uuid:e0280397-2d6a-3b4f-91ad-a2a33d1c38d8</id>
+    <updated>2020-02-03T00:00:00Z</updated>
+    <link href="https://guidopercu.dev/blog/a-amizade-em-senhor-dos-aneis/" />
+    <author>
+      <name>Guido Percú</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;../../static/images/lotr.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&quot;Assim, a virtude adquirida por um conjunto de heróis -- apesar de suas debilidades --, especialmente a coragem e a misericórdia, somadas à providência divina, à própria força autodestrutiva do mal e ao papel prepoderante da amizade na saga do Anel, propiciou o tão desejado final feliz nessa história de fadas.&quot;&lt;/p&gt;
+&lt;p&gt;Assim termina esse belíssimo livro. Aprendi muito sobre Amizade e sobre o maravilhoso universo criado por Tolkien. Em &quot;A Amizade em Senhor dos Anéis&quot; a autora Cristina Casagrande analisa de forma muito bonita e singela a obra &quot;O Senhor dos Anéis&quot; (os livros e os filmes) buscando trazer à tona os elementos da amizade. Ela usa conceitos de Aristóteles e mescla com mensagens do cristianismo (através de Tomás de Aquino, C. S. Lewis e da Bíblia) para nos mostrar a visão de mundo do professor Tolkien.&lt;/p&gt;
+&lt;p&gt;Ler esse livro reacendeu em mim o amor pela obra do Tolkien, ao ver o quão profundo são os ensinamentos contidos em seus textos. Além disso, fui apresentado à autores importantes da história da humanidade (Aristóteles e Tomás de Aquinio) que de outra forma provavelmente não teria lido. O texto do livro é interessante de ler, nunca se perdendo em vícios de linguagem de textos academicos. Consegue tratar de forma profunda temas fundamentais, sem ser pedante e maçante.&lt;/p&gt;
+&lt;p&gt;Recomendo à todos os fãs de Tolkien.&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="https://guidopercu.dev/blog/3-books-I-loved-in-2017/">
