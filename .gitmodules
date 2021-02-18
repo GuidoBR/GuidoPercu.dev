@@ -4,3 +4,6 @@
 [submodule "themes/color"]
 	path = themes/color
 	url = https://gitlab.com/rmaguiar/hugo-theme-color-your-world.git
+[submodule "themes/zettels"]
+	path = themes/zettels
+	url = https://github.com/crisrojas/Zettels.git
