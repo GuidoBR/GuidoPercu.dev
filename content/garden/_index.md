@@ -12,3 +12,4 @@ You can navigate through my notes with the arrow keys `←`and `→`.
 
 
 - [[bioinformatics]] Bioinformatics
+- [[black-swan]] Black Swan - Taleb
