@@ -26,7 +26,7 @@ The AWS Lambda free usage tier includes 1M free request per month and 400.000 GB
 
 ## SAM - Serverless Application Model
 
-![sam-logo](/static/sam-logo.png)
+![sam-logo](/images/sam-logo.png)
 
 
 
@@ -112,7 +112,7 @@ def lambda_handler(event, context):
 
 To deploy, let's first build it using `sam build --use-container` This will build the source of your application and prepare it to run locally (with `sam local invoke`) or to ship it to AWS. 
 
-![image-20200216173603258](./build-success.png)
+![image-20200216173603258](/images/build-success.png)
 
 Then it's time to package and deploy your application to AWS, with a series of prompts:
 
@@ -128,7 +128,7 @@ Then it's time to package and deploy your application to AWS, with a series of p
 
 At the end of your process, you should see a URL with the production environment of your API. If all went well, you can just access it to get your Hello World using SAM.
 
-![image-20200216182833524](./image-20200216182833524.png)
+![image-20200216182833524](/images/image-20200216182833524.png)
 
 
 
