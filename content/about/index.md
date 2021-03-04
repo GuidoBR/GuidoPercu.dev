@@ -24,5 +24,3 @@ I'm a Full Stack Engineer at Modus Create, where I create software projects usin
 ---
 
 {{< social >}}
-
-{{< contact-form >}}
