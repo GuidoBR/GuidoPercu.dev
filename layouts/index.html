@@ -1,0 +1,64 @@
+{{ define "main" }}
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
+  <main class="index">
+
+    <header>
+        <h1>Guido Percú</h1>
+
+        <p class="highlight">Specializes in building web applications across the whole stack (Python, PHP, Javascript, AWS)</p>
+
+        <p>Senior Consultant and Laravel CoE leader at Modus Create</p>
+    </header>
+
+    <section>
+        <header>
+                <h2>Projects</h2>
+        </header>
+        <div>
+            <article>
+                    <span class="icon solid fa-signal"></span>
+                    <div>
+                            <h3><a href="https://github.com/GuidoBR/python-for-finance">Python for Finance</a></h3>
+                            <p>Stock analysis using Python / Jupyter / Pandas</p>
+                    </div>
+            </article>
+                
+            <article>
+                    <span class="icon solid fa-money-bill"></span>
+                    <div>
+                            <h3><a href="https://github.com/GuidoBR/investment-letters">Investment Letters</a></h3>
+                            <p>Crawler that gets investment letters from major financial institutions</p>
+                    </div>
+            </article>
+                
+            <article>
+                    <span class="icon solid fa-mask"></span>
+                    <div>
+                            <h3><a href="http://www.heroisdenovigrath.com.br/">Heróis de Novigrath</a></h3>
+                            <p>Fantasy book web site</p>
+                    </div>
+            </article>
+                
+            <article>
+                    <span class="icon fa-building"></span>
+                    <div>
+                            <h3><a href="http://www.philigretimobiliaria.com.br/">Philigret Imobiliária</a></h3>
+                            <p>Building management web site</p>
+                    </div>
+            </article>
+                
+        </div>
+</section>
+
+
+  </main>
+
+{{ end }}
+
+{{ define "svg-extra" }}
+  {{ if .Content }}
+    {{ partialCached "content-svg" . }}
+  {{ end }}
+{{ end }}
