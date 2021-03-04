@@ -1,0 +1,17 @@
+baseURL = "https://guidopercu.dev/garden/"
+languageCode = "en-EN"
+title = "GuidoPercu"
+theme = "zettels"
+uglyURLS=  true
+pygmentsUseClasses=true
+googleAnalytics = "Your google analytics number"
+contentDir = "content/garden"
+publishDir = "public/garden"
+staticDir = "static/garden"
+# assetDir = "themes/zettels/assets"
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+[params]
+    favicon = "favicon.ico"
+[markup.goldmark.renderer]
+unsafe= true

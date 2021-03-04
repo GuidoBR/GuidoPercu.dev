@@ -1,0 +1,57 @@
+---
+title: "JAM Stack: HTML/CSS/JS static websites on modern web"
+date: 2020-04-18T13:57:29-03:00
+draft: false
+image: "/images/jamstack-html-css-javascript-statics-on-modern-web.png"
+description: "JavaScript in the browser as the runtime; Reusable HTTP APIs rather than app-specific databases; Prebuilt markup as the delivery mechanism."
+---
+
+[**JAM**Stack](https://jamstack.org/) is a way to create sites and apps focused on performance, security and scaling. It was a term created by [Matt Biilmann](https://twitter.com/biilmann) to describe a modern development architecture based on Javascript, reusable APIs and pre-built Markup.
+
+> ### **J**avaScript in the browser as the runtime; Reusable HTTP **A**PIs rather than app-specific databases; Prebuilt **m**arkup as the delivery mechanism. 
+>
+> #### [*Modern Web Development on the JAM Stack*](https://www.netlify.com/oreilly-jamstack/)
+
+![JAMStack](/images/jamstack.png)
+
+**JAM**Stack embraces continuous delivery, with atomic deploys and version control. The deployment process should be easy so it can be done by developers as well as content editors. 
+
+### What are the benefits?
+
+- You won't need to have a Database, build servers or manage infrastructure on AWS.
+- Less code being executed on each request means fewer runtime errors and more security. The more distance we can put between our users and the complexity in our systems, the greater our confidence that they will have the experience that we designed.
+- Static assets on the CDN makes it easier to scale and improve performance.
+- It's cheaper (and depending on your size, it can be [free](https://www.netlify.com)).
+
+
+
+### How to manage content?
+
+![static-site-generators](/images/static-site-generators.png)
+
+> ### The tools brought back a feeling of simplicity and control from the complex database-based Content Management Systems (CMS) that they replaced.
+>
+> #### [*Modern Web Development on the JAM Stack*](https://www.netlify.com/oreilly-jamstack/)
+
+There are plenty of [static site generators](https://www.staticgen.com/) and [Headless CMS](https://headlesscms.org/) to choose from. When we use a traditional CMS like Wordpress, Dupral or Joomla, the same tool is responsible for managing the content and building the HTML that will be rendered at the client's browser. When using static generators and Headless CMS we're able to separate those concerns, attaining all the benefits of JAMStack without loosing the flexibility of CMS.
+
+### The Ecosystem
+
+![](/images/ecosystem.png)
+
+For **e-commerce** we have solutions like [Snipcart](https://snipcart.com/) (a two lines of code solution to start selling products on your site), [Foxycart](https://www.foxy.io/), [Shopify buy button](https://www.shopify.co.uk/buy-button) and [Stripe](https://stripe.com/en-br) ([learn how to accept money on Jamstack](https://www.netlify.com/blog/2020/04/13/learn-how-to-accept-money-on-jamstack-sites-in-38-minutes/)).
+
+To handle **forms** and contact, we can use [Netlify Forms](https://www.netlify.com/products/forms/), [Wufoo](https://www.wufoo.com/), [Formkeep](https://formkeep.com/), [Formcarry](https://formcarry.com/) and [Google Forms](https://www.google.com/forms/about/). **Search** functionality can be handled by [Google Custom Search Engine](https://cse.google.com/about), [Bing Custom Search](https://www.customsearch.ai/) and [Algolia](https://www.algolia.com/). It's also possible to handle **A/B** testing ([Netlify split testing](https://docs.netlify.com/site-deploys/split-testing/?_ga=2.128409157.833240796.1587206131-2078730938.1586971403)), user **authentication** ([Netlify Identity](https://docs.netlify.com/visitor-access/identity/), [JWT](https://jwt.io/), [Amazon Cognito SSO](https://aws.amazon.com/pt/cognito/), [Auth0](https://auth0.com/)), **comments** and audience engaging [Disqus](https://disqus.com/).
+
+We can also expand what's possible with Function as a Service (Serverless), deploying on [Netlify](https://www.netlify.com/products/functions/), [AWS with SAM framework](https://www.guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/), [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) and [Google Cloud](https://cloud.google.com/functions/).
+
+
+
+### Resources
+
+- [Modern Web Development on the JAM Stack](https://www.netlify.com/oreilly-jamstack/) (e-book)
+- [Top 10 Reasons to be Betting on JAMStack](https://www.youtube.com/watch?v=NpDYdflrND0) (YouTube)
+- [How Websites Evolved Back to Static HTML/CSS/JS Files](https://paramaggarwal.substack.com/p/how-websites-evolved-back-to-static-html-css-js-files-57ce549f81db)
+- [5 Myths About JAMStack](https://css-tricks.com/5-myths-about-jamstack/)
+- [Let’s Build a JAMstack E-Commerce Store with Netlify Functions](https://css-tricks.com/lets-build-a-jamstack-e-commerce-store-with-netlify-functions/)
+

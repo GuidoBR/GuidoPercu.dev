@@ -1,3 +1,9 @@
 [submodule "content/playlist-ciencia"]
 	path = content/playlist-ciencia
 	url = git@github.com:GuidoBR/playlist-ciencia.git
+[submodule "themes/color"]
+	path = themes/color
+	url = https://gitlab.com/rmaguiar/hugo-theme-color-your-world.git
+[submodule "themes/zettels"]
+	path = themes/zettels
+	url = https://github.com/crisrojas/Zettels.git

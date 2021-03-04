@@ -1,0 +1,99 @@
+---
+title: "Serverless on Amazon Aws"
+date: 2020-07-08T12:31:40-03:00
+description: "AWS Serverless study notes for helping you build your Serverless app."
+draft: false
+image: "/images/amazon-aws-serverless.png"
+---
+
+![amazon-aws-serverless](/images/amazon-aws-serverless.png)
+
+Serverless is a architecture that let you delegate to the cloud provider ([AWS](https://aws.amazon.com/serverless/), Azure, GCP) the task of running and managing the infrastructure, which let you focus on your code itself. Pricing is based on resources consumed on the execution of the code, rather than pre-purchased units of computing. I've already covered about [how to build a serverless API using AWS SAM](/blog/build-a-serverless-python-api-using-aws-sam/) and in this article I want to explain how the main AWS services can be combined to create powerful serverless apps.
+
+> ### Serverless architectures may **benefit** from significantly reduced operational cost, complexity, and engineering lead time, at a **cost** of increased reliance on vendor dependencies and comparatively immature supporting services.
+>
+> #### Mike Roberts at [Serverless Architecture](https://martinfowler.com/articles/serverless.html)
+
+### Serverless Computation on AWS
+
+#### [Lambda Functions](https://aws.amazon.com/lambda/)
+
+Let you run code without dealing with infrastructure configuration, provisioning or managing servers. You pay for the time it's running. It natively supports Python, Go, NodeJS, Ruby, C# and Java. It also provides built-in fault tolerance (its built to compute across multiple availability zone, to protect you against data center failures).
+
+#### [Lambda@Edge](https://aws.amazon.com/lambda/edge/)
+
+It runs your code in response to events on your [Amazon CloudFront (CDN)](https://aws.amazon.com/cloudfront/), that helps you to run and scale your [frontend globally, with high availability](https://moduscreate.com/blog/serverless-allthethings-2/).
+
+### Databases
+
+#### [DynamoDB](https://aws.amazon.com/dynamodb/)
+
+A fast and flexible NoSQL database, ready to be integrated with [Lambda functions](blog/dynamodb-on-aws-sam/).
+
+#### [Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/)
+
+This is Amazon version of MySQL, where the database will automatically start up and shut down based on your application need.
+
+> ### Focus on your **application**, not the **infrastructure**.
+
+### SAM - Serverless Application Model
+
+[SAM](https://github.com/awslabs/serverless-application-model) is the framework from Amazon to help you [build Serverless application on AWS](https://www.guidopercu.dev/blog/build-a-serverless-python-api-using-aws-sam/). Combining [sam-cli](https://github.com/awslabs/aws-sam-cli) with [boto3 (Python library)](https://github.com/boto/boto3), you have a powerful environment to build Serverless applications.
+
+#### [CloudFormation](https://aws.amazon.com/pt/cloudformation/)
+
+[![CloudFormation example](/images/cloudformation.png)](https://github.com/GuidoBR/aws-sam-hello-world/blob/master/template.yaml)
+
+CloudFormation enables you to create and provision infrastructure deployment. It lets you uses AWS services and control them directly on your code. This is used inside the SAM as a `template.yaml` file and it has an good [documentation on how to use it](https://docs.aws.amazon.com/cloudformation/).
+
+#### [SNS](https://aws.amazon.com/sns/)
+
+![Create SNS Topic on CloudFormation example](/images/aws-topic.png)
+
+Amazon Simple Notification Service provides a fully managed service using emails and mobile push notifications.
+
+And with a simple Python function, using `boto3` library, you'll be able to send message to the topic you just created (triggering emails or push notifications):
+
+<script src="https://gist.github.com/GuidoBR/7bda377a36de6d82aa8c7d34588e6f71.js"></script>
+
+#### [S3](https://aws.amazon.com/en/s3/)
+
+![S3 Bucket on CloudFormation example](/static/images/aws-s3.png)
+
+Hosts web application static assets, and can be configured to be served through CloudFront. It can also be used to store user uploaded content, and can be accessed through your Lambda functions code using `boto3` Python library.
+
+<script src="https://gist.github.com/GuidoBR/fe55eff6d09e022abcaa08a2314e6d1d.js"></script>
+
+
+
+#### API Gateway
+
+![API Gateway on CloudFormation example](/static/images/api-gateway.png)
+
+You can run and manage an REST API that integrates with your Lambda functions to execute business logic, send and retrieve data to the database, includes traffic management, monitoring and API versioning. 
+
+The API Gateway is also used to [manage cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-api-corsconfiguration.html) for your API, configure custom [error responses](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html) and restrict access to your app to only some IP address (useful when you're developing an internal application that will going to be used only via VPN access).
+
+![API Gateway IP restriction on CloudFormation example](/static/images/api-gateway-restrict-access-ip.png)
+
+#### [Cognito](https://aws.amazon.com/en/cognito/)
+
+AWS Cognito is used for user management and as a identity provider. This tool can be used to manage user sign-up, sign-in, authorization, user groups and also provide built-in sign-in screens and federations (Facebook, Google, Amazon, SAML).
+
+- [Sessions With SAM (S1E2): Cognito and HTTP API](https://www.youtube.com/watch?v=nBtWCjKd72M&)
+- [AWS SAM API with Cognito](https://tenmilesquare.com/aws-sam-api-with-cognito/)
+
+### [CloudFormation Designer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html)
+
+After a while building your application, you will be able to create a diagram describing it. To do that, you'll need to upload your `template.yaml` file into [AWS CloudFormation Designer](https://console.aws.amazon.com/cloudformation/designer). It's a nice way to demonstrate how your application work for the stakeholders of the project.
+
+### References
+
+- [AWS Well Architected Patterns](https://cdkpatterns.com/patterns/well-architected/)
+- [Serverless Lens Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Serverless-Applications-Lens.pdf)
+- [Boto3 Python Library](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+
+
+
+
+
