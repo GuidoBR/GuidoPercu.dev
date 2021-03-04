@@ -60,8 +60,13 @@ theme = "color"
         url = "posts/"
       
       [[languages.en.menu.main]]
-        name = "Contact"
+        name = "Digital Garden"
         weight = 3
+        url = "garden/"
+
+      [[languages.en.menu.main]]
+        name = "Contact"
+        weight = 4
         url = "contact/"
 
 
