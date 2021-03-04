@@ -64,11 +64,6 @@ theme = "color"
         weight = 3
         url = "garden/"
 
-      [[languages.en.menu.main]]
-        name = "Contact"
-        weight = 4
-        url = "contact/"
-
 
 
 
