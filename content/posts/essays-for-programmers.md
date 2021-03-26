@@ -5,16 +5,16 @@ draft: true
 description: "Essays are very powerful ways of transmitting profound ideas. Those are books, articles and essays that had the most impact on my career."
 image: "/images/essays-on-programming-large.png"
 ---
-
+{{< rawhtml >}}
 <style>
-article { width: 100% !important; }        
+article.books { width: 100% }
 .bookshelf { margin: 2rem auto; text-align: center; position: relative; }
 .book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
-.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
-.book-grid ul li {  padding-left: 1.5em; }
+.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
+/*.book-grid ul li {  padding-left: 1.5em; }*/
 .book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
-.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1.0em; padding: 5px;}
-.book-description a { color: #fff; }
+.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1em; padding: 5px;}
+.book-description a { color: #fff; word-break: normal }
 .shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
 .shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
   box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
@@ -37,9 +37,47 @@ article { width: 100% !important; }
         article { margin-bottom: -5em !important; }
 }
 </style>
+{{< /rawhtml >}}
 
 <img src="/images/essays-on-programming-large.png" alt="Essays on Programming">
+------
 
+[Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) is considered the father of Computer Science and a personal hero.
+
+{{< rawhtml >}}
+<article class="books">
+  <div class="bookshelf">
+          <div class="book-grid">
+                  <ul>
+                    <li>
+                            <a href="http://www.abelard.org/turpap/turpap.htm" target="_blank">
+                                    <img src="/images/paper-turing-1.png" alt="Computing Machinery and Intelligence" class="book-image">
+                            </a>
+                            <p class="book-description">
+                                    <a href="http://www.abelard.org/turpap/turpap.htm" target="_blank">Computing Machinery and Intelligence</a>
+                            </p>
+                    </li>
+                    <li>
+                            <a href="http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf" target="_blank">
+                                    <img src="/images/paper-turing-2.jpg" alt="On computable numbers, with an application to the Entscheidungsproblem" class="book-image">
+                            </a>
+                            <p class="book-description">
+                                    <a href="http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf" target="_blank">On computable numbers, with an application to the Entscheidungsproblem</a>
+                            </p>
+                    </li>
+                    <li>
+                            <a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055" target="_blank">
+                                    <img src="/images/book-turing.jpg" alt="The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine" class="book-image">
+                            </a>
+                            <p class="book-description">
+                                    <a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055" target="_blank">The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine</a>
+                            </p>
+                    </li>
+                  </ul>
+          </div>
+  </div>
+</article>
+{{< /rawhtml >}}
 Peter Norvig "[Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html)" is a classic. Read it if you ever found yourself in a hurry to learn a new language or the most hyped Javascript framework.
 
 <blockquote class="otro-blockquote"> "Get interested in programming, and do some because it is fun. Make sure that it keeps being enough fun so that you will be willing to put in your ten years"</blockquote>
@@ -102,45 +140,6 @@ The more feedback you give, the more comfortable and skilled you will be next ti
 On [Why the next language you learn should be functional](http://queue.acm.org/detail.cfm?id=2038036) Yaron Minsky argues in favor of functional programming.
 
 <blockquote class="otro-blockquote">"I've been using OCaml in a production environment for nearly a decade, and over that time I have become convinced that functional languages, and in particular, statically typed ones such as OCaml and Haskell, are excellent general-purpose programming tools—better than any existing mainstream language. They also have an enormous range, being well suited for small scripting tasks as well as large-scale high-performance applications. They are not the right tool for every job, but they come surprisingly close."</blockquote>
-
-------
-
-[Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) is considered the father of Computer Science and a personal hero.
-
-<article>
-  <div class="bookshelf">
-          <div class="book-grid">
-                  <ul>
-                    <li>
-                            <a href="http://www.abelard.org/turpap/turpap.htm" target="_blank">
-                                    <img src="/images/paper-turing-1.png" alt="Computing Machinery and Intelligence" class="book-image">
-                            </a>
-                            <p class="book-description">
-                                    <a href="http://www.abelard.org/turpap/turpap.htm" target="_blank">Computing Machinery and Intelligence</a>
-                            </p>
-                    </li>
-
-                    <li>
-                            <a href="http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf" target="_blank">
-                                    <img src="/images/paper-turing-2.jpg" alt="On computable numbers, with an application to the Entscheidungsproblem" class="book-image">
-                            </a>
-                            <p class="book-description">
-                                    <a href="http://web.comlab.ox.ac.uk/oucl/research/areas/ieg/e-library/sources/tp2-ie.pdf" target="_blank">On computable numbers, with an application to the Entscheidungsproblem</a>
-                            </p>
-                    </li>
-    
-                    <li>
-                            <a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055" target="_blank">
-                                    <img src="/images/book-turing.jpg" alt="The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine" class="book-image">
-                            </a>
-                            <p class="book-description">
-                                    <a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055" target="_blank">The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine</a>
-                            </p>
-                    </li>
-                  </ul>
-          </div>
-  </div>
-</article>
 
 ------
 
