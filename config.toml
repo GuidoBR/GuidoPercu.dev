@@ -63,6 +63,11 @@ theme = "color"
         name = "Digital Garden"
         weight = 3
         url = "garden/"
+      
+      [[languages.en.menu.main]]
+        name = "Library"
+        weight = 4
+        url = "garden/"
 
 
 
