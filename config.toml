@@ -67,7 +67,7 @@ theme = "color"
       [[languages.en.menu.main]]
         name = "Library"
         weight = 4
-        url = "library/"
+        url = "library/library/"
 
 
 
