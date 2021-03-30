@@ -9,7 +9,7 @@ at [JAMstack Porto OPO Meetup](https://www.meetup.com/JAMstack-Porto/events/2747
 
 [![Performance and Sustainability with Jamstack websites](/images/jamstack-presentation.png)](https://www.canva.com/design/DAEZD31uQMo/77wXoPMKG3hwsZuNlLlJxg/view?utm_content=DAEZD31uQMo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
-[Complete presentation on Canva](https://www.canva.com/design/DAEZD31uQMo/77wXoPMKG3hwsZuNlLlJxg/view?utm_content=DAEZD31uQMo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+[Complete presentation on Canva](https://www.canva.com/design/DAEZD31uQMo/77wXoPMKG3hwsZuNlLlJxg/view?utm_content=DAEZD31uQMo&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) and on [Youtube](https://www.youtube.com/watch?v=EgxWItfMqsc)
 
 - [Performance, Security, SEO and JAMStack](https://moduscreate.com/blog/performance-security-seo-jamstack/)
 - [Gimball web performance audit budgeting](https://labs.moduscreate.com/gimbal-web-performance-audit-budgeting)
