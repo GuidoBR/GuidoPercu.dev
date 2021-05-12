@@ -9,6 +9,7 @@ title: "Bioinformatics"
 - [Ψ in RNA Vaccine - Twitter Thread (PT-BR)](https://twitter.com/fvguima/status/1344216804844044290)
 - [Conheça a Dra. Katalin Karikó, a cientista que desenvolveu a técnica da vacina de RNAm para a COVID-19](https://www.blogs.unicamp.br/covid-19/conheca-a-dra-katalin-kariko-a-cientista-que-desenvolveu-a-tecnica-da-vacina-de-rnam-para-a-covid-19/)
 - [Twitter Thread on Israel Vaccination](https://twitter.com/EricTopol/status/1364706944309628929)
+- [A Vida é um copia e cola](https://www.youtube.com/watch?v=ai36EJ2v95Q)
 
 -----
 
