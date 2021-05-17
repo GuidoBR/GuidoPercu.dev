@@ -28,12 +28,14 @@ According to [career ladders](https://career-ladders.dev/engineering/#senior-eng
 
 | name                                                         | type   |
 | ------------------------------------------------------------ | ------ |
+| [AWS Cloud Practitioner Essentials](https://www.coursera.org/learn/aws-cloud-practitioner-essentials#about) | Course |
 | [AWS Certified Cloud Practitioner Training 2020](https://www.youtube.com/watch?v=3hLmDS179YE) | Course |
 | [AWS Certified Developer - Associate 2020](https://www.youtube.com/watch?v=RrKRN9zRBWs&list=WL&index=59) | Course |
 | [AWS Certified Solutions Architect - Associate 2020](https://www.youtube.com/watch?v=Ia-UEYYR44s) | Course |
 | [Introduction to AWS Identity and Access Management](https://www.coursera.org/learn/introduction-to-aws-identity-and-access-management) | Course |
 | [Building Modern Python Applications on AWS](https://www.coursera.org/learn/building-modern-python-applications-on-aws) | Course |
 | [Full Stack AWS Crash Course](https://twitter.com/dabit3/status/1362142573402415106) | Course |
+| [AWS Fundamentals: Building Serverless Applications](https://www.coursera.org/learn/aws-fundamentals-building-serverless-applications) | Course |
 | [The Good Parts of AWS](https://gumroad.com/l/aws-good-parts) | Book   |
 
 ## System Design
