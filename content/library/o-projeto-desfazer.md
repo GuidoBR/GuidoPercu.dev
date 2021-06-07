@@ -1,7 +1,7 @@
 ---
-title: Resenha: "O Projeto Desfazer - A amizade que mudou nossa forma de pensar"
+title: Resenha de "O Projeto Desfazer - A amizade que mudou nossa forma de pensar"
 date: 2021-06-06T20:45:22-03:00
-draft: true
+draft: false
 ---
 
 > As imagens do futuro são moldadas pela experiência do passado”, escreveram, virando de cabeça para baixo as
