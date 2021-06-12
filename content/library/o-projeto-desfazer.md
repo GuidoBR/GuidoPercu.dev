@@ -30,6 +30,8 @@ O final é bem comovente da forma como o Michael Lewis sabe fazer seus finais de
 
 Excelente para quem quer procurar um livro humano, sobre amizade e de quebra aprender sobre como pensamos e tomamos decisões.
 
+ps: [Taleb faz algumas críticas ao autor Michael Lewis](https://twitter.com/nntaleb/status/1391842244911673348), especialmente em como ele retratou a controvérsia entre Amos e Danny com Gigerenzer.
+
 > Essa falha da intuição humana teve todo tipo de implicação para o modo como as pessoas atuavam no mundo,
 > faziam julgamentos e tomavam decisões, mas o artigo de Danny e Amos — que seria publicado no
 > Psychological Bulletin — se debruçava em suas consequências para a ciência social. Experimentos nessa área
