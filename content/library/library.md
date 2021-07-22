@@ -38,35 +38,65 @@ article.books { width: 100% }
 </style>
 <section>
 <article class="books">
-    <div class="bookshelf">
-            <div class="book-grid">
-                    <ul>
-                        <li>
-                                <a href="/library/almanack-of-naval-ravikant/">
-                                        <img src="/images/almanack-naval.jpg" alt="Almanack of Naval Ravikant" class="book-image">
-                                </a>
-                                <p class="book-description">
-                                        <a href="/library/almanack-of-naval-ravikant/">Almanack of Naval Ravikant</a>
-                                </p>
-                        </li>
-                        <li>
-                                <a href="/library/uma-breve-historia-da-riqueza/">
-                                        <img src="/images/uma-breve-historia-riqueza.jpeg" alt="Uma Breve Historia Da Riqueza" class="book-image">
-                                </a>
-                                <p class="book-description">
-                                        <a href="/library/uma-breve-historia-da-riqueza/">Uma Breve Historia Da Riqueza</a>
-                                </p>
-                        </li>
-                        <li>
-                                <a href="/library/essential-hayek/">
-                                        <img src="/images/book-essential-hayek.jpg" alt="The Essential Hayek" class="book-image">
-                                </a>
-                                <p class="book-description">
-                                        <a href="/library/essential-hayek/">The Essential Hayek</a>
-                                </p>
-                        </li>
-                    </ul>
-            </div>
+        <div class="bookshelf">
+                <div class="book-grid">
+                        <ul>
+                                <li>
+                                        <a href="/library/noise-daniel-kahneman/">
+                                                <img src="/images/noise-book.jpg" alt="Noise: A Flaw in Human Judgement" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/noise-daniel-kahneman/">Noise: A Flaw in Human Judgement</a>
+                                                <span><br>Daniel Kahneman, Olivier Sibony, Cass R. Sunstein</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/licoes-amargas/">
+                                                <img src="/images/livros-gustavo-franco.jpg" alt="Lições Amargas" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/licoes-amargas/">Lições Amargas</a>
+                                                <span><br>Gustavo Franco</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/o-projeto-desfazer/">
+                                                <img src="/images/o-projeto-desfazer.jpg" alt="O Projeto Desfazer" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/o-projeto-desfazer/">O Projeto Desfazer</a>
+                                        </p>
+                                </li>
+                        </ul>
+                </div>
+                <div class="book-grid">
+                        <ul>
+                                <li>
+                                        <a href="/library/almanack-of-naval-ravikant/">
+                                                <img src="/images/almanack-naval.jpg" alt="Almanack of Naval Ravikant" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/almanack-of-naval-ravikant/">Almanack of Naval Ravikant</a>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/uma-breve-historia-da-riqueza/">
+                                                <img src="/images/uma-breve-historia-riqueza.jpeg" alt="Uma Breve Historia Da Riqueza" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/uma-breve-historia-da-riqueza/">Uma Breve Historia Da Riqueza</a>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/essential-hayek/">
+                                                <img src="/images/book-essential-hayek.jpg" alt="The Essential Hayek" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/essential-hayek/">The Essential Hayek</a>
+                                        </p>
+                                </li>
+                        </ul>
+                </div>
             <div class="book-grid">
                     <ul>
                         <li>
