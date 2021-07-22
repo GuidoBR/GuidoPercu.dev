@@ -63,6 +63,8 @@ When we take more responsibilities on our careers, so does the [complexity of th
 | [Concurrent and Distributed Systems](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) | Course  |
 | [Grokking the Object Oriented Design Interview](https://www.educative.io/courses/grokking-the-object-oriented-design-interview) | Course  |
 | [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview) | Course  |
+| [Load Balancer concepts](https://twitter.com/sunilc_/status/1399599996324962304) | Tweet   |
+| [CAP Theorem](https://twitter.com/sunilc_/status/1400400067270377475) | Tweet   |
 
 ## Algorithms
 
