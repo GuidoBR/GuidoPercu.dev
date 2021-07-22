@@ -16,6 +16,14 @@ Senti falta de um pouco mais de enfase nas críticas ao atual ministro da econom
 Um livro bom e importante para entender o Brasil dos anos 2020/21.
 
 ----------------------
+
+Mais sobre Gustavo Franco:
+
+- [Podcast: A Arte da Política Economica - A Casa das Garças](https://iepecdg.com.br/podcast/podcast/gustavo-franco/)
+- [20 anos do Plano Real, O Globo - 2014](https://oglobo.globo.com/economia/20-anos-do-plano-real-11687119)
+- [História Contada (BCB): Gustavo Franco](https://www.bcb.gov.br/historiacontada/publicacoes/hc_bc_volume_22_gustavo_franco.pdf)
+
+----------------------
 Alguns trechos que destaquei:
 
 > "O Brasil ainda está preso a um anticapitalismo selvagem."
@@ -39,9 +47,7 @@ Alguns trechos que destaquei:
 > "As famílias brasileiras vêm sendo dilaceradas pela política desde a Proclamação da República, conforme tradição inaugurada por Esaú e Jacó, romance de Machado de Assis de 1904, ano da Revolta da Vacina, sobre dois irmãos – Pedro, o médico monarquista, e Paulo, o advogado republicano – que amavam a mesma mulher. Desde então a política vem sistematicamente arruinando a harmonia familiar em almoços e jantares, todos gritam e ninguém come direito, sobretudo se o assunto é a intervenção do Estado no domínio da economia."
 
 
-Editora: História Real
-Número de páginas: 256 páginas
-Data de publicação: 26/05/2021
+Editora História Real, publicado em 26/05/2021 (256 páginas)
 
 Referências:
 
