@@ -1,0 +1,131 @@
+---
+title: "Book Review: Noise a Flaw in Human Judgment"
+date: 2021-07-22T18:06:23-03:00
+draft: true
+
+---
+{{< rawhtml >}}
+<style>
+article.books { width: 100% }
+.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
+.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
+/*.book-grid ul li {  padding-left: 1.5em; }*/
+.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1em; padding: 5px;}
+.book-description a { color: #fff; word-break: normal }
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
+.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
+
+}
+.book-grid ul li .book-description { display: none; }
+.book-grid ul li:hover img { display: none; }
+.book-grid ul li:hover { margin-bottom: -3em !important; }
+.book-grid ul li:hover .book-description { display: block; }
+@media screen and (max-width: 1024px) {
+​        .book-grid ul { grid-template-columns: repeat(3, 1fr); }
+        .book-grid ul li { padding-left: 1.0em; }
+}
+@media screen and (max-width: 800px) {
+​        .book-grid ul { grid-template-columns: repeat(1, 1fr); }
+​        .book-grid ul li {  padding-bottom*: 1.5em; }
+​        .shelf-shadows, .shelf { display: none;}
+​        article { margin-bottom: -5em !important; }
+}
+</style>
+{{< /rawhtml >}}
+[![Noise a Flaw in Human Judgment](/images/noise-book.jpg)](https://amzn.to/3ztD15o)
+
+> Measurement, in everyday life as in science, is the act of using an instrument to assign a value on a scale to an object or event. You measure the length of a carpet in inches, using a tape measure. You measure the temperature in degrees Fahrenheit or Celsius by consulting a thermometer. The act of making a judgment is similar. When judges determine the appropriate prison term for a crime, they assign a value on a scale. So do underwriters when they set a dollar value to insure a risk, or doctors when they make a diagnosis. (The scale need not be numerical: “guilty beyond a reasonable doubt,” “advanced melanoma,” and “surgery is recommended” are judgments, too.) **Judgment can therefore be described as measurement in which the instrument is a human mind.**
+
+Ten years after "[Thinking Fast and Slow](https://amzn.to/3ztD15o)", Daniel Kahneman writes another great book about human judgment and decision making. On “[Noise: A Flaw in Human Judgment](https://amzn.to/3ztD15o)” Kahneman (with Cass Sunstein and Olivier Sibony) focuses on how we make noisy decisions in our daily life and in our professional environments.
+
+> Noise is variability in judgments that should be identical.
+
+The authors define Noise as “the unwanted variability of judgments” where bias are systematic errors in the same direction. Today we’re very focused on eliminating or at least reducing bias and the book argues that noise is just as important a matter to focus on.
+
+The book is full of examples of fields where there are noisy decisions, including medicine, justice, business and surprisingly (at least for me) fingerprint analysis.
+
+> Podcast interview with Daniel Kahneman: [Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)](https://freakonomics.com/podcast/pima-daniel-kahneman/)
+
+The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyse noise in different situations including project estimation, hiring, feedback cycles and much more.
+
+> As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.
+
+In chapter 8, there's an interesting discussion about what makes some ideas popular and how this can be misused to influence political opinion. It’s also described how people discussing together in a group can become more extremist in their ideas. This discussion together with the book “[Rules of Contagion](https://amzn.to/2Tu0pk1)” illuminated my world view on why the world is so polarized and with more extreme ideas circulating in the news and social media.
+
+There are some very important discussions about using algorithms and machine learning systems which can produce bias. They cite the book “[Weapons of Math Destruction](https://amzn.to/3y14fQz)” and argue that we should do better algorithms:
+
+> These examples and many others lead to an inescapable conclusion: although a predictive algorithm in an uncertain world is unlikely to be perfect, it can be far less imperfect than noisy and often ­biased human judgment. This superiority holds in terms of both validity (good algorithms almost always predict better) and discrimination (good algorithms can be less biased than human judges). If algorithms make fewer mistakes than human experts do and yet we have an intuitive preference for for people, then our intuitive preferences should be carefully examined
+
+In my opinion the most practical chapters are the appendices, because they are really useful and practical and can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution's decision process. Appendix B is a checklist for decision observers (the professional that will help a team to make better decisions). Appendix C tells us how to improve predictions.
+
+![Noise a Flaw in Human Judgment](/images/noise-bias-checklist.png)
+
+### Important chapters
+
+- 5 - Measuring Error
+- 8 - How Groups Amplify Noise
+- 12 - The Valley of the Normal
+- 19 - Debiasing and Decision Hygiene
+- 20 - Sequencing Information in Forensic Science
+- 21 - Selection and Aggregation in Forecasting
+- 22 - Guidelines in Medicine
+- 24 - Structure in Hiring
+- Review and Conclusion: Taking Noise Seriously
+- Appendix A: How to Conduct a Noise Audit
+- Appendix B: A Checklist for a Decision Observer
+- Appendix C: Correcting Predictions
+
+Together with [Kahneman's previous work](https://scholar.princeton.edu/kahneman/publications-0), this is a very important book that is worth to be re-read from time to time for it’s practical and philosophical value.
+
+### Further readings
+
+{{< rawhtml >}}
+<article class="books">
+        <div class="bookshelf">
+                <div class="book-grid">
+                        <ul>
+                                <li>
+                                        <a href="https://amzn.to/3iD7R4R">
+                                                <img src="/images/book-superforecasting.jpg" alt="Superforecasting: The Art and Science of Prediction" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://amzn.to/3iD7R4R">Superforecasting: The Art and Science of Prediction</a>
+                                                <span><br>Philip Tetlok</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="https://amzn.to/2W3RFlx">
+                                                <img src="/images/book-fast-and-slow.jpg" alt="Thinking Fast and Slow" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://amzn.to/2W3RFlx">Thinking Fast and Slow</a>
+                                                <span><br>Daniel Kahneman</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="https://amzn.to/3y14fQz">
+                                                <img src="/images/book-weapons-of-math-destruction.jpg" alt="Weapons of Math Destruction" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://amzn.to/3y14fQz">Weapons of Math Destruction</a>
+                                                <span><br>Cathy O'Neil</span>
+
+                                        </p>
+                                </li>
+                        </ul>
+                </div>
+        </div>
+</article>
+{{< /rawhtml >}}
+
+- [Best Books on Behavioral Economics](https://fivebooks.com/best-books/behavioural-economics-dan-ariely/)
+- [Daniel Kahneman on Google Scholar](https://scholar.google.com.br/citations?hl=pt-BR&user=ImhakoAAAAAJ)
+- [Daniel Kahneman on Priniceton](https://scholar.princeton.edu/kahneman/publications-0)
+- [Noise: How to Overcome the High, Hidden Cost of Inconsistent Decision Making](https://rapaport.com/wp-content/uploads/2020/09/20171001-AR-HBR-Noise.pdf) by Daniel Kahneman, Andrew M. Rosenfield, Linnea Gandhi, and Tom Blaser
+- #68 [Putting Your Intuition on Ice with Daniel Kahneman](https://fs.blog/daniel-kahneman/) — In this fascinating episode of the Knowledge Project Podcast, Psychologist and Nobel laureate Daniel Kahneman reveals the actions we can take to overcome the biases that cripple our decision-making, damper our thinking, and limit our effectiveness. Listen and Learn from the master.
+- [A Chat with Daniel Kahneman](https://www.collaborativefund.com/blog/a-chat-with-daniel-kahneman/)
+- [You're about to make a terrible decision](https://amzn.to/36TuoFh)
+- [Nudge](https://amzn.to/3y0diRL)

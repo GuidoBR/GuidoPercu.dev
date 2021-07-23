@@ -42,11 +42,11 @@ article.books { width: 100% }
                 <div class="book-grid">
                         <ul>
                                 <li>
-                                        <a href="/library/noise-daniel-kahneman/">
+                                        <a href="/library/book-review-noise-a-flaw-in-human-judgment/">
                                                 <img src="/images/noise-book.jpg" alt="Noise: A Flaw in Human Judgement" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/noise-daniel-kahneman/">Noise: A Flaw in Human Judgement</a>
+                                                <a href="/library/book-review-noise-a-flaw-in-human-judgment/">Noise: A Flaw in Human Judgement</a>
                                                 <span><br>Daniel Kahneman, Olivier Sibony, Cass R. Sunstein</span>
                                         </p>
                                 </li>
