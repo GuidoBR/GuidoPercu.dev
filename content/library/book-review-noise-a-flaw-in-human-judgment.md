@@ -56,15 +56,11 @@ The book is full of examples of fields where there are noisy decisions, includin
 
 The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyse noise in different situations including project estimation, hiring, feedback cycles and much more.
 
-> As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.
-
-In chapter 8, there's an interesting discussion about what makes some ideas popular and how this can be misused to influence political opinion. It’s also described how people discussing together in a group can become more extremist in their ideas. This discussion together with the book “[Rules of Contagion](https://amzn.to/2Tu0pk1)” illuminated my world view on why the world is so polarized and with more extreme ideas circulating in the news and social media.
-
 There are some very important discussions about using algorithms and machine learning systems which can produce bias. They cite the book “[Weapons of Math Destruction](https://amzn.to/3y14fQz)” and argue that we should do better algorithms:
 
 > These examples and many others lead to an inescapable conclusion: although a predictive algorithm in an uncertain world is unlikely to be perfect, it can be far less imperfect than noisy and often ­biased human judgment. This superiority holds in terms of both validity (good algorithms almost always predict better) and discrimination (good algorithms can be less biased than human judges). If algorithms make fewer mistakes than human experts do and yet we have an intuitive preference for for people, then our intuitive preferences should be carefully examined
 
-In my opinion the most practical chapters are the appendices, because they are really useful and practical and can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution's decision process. Appendix B is a checklist for decision observers (the professional that will help a team to make better decisions). Appendix C tells us how to improve predictions.
+In my opinion the most practical chapters are the appendices, because they present a set of guidelinies that can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution's decision process. Appendix B is a [checklist for decision observers](/images/noise-bias-checklist.png) (the professional that will help a team to make better decisions). Appendix C tells us how to improve predictions.
 
 ### Measuring Error
 
@@ -76,7 +72,10 @@ In my opinion the most practical chapters are the appendices, because they are r
 
 ### Group Polarization
 
-- “As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.”
+> As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.
+
+In chapter 8, there's an interesting discussion about what makes some ideas popular and how this can be misused to influence political opinion. It’s also described how people discussing together in a group can become more extremist in their ideas. This discussion together with the book “[Rules of Contagion](https://amzn.to/2Tu0pk1)” illuminated my world view on why the world is so polarized and with more extreme ideas circulating in the news and social media.
+
 - “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
   processes that isn’t going all that well!”
 - "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
