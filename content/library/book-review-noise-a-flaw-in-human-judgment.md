@@ -17,7 +17,6 @@ article.books { width: 100% }
 .shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
 .shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
   box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
-
 }
 .book-grid ul li .book-description { display: none; }
 .book-grid ul li:hover img { display: none; }
@@ -47,7 +46,7 @@ The authors define Noise as “the unwanted variability of judgments” where bi
 
 The book is full of examples of fields where there are noisy decisions, including medicine, justice, business and surprisingly (at least for me) fingerprint analysis.
 
-> Podcast interview with Daniel Kahneman: [Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)](https://freakonomics.com/podcast/pima-daniel-kahneman/)
+[![Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)](/images/kahneman-people-i-mostly-admire.png)](https://freakonomics.com/podcast/pima-daniel-kahneman/)Podcast interview with Daniel Kahneman: [Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)](https://freakonomics.com/podcast/pima-daniel-kahneman/)
 
 The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyse noise in different situations including project estimation, hiring, feedback cycles and much more.
 
@@ -66,8 +65,22 @@ In my opinion the most practical chapters are the appendices, because they are r
 ### Important chapters
 
 - 5 - Measuring Error
+  - [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error)
+  - “Oddly, reducing bias and noise by the same amount has the same
+    effect on accuracy.”
+  - Overall Error (MSE) = Bias 2 + Noise 2
 - 8 - How Groups Amplify Noise
+  - “As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.”
+  - “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
+    processes that isn’t going all that well!”
+  - "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
 - 12 - The Valley of the Normal
+  - "When the authors of the Fragile Families challenge equate understanding with prediction (or the absence of one with the absence of the other), they use the term understanding in a specific sense. There are other meanings of the word: if you say you understand a mathematical concept or you understand what love is, you are probably not suggesting an ability to make any specific predictions.
+    However, in the discourse of social science, and in most everyday conversations, a claim to understand something is a claim to understand what causes that thing. The sociologists who collected and studied the thousands of variables in the Fragile Families study were looking for the causes of the outcomes they observed. Physicians who understand what ails a patient are claiming that the pathology they have diagnosed is the cause of the symptoms they have observed. To understand is to describe a causal chain. The ability to make a prediction is a measure of whether such a causal chain has indeed been identified. And correlation, the measure of predictive accuracy, is a measure of how much causation we can explain."
+  - [Does causation imply correlation?](https://stats.stackexchange.com/questions/26300/does-causation-imply-correlation)
+  - Causal Thinking x Statistical Thinking
+  - Understanding in the Valley of the Normal
+  - "More broadly, our sense of understanding the world depends on our extraordinary ability to construct narratives that explain the events we observe. The search for causes is almost always successful because causes can be drawn from an unlimited reservoir of facts and beliefs about the world. As anyone who listens to the evening news knows, for example, few large movements of the stock market remain unexplained. The same news flow can “explain” either a fall of the indices (nervous investors are worried about the news!) or a rise (sanguine investors remain optimistic!)."
 - 19 - Debiasing and Decision Hygiene
 - 20 - Sequencing Information in Forensic Science
 - 21 - Selection and Aggregation in Forecasting
@@ -106,13 +119,39 @@ Together with [Kahneman's previous work](https://scholar.princeton.edu/kahneman/
                                         </p>
                                 </li>
                                 <li>
+                                        <a href="https://amzn.to/3eP5n2l">
+                                                <img src="/images/book-mindware.webp" alt="Mindware" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://amzn.to/3eP5n2l">Mindware: Tools for Smart Thinking</a>
+                                                <span><br>Richard Nisbett</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="https://amzn.to/2ULMLJA">
+                                                <img src="/images/book-misbehaving.jpg" alt="Misbehaving: The Making of Behavioral Economics" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://amzn.to/2ULMLJA">Misbehaving: The Making of Behavioral Economics</a>
+                                                <span><br>Richard Thaler</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="https://amzn.to/3kSY1P8">
+                                                <img src="/images/book-you-are-about-to-make-a-terrible-mistake.jpg" alt="You are about to make a terrible mistake" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://amzn.to/3kSY1P8">You are about to make a terrible mistake</a>
+                                                <span><br>Richard Thaler</span>
+                                        </p>
+                                </li>
+                                <li>
                                         <a href="https://amzn.to/3y14fQz">
                                                 <img src="/images/book-weapons-of-math-destruction.jpg" alt="Weapons of Math Destruction" class="book-image">
                                         </a>
                                         <p class="book-description">
                                                 <a href="https://amzn.to/3y14fQz">Weapons of Math Destruction</a>
                                                 <span><br>Cathy O'Neil</span>
-
                                         </p>
                                 </li>
                         </ul>
@@ -122,10 +161,7 @@ Together with [Kahneman's previous work](https://scholar.princeton.edu/kahneman/
 {{< /rawhtml >}}
 
 - [Best Books on Behavioral Economics](https://fivebooks.com/best-books/behavioural-economics-dan-ariely/)
-- [Daniel Kahneman on Google Scholar](https://scholar.google.com.br/citations?hl=pt-BR&user=ImhakoAAAAAJ)
 - [Daniel Kahneman on Priniceton](https://scholar.princeton.edu/kahneman/publications-0)
 - [Noise: How to Overcome the High, Hidden Cost of Inconsistent Decision Making](https://rapaport.com/wp-content/uploads/2020/09/20171001-AR-HBR-Noise.pdf) by Daniel Kahneman, Andrew M. Rosenfield, Linnea Gandhi, and Tom Blaser
 - #68 [Putting Your Intuition on Ice with Daniel Kahneman](https://fs.blog/daniel-kahneman/) — In this fascinating episode of the Knowledge Project Podcast, Psychologist and Nobel laureate Daniel Kahneman reveals the actions we can take to overcome the biases that cripple our decision-making, damper our thinking, and limit our effectiveness. Listen and Learn from the master.
 - [A Chat with Daniel Kahneman](https://www.collaborativefund.com/blog/a-chat-with-daniel-kahneman/)
-- [You're about to make a terrible decision](https://amzn.to/36TuoFh)
-- [Nudge](https://amzn.to/3y0diRL)
