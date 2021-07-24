@@ -46,7 +46,13 @@ The authors define Noise as “the unwanted variability of judgments” where bi
 
 The book is full of examples of fields where there are noisy decisions, including medicine, justice, business and surprisingly (at least for me) fingerprint analysis.
 
-[![Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)](/images/kahneman-people-i-mostly-admire.png)](https://freakonomics.com/podcast/pima-daniel-kahneman/)Podcast interview with Daniel Kahneman: [Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)](https://freakonomics.com/podcast/pima-daniel-kahneman/)
+{{< rawhtml >}}
+<figure>
+  <p><a href="https://freakonomics.com/podcast/pima-daniel-kahneman/"><img src="/images/kahneman-people-i-mostly-admire.png" alt="Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27"></a>
+  <figcaption>Podcast interview with Daniel Kahneman: <a href="https://freakonomics.com/podcast/pima-daniel-kahneman/">Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)</a></figcaption>
+</figure>
+{{< /rawhtml >}}
+
 
 The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyse noise in different situations including project estimation, hiring, feedback cycles and much more.
 
@@ -60,32 +66,60 @@ There are some very important discussions about using algorithms and machine lea
 
 In my opinion the most practical chapters are the appendices, because they are really useful and practical and can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution's decision process. Appendix B is a checklist for decision observers (the professional that will help a team to make better decisions). Appendix C tells us how to improve predictions.
 
-![Noise a Flaw in Human Judgment](/images/noise-bias-checklist.png)
+### Measuring Error
 
-### Important chapters
+- [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error)
+- “Oddly, reducing bias and noise by the same amount has the same
+  effect on accuracy.”
+- Overall Error (MSE) = Bias 2 + Noise 2
+- Chapter 5
 
-- 5 - Measuring Error
-  - [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error)
-  - “Oddly, reducing bias and noise by the same amount has the same
-    effect on accuracy.”
-  - Overall Error (MSE) = Bias 2 + Noise 2
-- 8 - How Groups Amplify Noise
-  - “As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.”
-  - “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
-    processes that isn’t going all that well!”
-  - "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
-- 12 - The Valley of the Normal
-  - "When the authors of the Fragile Families challenge equate understanding with prediction (or the absence of one with the absence of the other), they use the term understanding in a specific sense. There are other meanings of the word: if you say you understand a mathematical concept or you understand what love is, you are probably not suggesting an ability to make any specific predictions.
-    However, in the discourse of social science, and in most everyday conversations, a claim to understand something is a claim to understand what causes that thing. The sociologists who collected and studied the thousands of variables in the Fragile Families study were looking for the causes of the outcomes they observed. Physicians who understand what ails a patient are claiming that the pathology they have diagnosed is the cause of the symptoms they have observed. To understand is to describe a causal chain. The ability to make a prediction is a measure of whether such a causal chain has indeed been identified. And correlation, the measure of predictive accuracy, is a measure of how much causation we can explain."
-  - [Does causation imply correlation?](https://stats.stackexchange.com/questions/26300/does-causation-imply-correlation)
-  - Causal Thinking x Statistical Thinking
-  - Understanding in the Valley of the Normal
-  - "More broadly, our sense of understanding the world depends on our extraordinary ability to construct narratives that explain the events we observe. The search for causes is almost always successful because causes can be drawn from an unlimited reservoir of facts and beliefs about the world. As anyone who listens to the evening news knows, for example, few large movements of the stock market remain unexplained. The same news flow can “explain” either a fall of the indices (nervous investors are worried about the news!) or a rise (sanguine investors remain optimistic!)."
-- 19 - Debiasing and Decision Hygiene
+### Group Polarization
+
+- “As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.”
+- “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
+  processes that isn’t going all that well!”
+- "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
+- Chapter 8
+
+### Understanding: Causal x Statistical
+
+- "When the authors of the Fragile Families challenge equate understanding with prediction (or the absence of one with the absence of the other), they use the term understanding in a specific sense. There are other meanings of the word: if you say you understand a mathematical concept or you understand what love is, you are probably not suggesting an ability to make any specific predictions.
+  However, in the discourse of social science, and in most everyday conversations, a claim to understand something is a claim to understand what causes that thing. The sociologists who collected and studied the thousands of variables in the Fragile Families study were looking for the causes of the outcomes they observed. Physicians who understand what ails a patient are claiming that the pathology they have diagnosed is the cause of the symptoms they have observed. To understand is to describe a causal chain. The ability to make a prediction is a measure of whether such a causal chain has indeed been identified. And correlation, the measure of predictive accuracy, is a measure of how much causation we can explain."
+- [Does causation imply correlation?](https://stats.stackexchange.com/questions/26300/does-causation-imply-correlation)
+- Causal Thinking x Statistical Thinking
+- Understanding in the Valley of the Normal
+- "More broadly, our sense of understanding the world depends on our extraordinary ability to construct narratives that explain the events we observe. The search for causes is almost always successful because causes can be drawn from an unlimited reservoir of facts and beliefs about the world. As anyone who listens to the evening news knows, for example, few large movements of the stock market remain unexplained. The same news flow can “explain” either a fall of the indices (nervous investors are worried about the news!) or a rise (sanguine investors remain optimistic!)."
+- Chapter 12
+
+### How to make better decisions
+
+- This chapter introduces "decision hygiene" and "decision observer" as ways of reducing noise and bias in the decision process. This will be later explored on the appendix.
+- “Do you know what specific bias you’re fighting and in what direction
+  it affects the outcome? If not, there are probably several biases at
+  work, and it is hard to predict which one will dominate.”
+- “Before we start discussing this decision, let’s designate a decision
+  observer.”
+- “We have kept good decision hygiene in this decision process;
+  chances are the decision is as good as it can be.”
+- Chapter 19
+
+{{< rawhtml >}}
+<figure>
+  <p><img src="/images/noise-bias-checklist.png" alt="Noise Bias Checklist">
+  <figcaption>A checklist for decision observer (from the boo Noise a Flaw in Human Judgment, Appendix B)</a></figcaption>
+</figure>
+{{< /rawhtml >}}
+
+### Noise examples
+
 - 20 - Sequencing Information in Forensic Science
 - 21 - Selection and Aggregation in Forecasting
 - 22 - Guidelines in Medicine
 - 24 - Structure in Hiring
+
+### Important chapters
+
 - Review and Conclusion: Taking Noise Seriously
 - Appendix A: How to Conduct a Noise Audit
 - Appendix B: A Checklist for a Decision Observer
