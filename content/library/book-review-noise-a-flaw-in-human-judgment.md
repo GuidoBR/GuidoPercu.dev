@@ -1,6 +1,6 @@
 ---
 title: "Book Review: Noise a Flaw in Human Judgment"
-date: 2021-07-22T18:06:23-03:00
+date: 2021-07-31T18:06:23-03:00
 draft: true
 
 ---
@@ -54,7 +54,7 @@ The book is full of examples of fields where there are noisy decisions, includin
 {{< /rawhtml >}}
 
 
-The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyse noise in different situations including project estimation, hiring, feedback cycles and much more.
+The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyses noise in different situations including project estimation, hiring, feedback cycles and much more.
 
 There are some very important discussions about using algorithms and machine learning systems which can produce bias. They cite the book “[Weapons of Math Destruction](https://amzn.to/3y14fQz)” and argue that we should do better algorithms:
 
@@ -62,60 +62,71 @@ There are some very important discussions about using algorithms and machine lea
 
 In my opinion the most practical chapters are the appendices, because they present a set of guidelinies that can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution's decision process. Appendix B is a [checklist for decision observers](/images/noise-bias-checklist.png) (the professional that will help a team to make better decisions). Appendix C tells us how to improve predictions.
 
-### Measuring Error
+### How can Error be measured?
 
-- [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error)
-- “Oddly, reducing bias and noise by the same amount has the same
-  effect on accuracy.”
-- Overall Error (MSE) = Bias 2 + Noise 2
-- Chapter 5
+> - “Oddly, reducing bias and noise by the same amount has the same
+>   effect on accuracy.”
+> - “Reducing noise in predictive judgment is always useful, regardless of
+>   what you know about bias.”
+> - “Predictive judgments are involved in every decision, and accuracy
+>   should be their only goal. Keep your values and your facts
+>   separate.”
+
+In the XVIII century, Carl Friedrich Gauss and Adrien-Marie Legendre invented the [method of least squares](https://en.wikipedia.org/wiki/Least_squares), a way to rule for scoring the contribution of individual errors to the overall error. This method has applications on many areas, including [finance](https://www.investopedia.com/terms/l/least-squares-method.asp), [statistics](https://www.jmp.com/en_ch/statistics-knowledge-portal/what-is-regression/the-method-of-least-squares.html), and on Noise analysis. The authors use this method to get the error equations -- that remind us of the Pythagorean theorem:
+
+> Error in a single measurement = Bias + Noisy Error
+>
+> Overall Error (MSE) = Bias² + Noise²
 
 ### Group Polarization
 
-> As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.
+> - As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.
+> - “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
+>   processes that isn’t going all that well!”
+> - "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
 
 In chapter 8, there's an interesting discussion about what makes some ideas popular and how this can be misused to influence political opinion. It’s also described how people discussing together in a group can become more extremist in their ideas. This discussion together with the book “[Rules of Contagion](https://amzn.to/2Tu0pk1)” illuminated my world view on why the world is so polarized and with more extreme ideas circulating in the news and social media.
 
-- “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
-  processes that isn’t going all that well!”
-- "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
-- Chapter 8
+### Understanding: Causal Thinking x Statistical Thinking
 
-### Understanding: Causal x Statistical
+> "When the authors of the Fragile Families challenge equate understanding with prediction (or the absence of one with the absence of the other), they use the term understanding in a specific sense. There are other meanings of the word: if you say you understand a mathematical concept or you understand what love is, you are probably not suggesting an ability to make any specific predictions.
+>
+> However, **in the discourse of social science, and in most everyday conversations, a claim to understand something is a claim to understand what causes that thing**. The sociologists who collected and studied the thousands of variables in the Fragile Families study were looking for the causes of the outcomes they observed. Physicians who understand what ails a patient are claiming that the pathology they have diagnosed is the cause of the symptoms they have observed. **To understand is to describe a causal chain**. The ability to make a prediction is a measure of whether such a causal chain has indeed been identified. And correlation, the measure of predictive accuracy, is a measure of how much causation we can explain."
 
-- "When the authors of the Fragile Families challenge equate understanding with prediction (or the absence of one with the absence of the other), they use the term understanding in a specific sense. There are other meanings of the word: if you say you understand a mathematical concept or you understand what love is, you are probably not suggesting an ability to make any specific predictions.
-  However, in the discourse of social science, and in most everyday conversations, a claim to understand something is a claim to understand what causes that thing. The sociologists who collected and studied the thousands of variables in the Fragile Families study were looking for the causes of the outcomes they observed. Physicians who understand what ails a patient are claiming that the pathology they have diagnosed is the cause of the symptoms they have observed. To understand is to describe a causal chain. The ability to make a prediction is a measure of whether such a causal chain has indeed been identified. And correlation, the measure of predictive accuracy, is a measure of how much causation we can explain."
-- [Does causation imply correlation?](https://stats.stackexchange.com/questions/26300/does-causation-imply-correlation)
-- Causal Thinking x Statistical Thinking
-- Understanding in the Valley of the Normal
-- "More broadly, our sense of understanding the world depends on our extraordinary ability to construct narratives that explain the events we observe. The search for causes is almost always successful because causes can be drawn from an unlimited reservoir of facts and beliefs about the world. As anyone who listens to the evening news knows, for example, few large movements of the stock market remain unexplained. The same news flow can “explain” either a fall of the indices (nervous investors are worried about the news!) or a rise (sanguine investors remain optimistic!)."
-- Chapter 12
+On chapter 12, in my opinion the most interesting chapter of the book, there is a discussion on what means to understand. We usually think about cause and effects, which can be highly misleading when we're dealing with complex phenomenons.  Causal thinking creates stories to explain how specific events affect the outcomes. In the chapter they explain this using an example of an social worker:
+
+> To experience causal thinking, picture yourself as a social worker who follows the cases of many underprivileged families. You have just heard that one of these families, the Joneses, has been evicted. Your reaction to this event is informed by what you know about the Joneses. As it happens, Jessica Jones, the family’s breadwinner, was laid off a few months ago. She could not find another job, and since then, she has been unable to pay the rent in full. She made partial payments, pleaded with the building manager several times, and even asked you to intervene (you did, but he remained unmoved). Given this context, the Joneses’ eviction is sad but not surprising. It feels, in fact, like the logical end of a chain of events, the inevitable denouement of a foreordained tragedy.
+
+It's easy to look for narratives and stories that explains the world, this is the default method that we form our own world view -- and it's also reinforced by stories on the media and how we learn from history. People think in stories, not statistics
+
+> "More broadly, our sense of understanding the world depends on our extraordinary ability to construct narratives that explain the events we observe. The search for causes is almost always successful because causes can be drawn from an unlimited reservoir of facts and beliefs about the world. As anyone who listens to the evening news knows, for example, few large movements of the stock market remain unexplained. The same news flow can “explain” either a fall of the indices (nervous investors are worried about the news!) or a rise (sanguine investors remain optimistic!)."
+
+Statistical thinking on the other hand, is a more sophisticated and effortful way of thinking. It requires the energy and attention of [System 2](https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-slow/) (slow, deliberate thought) and also needs some level of specialized training. It's applied on scientific research, and it takes into consideration that the world is much more complex than a simple cause and effect process. For the example above, the eviction of Joneses is seen as statistically likely outcome, given prior observations of cases that shares similarity, using statistics and data analysis to do an informed prediction. 
 
 ### How to make better decisions
 
-- This chapter introduces "decision hygiene" and "decision observer" as ways of reducing noise and bias in the decision process. This will be later explored on the appendix.
-- “Do you know what specific bias you’re fighting and in what direction
-  it affects the outcome? If not, there are probably several biases at
-  work, and it is hard to predict which one will dominate.”
-- “Before we start discussing this decision, let’s designate a decision
-  observer.”
-- “We have kept good decision hygiene in this decision process;
-  chances are the decision is as good as it can be.”
-- Chapter 19
+> - “Do you know what specific bias you’re fighting and in what direction
+>   it affects the outcome? If not, there are probably several biases at
+>   work, and it is hard to predict which one will dominate.”
+> - “Before we start discussing this decision, let’s designate a decision
+>   observer.”
+> - “We have kept good decision hygiene in this decision process;
+>   chances are the decision is as good as it can be.”
+
+Many organizations have as one of their goals debiasing judgments, and in order to achieve that they introduced a series of process and technologies. On chapter 19, the authors discuss about those interventions and explains how we can incorporate them on our own organizations. *Decision hygiene* is the process for reducing noise in the decision process, and following it's principles means that you are adopting mechanisms that reduces noises without ever knowing which errors you're avoiding. Some of those principles are:
+
+- Sequencing information to limit the formation of premature intuitions. Sometimes, less information is better.
+- When you get a second person to judge on a decision, he should not be aware of the first judgment.
+- Aggregating multiple independent estimates
+- Designating a decision observer to identify signs of bias
 
 {{< rawhtml >}}
 <figure>
   <p><img src="/images/noise-bias-checklist.png" alt="Noise Bias Checklist">
-  <figcaption>A checklist for decision observer (from the boo Noise a Flaw in Human Judgment, Appendix B)</a></figcaption>
+  <figcaption>A checklist for decision observer (from the book Noise a Flaw in Human Judgment, Appendix B)</a></figcaption>
 </figure>
+
 {{< /rawhtml >}}
-
-### Noise examples
-
-- 20 - Sequencing Information in Forensic Science
-- 21 - Selection and Aggregation in Forecasting
-- 22 - Guidelines in Medicine
-- 24 - Structure in Hiring
 
 ### Important chapters
 
@@ -123,8 +134,12 @@ In chapter 8, there's an interesting discussion about what makes some ideas popu
 - Appendix A: How to Conduct a Noise Audit
 - Appendix B: A Checklist for a Decision Observer
 - Appendix C: Correcting Predictions
+- 20 - Sequencing Information in Forensic Science
+- 21 - Selection and Aggregation in Forecasting
+- 22 - Guidelines in Medicine
+- 24 - Structure in Hiring
 
-Together with [Kahneman's previous work](https://scholar.princeton.edu/kahneman/publications-0), this is a very important book that is worth to be re-read from time to time for it’s practical and philosophical value.
+Bias is a problem and so is noise. It's a false to hope that becoming aware of the errors we'll make better decisions, but it is possible to design and create better systems and organizations to do better judgments.  Together with [Kahneman's previous work](https://scholar.princeton.edu/kahneman/publications-0), this is a very important book that is worth to be re-read from time to time for it’s practical and philosophical value.
 
 ### Further readings
 
@@ -194,7 +209,10 @@ Together with [Kahneman's previous work](https://scholar.princeton.edu/kahneman/
 {{< /rawhtml >}}
 
 - [Best Books on Behavioral Economics](https://fivebooks.com/best-books/behavioural-economics-dan-ariely/)
-- [Daniel Kahneman on Priniceton](https://scholar.princeton.edu/kahneman/publications-0)
-- [Noise: How to Overcome the High, Hidden Cost of Inconsistent Decision Making](https://rapaport.com/wp-content/uploads/2020/09/20171001-AR-HBR-Noise.pdf) by Daniel Kahneman, Andrew M. Rosenfield, Linnea Gandhi, and Tom Blaser
-- #68 [Putting Your Intuition on Ice with Daniel Kahneman](https://fs.blog/daniel-kahneman/) — In this fascinating episode of the Knowledge Project Podcast, Psychologist and Nobel laureate Daniel Kahneman reveals the actions we can take to overcome the biases that cripple our decision-making, damper our thinking, and limit our effectiveness. Listen and Learn from the master.
+- [Daniel Kahneman on Princeton](https://scholar.princeton.edu/kahneman/publications-0)
+- [Noise: How to Overcome the High, Hidden Cost of Inconsistent Decision Making](https://hbr.org/2016/10/noise) by Daniel Kahneman, Andrew M. Rosenfield, Linnea Gandhi, and Tom Blaser
+- #68 [Putting Your Intuition on Ice with Daniel Kahneman](https://fs.blog/daniel-kahneman/)
 - [A Chat with Daniel Kahneman](https://www.collaborativefund.com/blog/a-chat-with-daniel-kahneman/)
+- [Bias and Noise: Daniel Kahneman on Errors in Decision-Making](https://natematias.medium.com/bias-and-noise-daniel-kahneman-onerrors-in-decision-making-6bc844ff5194)
+- [Bias Is a Big Problem. But So Is ‘Noise.’](https://www.nytimes.com/2021/05/15/opinion/noise-bias-kahneman.html) by Daniel Kahneman
+
