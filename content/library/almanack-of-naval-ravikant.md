@@ -6,11 +6,44 @@ draft: true
 
 {{< rawhtml >}}
 <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+.otro-blockquote::after{
+  content: '';
+}
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
 article { width: 100% !important; }
 .bookshelf { margin: 2rem auto; text-align: center; position: relative; }
 .book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
 .book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
-.book-grid ul li {  padding-left: 1.5em; }
+/*.book-grid ul li {  padding-left: 1.5em; }*/
 .book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
 .book-description { width: 200px; background-color: #000; height: 300px; font-size: 1.2em; padding: 5px;}
 .book-description a { color: #fff; }
