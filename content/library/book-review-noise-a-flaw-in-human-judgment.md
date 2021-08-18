@@ -38,15 +38,16 @@ article.books { width: 100% }
 
 > Measurement, in everyday life as in science, is the act of using an instrument to assign a value on a scale to an object or event. You measure the length of a carpet in inches, using a tape measure. You measure the temperature in degrees Fahrenheit or Celsius by consulting a thermometer. The act of making a judgment is similar. When judges determine the appropriate prison term for a crime, they assign a value on a scale. So do underwriters when they set a dollar value to insure a risk, or doctors when they make a diagnosis. (The scale need not be numerical: “guilty beyond a reasonable doubt,” “advanced melanoma,” and “surgery is recommended” are judgments, too.) **Judgment can therefore be described as measurement in which the instrument is a human mind.**
 
-Ten years after "[Thinking Fast and Slow](https://amzn.to/3ztD15o)", Daniel Kahneman writes another great book about human judgment and decision making. On “[Noise: A Flaw in Human Judgment](https://amzn.to/3ztD15o)” Kahneman (with Cass Sunstein and Olivier Sibony) focuses on how we make noisy decisions in our daily life and in our professional environments.
+Ten years after "[Thinking Fast and Slow](https://amzn.to/3ztD15o)", Daniel Kahneman writes another great book about human judgment and decision making. “[Noise: A Flaw in Human Judgment](https://amzn.to/3ztD15o)” Together with Cass Sunstein and Olivier Sibony, Kahneman now focuses on how we make noisy decisions in our daily life and in our professional environments.
 
 > Noise is variability in judgments that should be identical.
 
-The authors define Noise as “the unwanted variability of judgments” where bias are systematic errors in the same direction. Today we’re very focused on eliminating or at least reducing bias and the book argues that noise is just as important a matter to focus on.
+The authors define Noise as “the unwanted variability of judgments” where bias are systematic errors in the same direction. Nowadays we’re very focused on eliminating or at least reducing bias and the book argues that noise is just as important a matter to focus on.
 
-The book is full of examples of fields where there are noisy decisions, including medicine, justice, business and surprisingly (at least for me) fingerprint analysis.
+The book is full of examples of noisy decisions in many different fields, including medicine, justice, business and surprisingly (at least for me) fingerprint analysis.
 
 {{< rawhtml >}}
+
 <figure>
   <p><a href="https://freakonomics.com/podcast/pima-daniel-kahneman/"><img src="/images/kahneman-people-i-mostly-admire.png" alt="Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27"></a>
   <figcaption>Podcast interview with Daniel Kahneman: <a href="https://freakonomics.com/podcast/pima-daniel-kahneman/">Why Our Judgment is Flawed — and What to Do About It (People I (Mostly) Admire Ep. 27)</a></figcaption>
@@ -54,13 +55,13 @@ The book is full of examples of fields where there are noisy decisions, includin
 {{< /rawhtml >}}
 
 
-The book is structured as a set of 6 parts and three very useful appendices. In the first part, the authors define what Noise is, and how it affects the criminal justice system. In the second part, it introduces us to how to measure errors (bias and noise) using a concept called mean squared error. In the next 4 parts they use those concepts to analyses noise in different situations including project estimation, hiring, feedback cycles and much more.
+The book is structured as a set of six parts and three very useful appendices. In the first part, the authors define the concept of Noise and how it affects the criminal justice system. The second part introduces a method to measure errors (bias and noise) based on a concept called mean squared error. In the following four parts of the book, the authors use those concepts to analyse noise in many different situations such as project estimation, hiring, feedback cycles and more.
 
-There are some very important discussions about using algorithms and machine learning systems which can produce bias. They cite the book “[Weapons of Math Destruction](https://amzn.to/3y14fQz)” and argue that we should do better algorithms:
+*Noise* also raises a very important discussion about how algorithms and machine learning systems can produce bias. There is a reference to Cathy O’Neil’s “[Weapons of Math Destruction](https://amzn.to/3y14fQz)” and the authors argue that improving algorithms is worth the effort.
 
-> These examples and many others lead to an inescapable conclusion: although a predictive algorithm in an uncertain world is unlikely to be perfect, it can be far less imperfect than noisy and often ­biased human judgment. This superiority holds in terms of both validity (good algorithms almost always predict better) and discrimination (good algorithms can be less biased than human judges). If algorithms make fewer mistakes than human experts do and yet we have an intuitive preference for for people, then our intuitive preferences should be carefully examined
+> These examples and many others lead to an inescapable conclusion: although a predictive algorithm in an uncertain world is unlikely to be perfect, it can be far less imperfect than noisy and often biased human judgment. This superiority holds in terms of both validity (good algorithms almost always predict better) and discrimination (good algorithms can be less biased than human judges). If algorithms make fewer mistakes than human experts do and yet we have an intuitive preference for people, then our intuitive preferences should be carefully examined.
 
-In my opinion the most practical chapters are the appendices, because they present a set of guidelinies that can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution's decision process. Appendix B is a [checklist for decision observers](/images/noise-bias-checklist.png) (the professional that will help a team to make better decisions). Appendix C tells us how to improve predictions.
+Finally, the appendices offer very practical advice, presenting a set of guidelinies that can be applied in most companies. Appendix A explains how to conduct a Noise audit, so we can understand how much noise is present in the institution’s decision process. Appendix B is a [checklist for decision observers](/images/noise-bias-checklist.png) (the professional that will help a team to make better decisions), and appendix C tells us how to improve predictions.
 
 ### How can Error be measured?
 
@@ -72,7 +73,7 @@ In my opinion the most practical chapters are the appendices, because they prese
 >   should be their only goal. Keep your values and your facts
 >   separate.”
 
-In the XVIII century, Carl Friedrich Gauss and Adrien-Marie Legendre invented the [method of least squares](https://en.wikipedia.org/wiki/Least_squares), a way to rule for scoring the contribution of individual errors to the overall error. This method has applications on many areas, including [finance](https://www.investopedia.com/terms/l/least-squares-method.asp), [statistics](https://www.jmp.com/en_ch/statistics-knowledge-portal/what-is-regression/the-method-of-least-squares.html), and on Noise analysis. The authors use this method to get the error equations -- that remind us of the Pythagorean theorem:
+In the XVIII century, Carl Friedrich Gauss and Adrien-Marie Legendre created the [method of least squares](https://en.wikipedia.org/wiki/Least_squares), a way to rule for scoring the contribution of individual errors to the overall error. This method has applications in many areas, including [finance](https://www.investopedia.com/terms/l/least-squares-method.asp), [statistics](https://www.jmp.com/en_ch/statistics-knowledge-portal/what-is-regression/the-method-of-least-squares.html), and Noise analysis. The authors use this method to get the error equations -- that remind us of the Pythagorean theorem:
 
 > Error in a single measurement = Bias + Noisy Error
 >
@@ -80,12 +81,11 @@ In the XVIII century, Carl Friedrich Gauss and Adrien-Marie Legendre invented th
 
 ### Group Polarization
 
-> - As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.
-> - “I’ve always been worried that when my team gets together, we end up confident and unified — ­and firmly committed to the course of action that we choose. I guess there’s something in our internal
->   processes that isn’t going all that well!”
-> - "Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (...) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm."
+> - “As I always suspected, ideas about politics and economics are a lot like movie stars. If people think that other people like them, such ideas can go far.”
+> - “I’ve always been worried that when my team gets together, we end up confident and unified — and firmly committed to the course of action that we choose. I guess there’s something in our internal processes that isn’t going all that well!”
+> - “Group polarization. The basic idea is that when people speak with one another, they often end up at a more extreme point in line with their original inclinations. (…) Internal discussions often create greater confidence, greater unity, and greater extremism, frequently in the form of increased enthusiasm.”
 
-In chapter 8, there's an interesting discussion about what makes some ideas popular and how this can be misused to influence political opinion. It’s also described how people discussing together in a group can become more extremist in their ideas. This discussion together with the book “[Rules of Contagion](https://amzn.to/2Tu0pk1)” illuminated my world view on why the world is so polarized and with more extreme ideas circulating in the news and social media.
+Chapter eight mentions one of the most relevant matters of our time – it analyses what makes some ideas popular and how this can be misused to influence political opinion. The authors also explain how group discussions can make each individual more extremist in their ideas. This chapter reminded me of another book I’ve recently read, called “[Rules of Contagion](https://amzn.to/2Tu0pk1)”. Both these readings illuminated my world view an gave me a better understanding of the increasing polarization we see nowadays, and how easily extreme ideas spread on social media.
 
 ### Understanding: Causal Thinking x Statistical Thinking
 
