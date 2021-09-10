@@ -39,15 +39,15 @@ article.books { width: 100% }
 <section>
 <article class="books">
         <div class="bookshelf">
-                <div class="book-grid">
+                        <div class="book-grid">
                         <ul>
                                 <li>
-                                        <a href="/library/book-review-noise-a-flaw-in-human-judgment/">
-                                                <img src="/images/noise-book.jpg" alt="Noise: A Flaw in Human Judgement" class="book-image">
+                                        <a href="/library/o-pior-emprego-do-mundo/">
+                                                <img src="/images/o-pior-emprego-do-mundo.jpg" alt="O Pior Emprego do Mundo" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/book-review-noise-a-flaw-in-human-judgment/">Noise: A Flaw in Human Judgement</a>
-                                                <span><br>Daniel Kahneman, Olivier Sibony, Cass R. Sunstein</span>
+                                                <a href="/library/book-review-noise-a-flaw-in-human-judgment/">O Pior Emprego do Mundo</a>
+                                                <span><br>Thomas Traumman</span>
                                         </p>
                                 </li>
                                 <li>
@@ -59,6 +59,28 @@ article.books { width: 100% }
                                                 <span><br>Gustavo Franco</span>
                                         </p>
                                 </li>
+                        </ul>
+                </div>
+                <div class="book-grid">
+                        <ul>
+                                <li>
+                                        <a href="/library/book-review-noise-a-flaw-in-human-judgment/">
+                                                <img src="/images/noise-book.jpg" alt="Noise: A Flaw in Human Judgement" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/book-review-noise-a-flaw-in-human-judgment/">Noise: A Flaw in Human Judgement</a>
+                                                <span><br>Daniel Kahneman, Olivier Sibony, Cass R. Sunstein</span>
+                                        </p>
+                                </li>
+                                <!--<li>
+                                        <a href="/library/superforecastersting/">
+                                                <img src="/images/superforecastersting.png" alt="Superforecastersting - The Art and Science of Prediction" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/superforecastersting/">Superforecastersting - The Art and Science of Prediction</a>
+                                                <span><br>Tetlock and Gardner</span>
+                                        </p>
+                                </li>-->
                                 <li>
                                         <a href="/library/o-projeto-desfazer/">
                                                 <img src="/images/o-projeto-desfazer.jpg" alt="O Projeto Desfazer" class="book-image">
