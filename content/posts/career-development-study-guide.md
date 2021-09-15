@@ -85,6 +85,8 @@ When we take more responsibilities on our careers, so does the [complexity of th
 | [Rosalind - Bioinformatics Algorithms](http://rosalind.info/) | Tests |
 | [SPOJ](https://www.spoj.com/)                                | Tests |
 | [Leet](https://leetcode.com/)                                | Tests |
+| [TripleByte](https://triplebyte.com)                         | Tests |
+| [Codility](https://www.codility.com/)                        | Tests |
 
 ## Computer Science
 
