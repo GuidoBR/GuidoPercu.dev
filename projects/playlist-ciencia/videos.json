@@ -1,0 +1,206 @@
+[
+  {
+    "title": "O computador ou o cérebro, quem é o mais potente? | Nerdologia 141",
+    "presenter": "Átila",
+    "year": 2016,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=F6XGm0W0xQc"
+    },
+    "tags": ["computeres", "computadores", "neurologia", "neurociencia", "IA", "AI"]
+  },
+  {
+    "title": "Quantum Computers Explained – Limits of Human Technology",
+    "presenter": "Kurzgesagt – In a Nutshell",
+    "year": 2015,
+    "venue": "Kurzgesagt – In a Nutshell",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=JhHMJCUmq28"
+    },
+    "tags": ["quantum computeres", "computadores quânticos"]
+  },
+  {
+    "title": "Black Holes Explained – From Birth to Death",
+    "presenter": "Kurzgesagt – In a Nutshell",
+    "year": 2015,
+    "venue": "Kurzgesagt – In a Nutshell",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=e-P5IFTqB98"
+    },
+    "tags": ["buracos negros", "black holes", "fisica", "astronomia"]
+  },
+  {
+    "title": "Ondas Gravitacionais | Nerdologia 121",
+    "presenter": "Átila",
+    "year": 2016,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=z71O5cHTOvM"
+    },
+    "tags": ["nerdologia", "ondas gravitacionais", "fisica", "astronomia"]
+  },
+  {
+    "title": "Exoplanetas | Nerdologia 117",
+    "presenter": "Átila",
+    "year": 2016,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=d_5_MAqsPOM"
+    },
+    "tags": ["nerdologia", "exoplanetas", "fisica", "astronomia"]
+  },
+  {
+    "title": "Como Funciona a Homeopatia? | Nerdologia 118",
+    "presenter": "Átila",
+    "year": 2016,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=26AgMFsh-98"
+    },
+    "tags": ["homeopatia", "placebo"]
+  },
+  {
+    "title": "Energia | Nerdologia 111",
+    "presenter": "Átila",
+    "year": 2015,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=pXtVUobPQLs"
+    },
+    "tags": ["energia"]
+  },
+  {
+    "title": "Vírus Zika | Nerdologia 112",
+    "presenter": "Átila",
+    "year": 2015,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=pm3do0nEuuM"
+    },
+    "tags": ["virus", "biologia", "medicina"]
+  },
+  {
+    "title": "Buraco Negro | Nerdologia 49",
+    "presenter": "Átila",
+    "year": 2015,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=ThG5RHBR7dA"
+    },
+    "tags": ["astronomia", "fisica"]
+  },
+  {
+    "title": "A Origem da Vida | Nerdologia 132",
+    "presenter": "Átila",
+    "year": 2016,
+    "venue": "Nerdologia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=rnMYZnY3uLA"
+    },
+    "tags": ["biologia", "evolução"]
+  },
+  {
+    "title": "Descubra como Silver Tape pode gerar luz",
+    "presenter": "Iberê Thenório",
+    "year": 2015,
+    "venue": "Manual do Mundo",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=uWMVA7I7Tzk"
+    },
+    "tags": ["experimentos"]
+  },
+  {
+    "title": "Microscópio caseiro com webcam ft. Átila Iamarino",
+    "presenter": "Iberê Thenório",
+    "year": 2016,
+    "venue": "Manual do Mundo",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=WufR6iwfQxY"
+    },
+    "tags": ["experimentos"]
+  },
+  {
+    "title": "Fomos à NASA pra mostrar como funciona um foguete",
+    "presenter": "Iberê Thenório",
+    "year": 2016,
+    "venue": "Manual do Mundo",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=mhgtGOcsUqM"
+    },
+    "tags": ["NASA"]
+  },
+  {
+    "title": "Sol de laboratório",
+    "presenter": "Pesquisa FAPESP",
+    "year": 2015,
+    "venue": "Pesquisa FAPESP",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=sCqoL-OVsVM"
+    },
+    "tags": ["FAPESP", "fisica"]
+  },
+  {
+    "title": "Newtonian Gravity: Crash Course Physics #8",
+    "presenter": "Iberê Thenório",
+    "year": 2016,
+    "venue": "Crash Course",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=7gf6YpdvtE0"
+    },
+    "language": "en",
+    "subtitles": ["pt-br"],
+    "tags": ["Newton", "physics", "fisica"]
+  },
+  {
+    "title": "Friction: Crash Course Physics #6",
+    "presenter": "Iberê Thenório",
+    "year": 2016,
+    "venue": "Crash Course",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=fo_pmp5rtzo"
+    },
+    "language": "en",
+    "subtitles": ["pt-br"],
+    "tags": ["friction", "fricção", "physics", "fisica"]
+  },
+  {
+    "title": "A Equação de Drake (e a Busca por Vida Extraterrestre)",
+    "presenter": "Ciência Todo Dia",
+    "year": 2014,
+    "venue": "Ciência Todo Dia",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=qkdCgsM46CY"
+    },
+    "language": "pt-br",
+    "subtitles": "",
+    "tags": ["astronomia", "vida inteligente", "extraterrestre"]
+  },
+  {
+    "title": "A USP, o câncer, e a 'cura' (#Pirula 117)",
+    "presenter": "Pirula",
+    "year": 2015,
+    "venue": "Canal do Pirula",
+    "slides": "",
+    "videos": {
+      "youtube": "https://www.youtube.com/watch?v=L51NrrK1APQ"
+    },
+    "tags": ["cancer", "medicina"]
+  }
+]

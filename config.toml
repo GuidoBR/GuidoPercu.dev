@@ -1,6 +1,6 @@
 baseURL = "http://guidopercu.dev/"
 languageCode = "en-us"
-title = "GuidoPercu.dev"
+title = "📓🌱💻 GuidoPercu.dev"
 theme = "color"
 
 [params]
