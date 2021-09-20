@@ -59,6 +59,15 @@ article.books { width: 100% }
                                                 <span><br>Gustavo Franco</span>
                                         </p>
                                 </li>
+                                <li>
+                                        <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
+                                                <img src="/images/book-how-to-make-a-vaccine.jpg" alt="How to make a vaccine" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">How to make a vaccine</a>
+                                                <span><br>John Rhodes</span>
+                                        </p>
+                                </li>
                         </ul>
                 </div>
                 <div class="book-grid">
@@ -72,15 +81,16 @@ article.books { width: 100% }
                                                 <span><br>Daniel Kahneman, Olivier Sibony, Cass R. Sunstein</span>
                                         </p>
                                 </li>
-                                <!--<li>
-                                        <a href="/library/superforecastersting/">
+                                <li>
+                                        <!-- <a href="/library/superforecastersting/"> -->
+                                        <a href="https://digitalgarden.guidopercu.dev/tetlock2015superforecasting.html" target="_blank">
                                                 <img src="/images/superforecastersting.png" alt="Superforecastersting - The Art and Science of Prediction" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/superforecastersting/">Superforecastersting - The Art and Science of Prediction</a>
+                                                <a href="https://digitalgarden.guidopercu.dev/tetlock2015superforecasting.html">Superforecastersting - The Art and Science of Prediction</a>
                                                 <span><br>Tetlock and Gardner</span>
                                         </p>
-                                </li>-->
+                                </li>
                                 <li>
                                         <a href="/library/o-projeto-desfazer/">
                                                 <img src="/images/o-projeto-desfazer.jpg" alt="O Projeto Desfazer" class="book-image">
