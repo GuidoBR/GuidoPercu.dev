@@ -62,7 +62,7 @@ theme = "color"
       [[languages.en.menu.main]]
         name = "Digital Garden"
         weight = 3
-        url = "garden/"
+        url = "https://digitalgarden.guidopercu.dev/"
       
       [[languages.en.menu.main]]
         name = "Library"
