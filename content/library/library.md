@@ -84,7 +84,7 @@ article.books { width: 100% }
                                 <li>
                                         <!-- <a href="/library/superforecastersting/"> -->
                                         <a href="https://digitalgarden.guidopercu.dev/tetlock2015superforecasting.html" target="_blank">
-                                                <img src="/images/superforecastersting.png" alt="Superforecastersting - The Art and Science of Prediction" class="book-image">
+                                                <img src="/images/superforecastersting.jpg" alt="Superforecastersting - The Art and Science of Prediction" class="book-image">
                                         </a>
                                         <p class="book-description">
                                                 <a href="https://digitalgarden.guidopercu.dev/tetlock2015superforecasting.html">Superforecastersting - The Art and Science of Prediction</a>
