@@ -46,7 +46,7 @@ article.books { width: 100% }
                                                 <img src="/images/o-pior-emprego-do-mundo.jpg" alt="O Pior Emprego do Mundo" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/book-review-noise-a-flaw-in-human-judgment/">O Pior Emprego do Mundo</a>
+                                                <a href="/library/o-pior-emprego-do-mundo/">O Pior Emprego do Mundo</a>
                                                 <span><br>Thomas Traumman</span>
                                         </p>
                                 </li>
