@@ -112,6 +112,7 @@ According to [career ladders](https://career-ladders.dev/engineering/#senior-eng
 | Name                                                         | type   |
 | ------------------------------------------------------------ | ------ |
 | [Best Courses and Books to Improve Soft Skills](https://engineerseekingfire.com/best-courses-and-books-to-improve-soft-skills/) | Guide  |
+| [An incomplete list of skills senior engineers need, beyond coding](https://www.elidedbranches.com/2021/06/an-incomplete-list-of-skills-senior.htm) | Guide  |
 | [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | Course |
 | [A Mind for Numbers](https://amzn.to/2RphkTk)                | Book   |
 | [Never Split the Difference: Negotiating As If Your Life Depended On It](https://www.amazon.com/gp/product/0062407805/) | Book   |
