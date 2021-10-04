@@ -39,6 +39,40 @@ article.books { width: 100% }
 <section>
 <article class="books">
         <div class="bookshelf">
+        <div class="book-grid">
+        <ul>
+                <li>
+                        <a href="https://digitalgarden.guidopercu.dev/lef%C3%A8vre1923reminiscencesofastockoperator.html">
+                                <img src="/images/ReminiscencesOfAStockOperator.jpg" alt="Reminiscences of a Stock Operator" class="book-image">
+                        </a>
+                        <p class="book-description">
+                                <a href="https://digitalgarden.guidopercu.dev/lef%C3%A8vre1923reminiscencesofastockoperator.html">Reminiscences of a Stock Operator</a>
+                                <span><br>Edwin Lefèvre</span>
+                        </p>
+                </li>
+                <li>
+                        <a href="https://digitalgarden.guidopercu.dev/oakley2014mindfornumbers.html">
+                                <img src="/images/a-mind-for-numbers.jpg" alt="A mind for numbers" class="book-image">
+                        </a>
+                        <p class="book-description">
+                                <a href="https://digitalgarden.guidopercu.dev/oakley2014mindfornumbers.html">A mind for numbers</a>
+                                <span><br>Oakley</span>
+                        </p>
+                </li>
+                <!--
+                <li>
+                        <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
+                                <img src="/images/book-ultraaprendizado.jpg" alt="Ultraaprendizado" class="book-image">
+                        </a>
+                        <p class="book-description">
+                                <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">Ultraaprendizado</a>
+                                <span><br>John Rhodes</span>
+                        </p>
+                </li>
+                -->
+        </ul>
+        </div>
+        <div class="bookshelf">
                         <div class="book-grid">
                         <ul>
                                 <li>
