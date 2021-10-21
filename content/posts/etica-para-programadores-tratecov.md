@@ -1,12 +1,12 @@
 ---
-title: "Etica Para Programadores Tratecov"
+title: "Ética para Programadores - o caso TrateCOV"
 date: 2021-10-21T13:56:22-03:00
 draft: true
 ---
 
 Se um desenvolvedor de software recebe uma demanda anti-ética e mesmo assim a cumpre, de quem é a culpa?
 
-O tratecov foi criado no Brasil em 2020. Com base nas respostas a um  questionário, o aplicativo deveria determinar se uma pessoa apresenta  sintomas de Covid-19 e preescrever os medicamentos (comprovadamente  ineficazes) do chamado "kit COVID".
+O TrateCOV foi criado no Brasil em 2020. Com base nas respostas a um  questionário, o aplicativo deveria determinar se uma pessoa apresenta  sintomas de Covid-19 e preescrever os medicamentos (comprovadamente  ineficazes) do chamado "kit COVID".
 
 > “Diante do quadro epidemiológico que hoje toma conta do estado do
 > Amazonas e diversos estados brasileiros, nós estamos apresentando para a
@@ -54,4 +54,5 @@ Onde está a responsabilidade e a ética dos profissionais de desenvolvimento de
 - [Eichmann em Jerusalém: o mal que há em nós](https://medium.com/@carolbufelli/eichmann-em-jerusal%C3%A9m-o-mal-que-h%C3%A1-em-n%C3%B3s-ff9dc05345c2)
 - [Livro: “Eichmann em Jerusalém – Um relato sobre a banalidade do mal”](https://thiagoesser.wordpress.com/2014/08/30/livro-eichmann-em-jerusalem-um-relato-sobre-a-banalidade-do-mal/)
 - [CPI da Covid: Leia a íntegra do relatório final](https://g1.globo.com/politica/cpi-da-covid/noticia/2021/10/19/leia-a-integra-da-minuta-do-relatorio-da-cpi-da-covid.ghtml)
+- [TCU - Aplicativo TrateCov recomendava tratamento precoce da COVID-19](https://portal.tcu.gov.br/imprensa/noticias/aplicativo-tratecov-recomendava-tratamento-precoce-da-covid-19.htm)
 - [Caipyra 2019: A banalidade do mal e a regulação de novos comportamentos tecnológicos ](https://www.youtube.com/watch?v=cdB5fP_zkC4) - [Cuducos](https://cuducos.me/)
