@@ -745,42 +745,51 @@ ul.courses li:hover {
                                 <section id="skills">
                                         <div class="item">
                                                 <h3 class="name">
-                                                        Frontend
+                                                        Languages and Frameworks
                                                 </h3>
                                                 <ul class="keywords">
                                                     {% for skill in [
-                                                        {'name': 'Javascript'},
-                                                        {'name': 'Angular'},
+                                                        {'name': 'Python'},
+                                                        {'name': 'PHP'},
+                                                        {'name': 'HTML/CSS'},
+                                                        {'name': 'Go'},
+                                                        {'name': 'Javascript/NodeJS'},
                                                         {'name': 'VueJS'},
-                                                        {'name': 'React'},
                                                     ] %}
                                                         <li>{{ skill.name }}</li>
                                                     {% endfor %}
                                                 </ul>
                                         </div>
+
                                         <div class="item">
                                                 <h3 class="name">
-                                                        Backend
-                                                </h3>
-                                                <ul class="keywords">
-                                                        {% for skill in [
-                                                            {'name': 'Python'},
-                                                            {'name': 'PHP'},
-                                                            {'name': 'Go'},
-                                                            {'name': 'NodeJS'},
-                                                        ] %}
-                                                            <li>{{ skill.name }}</li>
-                                                        {% endfor %}
-                                                </ul>
-                                        </div>
-                                        <div class="item">
-                                                <h3 class="name">
-                                                        Cloud
+                                                        Technologies
                                                 </h3>
                                                 <ul class="keywords">
                                                         {% for skill in [
                                                             {'name': 'AWS'},
                                                             {'name': 'Serverless'},
+                                                            {'name': 'MySQL'},
+                                                            {'name': 'PostgreSQL'},
+                                                            {'name': 'DynamoDB'},
+                                                            {'name': 'MongoDB'},
+                                                        ] %}
+                                                            <li>{{ skill.name }}</li>
+                                                        {% endfor %}
+                                                </ul>
+                                        </div>
+
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        Other
+                                                </h3>
+                                                <ul class="keywords">
+                                                        {% for skill in [
+                                                                {'name': 'API Design'},
+                                                                {'name': 'relational and NoSQL databases'},
+                                                                {'name': 'unit tests'},
+                                                                {'name': 'TDD'},
+                                                                {'name': 'Agile methodologies'},
                                                         ] %}
                                                             <li>{{ skill.name }}</li>
                                                         {% endfor %}
@@ -791,52 +800,76 @@ ul.courses li:hover {
 
                         <section class="section">
                                 <header>
-                                        <h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
+                                        <h2 class='section-title'>Work Experience <span class="item-count">(8+ Years)</span></h2>
                                 </header>
                                 <section id="work">
-                                            <header>
-                                                <span class="space-left">
-                                                        <span class="fa fa-caret-down"></span>
+                                                <header>
+                                                        <!--<span class="space-left">
+                                                                <span class="fa fa-caret-down"></span>
+                                                        </span>-->
+                                                        <div class="position">
+                                                                Team Lead / Senior Backend Engineer - Python/Django
+                                                        </div>
+                                                        <div class="company">
+                                                                Modus Create
+                                                        </div>
+                                                        <div class="date">
+                                                                <span class="startDate">
+                                                                        July 2017
+                                                                </span>
+                                                                <span class="endDate">
+                                                                        - Current
+                                                                </span>
+                                                        </div>
+                                                </header>
+
+                                                <span class="website">
+                                                        <a href="https://moduscreate.com/">ModusCreate.com</a>
                                                 </span>
+                                                <span class="location">
+                                                        Remote
+                                                </span>
+
+                                                <div>
+                                                        <div class="summary">
+                                                                <p>Leading a small team of highly talented software engineers, to build and deliver carefully crafted tools and documentations on the PHP/Laravel community.</p>
+
+                                                                <p>Senior Backend engineer working with Python, Django, micro-services, APIs, gRPC, Jenkins</p>
+                                                        </div>
+                                                        <ul class="highlights">
+                                                                <li>The team that I lead helped the organization closing consultant services with new clients.</li>
+                                                                <li>Managing 20+ Software Engineers: organizing team meetings, communication with directors and mentorship.</li>
+                                                                <li>Assisted the marketing team on creating promotional material for display to potential clients.</li>
+                                                        </ul>
+                                                </div>
+
+                                                <hr>
                                                 <div class="position">
-                                                        Fullstack Engineer - Python/AWS
+                                                        Senior Backend Engineer - Python/AWS
                                                 </div>
                                                 <div class="company">
                                                         Modus Create
                                                 </div>
                                                 <div class="date">
                                                         <span class="startDate">
-                                                                July 2020
+                                                                January 2020
                                                         </span>
                                                         <span class="endDate">
-                                                                - Current
+                                                               - October 2020
                                                         </span>
                                                 </div>
-                                        </header>
-
-                                        <span class="website">
-                                                <a href="https://moduscreate.com/">ModusCreate.com</a>
-                                        </span>
-                                        <span class="location">
-                                                Remote
-                                        </span>
-
-                                        <div class="item display" style="opacity:1">
-                                                <div class="summary">
-                                                        <p>Python / SAM Framework / AWS / Lambda Functions / Serverless / DynamoDB</p>
+                                                <div>
+                                                        <div class="summary">
+                                                                <p>Python / SAM Framework / AWS / Lambda Functions / Serverless / DynamoDB</p>
+                                                        </div>
+                                                        <ul class="highlights">
+                                                                <li>Created the backend for a health related Word plugin.</li>
+                                                                <li>Deployed on AWS platform, using Serverless concepts</li>
+                                                                <li>This project impacted the ability of our client to improve it's time to market, which reduces costs and improves revenue.</li>
+                                                        </ul>
                                                 </div>
-                                                <ul class="highlights">
-                                                        <li>Created the backend for a health related Word plugin.</li>
-                                                        <li>Deployed on AWS platform, using Serverless concepts</li>
-                                                        <li>This project impacted the ability of our client to improve it's time to market, which reduces costs and improves revenue.</li>
-                                                </ul>
-                                        </div>
-
-                                        <header>
-                                                <span class="space-left">
-                                                        <span class="fa fa-caret-down"></span>
-                                                </span>
-                                                <div class="position">
+                                        <hr>
+                                             <div class="position">
                                                         Fullstack Engineer - PHP/Javascript
                                                 </div>
                                                 <div class="company">
@@ -850,29 +883,20 @@ ul.courses li:hover {
                                                                - December 2019
                                                         </span>
                                                 </div>
-                                        </header>
-
-                                        <span class="website">
-                                                <a href="https://moduscreate.com/">ModusCreate.com</a>
-                                        </span>
-                                        <span class="location">
-                                                Remote
-                                        </span>
-
-                                        <div class="item display" style="opacity:1">
-                                                <div class="summary">
-                                                        <p>PHP / Laravel / Javascript / Angular / VueJS / Docker / MySQL / Jenkins</p>
+                                                <div>
+                                                        <div class="summary">
+                                                                <p>PHP / Laravel / Javascript / Angular / VueJS / Docker / MySQL / Jenkins</p>
+                                                        </div>
+                                                        <ul class="highlights">
+                                                                <li>Worked as a Tech Lead on a distributed team, with a strong remote culture.</li>
+                                                                <li>Created features that improved the relationship with 2 of the largest banks of the world.</li>
+                                                                <li>Supporting legacy code and developing new features with modern technologies.</li>
+                                                                <li>Discussed and reviewed new features with Product team.</li>
+                                                                <li>Supported the team during the releases proccess.</li>
+                                                                <li>Code reviews and close relationship with QA team.</li>
+                                                                <li>Mentored new team members</li>
+                                                        </ul>
                                                 </div>
-                                                <ul class="highlights">
-                                                        <li>Worked as a Tech Lead on a distributed team, with a strong remote culture.</li>
-                                                        <li>Created features that improved the relationship with 2 of the largest banks of the world.</li>
-                                                        <li>Supporting legacy code and developing new features with modern technologies.</li>
-                                                        <li>Discussed and reviewed new features with Product team.</li>
-                                                        <li>Supported the team during the releases proccess.</li>
-                                                        <li>Code reviews and close relationship with QA team.</li>
-                                                        <li>Mentored new team members</li>
-                                                </ul>
-                                        </div>
 
                                         <header>
                                                 <span class="space-left">
@@ -1025,6 +1049,25 @@ ul.courses li:hover {
                                                         <li>Integration with SugarCRM, reducing response time of the client relationship team.</li>
                                                         <li>Development of EDI software to deal with our clients bussiness needs.</li>
                                                 </ul>
+                                        </div>
+                                </section>
+                        </section>
+
+                        <section class="section margin1">
+                                <header>
+                                        <h2 class='section-title'>Highlights</h2>
+                                </header>
+                                <section id="skills">
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        <a href="https://www.guidopercu.dev/posts/talk-performance-and-sustainability-jamstack/">Talk: Performance and Sustainability with Jamstack</a>
+                                                </h3>
+                                        </div>
+
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        <a href="https://www.youtube.com/watch?v=oIkWESknP3Y">Video: The 15 Best New Features in Laravel 8</a>
+                                                </h3>
                                         </div>
                                 </section>
                         </section>
