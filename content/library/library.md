@@ -59,6 +59,15 @@ article.books { width: 100% }
                                 <span><br>Oakley</span>
                         </p>
                 </li>
+                <li>
+                        <a href="https://digitalgarden.guidopercu.dev/SueAnnCostaClemens2021HistoriaDeUmaVacina.html">
+                                <img src="/images/a-historia-de-uma-vacina.jpg" alt="A história de uma Vacina" class="book-image">
+                        </a>
+                        <p class="book-description">
+                                <a href="https://digitalgarden.guidopercu.dev/SueAnnCostaClemens2021HistoriaDeUmaVacina.html">A história de uma Vacina</a>
+                                <span><br>Sue Ann Costa Clemens</span>
+                        </p>
+                </li>
                 <!--
                 <li>
                         <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
