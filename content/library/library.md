@@ -60,6 +60,16 @@ article.books { width: 100% }
                         </p>
                 </li>
                 <li>
+                        <a href="/library/livro-leia-para-investir-e-prosperar/">
+                                <img src="/images/livro-leia-para-investir-e-prosperar.jpg" alt="Leia para investir e prosperar" class="book-image">
+                        </a>
+                        <p class="book-description">
+                                <a href="/library/livro-leia-para-investir-e-prosperar/">Leia para investir e prosperar</a>
+                                <span><br>Jean Tosetto</span>
+                        </p>
+                </li>
+                <!--
+                <li>
                         <a href="https://digitalgarden.guidopercu.dev/SueAnnCostaClemens2021HistoriaDeUmaVacina.html">
                                 <img src="/images/a-historia-de-uma-vacina.jpg" alt="A história de uma Vacina" class="book-image">
                         </a>
@@ -68,6 +78,7 @@ article.books { width: 100% }
                                 <span><br>Sue Ann Costa Clemens</span>
                         </p>
                 </li>
+                -->
                 <!--
                 <li>
                         <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
