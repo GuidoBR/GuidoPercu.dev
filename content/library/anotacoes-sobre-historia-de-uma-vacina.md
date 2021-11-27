@@ -1,10 +1,12 @@
 ---
-title: "Anotações sobre o livro: Historia De Uma Vacina"
+title: "Anotações sobre o livro: História De Uma Vacina"
 date: 2021-11-27T17:59:41-03:00
 draft: true
 ---
 
 > "**ajudando a preparar o mundo para as próximas epidemias. Pois elas virão.**"
+
+![Capa do livro: A Historia de uma Vacina](/images/a-historia-de-uma-vacina.jpg)
 
 
 O livro "[História de uma vacina](https://www.amazon.com.br/História-Uma-Vacina-Brasileira-AstraZeneca/dp/6587518176/)", lançado pela editora [Intrínseca](https://www.intrinseca.com.br/) em 2021, conta a história do teste clínico da vacina de Oxford/Astrazeneca realizado no Brasil, sob liderança da cientista brasileira Sue Ann Costa Clemens. Tudo começa com um convite: 
