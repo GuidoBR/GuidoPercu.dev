@@ -1,6 +1,6 @@
 ---
 title: "Anotações sobre o livro: Historia De Uma Vacina"
-date: 2021-11-13T17:59:41-03:00
+date: 2021-11-27T17:59:41-03:00
 draft: true
 ---
 
