@@ -68,7 +68,6 @@ article.books { width: 100% }
                                 <span><br>Jean Tosetto</span>
                         </p>
                 </li>
-                <!--
                 <li>
                         <a href="https://digitalgarden.guidopercu.dev/SueAnnCostaClemens2021HistoriaDeUmaVacina.html">
                                 <img src="/images/a-historia-de-uma-vacina.jpg" alt="A história de uma Vacina" class="book-image">
@@ -78,7 +77,15 @@ article.books { width: 100% }
                                 <span><br>Sue Ann Costa Clemens</span>
                         </p>
                 </li>
-                -->
+                <li>
+                                        <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
+                                                <img src="/images/book-how-to-make-a-vaccine.jpg" alt="How to make a vaccine" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">How to make a vaccine</a>
+                                                <span><br>John Rhodes</span>
+                                        </p>
+                                </li>
                 <!--
                 <li>
                         <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
@@ -111,15 +118,6 @@ article.books { width: 100% }
                                         <p class="book-description">
                                                 <a href="/library/licoes-amargas/">Lições Amargas</a>
                                                 <span><br>Gustavo Franco</span>
-                                        </p>
-                                </li>
-                                <li>
-                                        <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
-                                                <img src="/images/book-how-to-make-a-vaccine.jpg" alt="How to make a vaccine" class="book-image">
-                                        </a>
-                                        <p class="book-description">
-                                                <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">How to make a vaccine</a>
-                                                <span><br>John Rhodes</span>
                                         </p>
                                 </li>
                         </ul>
