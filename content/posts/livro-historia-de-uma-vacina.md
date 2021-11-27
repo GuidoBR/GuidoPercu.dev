@@ -1,5 +1,5 @@
 ---
-title: "Livro Historia De Uma Vacina"
+title: "Anotações sobre o livro: Historia De Uma Vacina"
 date: 2021-11-13T17:59:41-03:00
 draft: true
 ---
@@ -11,9 +11,7 @@ O livro "[História de uma vacina](https://www.amazon.com.br/História-Uma-Vacin
 
 > “Sue, você  tem interesse em fazer o estudo da nossa vacina no Brasil?” Minha  primeira reação foi: “Você quer isso para quando?” Naquela época, eu já  estava envolvida com o desenvolvimento de duas vacinas para a covid-19 — uma de RNA mensageiro, da empresa alemã **CureVac**, e outra baseada em  proteínas, da chinesa **Clover**. Eu era membro do comitê científico de  ambas, mas os projetos ainda estavam muito distantes da fase 3, de  comprovação da eficácia. A oportunidade que Andrew me oferecia naquele  momento era a de estar na linha de frente e tentar acelerar o processo  de testagem muito antes do que eu esperava. Era a chance de pôr em  prática as habilidades que desenvolvi ao longo de uma carreira dedicada  às vacinas e de salvar vidas em meio a uma crise sanitária sem  precedentes na história recente. Ao terminarmos a reunião, quase sem  perceber, eu já havia começado a saga para que o Brasil tivesse um braço da pesquisa de **Oxford** e, assim, pudesse ter acesso a uma das mais  promissoras vacinas contra a covid-19 em desenvolvimento no mundo.
 
-O livro também conta detalhes de como foram montadas as equipes que coordenaram os estudos 
-em diferentes centros de pesquisas brasileiros, como se deu o financiamento para o estudo (através dos parceiros Fundação Lehman, Rede D'or, Centro de Referência para Imunobiológicos Especiais - ligado á Unifesp, Fiocruz), e sua interação com o governo federal na época do ministro Nelson
-Teich.
+O livro também conta detalhes de como foram montadas as equipes que coordenaram os estudos em diferentes centros de pesquisas brasileiros, como se deu o financiamento para o estudo (através dos parceiros Fundação Lehman, Rede D'or, Centro de Referência para Imunobiológicos Especiais - ligado á Unifesp, Fiocruz), e sua interação com o governo federal na época do ministro Nelson Teich.
 
 > Nelson Teich  duraria pouco tempo no governo. Sua atuação foi importante para promover articulações essenciais para a pesquisa, como uma reunião da Anvisa com a MHRA (Medicines and Healthcare products Regulatory Agency). Mas ele  deixou o posto no ministério ainda em maio, menos de um mês depois de  assumir, e não chegou a ver o estudo ser aprovado pela Anvisa, o que  aconteceu logo no início de junho.
 
