@@ -73,8 +73,8 @@ article.books { width: 100% }
                                 <img src="/images/a-historia-de-uma-vacina.jpg" alt="A história de uma Vacina" class="book-image">
                         </a>
                         <p class="book-description">
-                                <a href="https://digitalgarden.guidopercu.dev/SueAnnCostaClemens2021HistoriaDeUmaVacina.html">A história de uma Vacina</a>
-                                <span><br>Sue Ann Costa Clemens</span>
+                                <a href="/library/anotacoes-sobre-historia-de-uma-vacina/">A história de uma Vacina</a>
+                                <span><br>Sue Ann Costa Clemens (<a href="https://digitalgarden.guidopercu.dev/SueAnnCostaClemens2021HistoriaDeUmaVacina.html">notes</a>)</span>
                         </p>
                 </li>
                 <li>
