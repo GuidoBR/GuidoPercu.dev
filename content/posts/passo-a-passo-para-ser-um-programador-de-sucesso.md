@@ -16,7 +16,7 @@ Além de conhecimentos sobre uma linguagem de programação, sugiro que quem est
 
 ### O que é desenvolvimento de software? Como é a carreira?
 
-A área de computação é muito vasta, oferecendo diversas oportunidades e escolhas na sua carreira. Os [programadores](https://www.alura.com.br/artigos/programador) (também chamados de desenvolvedores, ou apenas como devs) podem se especializar em  áreas distintas, como [front-end](https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end), [back-end](https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end), [cientista de dados](https://medium.com/databootcamp/quem-tem-medo-de-virar-cientista-de-dados-1-3-148ae98a01dd), [DevOps](https://www.alura.com.br/formacao-devops), mobile, ou dispositivos embarcados.
+A área de computação é muito vasta, oferecendo diversas oportunidades e escolhas na sua carreira. Os [programadores](https://www.alura.com.br/artigos/programador) (também chamados de desenvolvedores, ou apenas como devs) podem se especializar em  áreas distintas, como [front-end](https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end), [back-end](https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end), [cientista de dados](https://medium.com/databootcamp/quem-tem-medo-de-virar-cientista-de-dados-1-3-148ae98a01dd), [DevOps](https://roadmap.sh/devops), mobile, ou dispositivos embarcados.
 
 [Programação definitivamente não é uma disciplina fácil](https://www.youtube.com/watch?v=V7oUDL7E1g4&list=PLdsnXVqbHDUcAWAN3cXHWnM9JEw2gjIN9&index=28), exige constante esforço e estudo mas é extremamente recompensador. Há grandes debates sobre a necessidade ou não de [faculdade](https://www.youtube.com/watch?v=iRjEa7N8wEo&list=PLdsnXVqbHDUcAWAN3cXHWnM9JEw2gjIN9&index=5), mas por não ser exigido um diploma na maioria das vagas disponíveis no [mercado](https://www.youtube.com/watch?v=O76ZfAIEukE&list=PLdsnXVqbHDUcAWAN3cXHWnM9JEw2gjIN9&index=14) é relativamente mais fácil e rápido começar na carreira se comparado a outras áreas (como Medicina, Engenharia ou Direito).
 
@@ -26,7 +26,7 @@ A área de computação é muito vasta, oferecendo diversas oportunidades e esco
 
 Sempre leve isso em consideração quando estiver lendo uma matéria sobre salários de desenvolvedores. Não temos acesso há como aqueles números foram coletados, quem participou e quem deixou de participar daquela pesquisa, e principalmente sobre como usar aquela informação para nos beneficiar.
 
-Dito isso, não existe [média salarial](https://www.youtube.com/watch?v=WwdNJM_3Cdo&t=11s). Salários são negociados baseados no nível do profissional, na capacidade de pagamento que a empresa pode oferecer (empresas maiores costumam ter mais dinheiro disponível para salários, mas startups tem outras formas de remunerar que podem valer a pena) e na concorrência com outras empresas e profissionais. Em resumo, salários são determinados por [oferta e demanda](https://opentextbc.ca/principlesofeconomics/chapter/4-1-demand-and-supply-at-work-in-labor-markets/).
+Dito isso, não confie en [média salarial](https://www.youtube.com/watch?v=WwdNJM_3Cdo&t=11s). Salários são negociados: baseado no nível do profissional, na capacidade de pagamento que a empresa pode oferecer (empresas maiores costumam ter mais dinheiro disponível para salários, mas startups tem outras formas de remunerar que podem valer a pena) e na concorrência com outras empresas e profissionais. Em resumo, salários são determinados por [oferta e demanda](https://opentextbc.ca/principlesofeconomics/chapter/4-1-demand-and-supply-at-work-in-labor-markets/).
 
 Meu conselho é pesquisar em sites como [Glassdoor](https://www.glassdoor.com.br/index.htm), [Indeed](https://br.indeed.com/?r=us) e [Levels](https://www.levels.fyi/), além de usar as [redes sociais](https://twitter.com/search?q=sal%C3%A1rio%20programador&src=typed_query&f=top) ao seu favor na hora de negociar o seu salário. 
 
@@ -97,6 +97,8 @@ A comunidade de Javascript também é bastante ativa no Brasil, seja através de
 
 ### Programador Front-end
 
+É o profissional que cuida do lado do cliente, pensando na experiência do usuário, velocidade de navegação, acessibilidade, design, e toda a estrutura para que o site seja fácil de usar em diferentes dispositivos (celulares, notebooks, televisões, etc). O foco aqui é aprender os fundamentos da Web (HTML, CSS, Javascript, HTTP e aspectos de design (UI, UX, tipografia, cores, etc.) para criar uma experiência agradável para os clientes da sua aplicação.
+
 - [🇧🇷|Curso|Pago] [Formação Front-end Alura](https://www.alura.com.br/formacao-front-end)
 - [🇬🇧|Guia] [Frontend Roadmap](https://roadmap.sh/frontend)
 - [🇬🇧|Guia] [Angular Roadmap](https://roadmap.sh/angular)
@@ -105,19 +107,24 @@ A comunidade de Javascript também é bastante ativa no Brasil, seja através de
 
 ### Programador Back-end
 
+É o profissional que cuida do lado do servidor, que normalmente consiste em pensar sobre a aplicação, o servidor e o banco de dados. O desenvolvedor back end tem o trabalho de criar uma aplicação segura, escalável e que atenda os requisitos técnicos e de negócio para assegurar um bom funcionamento de todo o sistema.
+
 - [🇬🇧|Guia] [Backend Roadmap](https://roadmap.sh/backend)
 - [🇬🇧|Guia] [System Design](https://www.guidopercu.dev/posts/career-development-study-guide/#system-design)
 - [🇧🇷|Vídeo|Gratuito] [Entendendo Back-End para Iniciantes em Programação (Parte 1) | Série "Começando aos 40"](https://www.youtube.com/watch?v=Qjk-cSW-jk4)
 
-### DevOps
-
-- [🇬🇧|Guia] [DevOps Roadmap](https://roadmap.sh/devops)
-
 ### Cientista de Dados
+
+É o profissional que trabalha com dados para gerar informações. Tem foco em estatística, sabe trabalhar com banco de dados e diversas ferramentas para analisar, limpar, visualizar e gerar relatórios e ideias baseadas em dados.
 
 - [🇧🇷|Guia] [Guia do Cientista de Dados das Galáxias](https://github.com/PizzaDeDados/datascience-pizza)
 - [🇧🇷|Curso|Gratuito] [Análise de Dados Públicos](https://www.youtube.com/playlist?list=PLUukMN0DTKCu6g2Lq1KXLnIX6Ilk4DAPI)
 - [🇬🇧|Curso|Pago] [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 
+
+###### Textos relacionados
+- [🇬🇧 Career Development Study Guide](/posts/career-development-study-guide/)
+- [🇬🇧 Essays for Programmers](/posts/essays-for-programmers/)
+- [🇬🇧 5 Newsletters for Software Engineers](/posts/5-newsletters-for-software-engineers/)
 
 
