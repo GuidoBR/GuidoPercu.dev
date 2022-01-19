@@ -1,5 +1,5 @@
 ---
-title: "Passo a Passo Para Ser Um Programador De Sucesso"
+title: "Um guia para quem quer trabalhar com programação"
 date: 2022-01-14T09:43:13-03:00
 draft: true
 ---
@@ -12,7 +12,7 @@ Eu acredito que cada vez mais conhecimentos de programação vão ser úteis par
 
 Além de conhecimentos sobre uma linguagem de programação, sugiro que quem estiver começando busque aprender algumas ferramentas fundamentais da área como [controle de versão usando Git](https://www.udemy.com/course/git-e-github-para-iniciantes/).
 
-## Guia para ser um programador de sucesso
+## Um guia para quem quer trabalhar com programação
 
 ### O que é desenvolvimento de software? Como é a carreira?
 
