@@ -79,6 +79,7 @@ A comunidade de Javascript também é bastante ativa no Brasil, seja através de
 ##### Livros sobre Javascript
 
 - [📘 Secrets of the Javascript Ninja](https://www.amazon.com.br/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X)
+- [📘 Eloquent Javascript](https://eloquentjavascript.net/) - [Tradução 🇧🇷](https://github.com/braziljs/eloquente-javascript)
 
 ### Habilidades fundamentais para desenvolvimento web
 
