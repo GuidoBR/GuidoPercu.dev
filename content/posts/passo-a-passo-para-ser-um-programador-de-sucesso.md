@@ -99,7 +99,7 @@ A comunidade de Javascript também é bastante ativa no Brasil, seja através de
 
 ### Programador Front-end
 
-É o profissional que cuida do lado do cliente, pensando na experiência do usuário, velocidade de navegação, acessibilidade, design, e toda a estrutura para que o site seja fácil de usar em diferentes dispositivos (celulares, notebooks, televisões, etc). O foco aqui é aprender os fundamentos da Web (HTML, CSS, Javascript, HTTP e aspectos de design (UI, UX, tipografia, cores, etc.) para criar uma experiência agradável para os clientes da sua aplicação.
+É o profissional que cuida do lado do cliente, desenvolvendo a interface gráfica da aplicação e aplicando recursos que impactam na velocidade de navegação, acessibilidade, integração entre os elementos, e toda a estrutura para que o site seja fácil de usar em diferentes dispositivos (celulares, notebooks, televisões, etc). O foco aqui é aprender os fundamentos da Web (HTML, CSS, Javascript, HTTP e aspectos de design (UI, UX, tipografia, cores, etc.) para criar uma interface agradável para os usuários da sua aplicação.
 
 - [🇧🇷|Curso|Pago] [Formação Rockseat](https://www.rocketseat.com.br/)
 - [🇧🇷|Curso|Pago] [Formação Front-end Alura](https://www.alura.com.br/formacao-front-end)
