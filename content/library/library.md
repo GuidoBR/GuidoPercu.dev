@@ -78,25 +78,23 @@ article.books { width: 100% }
                         </p>
                 </li>
                 <li>
-                                        <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
+                                        <a href="http://localhost:1313/library/anotacoes-sobre-historia-de-uma-vacina/">
                                                 <img src="/images/book-how-to-make-a-vaccine.jpg" alt="How to make a vaccine" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">How to make a vaccine</a>
+                                                <a href="http://localhost:1313/library/anotacoes-sobre-historia-de-uma-vacina/">How to make a vaccine</a>
                                                 <span><br>John Rhodes</span>
                                         </p>
-                                </li>
-                <!--
+                </li>
                 <li>
-                        <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">
-                                <img src="/images/book-ultraaprendizado.jpg" alt="Ultraaprendizado" class="book-image">
+                        <a href="http://localhost:1313/library/livro-o-gene-uma-historia-intima/">
+                                <img src="/images/livro-o-gene.jpg" alt="O Gene - Uma História Íntima" class="book-image">
                         </a>
                         <p class="book-description">
-                                <a href="https://digitalgarden.guidopercu.dev/Rhodes2020HowToMakeAVaccine.html">Ultraaprendizado</a>
-                                <span><br>John Rhodes</span>
+                                <a href="http://localhost:1313/library/livro-o-gene-uma-historia-intima/">O Gene - Uma História Íntima</a>
+                                <span><br>Siddhartha Mukherjee</span>
                         </p>
                 </li>
-                -->
         </ul>
         </div>
         <div class="bookshelf">
@@ -118,6 +116,15 @@ article.books { width: 100% }
                                         <p class="book-description">
                                                 <a href="/library/licoes-amargas/">Lições Amargas</a>
                                                 <span><br>Gustavo Franco</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/livro-noticias-manual-do-usuario/">
+                                                <img src="/images/livro-noticias.jpg" alt="Noticias: Manual do Usuário" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/livro-noticias-manual-do-usuario/">Noticias: Manual do Usuário</a>
+                                                <span><br>Alain de Botton</span>
                                         </p>
                                 </li>
                         </ul>
