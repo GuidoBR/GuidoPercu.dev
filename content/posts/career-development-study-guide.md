@@ -56,6 +56,7 @@ When we take more responsibilities on our careers, so does the [complexity of th
 | [The System Design Primer](https://github.com/donnemartin/system-design-primer) | Guide   |
 | [Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/) | Guide   |
 | [Preparing for the Systems Design and Coding Interview](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/) | Guide   |
+| [8 Steps Guide To Ace A System Design Interview](https://sunilkumarc.in/8-steps-guide-to-ace-a-system-design-interview) | Article |
 | [Learning Distributed Systems](https://www.siddharthsarda.com/p/learning-distributed-systems) | Guide   |
 | [Drawing good architecture diagrams](https://www.ncsc.gov.uk/blog-post/drawing-good-architecture-diagrams) \| [Create diagrams with code](https://diagrams.mingrammer.com/) | Article |
 | [System Design Interview](https://www.youtube.com/channel/UC9vLsnF6QPYuH51njmIooCQ) | Course  |
