@@ -39,6 +39,37 @@ article.books { width: 100% }
 <section>
 <article class="books">
         <div class="bookshelf">
+                <div class="book-grid">
+                        <ul>
+                                <li>
+                                        <a href="/library/iliada/">
+                                                <img src="/images/livro-iliada.jpg" alt="Ilíada" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/iliada/">Ilíada</a>
+                                                <span><br>Homero</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/iliada/">
+                                                <img src="/images/livro-iliada.jpg" alt="Ilíada" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/iliada/">Ilíada</a>
+                                                <span><br>Homero</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/iliada/">
+                                                <img src="/images/livro-iliada.jpg" alt="Ilíada" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/iliada/">Ilíada</a>
+                                                <span><br>Homero</span>
+                                        </p>
+                                </li>
+                        </ul>
+                </div>
         <div class="book-grid">
         <ul>
                 <li>
