@@ -89,7 +89,7 @@ Ler a Ilíada foi uma experiência maravilhosa, o livro nos faz conhecer uma cul
 
 {{< rawhtml >}}
 <figure>
-	<a href=https://www.britannica.com/biography/Homer-Greek-poet" target="_blank"><img src="/images/Homer.webp" alt="Busto de Homero" style="zoom:20%;" /></a>
+	<a href=https://www.britannica.com/biography/Homer-Greek-poet" target="_blank"><img src="/images/Homer.webp" alt="Busto de Homero" style="zoom:50%;" /></a>
 	<figcaption>Busto com representação tradicional de Homero</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -472,7 +472,7 @@ como o manual dos Gregos
 </figure>
 
 <figure>
-	<a href="/images/Júpiter_y_Tetis,_por_Dominique_Ingres.jpg" target="_blank"><img src="/images/Júpiter_y_Tetis,_por_Dominique_Ingres.jpg" alt="Zeus e Tétis" style="zoom:50%;" /></a>
+	<a href="/images/Júpiter_y_Tetis,_por_Dominique_Ingres.jpg" target="_blank"><img src="/images/Júpiter_y_Tetis,_por_Dominique_Ingres.jpg" alt="Zeus e Tétis" style="zoom:100%;" /></a>
 	<figcaption><em>Júpiter and Tetis</em>, Dominique Ingres.</figcaption>
 </figure>
 
