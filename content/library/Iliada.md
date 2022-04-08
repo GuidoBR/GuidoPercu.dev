@@ -65,7 +65,6 @@ article { width: 100% !important; }
 }
 </style>
 {{< /rawhtml >}}
-# Ilíada: a obra fundadora da literatura ocidental
 
 Uma história contada e recontada desde antes da invenção da escrita. Deuses batalhando lado a lado a homens no campo de batalha. Uma guerra que destruiu a vida de muitos heróis, durou 10 longos anos e terminou com uma cidade incendiada. Tudo começou pelo julgamento de um homem, que entre o amor, a sabedoria e o poder, escolheu o amor.
 
