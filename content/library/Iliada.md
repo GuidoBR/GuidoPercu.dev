@@ -1,8 +1,70 @@
 ---
-title: "Iliada"
+title: "Ilíada: a obra fundadora da literatura ocidental"
 date: 2022-04-08T17:47:36-03:00
 ---
-
+{{< rawhtml >}}
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+.otro-blockquote::after{
+  content: '';
+}
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+article { width: 100% !important; }
+.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
+.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
+/*.book-grid ul li {  padding-left: 1.5em; }*/
+.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
+.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1.2em; padding: 5px;}
+.book-description a { color: #fff; }
+.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
+.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
+}
+.book-grid ul li .book-description { display: none; }
+.book-grid ul li:hover img { display: none; }
+.book-grid ul li:hover { margin-bottom: -3em !important; }
+.book-grid ul li:hover .book-description { display: block; }
+@media screen and (max-width: 1024px) {
+        .book-grid ul { grid-template-columns: repeat(3, 1fr); }
+        .book-grid ul li {  padding-left: 1.0em; }
+}
+@media screen and (max-width: 800px) {
+        .book-grid ul { grid-template-columns: repeat(1, 1fr); }
+        .book-grid ul li {  padding-bottom: 1.5em; }
+        .shelf-shadows, .shelf { display: none;}
+        article { margin-bottom: -5em !important; }
+}
+</style>
+{{< /rawhtml >}}
 # Ilíada: a obra fundadora da literatura ocidental
 
 Uma história contada e recontada desde antes da invenção da escrita. Deuses batalhando lado a lado a homens no campo de batalha. Uma guerra que destruiu a vida de muitos heróis, durou 10 longos anos e terminou com uma cidade incendiada. Tudo começou pelo julgamento de um homem, que entre o amor, a sabedoria e o poder, escolheu o amor.
@@ -756,7 +818,6 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 - ▶️ [Coursera - Greek And Roman Mythology](https://www.coursera.org/learn/mythology)
 - ▶️ [On Reading Homer - Odyssey I.1-10](https://www.coursera.org/lecture/mythology/1-7-on-reading-homer-0xrPb)
 - ▶️ [Coursera - Os Gregos Antigos](https://pt.coursera.org/learn/ancient-greeks)
-- ▶️ [Clube de leitura Ilíada](https://drive.google.com/drive/folders/17EIkqFv4sFasbxQeYxz2Pu18sljUVpGk?usp=sharing)
 - ▶️ [Cultura Ocidental: A origem da Literatura - BASES DA CULTURA OCIDENTAL](https://www.youtube.com/watch?v=PHHL1ENtS0c&list=PLdpq25FyrLLPcXyqXPvEJMpFW91_JV2HJ) - professor da UFF Fernando Tremoço
 
 ### Teatro e outras mídias
