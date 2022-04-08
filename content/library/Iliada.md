@@ -112,7 +112,7 @@ Esses epítetos cumprem algumas funções, além de ser um recurso mnemônico e 
 
 {{< rawhtml >}}
 <figure>
-	<a href=https://artsandculture.google.com/asset/aristotle-with-a-bust-of-homer/lwEkk2dA5kBGjg?hl=pt-BR" target="_blank"><img src="/images/Aristotle-with-a-Bust-of-Homer-Rembrandt.jpg" alt="Aristóteles com o busto de Homero" style="zoom:40%;" /></a>
+	<a href=https://artsandculture.google.com/asset/aristotle-with-a-bust-of-homer/lwEkk2dA5kBGjg?hl=pt-BR" target="_blank"><img src="/images/Aristotle-with-a-Bust-of-Homer-Rembrandt.jpg" alt="Aristóteles com o busto de Homero" style="zoom:60%;" /></a>
 	<figcaption>Aristóteles com o busto de Homero - Rembrandt</figcaption>
 </figure>
 {{< /rawhtml >}}
