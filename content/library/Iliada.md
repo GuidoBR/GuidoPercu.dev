@@ -306,7 +306,7 @@ Para os gregos, os sentimentos e emoções são coisas externas que os acometem,
 - **ἀρετή** [*areté*](https://pt.wikipedia.org/wiki/Aret%C3%AA) - adaptação perfeita, excelência, virtude; [*timé*](http://areteetime.blogspot.com/2010/08/arete-e-time-as-caracteristicas-do.html), a honra.
 - **Λύσσα** [lýssa](https://en.wikipedia.org/wiki/Lyssa) - ira, raiva, fúria. Como exemplo podemos citar: Herácles, incitado por lýssa matou sua esposa e seu próprio filho.
 - **Ἄτη** [atë](https://en.wikipedia.org/wiki/At%C3%AB) - desvairio (Agamêmnon, Canto IX, 18 - 116;  Fênix: ouça as Preces e não o Desvairio, Canto IX 499-514).
-- **Ἔλεος** [eleos]https://en.wikipedia.org/wiki/Eleos - compaixão, empatia, piedade. É o que Príamo consegue provocar em Aquiles, quando ele (um rei idoso que acabara de perder o filho querido) vai à tenda de Aquiles suplicar pelo corpo de seu filho e beija na mão do Aquiles -- que foi seu assassino. Esse sentimento foi o único que fez parar a cólera / *mênis* de Aquiles Presentes, dinheiro, gregos sofrendo, discursos e argumentos lógicos do melhor orador, nada disso conseguiu frear a cólera de Aquiles, somente *eleos* (compaixão).
+- **Ἔλεος** [eleos](https://en.wikipedia.org/wiki/Eleos) - compaixão, empatia, piedade. É o que Príamo consegue provocar em Aquiles, quando ele (um rei idoso que acabara de perder o filho querido) vai à tenda de Aquiles suplicar pelo corpo de seu filho e beija na mão do Aquiles -- que foi seu assassino. Esse sentimento foi o único que fez parar a cólera / *mênis* de Aquiles Presentes, dinheiro, gregos sofrendo, discursos e argumentos lógicos do melhor orador, nada disso conseguiu frear a cólera de Aquiles, somente *eleos* (compaixão).
 
 #### Destino e mitologia grega
 
