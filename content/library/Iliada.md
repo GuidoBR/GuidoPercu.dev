@@ -68,7 +68,7 @@ article { width: 100% !important; }
 
 Uma história contada e recontada desde antes da invenção da escrita. Deuses batalhando lado a lado a homens no campo de batalha. Uma guerra que destruiu a vida de muitos heróis, durou 10 longos anos e terminou com uma cidade incendiada. Tudo começou pelo julgamento de um homem, que entre o amor, a sabedoria e o poder, escolheu o amor.
 
-Ilíada é um poema épico grego, que acredita-se foi produzido no século VIII a.C., é uma obra fundamental para a cultura ocidental. O texto se desenrola por eventos da Guerra de Tróia (cidade que também é conhecida por *Ilion*; portanto *Ilíada* significa contos de Ílion), onde Gregos e Troianos disputam uma longa e sangrenta contenda que começou com uma desavença entre três deusas em um julgamento para saber quem é a mais bela. 
+Ilíada é um poema épico grego, que acredita-se foi produzido no [século VIII a.C.](https://www.scientificamerican.com/article/geneticists-estimate-publication-date-of-the-illiad/), é uma obra fundamental para a cultura ocidental. O texto se desenrola por eventos da Guerra de Tróia (cidade que também é conhecida por *Ilion*; portanto *Ilíada* significa contos de Ílion), onde Gregos e Troianos disputam uma longa e sangrenta contenda que começou com uma desavença entre três deusas em um julgamento para saber quem é a mais bela. 
 
 Por se tratar de uma epopeia (termo que provém do grego *epus* que significa história de heróis), é um dos textos fundamentais do período clássico. Narra as glórias e os dramas de incontáveis heróis, e nos conta o que é ser humano e questões que enfrentamos durante nossa vida.
 
@@ -94,7 +94,7 @@ Ler a Ilíada foi uma experiência maravilhosa, o livro nos faz conhecer uma cul
 {{< /rawhtml >}}
 
 
-Há diversos debates sobre quem foi [Homero](https://www.britannica.com/biography/Homer-Greek-poet), o poeta responsável pela obra. Há quem diga que ele não existiu, que foi um grupo de diversos autores. Há quem diga que ele era cego, e isso aumentou sua genialidade e seu poder poético. Os estudiosos do tema utilizam o termo **questão homérica** para se referir a debates sobre quem foi Homero.
+Há diversos [debates](https://blog.britishmuseum.org/who-was-homer/) sobre quem foi [Homero](https://www.britannica.com/biography/Homer-Greek-poet), o poeta responsável pela obra. Há quem diga que ele era cego, e isso aumentou sua genialidade e seu poder poético. Há quem diga que ele não existiu e na verdade as obras associadas a ele foram criadas por um [grupo de diversas pessoas](https://www.nationalgeographic.com/adventure/article/150104-homer-iliad-odyssey-greece-book-talk-travel-world),representando toda uma cultura oral. Os estudiosos do tema utilizam o termo **questão homérica** para se referir a debates sobre quem foi Homero.
 
 O que sabemos, graças principalmente a pesquisa de [Milman Parry](https://pt.wikipedia.org/wiki/Milman_Parry) sobre tradição oral, é que Ilíada (e também Odisseia) são ricos poemas de uma tradição oral de uma cultura que valorizava os **Aedos** (*ἀοιδός*) que eram poetas-cantores que recitavam suas composições acompanhadas de lira. No texto podemos observar elementos característicos de uma [cultura oral](https://alexcastro.com.br/poesia-oral/), que tinha diversas formas e fórmulas para facilitar a memória. Como exemplo podemos citar alguns epítetos que são bastante usados no texto Homérico:
 
@@ -302,7 +302,20 @@ Para isso, os adversários na guerra eram elogiados e engrandecidos. Quanto mais
 Para os gregos, os sentimentos e emoções são coisas externas que os acometem, e de certa forma isso os poupa de culpa por seus erros. Eros e Afrodite são culpados quando os gregos se apaixonam. Zeus ou algum outro deus é culpado pelo desvario (atë) de Agamêmnon, que o levou a desrespeitar Aquiles. 
 
 - **ὕϐρις** [húbris](https://pt.wikipedia.org/wiki/H%C3%BAbris) "tudo o que passa da medida, descomedimento". Em certo sentido, a infração de Agamêmnon no primeiro livro da Ilíada é relacionada com a húbris, por ter despojado Aquiles da parte da pilhagem que lhe deveria corresponder por justiça. Agamêmnon se sentiu superior aos demais, achando que seria indevido para usa honra ser o único a não ficar com um despojo de guerra, e com esse pensamento ele cometeu a injustiça que dá o ínicio para a história.
-- **ἀρετή** [*areté*](https://pt.wikipedia.org/wiki/Aret%C3%AA) - adaptação perfeita, excelência, virtude; [*timé*](http://areteetime.blogspot.com/2010/08/arete-e-time-as-caracteristicas-do.html), a honra.
+- **ἀρετή** [*areté*](https://pt.wikipedia.org/wiki/Aret%C3%AA) - adaptação perfeita, excelência, virtude. Para os gregos, a 
+virtude coincide com a realização da própria essência, com cumprir o seu propósito na vida.
+- [*timé*](http://areteetime.blogspot.com/2010/08/arete-e-time-as-caracteristicas-do.html) - a honra. Aquiles sente que sua *timé* foi violada quando Agamêmnon lhe retira Briseida, e para a sociedade grega isso era uma questão de fundamental 
+importância:
+
+> Para Agamemnon e para Aquiles a questão Criseida/Briseida está no status que cada um ocupa. Se a timé de Agamemnon fora 
+> assegurada para que ele exercesse o poder de Anax entre os Aqueus, era preciso que Agamemnon e os Aqueus reconhecessem e 
+> distinguissem o lugar de Aquiles. Os personagens de Homero só têm existência enquanto membros de um grupo, e como tal 
+> preservam seus direitos ou deixam de viver. A relação social entre uma pessoa e outra se define por direitos e
+> deveres; por atitudes e práticas de comportamento socialmente aprovadas. Estes direitos e deveres são condições necessárias 
+> de permanência da sociedade
+> 
+> [AS REALEZAS EM HOMERO: GÉRAS E TIMÉ - Neyde Theml](https://revistas.ufrj.br/index.php/phoinix/article/view/36585)
+
 - **Λύσσα** [lýssa](https://en.wikipedia.org/wiki/Lyssa) - ira, raiva, fúria. Como exemplo podemos citar: Herácles, incitado por lýssa matou sua esposa e seu próprio filho.
 - **Ἄτη** [atë](https://en.wikipedia.org/wiki/At%C3%AB) - desvairio (Agamêmnon, Canto IX, 18 - 116;  Fênix: ouça as Preces e não o Desvairio, Canto IX 499-514).
 - **Ἔλεος** [eleos](https://en.wikipedia.org/wiki/Eleos) - compaixão, empatia, piedade. É o que Príamo consegue provocar em Aquiles, quando ele (um rei idoso que acabara de perder o filho querido) vai à tenda de Aquiles suplicar pelo corpo de seu filho e beija na mão do Aquiles -- que foi seu assassino. Esse sentimento foi o único que fez parar a cólera / *mênis* de Aquiles Presentes, dinheiro, gregos sofrendo, discursos e argumentos lógicos do melhor orador, nada disso conseguiu frear a cólera de Aquiles, somente *eleos* (compaixão).
@@ -519,6 +532,7 @@ Foi quando sobreveio a décima segunda aurora
 - 🎥 Filme Tróia (2014)
 - 🎥 Filme [Electra, a vingadora (1962)](https://www.youtube.com/watch?v=vwB1FWzkU5Q)
 - 🎭 Opera: [King Priam](https://en.wikipedia.org/wiki/King_Priam)
+- 🎭 Teatro: [IlíadaHomero - Companhia de Teatro](https://iliadahomero.wordpress.com/category/apresentacoes-dos-cantos/)
 
 ### Ilíada e o Cânone Ocidental
 
@@ -554,7 +568,7 @@ Há diversos textos grego-romanos clássicos que contam sobre a guerra de Tróia
   - Electra, de Euripedes
   - As Troianas,de Eurípedes
 
-Além do que foi perdido, o [Ciclo Épico (Troioano)](https://en.wikipedia.org/wiki/Epic_Cycle) completo:
+A Ilíada, junto com a Odisseia, fazem parte de um grupo de poemas antigos que contavam a história da guerra de Tróia e outros eventos relacionados a ela. A maioria desses textos foram perdidos. O [Ciclo Épico (Troioano)](https://en.wikipedia.org/wiki/Epic_Cycle) completo:
 
 - *[Cypria](https://en.wikipedia.org/wiki/Cypria)*
 - *[Iliad](https://en.wikipedia.org/wiki/Iliad)*
@@ -773,33 +787,35 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 ### Textos e livros
 
 - 📝 [Ilíada - Wikipedia](https://pt.wikipedia.org/wiki/Il%C3%ADada)
+- 📝 [What Homer’s Iliad can tell us about worship and war](https://www.bbc.com/culture/article/20180428-what-homers-iliad-can-tell-us-about-worship-and-war)
 - 📝 [Dares Frígio](https://pt.wikipedia.org/wiki/Dares_Fr%C3%ADgio)
-- 📚 [História da Literatura Ocidental - Otto Maria Carpeaux](https://www.amazon.com.br/Box-Hist%C3%B3ria-Literatura-Ocidental-carpeaux/dp/6588732120) - [versão ebook gratuita](https://www2.senado.leg.br/bdsf/item/id/528992)
+- 📝 [A Morte de Aquiles](https://aguerradetroia.wordpress.com/2013/03/02/a-morte-de-aquiles/)
+- 📝 [Um Grego te conta o verdadeiro mito das três Moiras](https://brazilgreece.com/as-tres-irmas-da-mitologia-grega/)
+- 📝 [Exegese alegórica de Homero](https://pt.wikipedia.org/wiki/Exegese_aleg%C3%B3rica_de_Homero)
+- 📝 [Os Símiles em Homero](https://cidmarcus.blogspot.com/2021/03/os-similes-na-iliada.html)
 - 📝 [Posfácio de Trajano Vieira](https://aterraeredonda.com.br/iliada/)
+- 📚 [História da Literatura Ocidental - Otto Maria Carpeaux](https://www.amazon.com.br/Box-Hist%C3%B3ria-Literatura-Ocidental-carpeaux/dp/6588732120) - [versão ebook gratuita](https://www2.senado.leg.br/bdsf/item/id/528992)
 - 📚 [Homero – Barbara Graziosi](https://editoramnema.com.br/livro/homero-barbara-graziosi/)
 - 📚 [The Anger of Achilles: Mênis in Greek Epic - Leonard Muellner](https://chs.harvard.edu/book/muellner-leonard-the-anger-of-achilles-menis-in-greek-epic-2/) - [video](https://www.youtube.com/watch?v=wZxFVCBNEao)
 - 📚 [Agamemnon, the Pathetic Despot: Reading Characterization in Homer - Andrew Porter](https://chs.harvard.edu/book/porter-andrew-agamemnon-the-pathetic-despot-reading-characterization-in-homer/)
 - 📚 [O Mundo de Homero - Pierre Vidal-Naquet - Grupo Companhia das Letras](https://www.companhiadasletras.com.br/detalhe.php?codigo=11378)
 - 📚 [Bases da Cultura Ocidental - Volume 1- André Alonso](https://canal.cecierj.edu.br/recurso/15289)
 - 📚 [Teogonia – Hesíodo – Henry Bugalho (trad.)](https://kotter.com.br/loja/teogonia-hesiodo-henry-bugalho/) - [Henry Bugalho](https://twitter.com/henrybugalho/status/1160125985880268802)
-- 📝 [A Morte de Aquiles](https://aguerradetroia.wordpress.com/2013/03/02/a-morte-de-aquiles/)
-- 📝 [Um Grego te conta o verdadeiro mito das três Moiras](https://brazilgreece.com/as-tres-irmas-da-mitologia-grega/)
-- 📝 [Exegese alegórica de Homero](https://pt.wikipedia.org/wiki/Exegese_aleg%C3%B3rica_de_Homero)
-- 📝 [Os Símiles em Homero](https://cidmarcus.blogspot.com/2021/03/os-similes-na-iliada.html)
 - 📚 [The Artistry of the Homeric Simile - William C. Scott](https://www.dartmouth.edu/library/digital/publishing/scott2009/)
-- 📚 [The best books on Greek Myths - recommended by Lucy Coats](https://fivebooks.com/best-books/greek-myths-lucy-coats/)
-  - 📚 [The Song of Achilles](https://www.amazon.com.br/Song-Achilles-Madeline-Miller/dp/0062060627/)
-  - 📚 [The Greek Myths](https://www.amazon.com.br/dp/0241952743)
-  - 📚 [Ithaka](https://www.amazon.com.br/dp/0152061045)
-  - 📚 [Tales from Ovid](https://www.amazon.com.br/dp/0374525870)
-  - 📚 [The Children's Homer](https://www.amazon.com.br/dp/1375767542)
-  - 📚 [Atticus the Storyteller's 100 Greek Myths](https://www.amazon.com.br/Atticus-Storyteller-100-Stories-Greece/dp/1842552791)
+- 📚 [The Song of Achilles](https://www.amazon.com.br/Song-Achilles-Madeline-Miller/dp/0062060627/)
+- 📚 [The Greek Myths](https://www.amazon.com.br/dp/0241952743)
+- 📚 [Ithaka](https://www.amazon.com.br/dp/0152061045)
+- 📚 [Tales from Ovid](https://www.amazon.com.br/dp/0374525870)
+- 📚 [The Children's Homer](https://www.amazon.com.br/dp/1375767542)
+- 📚 [Atticus the Storyteller's 100 Greek Myths](https://www.amazon.com.br/Atticus-Storyteller-100-Stories-Greece/dp/1842552791)
 - 📚 [The best Trojan War books](https://fivebooks.com/best-books/the-trojan-war-stephen-fry/)
+- 📚 [Why Homer Matters](https://www.amazon.com.br/Why-Homer-Matters-History-English-ebook/dp/B00IQOC3AM/)
 
 ### Podcasts
 
 - 🎧 [A History of Epic w/ Gregory Nagy & Leonard Muellner](https://www.greecepodcast.com/a-history-of-epic-w-gregory-nagy-leonard_muellner/)
 - 🎧 [Noites Gregas - Homero o Senhor do Olimpo](https://noitesgregas.com.br/episodios/5-homero-o-senhor-do-olimpo/)
+- 🎧 [Audiobook: The Iliad](https://www.audible.com/pd/The-Iliad-Audiobook/B002V0PV5Q)
 
 ### Vídeos
 
@@ -811,8 +827,8 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 
 ### Cursos
 
-- ▶️ [Introdução à Grande Conversa - Gregos: vingança & justiça na Ilíada e na Oréstia](https://www.facebook.com/groups/grandeconversa/posts/598431650868730/)
 - 📝 [Alex Castro: Categoria: ilíada](https://alexcastro.com.br/category/grande-conversa/2a-aula-gregos/iliada/)
+- ▶️ [Introdução à Grande Conversa - Gregos: vingança & justiça na Ilíada e na Oréstia](https://www.facebook.com/groups/grandeconversa/posts/598431650868730/)
 - ▶️ [Khan Academy - History - Classical Greece](https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/v/overview-of-ancient-greece)
 - ▶️ [Coursera - Greek And Roman Mythology](https://www.coursera.org/learn/mythology)
 - ▶️ [On Reading Homer - Odyssey I.1-10](https://www.coursera.org/lecture/mythology/1-7-on-reading-homer-0xrPb)
@@ -821,7 +837,6 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 
 ### Teatro e outras mídias
 
-- [IlíadaHomero - Companhia de Teatro](https://iliadahomero.wordpress.com/category/apresentacoes-dos-cantos/)
 - [Works based on Iliad](https://en.wikipedia.org/wiki/Category:Works_based_on_the_Iliad)
 
 
