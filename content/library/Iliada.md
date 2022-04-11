@@ -797,6 +797,7 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 - 📚 [História da Literatura Ocidental - Otto Maria Carpeaux](https://www.amazon.com.br/Box-Hist%C3%B3ria-Literatura-Ocidental-carpeaux/dp/6588732120) - [versão ebook gratuita](https://www2.senado.leg.br/bdsf/item/id/528992)
 - 📚 [Homero – Barbara Graziosi](https://editoramnema.com.br/livro/homero-barbara-graziosi/)
 - 📚 [The Anger of Achilles: Mênis in Greek Epic - Leonard Muellner](https://chs.harvard.edu/book/muellner-leonard-the-anger-of-achilles-menis-in-greek-epic-2/) - [video](https://www.youtube.com/watch?v=wZxFVCBNEao)
+- 📚 [The Ancient Greek Hero in 24 Hours](https://chs.harvard.edu/book/nagy-gregory-the-ancient-greek-hero-in-24-hours/)
 - 📚 [Agamemnon, the Pathetic Despot: Reading Characterization in Homer - Andrew Porter](https://chs.harvard.edu/book/porter-andrew-agamemnon-the-pathetic-despot-reading-characterization-in-homer/)
 - 📚 [O Mundo de Homero - Pierre Vidal-Naquet - Grupo Companhia das Letras](https://www.companhiadasletras.com.br/detalhe.php?codigo=11378)
 - 📚 [Bases da Cultura Ocidental - Volume 1- André Alonso](https://canal.cecierj.edu.br/recurso/15289)
@@ -834,6 +835,7 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 - ▶️ [On Reading Homer - Odyssey I.1-10](https://www.coursera.org/lecture/mythology/1-7-on-reading-homer-0xrPb)
 - ▶️ [Coursera - Os Gregos Antigos](https://pt.coursera.org/learn/ancient-greeks)
 - ▶️ [Cultura Ocidental: A origem da Literatura - BASES DA CULTURA OCIDENTAL](https://www.youtube.com/watch?v=PHHL1ENtS0c&list=PLdpq25FyrLLPcXyqXPvEJMpFW91_JV2HJ) - professor da UFF Fernando Tremoço
+- ▶️ [edX / Harvard - The Ancient Greek Hero](https://www.edx.org/course/the-ancient-greek-hero-2) - [ebook gratuito](https://chs.harvard.edu/book/nagy-gregory-the-ancient-greek-hero-in-24-hours/)
 
 ### Teatro e outras mídias
 
