@@ -817,7 +817,8 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 - 🎧 [A History of Epic w/ Gregory Nagy & Leonard Muellner](https://www.greecepodcast.com/a-history-of-epic-w-gregory-nagy-leonard_muellner/)
 - 🎧 [Noites Gregas - Homero o Senhor do Olimpo](https://noitesgregas.com.br/episodios/5-homero-o-senhor-do-olimpo/)
 - 🎧 [Audiobook: The Iliad](https://www.audible.com/pd/The-Iliad-Audiobook/B002V0PV5Q)
-
+- 🎧 [Poesia homérica - Professor Me. Felipe Marques](https://open.spotify.com/episode/2cXx5LoEJa3y9NMnmVGTwa?si=TCphpqeQSE61PxL8HTZ9Iw&utm_source=native-share-menu&nd=1)
+- 🎧 [What the Ancient Greeks and Romans Thought About Manliness](https://www.artofmanliness.com/character/knowledge-of-men/podcast-299-manly-according-ancient-greeks-romans/)
 ### Vídeos
 
 - ▶️ [Literatura Universal - Ilíada (Homero) - André Malta - Pgm 01](https://www.youtube.com/watch?v=mRtUgA3_Mmo&t=0s) - Entrevista com especialista em estudos clássicos gregos sobre a Ilíada.
