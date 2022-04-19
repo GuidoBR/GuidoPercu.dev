@@ -819,6 +819,12 @@ Foi então que pensou outra coisa o divino Aquiles de pés velozes
 - 🎧 [Audiobook: The Iliad](https://www.audible.com/pd/The-Iliad-Audiobook/B002V0PV5Q)
 - 🎧 [Poesia homérica - Professor Me. Felipe Marques](https://open.spotify.com/episode/2cXx5LoEJa3y9NMnmVGTwa?si=TCphpqeQSE61PxL8HTZ9Iw&utm_source=native-share-menu&nd=1)
 - 🎧 [What the Ancient Greeks and Romans Thought About Manliness](https://www.artofmanliness.com/character/knowledge-of-men/podcast-299-manly-according-ancient-greeks-romans/)
+- 🎧 [Glittering Bronze Men](http://traffic.libsyn.com/literatureandhistory/episode_009_glittering_bronze_men.mp3) | [versão em texto](https://www.literatureandhistory.com/index.php/episode-009-glittering-bronze-men)
+- 🎧 [Homer's Gods](http://traffic.libsyn.com/literatureandhistory/episode_010_homers_gods.mp3) | [versão em texto](https://www.literatureandhistory.com/index.php/episode-010-homer-s-gods)
+- 🎧 [Who Was Homer?](http://traffic.libsyn.com/literatureandhistory/episode_011_who_was_homer.mp3) | [versão em texto](https://www.literatureandhistory.com/index.php/episode-011-who-was-homer)
+- 🎧 [Greek Religion and Its Discontents w/ Barbara Graziosi](https://www.greecepodcast.com/greek-religion-and-its-discontents-w-barbara-graziosi/)
+- 🎧 [A History of Epic w/ Gregory Nagy & Leonard Muellner (Homer, Iliad, Gilgamesh)](https://www.greecepodcast.com/a-history-of-epic-w-gregory-nagy-leonard_muellner/)
+- 🎧 [Dying for Immortality in Homer's Iliad w/ Andrew Ford](https://www.greecepodcast.com/dying-for-immortality-in-homers-iliad-w-andrew-ford/)
 ### Vídeos
 
 - ▶️ [Literatura Universal - Ilíada (Homero) - André Malta - Pgm 01](https://www.youtube.com/watch?v=mRtUgA3_Mmo&t=0s) - Entrevista com especialista em estudos clássicos gregos sobre a Ilíada.
