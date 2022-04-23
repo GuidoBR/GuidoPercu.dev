@@ -385,7 +385,7 @@ Tidida, no que toca à guerra és muito possante,
 </blockquote>
 {{< /rawhtml >}}
 
-No interessantíssimo canto IX, uma delegação de heróis gregos forma uma assembleia para *aconselhar* Aquiles ("**tecer-lhes a teia da prudência**"; canto IX: 93) e temos dois tipos de discursos sendo feitos para convencer Aquiles a voltar para a batalha: Odisseu usa fatos e lógica; Fênix faz um belíssimo apelo emocional (*pathos πάθος*) e pedagógico, educando pelo exemplo;
+No interessantíssimo canto IX, uma delegação de heróis gregos forma uma assembleia para *aconselhar* Aquiles ("**tecer-lhes a teia da prudência**"; canto IX: 93) e temos três tipos de discursos sendo feitos para convencer Aquiles a voltar para a batalha: Odisseu usa fatos e lógica; Fênix faz um belíssimo apelo emocional (*pathos πάθος*) e pedagógico, educando pelo exemplo; e Ájax faz um discurso usando argumentos éticos, apelando para a amizade e a honra.
 
 > Para ti mesmo sofrimento haverá no futuro. E remédio de mal
 > praticado não se encontrará.
