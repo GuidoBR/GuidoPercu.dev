@@ -36,6 +36,7 @@ According to [career ladders](https://career-ladders.dev/engineering/#senior-eng
 | [Building Modern Python Applications on AWS](https://www.coursera.org/learn/building-modern-python-applications-on-aws) | Course |
 | [Full Stack AWS Crash Course](https://twitter.com/dabit3/status/1362142573402415106) | Course |
 | [AWS Fundamentals: Building Serverless Applications](https://www.coursera.org/learn/aws-fundamentals-building-serverless-applications) | Course |
+| [Architect Learning Plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/78/architect-learning-plan?la=sec&sec=lp) | Course |
 | [The Good Parts of AWS](https://gumroad.com/l/aws-good-parts) | Book   |
 
 ## System Design
