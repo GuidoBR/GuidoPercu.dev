@@ -109,20 +109,20 @@ article.books { width: 100% }
                         </p>
                 </li>
                 <li>
-                                        <a href="http://localhost:1313/library/anotacoes-sobre-historia-de-uma-vacina/">
+                                        <a href="/library/anotacoes-sobre-historia-de-uma-vacina/">
                                                 <img src="/images/book-how-to-make-a-vaccine.jpg" alt="How to make a vaccine" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="http://localhost:1313/library/anotacoes-sobre-historia-de-uma-vacina/">How to make a vaccine</a>
+                                                <a href="/library/anotacoes-sobre-historia-de-uma-vacina/">How to make a vaccine</a>
                                                 <span><br>John Rhodes</span>
                                         </p>
                 </li>
                 <li>
-                        <a href="http://localhost:1313/library/livro-o-gene-uma-historia-intima/">
+                        <a href="/library/livro-o-gene-uma-historia-intima/">
                                 <img src="/images/livro-o-gene.jpg" alt="O Gene - Uma História Íntima" class="book-image">
                         </a>
                         <p class="book-description">
-                                <a href="http://localhost:1313/library/livro-o-gene-uma-historia-intima/">O Gene - Uma História Íntima</a>
+                                <a href="/library/livro-o-gene-uma-historia-intima/">O Gene - Uma História Íntima</a>
                                 <span><br>Siddhartha Mukherjee</span>
                         </p>
                 </li>
