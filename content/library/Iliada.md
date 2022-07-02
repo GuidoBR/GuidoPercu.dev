@@ -320,7 +320,7 @@ importância:
 - **Ἄτη** [atë](https://en.wikipedia.org/wiki/At%C3%AB) - desvairio (Agamêmnon, Canto IX, 18 - 116;  Fênix: ouça as Preces e não o Desvairio, Canto IX 499-514).
 - **Ἔλεος** [eleos](https://en.wikipedia.org/wiki/Eleos) - compaixão, empatia, piedade. É o que Príamo consegue provocar em Aquiles, quando ele (um rei idoso que acabara de perder o filho querido) vai à tenda de Aquiles suplicar pelo corpo de seu filho e beija na mão do Aquiles -- que foi seu assassino. Esse sentimento foi o único que fez parar a cólera / *mênis* de Aquiles Presentes, dinheiro, gregos sofrendo, discursos e argumentos lógicos do melhor orador, nada disso conseguiu frear a cólera de Aquiles, somente *eleos* (compaixão).
 
-#### Destino e mitologia grega
+#### Destino na mitologia grega
 
 Durante a leitura do livro, um dos questionamentos que vem á cabeça é sobre destino. Zeus parece controlar os acontecimentos e ter um plano definido para o que viria a acontecer desde o momento em que a discussão sobre a deusa mais bela acontece. Como os gregos pensavam sobre destino e livre-arbítrio? Como Zeus e as [moiras](https://brazilgreece.com/as-tres-irmas-da-mitologia-grega/) (Μοῖραι, as três irmãs que determinam o destino) influenciaram o pensamento grego? Como nós, do século XXI, pensamos sobre destino?
 
