@@ -84,6 +84,43 @@ Segundo Harold Bloom, lemos Homero para:
 
 Ler a Ilíada foi uma experiência maravilhosa, o livro nos faz conhecer uma cultura riquíssima e refletir sobre diversos temas. É um dos livros fundadores da literatura ocidental, que foi lido por muitas pessoas ao longo da história. De certa forma, é um livro que nos faz conectar com  a própria humanidade.
 
+1. [Homero: o autor da obra](#homero-o-autor-da-obra)
+2. [A estrutura do livro](#a-estrutura-do-livro)
+3. [O Proêmio](#o-proêmio)
+4. [Personagens principais](#personagens-principais)
+	1. [Ulisses / Odisseu](#ulisses--odisseu)
+	2. [Tersites](#tersites)
+5. [Temas principais](#temas-principais) 
+	6. [Como a Ilíada nos fala sobre a guerra?](#como-a-ilíada-nos-fala-sobre-a-guerra)
+	7. [Como a Ilíada nos fala sobre a vida?](#como-a-ilíada-nos-fala-sobre-a-vida)
+	8. [Destino na mitologia grega](#destino-na-mitologia-grega)
+	9. [Pestes e epidemia](#pestes-e-epidemia)
+	10. [Agon Ἀγών discursivo: o debate de ideias](#agon-ἀγών-discursivo-o-debate-de-ideias)
+6. [Onde está o Cavalo de Tróia?](#onde-está-o-cavalo-de-tróia)
+7. [Qual tradução da Ilíada ler?](#qual-tradução-da-ilíada-ler)
+8. [Influência cultural](#influência-cultural)
+	1. [Ilíada como manual de conduta e ética para os gregos](#ilíada-como-manual-de-conduta-e-ética-para-os-gregos)
+	2. [Ilíada e Arte](#ilíada-e-arte)
+	3. [Ilíada e o Cânone Ocidental](#ilíada-e-o-cânone-ocidental)
+		1. [Influência na literatura grega e romana clássica](#influência-na-literatura-grega-e-romana-clássica)
+		2. [Influência na Divina Comédia](#influência-na-divina-comédia)
+		3. [Influência na literatura de língua inglesa](#influência-na-literatura-de-língua-inglesa)
+			1. [Lord Alred Tennyson](#lord-alred-tennyson)
+			2. [Shakespeare](#shakespeare)
+			3. [Ulisses, James Joyce](#ulisses--james-joyce)
+			4. [Ithaca, C. P. Cavafy](#ithaca-c-p-cavafy)
+			5. [Mestre dos Mares, de Patrick O’Brian](#mestre-dos-mares-de-patrick-obrian)
+		4. [Influência na literatura de língua portuguesa] (#influência-na-literatura-de-língua-portuguesa)
+			1. [Os Lusíadas, Luís de Camões](#os-lusíadas-luís-de-camões)
+			2. [Ulisses, Fernando Pessoa](#ulisses-fernando-pessoa)
+		5. [Adaptações modernas](#adaptações-modernas)
+9. [Para se aprofundar](#para-se-aprofundar)
+	1. [Textos e livros](#textos-e-livros) 
+	2. [Podcasts](#podcasts)
+	3. [Vídeos](#vídeos)
+	4. [Cursos](#cursos)
+	5. [Teatro e outras mídias](#teatro-e-outras-mídias)
+
 ## Homero: o autor da obra
 
 {{< rawhtml >}}
@@ -676,6 +713,50 @@ herói tão ambíguo, **essa grande figura da Literatura Ocidental**.
 - [Harold Bloom e os Fantasmas de Homero e de Shakespeare](https://www.jornalopcao.com.br/opcao-cultural/harold-bloom-e-os-fantasmas-de-homero-e-shakespeare-326165/)
 - [Homero em Shakespeare](http://ocoisodascoisas.blogspot.com/2009/01/homero-em-shakespeare.html)
 
+#### Ithaca, C. P. Cavafy
+
+{{< rawhtml >}}
+<blockquote>
+As you set out for Ithaka
+<br>hope your road is a long one,
+</p>
+(...)<br>
+<p>Hope your road is a long one.
+<br>May there be many summer mornings when,
+<br>with what pleasure, what joy,
+<br>you enter harbors you’re seeing for the first time;
+<br>may you stop at Phoenician trading stations
+<br>to buy fine things,
+<br>mother of pearl and coral, amber and ebony,
+<br>sensual perfume of every kind—
+<br>as many sensual perfumes as you can;
+<br>and may you visit many Egyptian cities
+<br>to learn and go on learning from their scholars.
+</p>
+</blockquote>
+{{< /rawhtml >}}
+
+[Leia o poema completo.](https://www.poetryfoundation.org/poems/51296/ithaka-56d22eef917ec)
+
+#### Mestre dos Mares, de Patrick O'Brian
+
+Patrick O'Brian em sua magistral série Mestre dos Mares (Aubrey-Maturin) faz algumas referências a Homero. No livro "Treason's Harbour" temos a seguinte [citação](https://www.goodreads.com/quotes/10367207-certainly-he-had-heard-of-homer-and-had-indeed-looked):
+
+> “Certainly he had heard of Homer, and had indeed looked into Mr Pope’s version of his tale; but for aught he could make out, the fellow was no seaman. Admittedly Ulysses had no chronometer, and probably no sextant neither; but with no more than log, lead and lookout an officer-like commander would have found his way home from Troy a d—d sight quicker than that. Hanging about in port and philandering, that was what it amounted to, the vice of navies from the time of Noah to that of Nelson. And as for that tale of all his foremast-hands being turned into swine, so that he could not win his anchor or make sail, why, he might tell that to the Marines. Besides, he behaved like a very mere scrub to Queen Dido.”
+
+Além disso, o título da sua história "[The Wine-Dark Sea](https://www.amazon.com/Wine-Dark-Vol-Aubrey-Maturin-Novels/dp/0393312445)" é uma clara referência ao texto da [Ilíada](https://en.wikipedia.org/wiki/Wine-dark_sea_(Homer)) e a discussão de academicos sobre o que Homer quis dizer com mar cor de vinho.:
+
+{{< rawhtml >}}
+<blockquote>
+Foi então que pensou outra coisa o divino Aquiles de pés velozes
+<br>pôs-se de pé, afastado da pira, e cortou uma loira madeixa,
+<br>cujo comprimento ele mantinha prometido ao rio Esperqueio.
+<br>Entristecido assim disse, fitando o <strong>mar cor de vinho</strong>
+
+<p>Ilíada, Canto XXIII: 140-143</p>
+</blockquote>
+{{< /rawhtml >}}
+
 ##### Ulisses,  James Joyce
 
 É um romance criado pelo escritor irlandês James Joyce, nele o famoso Ulisses passa 18 horas (ao invés dos 10 anos) viajando por Dublin na pele do agente de publicidade Leopold Bloom. Joyce pretende apresentar toda a experiência humana, condensada em uma viagem no limitado ambiente de Dublin. Cheio de referências á Ilíada e Odisseia, é um livro que aparece com frequência em listas de livros mais importantes da humanidade.
@@ -729,50 +810,6 @@ De nada, morre.<br>
 {{< /rawhtml >}}
 
 Para compreender esse poema de Fernando Pessoa, devemos saber que existe uma lenda portuguesa que diz que [Ulisses foi o fundador de Lisboa](https://www.cidadeecultura.com/lenda-portuguesa/) . A professora [Ernani Terra](https://www.ernaniterra.com.br/ulisses-um-poema-de-fernando-pessoa/) faz uma análise muito interessante desse poema, e nos revela seus significados ocultos.
-
-#### Ithaca, C. P. Cavafy
-
-{{< rawhtml >}}
-<blockquote>
-As you set out for Ithaka
-<br>hope your road is a long one,
-</p>
-(...)<br>
-<p>Hope your road is a long one.
-<br>May there be many summer mornings when,
-<br>with what pleasure, what joy,
-<br>you enter harbors you’re seeing for the first time;
-<br>may you stop at Phoenician trading stations
-<br>to buy fine things,
-<br>mother of pearl and coral, amber and ebony,
-<br>sensual perfume of every kind—
-<br>as many sensual perfumes as you can;
-<br>and may you visit many Egyptian cities
-<br>to learn and go on learning from their scholars.
-</p>
-</blockquote>
-{{< /rawhtml >}}
-
-[Leia o poema completo.](https://www.poetryfoundation.org/poems/51296/ithaka-56d22eef917ec)
-
-#### Mestre dos Mares, de Patrick O'Brian
-
-Patrick O'Brian em sua magistral série Mestre dos Mares (Aubrey-Maturin) faz algumas referências a Homero. No livro "Treason's Harbour" temos a seguinte [citação](https://www.goodreads.com/quotes/10367207-certainly-he-had-heard-of-homer-and-had-indeed-looked):
-
-> “Certainly he had heard of Homer, and had indeed looked into Mr Pope’s version of his tale; but for aught he could make out, the fellow was no seaman. Admittedly Ulysses had no chronometer, and probably no sextant neither; but with no more than log, lead and lookout an officer-like commander would have found his way home from Troy a d—d sight quicker than that. Hanging about in port and philandering, that was what it amounted to, the vice of navies from the time of Noah to that of Nelson. And as for that tale of all his foremast-hands being turned into swine, so that he could not win his anchor or make sail, why, he might tell that to the Marines. Besides, he behaved like a very mere scrub to Queen Dido.”
-
-Além disso, o título da sua história "[The Wine-Dark Sea](https://www.amazon.com/Wine-Dark-Vol-Aubrey-Maturin-Novels/dp/0393312445)" é uma clara referência ao texto da [Ilíada](https://en.wikipedia.org/wiki/Wine-dark_sea_(Homer)) e a discussão de academicos sobre o que Homer quis dizer com mar cor de vinho.:
-
-{{< rawhtml >}}
-<blockquote>
-Foi então que pensou outra coisa o divino Aquiles de pés velozes
-<br>pôs-se de pé, afastado da pira, e cortou uma loira madeixa,
-<br>cujo comprimento ele mantinha prometido ao rio Esperqueio.
-<br>Entristecido assim disse, fitando o <strong>mar cor de vinho</strong>
-
-<p>Ilíada, Canto XXIII: 140-143</p>
-</blockquote>
-{{< /rawhtml >}}
 
 #### Adaptações modernas
 
