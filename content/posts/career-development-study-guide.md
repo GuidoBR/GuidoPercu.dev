@@ -39,7 +39,7 @@ According to [career ladders](https://career-ladders.dev/engineering/#senior-eng
 | [Architect Learning Plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/78/architect-learning-plan?la=sec&sec=lp) | Course |
 | [The Good Parts of AWS](https://gumroad.com/l/aws-good-parts) | Book   |
 
-## System Design
+## Architecture & System Design
 
 When we take more responsibilities on our careers, so does the [complexity of the systems we need to navigate](https://www.siddharthsarda.com/p/developer-progression-as-a-function). As a mid or senior level  engineer, you will be expected to have knowledge on [designing and building large systems](https://twitter.com/sunilc_/status/1354113437496799233). [System design](https://twitter.com/sunilc_/status/1292703584719499264) can be split in [two different categories](https://huspi.com/blog-open/what-the-differences-lld-hld-dld): Low Level Design (class design, design patterns, [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming), [SOLID](https://en.wikipedia.org/wiki/SOLID)) and High Level Design (fault tolerance, high availability, data flow, downtime).
 
@@ -53,6 +53,7 @@ When we take more responsibilities on our careers, so does the [complexity of th
 | [Designing Data-Intensive Applications](https://amzn.to/3eKU8Hu) | Book    |
 | [Software Engineer at Google](https://abseil.io/resources/swe-book) | Book    |
 | [Understanding Distributed Systems](https://understandingdistributed.systems/) | Book    |
+| [Fundamentals of Software Architecture: An Engineer Approach](https://www.amazon.com/Fundamentals-Software-Architecture-Comprehensive-Characteristics/dp/1492043451) \| [podcast](https://www.thoughtworks.com/insights/podcasts/technology-podcasts/fundamentals-software-architecture) | Book    |
 | [A Distributed Systems Reading List](https://dancres.github.io/Pages/) | Guide   |
 | [The System Design Primer](https://github.com/donnemartin/system-design-primer) | Guide   |
 | [Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/) | Guide   |
