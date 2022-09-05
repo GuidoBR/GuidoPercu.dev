@@ -110,7 +110,7 @@ Ler a Ilíada foi uma experiência maravilhosa, o livro nos faz conhecer uma cul
 			3. [Ulisses, James Joyce](#ulisses--james-joyce)
 			4. [Ithaca, C. P. Cavafy](#ithaca-c-p-cavafy)
 			5. [Mestre dos Mares, de Patrick O’Brian](#mestre-dos-mares-de-patrick-obrian)
-		4. [Influência na literatura de língua portuguesa] (#influência-na-literatura-de-língua-portuguesa)
+		4. [Influência na literatura de língua portuguesa](#influência-na-literatura-de-língua-portuguesa)
 			1. [Os Lusíadas, Luís de Camões](#os-lusíadas-luís-de-camões)
 			2. [Ulisses, Fernando Pessoa](#ulisses-fernando-pessoa)
 		5. [Adaptações modernas](#adaptações-modernas)
@@ -555,12 +555,12 @@ Foi quando sobreveio a décima segunda aurora
 
 <figure>
 	<a href="/images/iliada-paris-and-helene.jpg" target="_blank"><img src="/images/iliada-paris-and-helene.jpg" alt="Paris eHelena" style="zoom:65%;" /></a>
-	<figcaption><em>Pari and Helene</em></figcaption>
+	<figcaption><em>Paris e Helena</em></figcaption>
 </figure>
 
 <figure>
 	<a href="/images/Iliada-Achilles-Lamenting-the-Death-of-Patroclus.jpg" target="_blank"><img src="/images/Iliada-Achilles-Lamenting-the-Death-of-Patroclus.jpg" alt="Iliada - Aquiles lamentando a morte de Patroclo " style="zoom:70%;" /></a>
-	<figcaption><em>Achiles lamenting the Death of Patroclus</em></figcaption>
+	<figcaption><em>Aquiles lamentando a morte de Patroclo</em></figcaption>
 </figure>
 {{< /rawhtml >}}
 
@@ -816,6 +816,7 @@ Para compreender esse poema de Fernando Pessoa, devemos saber que existe uma len
 - 📚 [Helena de Tróia](https://www.amazon.com.br/Helena-Troia-Destino-Um-Povo/dp/8582750153/) / [Ulisses e Penelópe](https://www.amazon.com.br/Ulisses-Penelope-Nostalgia-Alberto-Carvalho/dp/8588038226/) pelo professor Carlos Alberto de Carvalho.
 - 📚 [A Canção de Aquiles](https://www.amazon.com.br/can%C3%A7%C3%A3o-Aquiles-aclamada-releitura-Il%C3%ADada/dp/6555354186/)
 - 📚 [A Guerra de Tróia - Uma saga de heróis e deuses](https://www.amazon.com.br/Guerra-Troia-Saga-Her%C3%B3is-Deuses/dp/8525432342)
+- 📚 [A Thousand Ships](https://www.amazon.com.br/gp/product/B07K6SG62Z/) por Natalie Haynes
 - 🎮 [Total War: Troy](https://www.totalwar.com/games/troy/)
 - 🔭 [Asteroides troianos de Júpiter](https://pt.m.wikipedia.org/wiki/Asteroides_troianos_de_J%C3%BApiter)
 
