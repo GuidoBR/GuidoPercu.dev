@@ -818,6 +818,7 @@ Para compreender esse poema de Fernando Pessoa, devemos saber que existe uma len
 - 📚 [A Guerra de Tróia - Uma saga de heróis e deuses](https://www.amazon.com.br/Guerra-Troia-Saga-Her%C3%B3is-Deuses/dp/8525432342)
 - 🎮 [Total War: Troy](https://www.totalwar.com/games/troy/)
 - 🔭 [Asteroides troianos de Júpiter](https://pt.m.wikipedia.org/wiki/Asteroides_troianos_de_J%C3%BApiter)
+- [📚 Omeros - Derek Walcott](https://www.amazon.com/Omeros-DEREK-WALCOTT/dp/0374523509/)
 
 ## Para se aprofundar
 
