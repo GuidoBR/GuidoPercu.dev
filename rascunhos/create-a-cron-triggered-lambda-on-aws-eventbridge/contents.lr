@@ -1,0 +1,42 @@
+title:
+10 Best Books I have Read in 2015
+---
+pub_date:
+2015-12-31
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+@oumguido
+
+---
+image:
+/static/images/image.jpg
+
+---
+
+description:
+Abc
+
+---
+body:
+
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html
+https://www.infoq.com/news/2016/02/AWS-CloudWatch-Events/
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-sam.html
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html
+https://medium.com/serverless-transformation/eventbridge-the-key-component-in-serverless-architectures-e7d4e60fca2d
+
+      Events:
+        Trigger:
+          Type: EventBridgeRule
+          EventBusName: event-bus-for-this-lambda
+          Properties:
+            Schedule: 'rate(1 month)'
+            Name: ConformIntegrationRule
+            Description: Event Bridge rule that triggers Conform lambda function
+            Enabled: false  # Change it to true when we are ready to integrate with Conform
+            Target:
+              Id: lambda-function-name
