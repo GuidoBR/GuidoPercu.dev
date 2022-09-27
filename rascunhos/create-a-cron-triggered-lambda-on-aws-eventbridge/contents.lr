@@ -28,6 +28,11 @@ https://www.infoq.com/news/2016/02/AWS-CloudWatch-Events/
 https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-sam.html
 https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html
 https://medium.com/serverless-transformation/eventbridge-the-key-component-in-serverless-architectures-e7d4e60fca2d
+https://docs.amazonaws.cn/en_us/serverless-application-model/latest/developerguide/sam-property-function-schedule.html
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
+https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-function-eventbridgerule.html
+https://docs.amazonaws.cn/en_us/AmazonCloudWatch/latest/events/RunLambdaSchedule.html#schedule-test-rule
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-sam.html#eb-combined-template
 
       Events:
         Trigger:
