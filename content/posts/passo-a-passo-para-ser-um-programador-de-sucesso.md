@@ -57,6 +57,7 @@ Falando em comunidade, busque interagir e conhecer a [comunidade de tecnologia](
 - [🇧🇷|Curso|Pago] [PythonPro](https://pythonpro.com.br/)
 - [🇬🇧|Curso|Gratuito] [Python for Everybody](https://www.coursera.org/specializations/python)
 - [🇬🇧|Curso|Gratuito] [CodeAcademy Python](https://www.codecademy.com/catalog/language/python)
+- [🇬🇧|Curso|Gratuito] [Automate with Python](https://www.youtube.com/watch?v=PXMJ6FS7llk)
 - [🇬🇧|Guia] [Python Roadmap](https://roadmap.sh/python)
 
 ##### Livros sobre Python
