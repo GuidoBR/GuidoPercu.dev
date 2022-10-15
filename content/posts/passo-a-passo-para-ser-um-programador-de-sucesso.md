@@ -125,6 +125,7 @@ A comunidade de Javascript também é bastante ativa no Brasil, seja através de
 - [🇧🇷|Guia] [Guia do Cientista de Dados das Galáxias](https://github.com/PizzaDeDados/datascience-pizza)
 - [🇧🇷|Curso|Gratuito] [Análise de Dados Públicos](https://www.youtube.com/playlist?list=PLUukMN0DTKCu6g2Lq1KXLnIX6Ilk4DAPI)
 - [🇬🇧|Curso|Pago] [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+- [🇬🇧|Curso|Pago] [Kaggle: Your Machine Learning and Data Science Community](https://www.kaggle.com/learn)
 
 
 ###### Textos relacionados

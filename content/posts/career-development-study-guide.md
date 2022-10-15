@@ -38,6 +38,7 @@ According to [career ladders](https://career-ladders.dev/engineering/#senior-eng
 | [Full Stack AWS Crash Course](https://twitter.com/dabit3/status/1362142573402415106) | Course |
 | [AWS Fundamentals: Building Serverless Applications](https://www.coursera.org/learn/aws-fundamentals-building-serverless-applications) | Course |
 | [Architect Learning Plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/78/architect-learning-plan?la=sec&sec=lp) | Course |
+| [AWS VPC Beginner to Pro - Virtual Private Cloud Tutorial](https://www.youtube.com/watch?v=g2JOHLHh4rI) | Course |
 | [The Good Parts of AWS](https://gumroad.com/l/aws-good-parts) | Book   |
 
 ## Architecture & System Design
@@ -91,6 +92,7 @@ When we take more responsibilities on our careers, so does the [complexity of th
 | [Leet](https://leetcode.com/)                                | Tests |
 | [TripleByte](https://triplebyte.com)                         | Tests |
 | [Codility](https://www.codility.com/)                        | Tests |
+| [Curated List of Top 75 LeetCode Questions to Save Your Time](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)                        | Tests |
 
 ## Computer Science
 

@@ -1,0 +1,47 @@
+title:
+10 Best Books I have Read in 2015
+---
+pub_date:
+2015-12-31
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+@oumguido
+
+---
+image:
+/static/images/image.jpg
+
+---
+
+description:
+Abc
+
+---
+body:
+
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html
+https://www.infoq.com/news/2016/02/AWS-CloudWatch-Events/
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-sam.html
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html
+https://medium.com/serverless-transformation/eventbridge-the-key-component-in-serverless-architectures-e7d4e60fca2d
+https://docs.amazonaws.cn/en_us/serverless-application-model/latest/developerguide/sam-property-function-schedule.html
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
+https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-function-eventbridgerule.html
+https://docs.amazonaws.cn/en_us/AmazonCloudWatch/latest/events/RunLambdaSchedule.html#schedule-test-rule
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-sam.html#eb-combined-template
+
+      Events:
+        Trigger:
+          Type: EventBridgeRule
+          EventBusName: event-bus-for-this-lambda
+          Properties:
+            Schedule: 'rate(1 month)'
+            Name: ConformIntegrationRule
+            Description: Event Bridge rule that triggers Conform lambda function
+            Enabled: false  # Change it to true when we are ready to integrate with Conform
+            Target:
+              Id: lambda-function-name
