@@ -730,22 +730,36 @@ ul.courses li:hover {
                                 <div id="profiles">
                                 </div>
                         </header>
-                        <!--
-                                <section class="section main-summary">
+
+                        <section class="section main-summary">
                                 <section>
-                                <div><p>I write about software development, technology, Web and books on my personal blog. I work as a software engineer and my goal is to help improve people's lives.  I have experience developing web apps as a full stack developer, working with agile methodologies, creating software with tests and using version control systems.  I'm currently studying Computer Science at UERJ (Rio de Janeiro - Brazil). My main interests are Functional Programming, Data Science and Finance.</p></div>
+                                <div><p>I'm a senior backend engineer at Modus Create, where I'm also the Team Lead of a 
+                                        group of highly talented software engineers. I have 9+ years of experience, using 
+                                        mainly Python/Django, PHP/Laravel, AWS. In the past I have worked in projects using 
+                                        Node.js, Go, VueJS, ReactJS. </p></div>
                                 </section>
-                                </section>
-                        -->                        
+                        </section>
 
                         <section class="section margin1">
                                 <header>
-                                        <h2 class='section-title'>Skills</h2>
+                                        <h2 class='section-title'>Highlights</h2>
                                 </header>
                                 <section id="skills">
                                         <div class="item">
                                                 <h3 class="name">
-                                                        Languages and Frameworks
+                                                        <a href="https://www.credly.com/badges/bbdc6629-529f-447c-bdf9-48dc7fdabe49">AWS Certified Cloud Practitioner</a>
+                                                </h3>
+                                        </div>
+
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        <a href="https://www.guidopercu.dev/posts/talk-performance-and-sustainability-jamstack/">Talk: Performance and Sustainability with Jamstack</a>
+                                                </h3>
+                                        </div>
+
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        Skills
                                                 </h3>
                                                 <ul class="keywords">
                                                     {% for skill in [
@@ -753,46 +767,20 @@ ul.courses li:hover {
                                                         {'name': 'PHP'},
                                                         {'name': 'HTML/CSS'},
                                                         {'name': 'Go'},
-                                                        {'name': 'Javascript/NodeJS'},
+                                                        {'name': 'Javascript'},
+                                                        {'name': 'NodeJS'},
                                                         {'name': 'VueJS'},
+                                                        {'name': 'ReactJS'},
+                                                        {'name': 'AWS'},
+                                                        {'name': 'Serverless'},
+                                                        {'name': 'MySQL'},
+                                                        {'name': 'PostgreSQL'},
+                                                        {'name': 'DynamoDB'},
+                                                        {'name': 'DocumentDB'},
+                                                        {'name': 'MongoDB'},
                                                     ] %}
                                                         <li>{{ skill.name }}</li>
                                                     {% endfor %}
-                                                </ul>
-                                        </div>
-
-                                        <div class="item">
-                                                <h3 class="name">
-                                                        Technologies
-                                                </h3>
-                                                <ul class="keywords">
-                                                        {% for skill in [
-                                                            {'name': 'AWS'},
-                                                            {'name': 'Serverless'},
-                                                            {'name': 'MySQL'},
-                                                            {'name': 'PostgreSQL'},
-                                                            {'name': 'DynamoDB'},
-                                                            {'name': 'MongoDB'},
-                                                        ] %}
-                                                            <li>{{ skill.name }}</li>
-                                                        {% endfor %}
-                                                </ul>
-                                        </div>
-
-                                        <div class="item">
-                                                <h3 class="name">
-                                                        Other
-                                                </h3>
-                                                <ul class="keywords">
-                                                        {% for skill in [
-                                                                {'name': 'API Design'},
-                                                                {'name': 'relational and NoSQL databases'},
-                                                                {'name': 'unit tests'},
-                                                                {'name': 'TDD'},
-                                                                {'name': 'Agile methodologies'},
-                                                        ] %}
-                                                            <li>{{ skill.name }}</li>
-                                                        {% endfor %}
                                                 </ul>
                                         </div>
                                 </section>
@@ -1018,6 +1006,7 @@ ul.courses li:hover {
                                 </section>
                         </section>
 
+                        <!--
                         <section class="section margin1">
                                 <header>
                                         <h2 class='section-title'>Highlights</h2>
@@ -1041,7 +1030,7 @@ ul.courses li:hover {
                                         </div>
                                 </section>
                         </section>
-
+                        -->
                         <!--
                                 <section class="section">
                                 <header>
