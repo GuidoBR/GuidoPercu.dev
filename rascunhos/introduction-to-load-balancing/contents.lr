@@ -1,0 +1,33 @@
+title:
+Introduction to Load Balancing
+---
+pub_date:
+2023-03-01
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+@oumguido
+
+---
+image:
+/static/images/image.jpg
+
+---
+
+description:
+Abc
+
+---
+body:
+
+## Algorithms
+
+![load-balance-algorithms-bytebytego](/home/guido/Projects/GuidoPercu.dev/rascunhos/introduction-to-load-balancing/load-balance-algorithms-bytebytego.jpeg)
+
+## Types of Load Balancing
+
+## AWS Elastic Load Balancing
+

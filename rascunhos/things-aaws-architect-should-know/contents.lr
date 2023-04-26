@@ -1,0 +1,73 @@
+title:
+Things a AWS Architect Should Know
+---
+pub_date:
+2022-09-07
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+@oumguido
+
+---
+image:
+/static/images/image.jpg
+
+---
+
+description:
+Abc
+
+---
+body:
+
+The AWS [Architect Learning Plan](https://explore.skillbuilder.aws/learn/lp/78/architect-learning-plan).
+
+## Costs and Pricing
+AWS Billing and Costs Management
+
+## Shared Responsibility
+[AWS Shared Responsibility Model](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html)
+
+
+
+![AWS Shared Responsibility](./aws-shared-responsibility-model.png)
+
+## Architecting a application
+[AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+
+- [Operational Excellence](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html)
+- [Security](https://docs.aws.amazon.com/wellarchitected/latest/framework/security.html)
+- [Reliability](https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html)
+- [Performance Efficiency](https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency.html)
+- [Cost Optimization](https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-optimization.html)
+- [Sustainability](https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html)
+
+
+
+### Sustainability
+
+> The discipline of sustainability addresses the long-term environmental, economic, and societal impact
+> of your business activities. The United Nations World Commission on Environment and Development
+> deﬁnes sustainable development as “development that meets the needs of the present without
+> compromising the ability of future generations to meet their own needs.” Your business or organization can have negative environmental impacts like direct or indirect carbon emissions, unrecyclable waste, and damage to shared resources like clean water.
+>
+> When building cloud workloads, the practice of sustainability is understanding the impacts of the
+> services used, quantifying impacts through the entire workload lifecycle, and applying design principles
+> and best practices to reduce these impacts. This document focuses on environmental impacts, especially energy consumption and eﬃciency, since they are important levers for architects to inform direct action to reduce resource usage.
+
+## Exam readiness. 
+
+
+
+## Study guide
+
+- [AWS Certified Solutions Architect - Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=Ia-UEYYR44s)
+- [AWS Certified Solutions Architect - SAA C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
+- [AWS Developer](https://www.udemy.com/course/aws-developer/)
+- [AWS Skill Builder](https://explore.skillbuilder.aws/)
+- [New SAA-C03 Exam Version for the AWS Certified Solutions Architect Associate](https://digitalcloud.training/new-saa-c03-exam-version-for-the-aws-certified-solutions-architect-associate/)
+- [CIDR](https://www.ipaddressguide.com/cidr)
+- [10 Things Serverless Architects Should Know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/)

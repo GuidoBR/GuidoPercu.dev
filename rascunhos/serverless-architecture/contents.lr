@@ -1,0 +1,66 @@
+title:
+Serverless Architecture
+---
+pub_date:
+2020-09-07
+---
+author:
+Guido Percú
+
+---
+twitter_handle:
+@oumguido
+
+---
+image:
+/static/images/image.jpg
+
+---
+
+description:
+Abc
+
+---
+body:
+
+
+### AWS Serverless services
+
+1. Lambda
+2. Lambda@Edge
+3. DynamoDB
+4. API Gateway
+5. Cognito
+6. Cloudformation and AWS SAM
+7. Eventbridge and Cloudwatch
+8. SNS
+
+- [Amazon EventBridge: O principal componente em arquiteturas serverless](https://oieduardorabelo.medium.com/amazon-eventbridge-o-principal-componente-em-arquiteturas-serverless-450766379976)
+- [Eventbridge - the key component in Serverless Architectures](https://medium.com/serverless-transformation/eventbridge-the-key-component-in-serverless-architectures-e7d4e60fca2d)
+- [Eventbridge](https://aws.amazon.com/eventbridge/)
+- [Serverless scheduling with Amazon Eventbridge, AWS Lambda, and DynamoDB](https://aws.amazon.com/blogs/architecture/serverless-scheduling-with-amazon-eventbridge-aws-lambda-and-amazon-dynamodb/)
+- [Using Amazon EventBridge and AWS Serverless Application Model templates](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-sam.html)
+- [Integrating Amazon EventBridge into your serverless applications](https://aws.amazon.com/blogs/compute/integrating-amazon-eventbridge-into-your-serverless-applications/)
+- [Serverless Land](https://serverlessland.com/learn/innovator-island)
+- [From Microservices to Serverless: How to avoid converting “Distributed monolith” microservices into “Serverless monoliths”](https://medium.com/the-theam-journey/how-to-avoid-converting-distributed-monolith-microservices-into-serverless-monoliths-f48061a9ff7e)
+- [Serverless courses](https://www.christopherbiscardi.com/serverless)
+
+
+### AWS Serverless solutions architecture
+
+#### Mobile Application
+
+
+#### Serverless Website
+
+#### Micro-services architecture
+
+#### Big data pipeline
+
+#### Crawler
+
+
+
+
+
+
