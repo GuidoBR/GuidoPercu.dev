@@ -41,7 +41,7 @@ body {
 }
 
 ol, ul {
-        list-style: none;
+        list-style: none !important;
 }
 
 blockquote, q {
@@ -675,7 +675,7 @@ ul.courses li:hover {
                         <header id="header" class="clear">
                                 <div>
                                         <h1 class="name">Guido Luz Percú</h1>
-                                        <h2 class="label">Software Developer</h2>
+                                        <h2 class="label">Senior Backend Engineer</h2>
                                 </div>
 
                                 <span class="location">
@@ -733,69 +733,21 @@ ul.courses li:hover {
 
                         <section class="section main-summary">
                                 <section>
-                                <div><p>I'm a senior backend engineer at Modus Create, where I'm also the Team Lead of a 
-                                        group of highly talented software engineers. I have 9+ years of experience, using 
-                                        mainly Python/Django, PHP/Laravel, AWS. In the past I have worked in projects using 
+                                <div><p>I have 10 years of experience, using Python/Django, PHP/Laravel, AWS. I've helped global companies to deliver software remotely. In the past I have worked in projects using 
                                         Node.js, Go, VueJS, ReactJS. </p></div>
-                                </section>
-                        </section>
-
-                        <section class="section margin1">
-                                <header>
-                                        <h2 class='section-title'>Highlights</h2>
-                                </header>
-                                <section id="skills">
-                                        <div class="item">
-                                                <h3 class="name">
-                                                        <a href="https://www.credly.com/badges/bbdc6629-529f-447c-bdf9-48dc7fdabe49">AWS Certified Cloud Practitioner</a>
-                                                </h3>
-                                        </div>
-
-                                        <div class="item">
-                                                <h3 class="name">
-                                                        <a href="https://www.guidopercu.dev/posts/talk-performance-and-sustainability-jamstack/">Talk: Performance and Sustainability with Jamstack</a>
-                                                </h3>
-                                        </div>
-
-                                        <div class="item">
-                                                <h3 class="name">
-                                                        Skills
-                                                </h3>
-                                                <ul class="keywords">
-                                                    {% for skill in [
-                                                        {'name': 'Python'},
-                                                        {'name': 'PHP'},
-                                                        {'name': 'HTML/CSS'},
-                                                        {'name': 'Go'},
-                                                        {'name': 'Javascript'},
-                                                        {'name': 'NodeJS'},
-                                                        {'name': 'VueJS'},
-                                                        {'name': 'ReactJS'},
-                                                        {'name': 'AWS'},
-                                                        {'name': 'Serverless'},
-                                                        {'name': 'MySQL'},
-                                                        {'name': 'PostgreSQL'},
-                                                        {'name': 'DynamoDB'},
-                                                        {'name': 'DocumentDB'},
-                                                        {'name': 'MongoDB'},
-                                                    ] %}
-                                                        <li>{{ skill.name }}</li>
-                                                    {% endfor %}
-                                                </ul>
-                                        </div>
                                 </section>
                         </section>
 
                         <section class="section">
                                 <header>
-                                        <h2 class='section-title'>Work Experience <span class="item-count">(9+ Years)</span></h2>
+                                        <h2 class='section-title'>Work Experience <span class="item-count">(10 Years)</span></h2>
                                 </header>
                                 <section id="work">
                                                 <header>
                                                         <!--<span class="space-left">
                                                                 <span class="fa fa-caret-down"></span>
                                                         </span>-->
-                                                        <div class="position">Senior Backend Engineer - Python/Django</div>
+                                                        <div class="position">Tech Lead - Python/AWS</div>
                                                         <div class="company">Modus Create</div>
                                                         <div class="date"><span class="startDate">July 2017</span><span class="endDate">- Current</span></div>
                                                 </header>
@@ -803,35 +755,22 @@ ul.courses li:hover {
                                                 <span class="website"><a href="https://moduscreate.com/">ModusCreate.com</a></span>
                                                 <span class="location">Remote</span>
 
-                                                <div class="position">Team Lead</div>
+                                                <div class="position">Tech Lead</div>
                                                 <div class="company">Modus Create</div>
                                                 <div class="date"><span class="startDate">January 2020</span><span class="endDate"> - Current</span></div>
                                                 <div>
                                                         <div class="summary">
-                                                                <strong>Modus Create's team</strong>
+                                                                <strong>Pfizer</strong>
                                                         </div>
+                                                        <p>Python / AWS / Serverless (SAM) / CloudFormation / DocumentDB / ECS / Github Actions</p>
                                                         <ul class="highlights">
-                                                                <li>The team that I lead helped the organization closing consultant services with new clients.</li>
-                                                                <li>Managing 10+ Software Engineers: organizing team meetings, communication with directors and mentorship.</li>
-                                                                <li>Assisted the marketing team on creating promotional material for display to potential clients.</li>
+                                                                <li>Created the backend for a Word plugin, an mobile app, and an smartwatch app on the healthcare industry.</li>
+                                                                <li>Deployed on AWS platform, using Serverless concepts.</li>
+                                                                <li>Those projects impacted the ability of our client to improve it's time to market, which reduces costs and improves revenue.</li>
+                                                                <li>Managing software engineers: organizing team meetings, communication with directors and mentorship.</li>    
                                                         </ul>
                                                 </div>
 
-                                                <hr>
-                                                <div class="position">Senior Backend Engineer - Python/AWS</div>
-                                                <div class="company">Modus Create</div>
-                                                <div class="date"><span class="startDate">January 2020</span><span class="endDate"> - Current</span></div>
-                                                <div>
-                                                        <div class="summary">
-                                                                <strong>Pfizer's team</strong>
-                                                                <p>Python / SAM Framework / AWS / Lambda Functions / Serverless / DynamoDB / DocumentDB</p>
-                                                        </div>
-                                                        <ul class="highlights">
-                                                                <li>Created the backend for a Word plugin and a mobile app on the healthcare industry.</li>
-                                                                <li>Deployed on AWS platform, using Serverless concepts.</li>
-                                                                <li>The first project impacted the ability of our client to improve it's time to market, which reduces costs and improves revenue.</li>
-                                                        </ul>
-                                                </div>
                                         <hr>
                                              <div class="position">Fullstack Engineer - PHP/Javascript</div>
                                              <div class="company">Modus Create</div>
@@ -1113,7 +1052,58 @@ ul.courses li:hover {
                                 </section>
                                 </section>
                         -->
+                        <section class="section margin1">
+                                <header>
+                                        <h2 class='section-title'>Highlights</h2>
+                                </header>
+                                <section id="skills">
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        <a href="https://www.credly.com/badges/bbdc6629-529f-447c-bdf9-48dc7fdabe49"><img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" width="150px"></a>
+                                                </h3>
+                                        </div>
+
+                                        <div class="item">
+                                                <ul>
+                                                        <li style="list-style: none;">🇧🇷 Portuguese - Native</li>
+                                                        <li style="list-style: none;">🇺🇸 English - Fluent</li>
+                                                        <li style="list-style: none;">🇫🇷 French - Basic</li>
+                                                </ul>
+                                        </div>
+
+                                        <!--<div class="item">
+                                                <h3 class="name">
+                                                        <a href="https://www.guidopercu.dev/posts/talk-performance-and-sustainability-jamstack/">Talk: Performance and Sustainability with Jamstack</a>
+                                                </h3>
+                                        </div>-->
+
+                                        <div class="item">
+                                                <h3 class="name">
+                                                        <a href="https://www.guidopercu.dev/posts/talk-performance-and-sustainability-jamstack/">Talk: Performance and Sustainability with Jamstack</a>
+                                                </h3>
+                                                <ul class="keywords">
+                                                        <strong>Skills:</strong>
+                                                    {% for skill in [
+                                                        {'name': 'Python'},
+                                                        {'name': 'PHP'},
+                                                        {'name': 'Go'},
+                                                        {'name': 'Javascript'},
+                                                        {'name': 'NodeJS'},
+                                                        {'name': 'VueJS'},
+                                                        {'name': 'AWS'},
+                                                        {'name': 'PostgreSQL'},
+                                                        {'name': 'DynamoDB'},
+                                                        {'name': 'DocumentDB'},
+                                                        {'name': 'MongoDB'},
+                                                    ] %}
+                                                        <li>{{ skill.name }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                        </div>
+                                </section>
+                        </section>
                 </div>
+                
                 <script>
                         (function(){
                                 var elements = document.querySelector("#resume");
