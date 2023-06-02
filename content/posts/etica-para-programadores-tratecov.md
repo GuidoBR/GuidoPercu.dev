@@ -56,3 +56,4 @@ Onde está a responsabilidade e a ética dos profissionais de desenvolvimento de
 - [CPI da Covid: Leia a íntegra do relatório final](https://g1.globo.com/politica/cpi-da-covid/noticia/2021/10/19/leia-a-integra-da-minuta-do-relatorio-da-cpi-da-covid.ghtml)
 - [TCU - Aplicativo TrateCov recomendava tratamento precoce da COVID-19](https://portal.tcu.gov.br/imprensa/noticias/aplicativo-tratecov-recomendava-tratamento-precoce-da-covid-19.htm)
 - [Caipyra 2019: A banalidade do mal e a regulação de novos comportamentos tecnológicos ](https://www.youtube.com/watch?v=cdB5fP_zkC4) - [Cuducos](https://cuducos.me/)
+- [CPI e a filosofia](https://www.revistaquestaodeciencia.com.br/apocalipse-now/2021/05/22/cpi-e-filosofia)
