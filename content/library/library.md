@@ -46,7 +46,7 @@ article.books { width: 100% }
                                                 <img src="/images/livro-IliadeSimoneWeil.jpg" alt="L'Iliade ou le poeme de la force" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/iliada/">L'Iliade ou le poeme de la force</a>
+                                                <a href="/library/Iliade-explique-les-guerres-modernes/">L'Iliade ou le poeme de la force</a>
                                                 <span><br>Simone Weil</span>
                                         </p>
                                 </li>
