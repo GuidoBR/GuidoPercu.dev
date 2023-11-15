@@ -17,10 +17,8 @@ I'm a Full Stack Engineer at Modus Create, where I create software projects usin
 ### Technologies
 - Python with Django, Pyramid and Flask
 - PHP with Yii or Laravel
-- HTML,CSS
+- C# .NET
 - JavaScript,  NodeJS,  Angular,  VueJS
 - MySQL, MS SQL, PostgresSQL, MongoDB
 
 ---
-
-{{< social >}}
