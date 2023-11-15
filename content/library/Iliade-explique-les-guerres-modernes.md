@@ -6,7 +6,7 @@ draft: true
 
 # L'Iliade explique les guerres modernes
 
-![](/static/images/IliadeSimoneWeil.jpg)
+![](/images/livro-IliadeSimoneWeil.jpg)
 
 > «Considérant que la reconnaissance de la dignité inhérente à tous les membres de la famille humaine et de leurs droits égaux et inaliénables constitue le fondement de la liberté, de la justice et de la paix dans le monde.» 
 > [L’ONU - La Déclaration universelle des droits de l'homme](https://www.un.org/fr/universal-declaration-human-rights/)
