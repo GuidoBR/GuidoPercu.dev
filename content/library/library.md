@@ -43,11 +43,11 @@ article.books { width: 100% }
                         <ul>
                                 <li>
                                         <a href="/library/iliada/">
-                                                <img src="/images/livro-iliada.jpg" alt="Ilíada" class="book-image">
+                                                <img src="/images/livro-IliadeSimoneWeil.jpg" alt="L'Iliade ou le poeme de la force" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/iliada/">Ilíada</a>
-                                                <span><br>Homero</span>
+                                                <a href="/library/iliada/">L'Iliade ou le poeme de la force</a>
+                                                <span><br>Simone Weil</span>
                                         </p>
                                 </li>
                                 <li>
