@@ -467,7 +467,7 @@ A Ilíada foca em acontecimentos no penúltimo ano da Guerra de Tróia, mas term
 
 Helena de Tróia desconfia do Cavalo e imita vozes de esposa de guerreiros gregos, para tentá-los:
 
-> "Sim, em tudo isso, esposa, disseste a verdade. Eu que viajei muito e cheguei a conhecer muitos heróis, nunca meus olhos viram alguém como Odisseu. Que perseverança, e que coragem ele mostrou dentro do cavalo de madeira, onde estavam todos os mais bravos dos argivos esperando para levar a morte e a destruição aos troianos. Naquele momento vieste a nós; algum deus que amava os troianos te mandou, trazendo contigo [Deífobo](https://pt.wikipedia.org/wiki/Deífobo). Três vezes tu andaste em volta do nosso esconderijo; tu chamaste nossos capitães cada qual por seu nome, imitando as vozes de suas esposas - [Diomedes](https://pt.wikipedia.org/wiki/Diomedes), Odisseu e eu, de nossos assentos, ouvimos o que dizias. Diomedes e eu não conseguíamos decidir se devíamos sair, ou se responder, mas Odisseu nos impediu, de modo que permanecemos em silêncio, exceto [ nticlo](https://pt.wikipedia.org/w/index.php?title= nticlo&action=edit&redlink=1), que estava prestes a falar-te, quando Odisseu tapou-lhe a boca com suas mãos. Isso nos salvou a todos, até que Atena te fez ir embora"
+> "Sim, em tudo isso, esposa, disseste a verdade. Eu que viajei muito e cheguei a conhecer muitos heróis, nunca meus olhos viram alguém como Odisseu. Que perseverança, e que coragem ele mostrou dentro do cavalo de madeira, onde estavam todos os mais bravos dos argivos esperando para levar a morte e a destruição aos troianos. Naquele momento vieste a nós; algum deus que amava os troianos te mandou, trazendo contigo [Deífobo](https://pt.wikipedia.org/wiki/Deífobo). Três vezes tu andaste em volta do nosso esconderijo; tu chamaste nossos capitães cada qual por seu nome, imitando as vozes de suas esposas - [Diomedes](https://pt.wikipedia.org/wiki/Diomedes), Odisseu e eu, de nossos assentos, ouvimos o que dizias. Diomedes e eu não conseguíamos decidir se devíamos sair, ou se responder, mas Odisseu nos impediu, de modo que permanecemos em silêncio, exceto Ânticlo, que estava prestes a falar-te, quando Odisseu tapou-lhe a boca com suas mãos. Isso nos salvou a todos, até que Atena te fez ir embora"
 >
 > *Odisseia*
 
@@ -589,7 +589,7 @@ O crítico literário Otto Carpeaux relata em sua História da Literatura Ociden
 Nas origens desses três elementos encontram-se pensamentos antigos: o idealismo acadêmico, o materialismo epicureu e a utopia platônica. Não será difícil demonstrar, da mesma maneira, a presença invisível da Antiguidade em todos os setores do pensamento moderno; e do pensamento antigo, a literatura antiga é a mais completa expressão emotiva. <strong>Daí se origina o fato de todos os gêneros literários ainda hoje existentes haverem sido criados pelos gregos, tendo-nos sido transmitidos pelos romanos.</strong></p>
 
 <strong>[História da Literatura Ocidental](https://www2.senado.leg.br/bdsf/item/id/528992)</strong>, <em>Otto Maria Carpeaux</em> página 71.
-</blockquote>
+
 {{< /rawhtml >}}
 
 #### Influência na literatura grega e romana clássica
@@ -887,5 +887,4 @@ Para compreender esse poema de Fernando Pessoa, devemos saber que existe uma len
 ### Teatro e outras mídias
 
 - [Works based on Iliad](https://en.wikipedia.org/wiki/Category:Works_based_on_the_Iliad)
-
 
