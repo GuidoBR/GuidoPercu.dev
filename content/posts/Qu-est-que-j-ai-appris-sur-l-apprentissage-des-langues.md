@@ -1,5 +1,5 @@
 ---
-title: "Qu Est Que J Ai Appris Sur L Apprentissage Des Langues"
+title: "Qu'est que j'ai appris sur l'apprentissage des langues"
 date: 2023-11-30T14:58:30-03:00
 draft: true
 ---
