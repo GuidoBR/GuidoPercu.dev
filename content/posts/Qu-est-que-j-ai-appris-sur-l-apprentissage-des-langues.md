@@ -4,6 +4,10 @@ date: 2023-11-30T14:58:30-03:00
 draft: true
 ---
 
+![](static/images/amador-loureiro-BVyNlchWqzs-unsplash.jpg)
+
+
+
 Quand j'étais un ado, ma famille m'envoyait dans une école de langues parce qu'ils savaient que l'anglais est fondamental pour réussir dans la vie. Nous écoutons ça presque tous les jours sur les médias: l'anglais est la langue des affaires, et pour conquérir un bon travail il est un << must have >>. Aujourd'hui je suis heureux de cette décision de mes parents, grâce à ça j'ai la chance de travailler avec les gens de beaucoup de pays intéressants et l'opportunité de voyager dans le monde.
 
 Après plusieurs années sans étudier formellement une nouvelle langue, cette année j'ai décidé d’apprendre le français. J'ai déjà aimé cette langue depuis plusieurs années et j'ai déjà essayé de l'apprendre mais sans jamais réussir. J'ai manqué de motivation et aussi une meilleure méthode pour l’étudier. Au hasard, j'ai fait une découverte qui a changé tout: les êtres humains acquièrent les langues, ils ne l'apprendront pas. J'ai commencé à écouter les polyglots qui ont dit que la meilleur manière d'étudier une langue est de l'utiliser le << comprehensible [input](https://en.wikipedia.org/wiki/Input_hypothesis) >>, autrement dit << écouter et lire beaucoup de choses en la langue désirée en un niveau de difficulté qu'est un défi intelligible pour toi-même >>.
