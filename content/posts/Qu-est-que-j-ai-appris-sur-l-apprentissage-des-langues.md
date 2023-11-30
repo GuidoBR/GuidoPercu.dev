@@ -4,7 +4,7 @@ date: 2023-11-30T14:58:30-03:00
 draft: true
 ---
 
-![](static/images/amador-loureiro-BVyNlchWqzs-unsplash.jpg)
+![](/images/amador-loureiro-BVyNlchWqzs-unsplash.jpg)
 
 
 
