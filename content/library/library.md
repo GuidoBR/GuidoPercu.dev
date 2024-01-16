@@ -60,12 +60,12 @@ article.books { width: 100% }
                                         </p>
                                 </li>
                                 <li>
-                                        <a href="/library/iliada/">
-                                                <img src="/images/livro-iliada.jpg" alt="Ilíada" class="book-image">
+                                        <a href="/library/how-to-think-like-a-roman-emperor/">
+                                                <img src="/images/livro-howtothinklikearomanemperor.jpg" alt="How to Think like a Roman Emperor" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/iliada/">Ilíada</a>
-                                                <span><br>Homero</span>
+                                                <a href="/library/how-to-think-like-a-roman-emperor/">How to Think like a Roman Emperor</a>
+                                                <span><br>Donald Robertson</span>
                                         </p>
                                 </li>
                         </ul>

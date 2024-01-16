@@ -2,8 +2,6 @@
 title: How to think like a Roman Emperor
 ---
 
-# How to think like a Roman Emperor
-
 ![](/images/livro-howtothinklikearomanemperor.jpg)
 
 In "How to think like a Roman Emperor" by Donald Robertson, readers are taken on a captivating journey into the wisdom of ancient Stoicism through the lens of one of its most renowned practitioners, Marcus Aurelius. The author pierces together historical narrative, philosophical and psychological insights with practical exercises, offering a compelling guide for modern readers seeking timeless wisdom in the pursuit of a more meaningful, resilient and happy life. The book provides a thoughtful exploration of Marcus Aurelius' life and teachings (by explaining relevant passages of Meditations) and it also serves as a guide to applying Stoic principles to contemporary challenges.
