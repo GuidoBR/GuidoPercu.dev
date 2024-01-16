@@ -16,7 +16,8 @@ In a rapidly changing world where institutionalized religion holds less sway and
 
 I had the enriching experience of delving into "How to Think Like a Roman Emperor" alongside "Meditations" and a biography of Marcus Aurelius by Pierre Grimal, and the synergy among these works was truly remarkable. Each book complemented and enhanced the insights of the others, creating a holistic understanding of Marcus Aurelius and Stoic philosophy. I highly recommend this multidimensional approach, as tackling "Meditations" alone can prove challenging without the historical context. Donald Robertson's book serves as an invaluable companion, providing a nuanced perspective that enriches the reading of Aurelius' meditative reflections. Engaging with these works together offers a more comprehensive and rewarding experience, bridging the gap between our contemporary world and the profound wisdom of ancient Stoicism.
 
-## What is stoicism and it's history
+## What is Stoicism and its historical background?
+
 
 ![](/images/rome.jpg)
 
