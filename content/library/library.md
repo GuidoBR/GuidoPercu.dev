@@ -46,7 +46,7 @@ article.books { width: 100% }
                                                 <img src="/images/livro-IliadeSimoneWeil.jpg" alt="L'Iliade ou le poeme de la force" class="book-image">
                                         </a>
                                         <p class="book-description">
-                                                <a href="/library/Iliade-explique-les-guerres-modernes/">L'Iliade ou le poeme de la force</a>
+                                                <a href="/library/Iliade-explique-les-guerres-modernes/">🇫🇷 L'Iliade ou le poeme de la force</a>
                                                 <span><br>Simone Weil</span>
                                         </p>
                                 </li>
@@ -66,6 +66,7 @@ article.books { width: 100% }
                                         <p class="book-description">
                                                 <a href="/library/how-to-think-like-a-roman-emperor/">How to Think like a Roman Emperor</a>
                                                 <span><br>Donald Robertson</span>
+                                                <br><a href="/library/comment-penser-comme-un-empereur-romain/">🇫🇷 version en français</a>
                                         </p>
                                 </li>
                         </ul>
