@@ -19,3 +19,6 @@ Le livre sert de guide pour aborder cet aspect universel de l'expérience humain
 
 
 - [Podcast - LE STOÏCISME - Se libérer du jugement de Le Précepteur.](https://music.amazon.com/podcasts/74de1185-e996-4484-b1fe-e24f35a9ca91/episodes/b0726e27-e7b2-48de-8fe4-4fbed37a6b75/LE-PR%C3%89CEPTEURLE-STO%C3%8FCISME-SE-LIB%C3%89RER-DU-JUGEMENT)
+- [LES 10 MEILLEURES CITATIONS DU STOÏCISME de Le Précepteur](https://music.amazon.com/podcasts/74de1185-e996-4484-b1fe-e24f35a9ca91/episodes/766e698c-1d58-4fd1-90b0-d6aa0ad2dde9/LE-PR%C3%89CEPTEURLES-10-MEILLEURES-CITATIONS-DU-STO%C3%8FCISME)
+- [Podcast -  LE STOÏCISME - Vaincre nos émotions de Le Précepteur](https://music.amazon.com/podcasts/74de1185-e996-4484-b1fe-e24f35a9ca91/episodes/19924462-0765-4338-b7de-0ea7d3181416/LE-PR%C3%89CEPTEURLE-STO%C3%8FCISME-VAINCRE-NOS-%C3%89MOTIONS)
+  
