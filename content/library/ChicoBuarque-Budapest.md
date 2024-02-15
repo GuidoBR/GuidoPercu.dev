@@ -4,6 +4,8 @@ date: 2024-01-28T20:29:48-03:00
 draft: true
 ---
 
+![](/images/livro-budapest.jpg)
+
 C'est le premier roman littéraire que j'ai lu en français et c'était très agréable. Ce bouquin raconte l'histoire d'un ghostwritter brésilien qui pour un hasard du desitn a voyagé à Budapest et commence a vivre un autre vivre lá-bas: un nouvelle idiome, une nouvelle profession et une nouvelle femme. C'est livre explore le concept qui s'appelle <<Doppelganger>> ( le double) d'une manière très intéressante.
 
 Le roman "*Budapest*" de Chico Buarque, publié en 2003, nous plonge dans un récit captivant qui oscille entre le mystère, la passion et l'histoire. L'auteur brésilien, également connu pour sa carrière musicale, nous transporte dans la fascinante atmosphère de la capitale hongroise. À travers les pages de ce roman, Buarque tisse une histoire d'amour complexe entre José Costa, un ghostwriter brésilien, et une mystérieuse femme hongroise. L'intrigue se déroule dans une Budapest envoûtante (une ville double - Buda et Pest coupé par le river Danube), imprégnée d'une histoire tumultueuse et de marques du passé.
