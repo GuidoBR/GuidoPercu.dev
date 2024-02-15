@@ -39,6 +39,28 @@ article.books { width: 100% }
 <section>
 <article class="books">
         <div class="bookshelf">
+        <div class="book-grid">
+                        <ul>
+                                <li>
+                                        <a href="/library/Sartre-Lexistentialisme-est-un-humanisme/">
+                                                <img src="/images/livro-Lexistentialisme-est-un-humanisme.jpg" alt="L'existentialisme est un humanisme" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/Sartre-Lexistentialisme-est-un-humanisme/">🇫🇷 L'existentialisme est un humanisme</a>
+                                                <span><br>Jean-Paul Sartre</span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <a href="/library/ChicoBuarque-Budapest/">
+                                                <img src="/images/livro-budapest.jpg" alt="Budapest" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/ChicoBuarque-Budapest/">🇫🇷 Budapest</a>
+                                                <span><br>Chico Buarque</span>
+                                        </p>
+                                </li>
+                        </ul>
+                </div>
                 <div class="book-grid">
                         <ul>
                                 <li>
