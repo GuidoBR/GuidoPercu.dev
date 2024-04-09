@@ -42,6 +42,15 @@ article.books { width: 100% }
         <div class="book-grid">
                         <ul>
                                 <li>
+                                        <a href="/library/BelAmi/">
+                                                <img src="/images/livro-Bel-Ami.webp" alt="Bel-Ami" class="book-image">
+                                        </a>
+                                        <p class="book-description">
+                                                <a href="/library/BelAmi/">🇫🇷 Bel-Ami</a>
+                                                <span><br>Guy de Maupassant</span>
+                                        </p>
+                                </li>
+                                <li>
                                         <a href="/library/Sartre-Lexistentialisme-est-un-humanisme/">
                                                 <img src="/images/livro-Lexistentialisme-est-un-humanisme.jpg" alt="L'existentialisme est un humanisme" class="book-image">
                                         </a>
