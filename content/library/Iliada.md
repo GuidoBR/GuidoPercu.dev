@@ -91,11 +91,11 @@ Ler a Ilíada foi uma experiência maravilhosa, o livro nos faz conhecer uma cul
 	1. [Ulisses / Odisseu](#ulisses--odisseu)
 	2. [Tersites](#tersites)
 5. [Temas principais](#temas-principais) 
-	6. [Como a Ilíada nos fala sobre a guerra?](#como-a-ilíada-nos-fala-sobre-a-guerra)
-	7. [Como a Ilíada nos fala sobre a vida?](#como-a-ilíada-nos-fala-sobre-a-vida)
-	8. [Destino na mitologia grega](#destino-na-mitologia-grega)
-	9. [Pestes e epidemia](#pestes-e-epidemia)
-	10. [Agon Ἀγών discursivo: o debate de ideias](#agon-ἀγών-discursivo-o-debate-de-ideias)
+	1. [Como a Ilíada nos fala sobre a guerra?](#como-a-ilíada-nos-fala-sobre-a-guerra)
+	2. [Como a Ilíada nos fala sobre a vida?](#como-a-ilíada-nos-fala-sobre-a-vida)
+	3. [Destino na mitologia grega](#destino-na-mitologia-grega)
+	4. [Pestes e epidemia](#pestes-e-epidemia)
+	5. [Agon Ἀγών discursivo: o debate de ideias](#agon-ἀγών-discursivo-o-debate-de-ideias)
 6. [Onde está o Cavalo de Tróia?](#onde-está-o-cavalo-de-tróia)
 7. [Qual tradução da Ilíada ler?](#qual-tradução-da-ilíada-ler)
 8. [Influência cultural](#influência-cultural)
@@ -814,7 +814,7 @@ Para compreender esse poema de Fernando Pessoa, devemos saber que existe uma len
 #### Adaptações modernas
 
 - 📚 [Helena de Tróia](https://www.amazon.com.br/Helena-Troia-Destino-Um-Povo/dp/8582750153/) / [Ulisses e Penelópe](https://www.amazon.com.br/Ulisses-Penelope-Nostalgia-Alberto-Carvalho/dp/8588038226/) pelo professor Carlos Alberto de Carvalho.
-- 📚 [A Canção de Aquiles](https://www.amazon.com.br/can%C3%A7%C3%A3o-Aquiles-aclamada-releitura-Il%C3%ADada/dp/6555354186/)
+- 📚 [A Canção de Aquiles](https://www.amazon.com.br/can%C3%A7%C3%A3o-Aquiles-aclamada-releitura-Il%C3%ADada/dp/6555354186/) e outros [livros como este](https://fivebooks.com/books-like/the-song-of-achilles/).
 - 📚 [A Guerra de Tróia - Uma saga de heróis e deuses](https://www.amazon.com.br/Guerra-Troia-Saga-Her%C3%B3is-Deuses/dp/8525432342)
 - 📚 [A Thousand Ships](https://www.amazon.com.br/gp/product/B07K6SG62Z/) por Natalie Haynes
 - 🎮 [Total War: Troy](https://www.totalwar.com/games/troy/)
