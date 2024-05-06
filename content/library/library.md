@@ -38,7 +38,20 @@ article.books { width: 100% }
 </style>
 <section>
 <article class="books">
-        <div class="bookshelf">
+<div class="bookshelf">
+        <div class="book-grid">
+                <ul>
+                        <li>
+                                <a href="/library/Il-ny-a-pas-d-amour-parfait/">
+                                        <img src="/images/livro-Il-ny-a-pas-d-amour-parfait.jpg" alt="Il n'y a pas d'amour parfait" class="book-image">
+                                </a>
+                                <p class="book-description">
+                                        <a href="/library/Il-ny-a-pas-d-amour-parfait/">🇫🇷 Il n'y a pas d'amour parfait</a>
+                                        <span><br>Francis Wolff</span>
+                                </p>
+                        </li>
+                </ul>
+        </div>
         <div class="book-grid">
                         <ul>
                                 <li>
