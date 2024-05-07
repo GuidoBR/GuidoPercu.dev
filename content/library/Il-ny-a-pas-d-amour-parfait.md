@@ -1,5 +1,5 @@
 ---
-title: "Il Ny a Pas D Amour Parfait"
+title: "Il n'y a pas  d'amour parfait"
 date: 2024-05-06T11:49:59-03:00
 draft: true
 ---
