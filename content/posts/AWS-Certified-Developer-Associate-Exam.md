@@ -4,7 +4,7 @@ date: 2024-09-07T17:29:14-04:00
 draft: true
 ---
 
-# How I Passed the AWS Certified Developer Associate Exam: My Study Strategy
+# My Study Strategy
 
    Preparing for the AWS Certified Developer Associate exam can feel overwhelming, especially with the vast amount of material to cover. I recently passed the exam, and here’s a breakdown of how I structured my study plan and resources, which might help you as well.
 
