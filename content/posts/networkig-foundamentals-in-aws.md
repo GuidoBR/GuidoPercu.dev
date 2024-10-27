@@ -6,6 +6,8 @@ draft: true
 
 ![](/images/network.jpg)
 
+by [Nastya Dulhiier](https://unsplash.com/@dulhiier)
+
 In preparing for AWS Associate-level certifications, such as the [**AWS Solutions Architect**](https://aws.amazon.com/certification/certified-solutions-architect-associate/) and [**AWS Developer Associate**](https://aws.amazon.com/certification/certified-developer-associate/), understanding networking is crucial. Networking is the backbone of cloud infrastructure, ensuring secure, reliable communication between services and systems. It’s also a key part of designing scalable, high-performance architectures for real-world projects. Whether you're deploying an API behind an Elastic Load Balancer or setting up hybrid connectivity with Direct Connect, networking knowledge plays a central role.  
 
 This post outlines the main networking topics I studied, covering fundamental services and concepts to help deepen my understanding of AWS networking.  
