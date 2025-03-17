@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portfolio de Revisões Técnicas</title>
+  <style>
+    :root {
+      --accent: 136, 58, 234;
+      --accent-light: 224, 204, 250;
+      --accent-dark: 49, 10, 101;
+      --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+      );
+    }
+    
+    html {
+      font-family: system-ui, sans-serif;
+      background: #13151a;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    main {
+      margin: auto;
+      padding: 2rem;
+      width: 1200px;
+      max-width: calc(100% - 2rem);
+      color: white;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 1em;
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    
+    .intro {
+      max-width: 60ch;
+      margin: 0 auto 3rem;
+      text-align: center;
+      color: rgb(var(--accent-light));
+    }
+    
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 4rem;
+    }
+    
+    .book-card {
+      border: 1px solid rgba(var(--accent-light), 25%);
+      background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+      padding: 1.5rem;
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 1.5rem;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .book-cover {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    
+    .book-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .book-info h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: rgb(var(--accent-light));
+    }
+    
+    .author {
+      margin: 0.5rem 0 1rem;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem 1rem;
+      margin: 0;
+    }
+    
+    dt {
+      font-weight: bold;
+      color: rgb(var(--accent-light));
+    }
+    
+    dd {
+      margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .book-card {
+        grid-template-columns: 1fr;
+      }
+    
+      .book-cover {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Technical Book Reviews</h1>
+    <p class="intro">
+        Como revisor técnico, atuo na interseção entre conhecimento especializado e comunicação precisa, assegurando que publicações técnicas e científicas mantenham integridade conceitual e clareza expositiva. Meu trabalho vai além da verificação terminológica – analiso a consistência de teorias, avalio a precisão de fórmulas e cálculos, e certifico-me de que metodologias complexas sejam apresentadas com rigor acadêmico sem sacrificar a acessibilidade. Em traduções, garanto que nuances técnicas sejam preservadas entre idiomas, evitando distorções comuns em temas especializados. Com experiência em economia, finanças e tecnologia, contribuo para que cada publicação não apenas transmita informações corretas, mas também estabeleça um diálogo efetivo com seu público-alvo, mantendo o equilíbrio perfeito entre profundidade técnica e clareza narrativa.
+    </p>
+
+    <div class="book-grid" id="book-grid">
+      <!-- Books will be rendered here by JavaScript -->
+    </div>
+  </main>
+
+  <script>
+    // Book data
+    const books = [
+      {
+        title: "A Álgebra da Riqueza",
+        author: "Scott Galloway",
+        publisher: "Intrínseca",
+        year: "2024",
+        coverUrl: "https://intrinseca.com.br/wp-content/uploads/2024/06/CAPA-SITE-3.png",
+        url: "https://intrinseca.com.br/livro/a-algebra-da-riqueza/"
+      },
+      {
+        title: "A Lógica do Cisne Negro",
+        author: "Nassim Nicholas Taleb",
+        publisher: "Objetiva",
+        year: "2021",
+        coverUrl: "https://m.media-amazon.com/images/I/714RNYWLXIS._SY522_.jpg"
+      },
+      {
+        title: "Viver com risco",
+        author: "Allison Schrager",
+        publisher: "Portfolio-Penguin",
+        year: "2021",
+        coverUrl: "https://m.media-amazon.com/images/I/619P1WkDItL._SY522_.jpg"
+      },
+      {
+        title: "Antifrágil",
+        author: "Nassim Nicholas Taleb",
+        publisher: "Objetiva",
+        year: "2020",
+        coverUrl: "https://m.media-amazon.com/images/I/8119xmkJ3IL._SY522_.jpg"
+      },
+      {
+        title: "Iludidos pelo Acaso",
+        author: "Nassim Nicholas Taleb",
+        publisher: "Objetiva",
+        year: "2019",
+        coverUrl: "https://m.media-amazon.com/images/I/81j15XZb34L._SY522_.jpg"
+      },
+      {
+        title: "Como investir: Por quem mais entende do assunto",
+        author: "David M. Rubenstein",
+        publisher: "Intrínseca",
+        year: "2023",
+        coverUrl: "https://m.media-amazon.com/images/I/41g1Ru4xVeL._SY445_SX342_.jpg"
+      },
+      {
+        title: "Ruído: Uma falha no julgamento humano",
+        author: "Daniel Kahneman, Olivier Sibony, Cass R. Sunstein",
+        publisher: "Objetiva",
+        year: "2021",
+        coverUrl: "https://m.media-amazon.com/images/I/81I6rfFOM-S._SY522_.jpg"
+      },
+      {
+        title: "O Ciclo de Vida Corporativo",
+        author: "Aswath Damodaran",
+        publisher: "Íntrinseca",
+        year: "2025",
+        coverUrl: "https://m.media-amazon.com/images/I/71VXluixrmL._SY522_.jpg"
+      },
+      {
+        title: "Poder e Progresso",
+        author: "Daron Acemoglu",
+        publisher: "Objetiva",
+        year: "2023",
+        coverUrl: "https://m.media-amazon.com/images/I/71kkntXKEnL._SY385_.jpg"
+      },
+      {
+        title: "Reminiscências de um operador da bolsa: Lições de um dos maiores investidores de todos os tempos",
+        author: "Edwin Lefèvre",
+        publisher: "Portfolio-Penguin",
+        year: "2022",
+        coverUrl: "https://m.media-amazon.com/images/I/71TbRnmQoGL._SY522_.jpg"
+      },
+      {
+        title: "Obrigado pelo Atraso",
+        author: "Thomas L. Friedman",
+        publisher: "Objetiva",
+        year: "2017",
+        coverUrl: "https://m.media-amazon.com/images/I/51-7GS6KXbL._SY445_SX342_.jpg"
+      },
+      {
+        title: "Preparados para o risco: Como tomar boas decisões",
+        author: "Gerd Gigerenzer",
+        publisher: "Portfolio-Penguim",
+        year: "2022",
+        coverUrl: "https://m.media-amazon.com/images/I/718HG+0l37L._SY522_.jpg"
+      },
+      {
+        title: "O futuro é mais rápido do que você pensa: Como a convergência tecnológica está transformando as empresas, a economia e nossas vidas",
+        author: "Peter H. Diamandis, Steven Kotler",
+        publisher: "Objetiva",
+        year: "2021",
+        coverUrl: "https://m.media-amazon.com/images/I/61aMSxNw91L._SY445_SX342_.jpg"
+      },
+      {
+        title: "O trader vencedor: Como operar em flow e dominar o mercado com confiança",
+        author: "Mark Douglas",
+        publisher: "Portfolio-Penguim",
+        year: "2023",
+        coverUrl: "https://m.media-amazon.com/images/I/71tlybuaafL._SY522_.jpg"
+      }
+    ];
+
+    // Function to render books
+    function renderBooks() {
+      const bookGrid = document.getElementById('book-grid');
+      
+      books.forEach(book => {
+        const bookCard = document.createElement('div');
+        bookCard.className = 'book-card';
+        
+        // Create book card content
+        bookCard.innerHTML = `
+          <img src="${book.coverUrl}" alt="Cover of ${book.title}" class="book-cover">
+          <div class="book-info">
+            <h2>${book.title}</h2>
+            <p class="author">by ${book.author}</p>
+            <dl>
+              <dt>Publisher</dt>
+              <dd>${book.publisher}</dd>
+              
+              <dt>Year</dt>
+              <dd>${book.year}</dd>
+            </dl>
+          </div>
+        `;
+        
+        // If the book has a URL, make the whole card clickable
+        if (book.url) {
+          bookCard.style.cursor = 'pointer';
+          bookCard.addEventListener('click', () => {
+            window.open(book.url, '_blank');
+          });
+        }
+        
+        bookGrid.appendChild(bookCard);
+      });
+    }
+
+    // Render books when the page loads
+    document.addEventListener('DOMContentLoaded', renderBooks);
+  </script>
+</body>
+</html>
