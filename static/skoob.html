@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skoob Exporter - Exporte seus dados do Skoob</title>
+    <style>
+        :root {
+            --primary-color: #5271ff;
+            --secondary-color: #f0f2ff;
+            --text-color: #333;
+            --light-text: #777;
+            --error-color: #e74c3c;
+            --success-color: #2ecc71;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: var(--light-text);
+            font-size: 1.1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            flex: 1;
+        }
+        
+        button:hover {
+            background-color: #3a5ae8;
+        }
+        
+        button.secondary {
+            background-color: #e0e0e0;
+            color: var(--text-color);
+        }
+        
+        button.secondary:hover {
+            background-color: #d0d0d0;
+        }
+        
+        .format-selector {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .format-option {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .format-option:hover {
+            border-color: var(--primary-color);
+            background-color: var(--secondary-color);
+        }
+        
+        .format-option.selected {
+            border-color: var(--primary-color);
+            background-color: var(--secondary-color);
+        }
+        
+        .format-option h3 {
+            margin-bottom: 5px;
+        }
+        
+        .format-option p {
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+        
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f5f7ff;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        #data-display {
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 15px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .error {
+            color: var(--error-color);
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .success {
+            color: var(--success-color);
+        }
+        
+        .privacy-section, .about-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .privacy-section h2, .about-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .privacy-section p, .about-section p {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: var(--primary-color);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .format-selector {
+                flex-direction: column;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Skoob Exporter</h1>
+            <p class="tagline">Exporte seus dados do Skoob em formato JSON ou CSV</p>
+        </header>
+        
+        <div class="form-group">
+            <label for="user-id">ID do Usuário Skoob</label>
+            <input type="text" id="user-id" placeholder="Digite o seu ID do Skoob (ex: 123456)">
+            <p class="error" id="id-error"></p>
+            <p>Para encontrar seu ID, acesse seu perfil no Skoob e observe o número na URL: https://www.skoob.com.br/usuario/XXXXXX</p>
+        </div>
+        
+        <div class="format-selector">
+            <div class="format-option selected" data-format="json">
+                <h3>JSON</h3>
+                <p>Formato estruturado para uso em aplicações</p>
+            </div>
+            <div class="format-option" data-format="csv">
+                <h3>CSV</h3>
+                <p>Para importar em Excel ou outras planilhas</p>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button id="export-button">Exportar Dados</button>
+            <button id="clear-button" class="secondary">Limpar</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Carregando dados do Skoob...</p>
+        </div>
+        
+        <div id="result">
+            <h2>Seus dados:</h2>
+            <div id="data-display"></div>
+            <div class="actions">
+                <button id="download-button">Baixar Arquivo</button>
+                <button id="copy-button" class="secondary">Copiar para Área de Transferência</button>
+            </div>
+        </div>
+        
+        <div class="privacy-section">
+            <h2>Privacidade</h2>
+            <p>Este site <strong>não armazena ou compartilha</strong> nenhum dado que você insere ou exporta. Todo o processamento é feito inteiramente no seu navegador.</p>
+            <p>Nenhuma informação é enviada aos nossos servidores ou a terceiros. Você pode verificar isso inspecionando o código fonte ou desconectando-se da internet após carregar esta página.</p>
+            <p>Seu ID do Skoob é utilizado apenas para acessar a API pública do Skoob para obter seus dados de leitura.</p>
+        </div>
+        
+        <div class="about-section">
+            <h2>Sobre o Projeto</h2>
+            <p>O Skoob Exporter é uma ferramenta que apoia o <strong>direito à liberdade de leitura</strong> e o acesso aos seus próprios dados. Acreditamos que todos devem ter controle sobre suas informações pessoais.</p>
+            <p>Esta ferramenta é código aberto e foi desenvolvida para ajudar leitores a terem mais autonomia sobre seus dados de leitura.</p>
+            <p>Não temos nenhuma afiliação oficial com o Skoob. Este projeto utiliza apenas a API pública disponibilizada pela plataforma.</p>
+        </div>
+        
+        <footer>
+            <p>© 2025 Skoob Exporter - Uma ferramenta para leitores, por leitores</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userId = document.getElementById('user-id');
+            const exportButton = document.getElementById('export-button');
+            const clearButton = document.getElementById('clear-button');
+            const downloadButton = document.getElementById('download-button');
+            const copyButton = document.getElementById('copy-button');
+            const result = document.getElementById('result');
+            const dataDisplay = document.getElementById('data-display');
+            const idError = document.getElementById('id-error');
+            const loading = document.getElementById('loading');
+            const formatOptions = document.querySelectorAll('.format-option');
+            
+            let selectedFormat = 'json';
+            let exportedData = null;
+            
+            // Format selector
+            formatOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    formatOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    selectedFormat = this.getAttribute('data-format');
+                });
+            });
+            
+            // Export data
+            exportButton.addEventListener('click', async function() {
+                const id = userId.value.trim();
+                
+                // Validate ID
+                if (!id || isNaN(parseInt(id))) {
+                    idError.textContent = 'Por favor, insira um ID de usuário válido.';
+                    return;
+                }
+                
+                idError.textContent = '';
+                loading.style.display = 'block';
+                result.style.display = 'none';
+                
+                try {
+                    // Fetch data from Skoob API
+                    const response = await fetch(`https://www.skoob.com.br/v1/bookcase_stats/books/${id}/`);
+                    
+                    if (!response.ok) {
+                        throw new Error('Erro ao buscar dados do Skoob. Verifique o ID do usuário.');
+                    }
+                    
+                    const data = await response.json();
+                    
+                    if (!data.success) {
+                        throw new Error('API do Skoob retornou um erro.');
+                    }
+                    
+                    // Process data
+                    exportedData = data;
+                    
+                    // Display data based on selected format
+                    if (selectedFormat === 'json') {
+                        dataDisplay.textContent = JSON.stringify(data, null, 2);
+                    } else {
+                        // Convert JSON to CSV
+                        const csvData = convertToCSV(data);
+                        dataDisplay.textContent = csvData;
+                    }
+                    
+                    result.style.display = 'block';
+                } catch (error) {
+                    idError.textContent = error.message || 'Ocorreu um erro ao buscar os dados. Por favor, tente novamente.';
+                } finally {
+                    loading.style.display = 'none';
+                }
+            });
+            
+            // Clear data
+            clearButton.addEventListener('click', function() {
+                userId.value = '';
+                idError.textContent = '';
+                result.style.display = 'none';
+                exportedData = null;
+            });
+            
+            // Download file
+            downloadButton.addEventListener('click', function() {
+                if (!exportedData) return;
+                
+                let content, filename, type;
+                
+                if (selectedFormat === 'json') {
+                    content = JSON.stringify(exportedData, null, 2);
+                    filename = `skoob_data_${userId.value}.json`;
+                    type = 'application/json';
+                } else {
+                    content = convertToCSV(exportedData);
+                    filename = `skoob_data_${userId.value}.csv`;
+                    type = 'text/csv';
+                }
+                
+                const blob = new Blob([content], { type });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    window.URL.revokeObjectURL(url);
+                }, 0);
+            });
+            
+            // Copy to clipboard
+            copyButton.addEventListener('click', function() {
+                if (!exportedData) return;
+                
+                let content;
+                
+                if (selectedFormat === 'json') {
+                    content = JSON.stringify(exportedData, null, 2);
+                } else {
+                    content = convertToCSV(exportedData);
+                }
+                
+                navigator.clipboard.writeText(content)
+                    .then(() => {
+                        const originalText = copyButton.textContent;
+                        copyButton.textContent = 'Copiado!';
+                        
+                        setTimeout(() => {
+                            copyButton.textContent = originalText;
+                        }, 2000);
+                    })
+                    .catch(err => {
+                        console.error('Erro ao copiar: ', err);
+                    });
+            });
+            
+            // Convert JSON to CSV
+            function convertToCSV(data) {
+                if (!data || !data.response) {
+                    return '';
+                }
+                
+                const stats = data.response;
+                
+                // Headers
+                const headers = Object.keys(stats).join(',');
+                
+                // Values
+                const values = Object.values(stats).join(',');
+                
+                return headers + '\n' + values;
+            }
+        });
+    </script>
+</body>
+</html>
