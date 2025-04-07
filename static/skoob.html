@@ -430,7 +430,7 @@
                     } else {
                         // Fetch books list from Skoob API
                         const shelfId = shelfSelect.value;
-                        const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${id}/shelf_id:${shelfId}/page:1/limit:1000/`);
+                        const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${id}/shelf_id:${shelfId}/page:1/limit:10000/`);
                         
                         if (!response.ok) {
                             throw new Error('Erro ao buscar lista de livros do Skoob. Verifique o ID do usuário.');
