@@ -1,0 +1,49 @@
+AWS Lambda in depth
+
+1. What is Serverless
+2. Lambda as Serverless Compute Engine
+	- Lambda in CloudFormation
+3. Lambda Synchronous Invokations
+4. Lambda + Load Balancer
+5. Lambda Asynchronous Invokations
+6. Lambda + Event Bridge
+7. Lambda + S3 (S3 Event Notifications)
+8. Lambda Event Source Mapping
+	-> https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
+	-> https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html
+	-> https://jayendrapatil.com/aws-lambda-event-source/
+9. Lambda Destinations
+	-> https://aws.amazon.com/blogs/compute/introducing-aws-lambda-destinations/
+10. Lambda Event and Context objects
+	-> https://aws-lambda-for-python-developers.readthedocs.io/en/latest/02_event_and_context/
+	-> https://docs.aws.amazon.com/lambda/latest/dg/python-context.html
+11. Lambda IAM Roles and Resource Policies
+12. Environment Variables
+13. Monitoring and X-Ray Tracing
+14. Lambda Layers
+	-> https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html
+15. Lambda Environment Variables
+16. Lambda Limits
+	- Execution
+		-> Memory allocation: 128 MB - 10 GB
+		-> Max execution time: 15 min (900 seconds)
+		-> Env variables: 4KB
+		-> Disk capacity (/tmp): 512MB to 10GB
+		-> Concurrency executions: 1000 (can be increased)
+	- Deployment
+		-> Lambda function deployment size .zip: 50MB
+		-> Lambda function uncompressed deployment (code + dependencies): 250MB	
+17. Concurrency and throttling
+	- Cold Start
+	- Provisioned Concurrency
+	- Reserved Concurrency
+	- Throttling
+	-> https://www.linkedin.com/pulse/understanding-concurrency-throttling-aws-lambda-kelvin-onuchukwu/
+	-> https://aws.amazon.com/blogs/compute/understanding-aws-lambdas-invoke-throttle-limits/
+18. Lambda Container Images
+19. Lambda and VPC
+20. Lambda + CodeGuru
+	-> https://aws.amazon.com/codeguru/		
+21. Powertools for AWS Lambda and Serverless Lens
+	-> https://docs.powertools.aws.dev/lambda/python/latest/#install
+	-> https://aws.amazon.com/blogs/aws/new-serverless-lens-in-aws-well-architected-tool/
