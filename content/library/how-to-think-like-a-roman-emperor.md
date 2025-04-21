@@ -84,7 +84,7 @@ Robertson underscores the Stoic idea that death is a natural part of the human e
 - [🇬🇧 Lessons in Stoicism](https://amzn.to/3OqpIvK)
 - [🇬🇧 Epictetus' Complete Works](https://amzn.to/3rY7muF)
 - [🇬🇧 Seneca's Letters on Ethics](https://amzn.to/3YpJyf6)
-- [🇬🇧 Musonius Rufus' Works]([https://amzn.to/3QsnMps)
+- [🇬🇧 Musonius Rufus' Works](https://amzn.to/3QsnMps)
 - [🇬🇧 The Roman Stoics](https://amzn.to/45eektD)
 - [🇬🇧 The Morality of Happiness](https://amzn.to/3DKMud6)
 - [🇬🇧 The Therapy of Desire](https://amzn.to/45kqjWV)

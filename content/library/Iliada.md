@@ -205,7 +205,7 @@ O livro são divididos em 24 cantos, que o tradutor Haroldo de Campos nomeou da 
 23. Torneio em tributo à Pátroclo
 24. Héktoroslútra: Heitor resgatado
 
-A poesia épica de homero usa o chamado [hexômetro datílico](https://pt.wikipedia.org/wiki/Hex%C3%A2metro_dact%C3%ADlico), constituindo de seis dactílicos (uma sílaba longa e as duas seguintes breves; como as falanges em um dedo). Ler poesia no original em grego está definitivamente muito longe do que eu consigo, mas para quem tiver interesse há muito [material]((https://ryanfb.github.io/etc/2019/02/25/resources_for_reading_homeric_greek.html)) online para estudar.
+A poesia épica de homero usa o chamado [hexômetro datílico](https://pt.wikipedia.org/wiki/Hex%C3%A2metro_dact%C3%ADlico), constituindo de seis dactílicos (uma sílaba longa e as duas seguintes breves; como as falanges em um dedo). Ler poesia no original em grego está definitivamente muito longe do que eu consigo, mas para quem tiver interesse há muito [material]((https://ryanfb.github.io/etc/2019/02/25/resources_for_reading_homeric_greek.html) online para estudar.
 
 ## O Proêmio
 

@@ -35,4 +35,4 @@ Obs: a edição brasileira do livro não contém notas e referências. Achei iss
 
 > William Bernstein's The Birth of Plenty is based upon the premise that mankind experienced virtually zero economic growth from the dawn of time until 1820. This provocative book identifies the four conditions necessary for sustained economic progress--property rights, scientific rationalism, capital markets, and communications and transportation technology--and then analyzes their gradual appearance and impact throughout every corner of the globe. The Birth of Plenty explores where the world economy could be headed next; implications of the book's thesis for today's society; and how the absence of one or more of the conditions continues to threaten beleaguered regions of the world. 20.09.2007
 
-[The Birth of Plenty - William Bernstein - Talks at Google]("https://www.youtube.com/watch?v=fTUZXwQwUJM")
+[The Birth of Plenty - William Bernstein - Talks at Google](https://www.youtube.com/watch?v=fTUZXwQwUJM)
