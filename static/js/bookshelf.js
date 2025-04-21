@@ -283,8 +283,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       // Fetch real data
-      const readingData = await fetchSkoobShelf(1); // Currently reading
-      const readData = await fetchSkoobShelf(2); // Recently read
+      const readingData = await fetchSkoobShelf(2); // Currently reading
+      const readData = await fetchSkoobShelf(1); // Recently read
       
       currentlyReading = processBooks(readingData);
       const processedRead = processBooks(readData);
