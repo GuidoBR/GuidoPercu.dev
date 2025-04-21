@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Fetch books from Skoob API
   async function fetchSkoobShelf(shelfId) {
     try {
-      const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${userId}/shelf_id:${shelfId}/page:1/limit:7/`);
+      const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${userId}/shelf_id:${shelfId}/page:1/limit:9/`);
       
       if (!response.ok) {
         throw new Error(`Failed to fetch shelf ${shelfId}`);
