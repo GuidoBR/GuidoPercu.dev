@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Fetch books from Skoob API
   async function fetchSkoobShelf(shelfId) {
     try {
-      const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${userId}/shelf_id:${shelfId}/page:1/limit:36/`);
+      const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${userId}/shelf_id:${shelfId}/page:1/limit:7/`);
       
       if (!response.ok) {
         throw new Error(`Failed to fetch shelf ${shelfId}`);
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
           currentlyReading = mockData.currentlyReading;
           // Sort and limit to 7 most recently completed books
-          recentlyRead = sortByDate(mockData.recentlyRead).slice(0, 7);
+          recentlyRead = sortByDate(mockData.recentlyRead);
           renderBooks();
           loadingIndicator.style.display = 'none';
         }, 700); // Simulate loading
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const processedRead = processBooks(readData);
       
       // Sort and limit to 7 most recently completed books
-      recentlyRead = sortByDate(processedRead).slice(0, 7);
+      recentlyRead = sortByDate(processedRead);
       
       renderBooks();
     } catch (error) {
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Fallback to mock data
       currentlyReading = mockData.currentlyReading;
       // Sort and limit to 7 most recently completed books for fallback data too
-      recentlyRead = sortByDate(mockData.recentlyRead).slice(0, 7);
+      recentlyRead = sortByDate(mockData.recentlyRead);
       renderBooks();
     } finally {
       loadingIndicator.style.display = 'none';
