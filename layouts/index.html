@@ -2,7 +2,7 @@
 
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 <style>
-        @import url('static/css/bookshelf.css');
+        @import url('css/bookshelf.css');
         article.books { width: 100% }
         .bookshelf { margin: 2rem auto; text-align: center; position: relative; }
         .book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
@@ -182,7 +182,7 @@ gtag('js', new Date());
 
 gtag('config', 'UA-58821573-1');
 </script>
-<script src="static/js/bookshelf.js"></script>
+<script src="js/bookshelf.js"></script>
 
 
 {{ end }}
