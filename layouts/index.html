@@ -2,6 +2,7 @@
 
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 <style>
+        @import url('static/css/bookshelf.css');
         article.books { width: 100% }
         .bookshelf { margin: 2rem auto; text-align: center; position: relative; }
         .book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
@@ -134,7 +135,40 @@
     </section>
 
     <section>
-        <div id="skoob-bookshelf-container"></div>
+        <div class="skoob-bookshelf">
+                <!-- Header with toggle buttons -->
+                <div class="bookshelf-header">
+                  <div class="bookshelf-title">
+                    <h2>Literary Collection</h2>
+                    <p>A curated selection from my personal library</p>
+                  </div>
+                  
+                  <div id="display-toggle">
+                    <button data-mode="cards">Cards</button>
+                    <button data-mode="bookshelf" class="active">Bookshelf</button>
+                  </div>
+                </div>
+                
+                <!-- Loading indicator -->
+                <div id="loading-indicator">
+                  <div class="loading-spinner"></div>
+                </div>
+                
+                <!-- Currently reading section -->
+                <div class="bookshelf-section">
+                  <h3 class="section-title">Current Reading</h3>
+                  <div id="currently-reading">
+                    <!-- Books will be inserted here by JavaScript -->
+                  </div>
+                </div>
+                
+                <!-- Recently read section -->
+                <div class="bookshelf-section">
+                  <h3 class="section-title">Recently Completed</h3>
+                  <div id="recently-read">
+                    <!-- Books will be inserted here by JavaScript -->
+                  </div>
+                </div>
     </section>
 
   </main>
@@ -148,6 +182,7 @@ gtag('js', new Date());
 
 gtag('config', 'UA-58821573-1');
 </script>
+<script src="static/js/bookshelf.js"></script>
 
 
 {{ end }}
