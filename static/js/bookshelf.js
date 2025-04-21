@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Configuration
   const userId = '133113'; // Your Skoob user ID
-  const useMockData = true; // Set to false to use actual API
+  const useMockData = false; // Set to false to use actual API
 
   // DOM elements
   const bookshelfContainer = document.getElementById('skoob-bookshelf');
