@@ -274,7 +274,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Use mock data
         setTimeout(() => {
           currentlyReading = mockData.currentlyReading;
-          recentlyRead = mockData.recentlyRead;
+          // Sort and limit to 7 most recently completed books
+          recentlyRead = sortByDate(mockData.recentlyRead).slice(0, 7);
           renderBooks();
           loadingIndicator.style.display = 'none';
         }, 700); // Simulate loading
@@ -287,14 +288,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
       currentlyReading = processBooks(readingData);
       const processedRead = processBooks(readData);
-      recentlyRead = sortByDate(processedRead, 'finishDate').slice(0, 8); // Limit to 8 books
+      
+      // Sort and limit to 7 most recently completed books
+      recentlyRead = sortByDate(processedRead).slice(0, 7);
       
       renderBooks();
     } catch (error) {
       console.error('Error loading data:', error);
       // Fallback to mock data
       currentlyReading = mockData.currentlyReading;
-      recentlyRead = mockData.recentlyRead;
+      // Sort and limit to 7 most recently completed books for fallback data too
+      recentlyRead = sortByDate(mockData.recentlyRead).slice(0, 7);
       renderBooks();
     } finally {
       loadingIndicator.style.display = 'none';
