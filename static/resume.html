@@ -631,9 +631,11 @@
                 // Fetch the resume data from the provided URL
                 fetch('https://www.guidopercu.dev/resume.json')
                     .then(response => {
+                        console.log('Response status:', response.status);
                         if (!response.ok) {
                             throw new Error('Network response was not ok');
                         }
+                        console.log('Response headers:', response.headers);
                         return response.json();
                     })
                     .then(data => {
