@@ -70,7 +70,7 @@
         "Implemented CI/CD pipelines using GitHub Actions, reducing deployment times and improving reliability.",
         "Enhanced system reliability and performance through advanced AWS technologies, improving end-user experience."
       ],
-      "techStack": ["Python", "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)", "C#", ".NET", "Azure", "React", "Typescript", "Docker", "GitHub Actions", "PostgreSQL", "Jenkins", "PHP", "Laravel", "Django", "FastAPI", "Vue.js"]
+      "techStack": ["Python", "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)", "React", "Typescript", "Docker", "GitHub Actions", "PostgreSQL", "Django", "FastAPI"]
     },
     {
       "company": "Modus Create",
