@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guido Luz Percú - Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Added this script to handle potential fallback -->
+    <script>
+        // Make loadFallbackData available in global scope
+        let resumeRawData = null;
+        function loadFallbackData() {
+            console.log('Loading fallback resume data...');
+            window.resumeFallbackData();
+        }
+    </script>
     <style>
         :root {
             --primary: #0077B5;
@@ -293,6 +302,12 @@
             font-size: 0.9rem;
         }
         
+        .skill-highlight {
+            background-color: var(--primary);
+            color: white;
+            font-weight: bold;
+        }
+        
         .experience-item {
             margin-bottom: 25px;
             padding-bottom: 25px;
@@ -521,6 +536,21 @@
             border-radius: 20px;
         }
         
+        .cors-notice {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            border-left: 4px solid #ffeeba;
+        }
+        
+        .cors-notice a {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
         footer {
             text-align: center;
             padding: 20px 0;
@@ -623,331 +653,489 @@
                 </div>
             `;
             
-            // Store the raw data globally
-            let resumeRawData = null;
+            // Define the fallback data function
+            window.resumeFallbackData = function() {
+                console.log('Loading fallback resume data...');
+                const resumeData = {
+                  "_isLocalFallback": true, // Flag to indicate local data
+                  "basics": {
+                    "name": "Guido Luz Percú",
+                    "label": "Principal Backend Engineer",
+                    "location": {
+                      "city": "Toronto",
+                      "countryCode": "Canada"
+                    },
+                    "languages": ["English", "French", "Portuguese"],
+                    "email": "guidopercu@gmail.com",
+                    "website": "https://www.guidopercu.dev/",
+                    "profiles": [
+                      {
+                        "network": "GitHub",
+                        "username": "GuidoBR",
+                        "url": "https://github.com/GuidoBR"
+                      },
+                      {
+                        "network": "LinkedIn",
+                        "username": "guidopercu",
+                        "url": "https://www.linkedin.com/in/guidopercu/"
+                      }
+                    ],
+                    "certifications": [
+                      {
+                        "name": "AWS Certified Developer – Associate",
+                        "url": "https://www.credly.com/badges/f4541607-79f3-4796-b6f8-9c6313550759"
+                      }
+                    ]
+                  },
+                  "summary": "Experienced backend engineer with 12 years of career expertise, specializing in backend development and cloud. Proven track record of successfully building projects from scratch and optimizing legacy systems. Served as a tech lead on a AWS Serverless project.",
+                  "skills": [
+                    {
+                      "name": "Backend Development",
+                      "description": "Proficient in Python, with a strong focus on developing efficient and scalable backend systems. Solid understanding of database management and query optimization."
+                    },
+                    {
+                      "name": "Project Development",
+                      "description": "Demonstrated ability to build projects from inception to completion, ensuring high-quality deliverables within specified timelines. Skilled in requirement analysis, system design, implementation, and testing."
+                    },
+                    {
+                      "name": "Legacy System Enhancement",
+                      "description": "Experienced in working with legacy systems, identifying pain points, and implementing improvements to enhance performance, maintainability, and scalability."
+                    },
+                    {
+                      "name": "AWS Serverless",
+                      "description": "Extensive knowledge of AWS services and expertise in developing serverless applications using Lambda, API Gateway, DynamoDB, and other related technologies. Strong understanding of cloud architecture and best practices."
+                    },
+                    {
+                      "name": "Tech Leadership",
+                      "description": "Successfully led a team as a tech lead, providing guidance, mentoring, and technical direction. Collaborated closely with cross-functional teams to achieve project objectives and ensure adherence to coding standards."
+                    }
+                  ],
+                  "technicalSkillsByCategory": {
+                    "languages": ["Python", "C#", "PHP", "JavaScript", "Go"],
+                    "frameworks": ["Django", "Flask", "FastAPI", "ASP.NET Core", "Laravel", "React", "Vue.js"],
+                    "cloud": ["AWS Lambda", "AWS SAM", "AWS CloudFormation", "Azure"],
+                    "databases": ["PostgreSQL", "MongoDB", "DynamoDB"],
+                    "tools": ["Docker", "GitHub Actions", "Jenkins"]
+                  },
+                  "work": [
+                    {
+                      "company": "Modus Create",
+                      "position": "Principal Software Engineer",
+                      "location": "Remote",
+                      "startDate": "2023-11",
+                      "endDate": "Current",
+                      "highlights": [
+                        "Designed and deployed a backend system handling thousands of concurrent users, leveraging AWS Serverless architecture for cost-efficient scalability.",
+                        "Implemented CI/CD pipelines using GitHub Actions, reducing deployment times and improving reliability.",
+                        "Enhanced system reliability and performance through advanced AWS technologies, improving end-user experience."
+                      ],
+                      "techStack": ["Python", "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)", "C#", ".NET", "Azure", "React", "Typescript", "Docker", "GitHub Actions", "PostgreSQL", "Jenkins", "PHP", "Laravel", "Django", "FastAPI", "Vue.js"]
+                    },
+                    {
+                      "company": "Modus Create",
+                      "position": "Senior Backend Engineer",
+                      "location": "Remote",
+                      "startDate": "2023-11",
+                      "endDate": "2024-06",
+                      "highlights": [
+                        "Architected backend solutions, ensuring code quality through rigorous reviews and best practices adherence.",
+                        "Optimized system performance for enhanced efficiency, leveraging the power of C# .NET for maintainable and scalable solutions."
+                      ],
+                      "techStack": ["C#", ".NET Framework", "ASP.NET Core", "Azure"]
+                    },
+                    {
+                      "company": "Modus Create",
+                      "position": "Tech Lead",
+                      "location": "Remote",
+                      "startDate": "2022-01",
+                      "endDate": "2023-11",
+                      "highlights": [
+                        "Led a team of 5 developers, ensuring on-time project delivery by implementing Agile best practices and conducting technical reviews.",
+                        "Architected and deployed Serverless systems using AWS SAM, CloudFormation, and ECS, improving client time-to-market and reducing costs.",
+                        "Guided projects from inception to delivery, including requirement gathering, system design, and implementation."
+                      ],
+                      "techStack": ["Python", "AWS", "Serverless (SAM)", "CloudFormation", "DocumentDB", "ECS", "GitHub Actions"]
+                    },
+                    {
+                      "company": "Modus Create",
+                      "position": "Senior Fullstack Engineer",
+                      "location": "Remote",
+                      "startDate": "2020-01",
+                      "endDate": "2022-01",
+                      "highlights": [
+                        "Optimized legacy systems by identifying bottlenecks, refactoring code, and implementing performance enhancements, resulting in improved system efficiency and reduced maintenance costs.",
+                        "Designed and built APIs using REST standards with Python/Django."
+                      ],
+                      "techStack": ["Python", "Django", "React", "FastAPI", "Celery", "Jenkins", "PostgreSQL"]
+                    },
+                    {
+                      "company": "Modus Create",
+                      "position": "Fullstack Engineer - PHP/Javascript",
+                      "location": "Remote",
+                      "startDate": "2017-07",
+                      "endDate": "2019-12",
+                      "highlights": [
+                        "Created features that improved the relationship with 2 of the largest banks in the world.",
+                        "Successfully migrated legacy systems to modern architectures, improving system stability, scalability, and maintainability.",
+                        "Collaborated with cross-functional teams to develop and enhance backend systems for web applications using PHP / Laravel / Vue / React."
+                      ],
+                      "techStack": ["PHP", "Laravel", "Javascript", "Angular", "VueJS", "Docker", "PostgreSQL", "Jenkins"]
+                    },
+                    {
+                      "company": "Stone Pagamentos",
+                      "position": "Fullstack Engineer - Go/NodeJS/AngularJS",
+                      "location": "Rio de Janeiro",
+                      "startDate": "2016-11",
+                      "endDate": "2017-07",
+                      "website": "http://www.stone.com.br/",
+                      "highlights": [
+                        "Engineered high-performance RESTful APIs using Go that formed the backbone of the company's merchant services platform.",
+                        "Developed and implemented crucial features accessed by over 100,000 clients monthly, directly supporting Stone's market expansion.",
+                        "Created responsive frontend interfaces with AngularJS that significantly improved merchant user experience."
+                      ],
+                      "techStack": ["Go", "NodeJS", "AngularJS", "PostgreSQL", "Docker", "Redis", "Microservices"]
+                    },
+                    {
+                      "company": "Anchor Loans LP",
+                      "position": "Backend Engineer - Python/MongoDB",
+                      "location": "Remote",
+                      "startDate": "2015-08",
+                      "endDate": "2016-11",
+                      "website": "https://www.anchorloans.com/",
+                      "highlights": [
+                        "Created a crawler to get thousands of real state properties and use this information to help investors spot great opportunities.",
+                        "Developed core product using Python / Django / Pyramid and MongoDB.",
+                        "Made the sysadmin job easier with an integration with Amazon's EC2."
+                      ],
+                      "techStack": ["Python", "Django", "Pyramid", "MongoDB", "AWS EC2"]
+                    },
+                    {
+                      "company": "Perspectiva.in",
+                      "position": "Full Stack Engineer - PHP / Javascript",
+                      "location": "Remote",
+                      "startDate": "2015-01",
+                      "endDate": "2015-11",
+                      "website": "http://www.perspectiva.in/",
+                      "highlights": [
+                        "Integration with Instagram's API, allowing our customers to perform batch social operations.",
+                        "Creation of maps with geolocalized data leading our customers to better meet their needs.",
+                        "Development of a SaaS solution to automatize the social interaction between business and clients."
+                      ],
+                      "techStack": ["PHP", "Yii2", "PostgreSQL", "MongoDB", "Javascript"]
+                    },
+                    {
+                      "company": "Fidelize",
+                      "position": "Full Stack Engineer - PHP / Javascript",
+                      "location": "Rio de Janeiro",
+                      "startDate": "2013-06",
+                      "endDate": "2015-08",
+                      "website": "https://site.fidelize.com.br/",
+                      "highlights": [
+                        "Developed and delivered a crawler that boosts the client's productivity in dealing with orders.",
+                        "Integration with SugarCRM, reducing response time of the client relationship team.",
+                        "Development of EDI software to deal with our clients business needs."
+                      ],
+                      "techStack": ["PHP", "Yii", "PostgreSQL", "Javascript", "Ionic"]
+                    }
+                  ],
+                  "projects": [
+                    {
+                      "name": "Health Focused AI-powered Mobile App",
+                      "description": "Helps users make sense of their health data",
+                      "startDate": "2025",
+                      "endDate": "Current",
+                      "highlights": [
+                        "Developed an application that interprets and makes sense of personal health data",
+                        "Implemented natural language processing for health data analysis",
+                        "Built secure data storage and processing pipelines"
+                      ],
+                      "techStack": ["NestJS", "Ionic", "ReactJS", "AWS", "Fargate", "CDK", "AWS Bedrock", "DynamoDB", "Tesseract", "Perplexity API"]
+                    },
+                    {
+                      "name": "Auction House Management System",
+                      "description": "AI-powered auction management platform",
+                      "startDate": "2025",
+                      "endDate": "Current",
+                      "highlights": [
+                        "Engineered system leveraging AI for inventory management and pricing optimization",
+                        "Implemented automated document processing",
+                        "Built secure and scalable backend infrastructure"
+                      ],
+                      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "RDS", "AWS Bedrock"]
+                    }
+                  ],
+                  "education": [
+                    {
+                      "institution": "UERJ",
+                      "area": "Computer Science",
+                      "studyType": "Bachelor's Degree",
+                      "startDate": "2011",
+                      "endDate": "2015"
+                    }
+                  ],
+                  "additionalInfo": {
+                    "yearsOfExperience": "12 Years",
+                    "yearsOfExperiencePython": "8 Years",
+                    "yearsOfExperienceAWS": "6 Years",
+                    "yearsOfExperiencePHP": "5 Years",
+                    "yearsOfExperienceNodeJS": "3 Years",
+                    "yearsOfExperienceGo": "1 Year",
+                    "yearsOfExperienceCSharp": "1 Year"
+                  },
+                  "availability": {
+                    "status": "Open to opportunities",
+                    "preferredLocation": ["Remote", "Toronto"]
+                  },
+                  "publications": [
+                  {
+                    "name": "Improve Performance, Security, and SEO with JAMStack",
+                    "publisher": "Modus Create Blog",
+                    "releaseDate": "2023",
+                    "url": "https://moduscreate.com/blog/performance-security-seo-jamstack/",
+                    "type": "Blog Post"
+                  },
+                  {
+                    "name": "The 15 Best New Features in Laravel 8",
+                    "publisher": "Modus Create Blog",
+                    "releaseDate": "2021",
+                    "url": "https://moduscreate.com/blog/15-features-laravel-8/",
+                    "type": "Blog Post"
+                  },
+                  {
+                    "name": "Build Secure Web Applications with Laravel",
+                    "publisher": "Modus Create Blog",
+                    "releaseDate": "2021",
+                    "url": "https://moduscreate.com/blog/build-secure-web-application-laravel/",
+                    "type": "Blog Post"
+                  },
+                  {
+                    "name": "How to Build a Serverless Application Using Laravel and Bref",
+                    "publisher": "Modus Create Blog",
+                    "releaseDate": "2021",
+                    "url": "https://moduscreate.com/blog/serverless-application-laravel-bref/",
+                    "type": "Blog Post"
+                  }
+                ]
+                };
+                
+                // After parsing the JSON data
+                resumeRawData = resumeData;
+                const version = localStorage.getItem('resumeVersion') || 'complete';
+                filterAndRenderResume(resumeData, version);
+            };
             
             // Function to fetch and load JSON resume data
             function loadResumeData() {
+                // Set a timeout to load fallback data if fetch fails
+                const timeoutId = setTimeout(() => {
+                    console.log('Fetch timeout - loading fallback data');
+                    loadFallbackData();
+                }, 3000); // 3 second timeout
+                
                 // Fetch the resume data from the provided URL
-                fetch('https://www.guidopercu.dev/resume.json')
-                    .then(response => {
-                        console.log('Response status:', response.status);
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        console.log('Response headers:', response.headers);
-                        return response.json();
-                    })
-                    .then(data => {
-                        resumeRawData = data; // Store the raw data
-                        const version = localStorage.getItem('resumeVersion') || 'complete';
-                        filterAndRenderResume(data, version);
-                    })
-                    .catch(error => {
-                        console.error('Error loading resume data:', error);
-                        document.getElementById('resume-container').innerHTML = 
-                            '<div class="error" style="text-align:center; padding:30px; background-color:var(--card-bg); border-radius:10px;">' +
-                            '<h3>Failed to load resume data</h3>' +
-                            '<p>Could not load data from https://www.guidopercu.dev/resume.json</p>' +
-                            '<p>Please try again later or check the URL.</p>' +
-                            '<button onclick="loadFallbackData()" style="padding: 10px 20px; background-color: var(--primary); color: white; border: none; border-radius: 5px; margin-top: 15px; cursor: pointer;">Load Fallback Data</button>' +
-                            '</div>';
-                    });
+                try {
+                    fetch('https://www.guidopercu.dev/resume.json', { cache: 'no-cache' })
+                        .then(response => {
+                            clearTimeout(timeoutId); // Clear the timeout since fetch succeeded
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            resumeRawData = data; // Store the raw data
+                            const version = localStorage.getItem('resumeVersion') || 'complete';
+                            filterAndRenderResume(data, version);
+                        })
+                        .catch(error => {
+                            clearTimeout(timeoutId); // Clear the timeout since we're handling the error
+                            console.error('Error loading resume data:', error);
+                            loadFallbackData();
+                        });
+                } catch (error) {
+                    clearTimeout(timeoutId);
+                    console.error('Fetch failed completely:', error);
+                    loadFallbackData();
+                }
             }
             
-            // Fallback function to load the embedded data if the fetch fails
-            function loadFallbackData() {
-                console.log('Loading fallback resume data...');
-                resumeRawData = {
-  "basics": {
-    "name": "Guido Luz Percú",
-    "label": "Principal Backend Engineer",
-    "location": {
-      "city": "Toronto",
-      "countryCode": "Canada"
-    },
-    "languages": ["English", "French", "Portuguese"],
-    "email": "guidopercu@gmail.com",
-    "website": "https://www.guidopercu.dev/",
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "GuidoBR",
-        "url": "https://github.com/GuidoBR"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "guidopercu",
-        "url": "https://www.linkedin.com/in/guidopercu/"
-      }
-    ],
-    "certifications": [
-      {
-        "name": "AWS Certified Developer – Associate",
-        "url": "https://www.credly.com/badges/f4541607-79f3-4796-b6f8-9c6313550759"
-      }
-    ]
-  },
-  "summary": "Experienced backend engineer with 12 years of career expertise, specializing in backend development and cloud. Proven track record of successfully building projects from scratch and optimizing legacy systems. Served as a tech lead on a AWS Serverless project.",
-  "skills": [
-    {
-      "name": "Backend Development",
-      "description": "Proficient in Python, with a strong focus on developing efficient and scalable backend systems. Solid understanding of database management and query optimization."
-    },
-    {
-      "name": "Project Development",
-      "description": "Demonstrated ability to build projects from inception to completion, ensuring high-quality deliverables within specified timelines. Skilled in requirement analysis, system design, implementation, and testing."
-    },
-    {
-      "name": "Legacy System Enhancement",
-      "description": "Experienced in working with legacy systems, identifying pain points, and implementing improvements to enhance performance, maintainability, and scalability."
-    },
-    {
-      "name": "AWS Serverless",
-      "description": "Extensive knowledge of AWS services and expertise in developing serverless applications using Lambda, API Gateway, DynamoDB, and other related technologies. Strong understanding of cloud architecture and best practices."
-    },
-    {
-      "name": "Tech Leadership",
-      "description": "Successfully led a team as a tech lead, providing guidance, mentoring, and technical direction. Collaborated closely with cross-functional teams to achieve project objectives and ensure adherence to coding standards."
-    }
-  ],
-  "technicalSkillsByCategory": {
-    "languages": ["Python", "C#", "PHP", "JavaScript", "Go"],
-    "frameworks": ["Django", "Flask", "FastAPI", "ASP.NET Core", "Laravel", "React", "Vue.js"],
-    "cloud": ["AWS Lambda", "AWS SAM", "AWS CloudFormation", "Azure"],
-    "databases": ["PostgreSQL", "MongoDB", "DynamoDB"],
-    "tools": ["Docker", "GitHub Actions", "Jenkins"]
-  },
-  "work": [
-    {
-      "company": "Modus Create",
-      "position": "Principal Software Engineer",
-      "location": "Remote",
-      "startDate": "2023-11",
-      "endDate": "Current",
-      "highlights": [
-        "Designed and deployed a backend system handling thousands of concurrent users, leveraging AWS Serverless architecture for cost-efficient scalability.",
-        "Implemented CI/CD pipelines using GitHub Actions, reducing deployment times and improving reliability.",
-        "Enhanced system reliability and performance through advanced AWS technologies, improving end-user experience."
-      ],
-      "techStack": ["Python", "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)", "C#", ".NET", "Azure", "React", "Typescript", "Docker", "GitHub Actions", "PostgreSQL", "Jenkins", "PHP", "Laravel", "Django", "FastAPI", "Vue.js"]
-    },
-    {
-      "company": "Modus Create",
-      "position": "Senior Backend Engineer",
-      "location": "Remote",
-      "startDate": "2023-11",
-      "endDate": "2024-06",
-      "highlights": [
-        "Architected backend solutions, ensuring code quality through rigorous reviews and best practices adherence.",
-        "Optimized system performance for enhanced efficiency, leveraging the power of C# .NET for maintainable and scalable solutions."
-      ],
-      "techStack": ["C#", ".NET Framework", "ASP.NET Core", "Azure"]
-    },
-    {
-      "company": "Modus Create",
-      "position": "Tech Lead",
-      "location": "Remote",
-      "startDate": "2022-01",
-      "endDate": "2023-11",
-      "highlights": [
-        "Led a team of 5 developers, ensuring on-time project delivery by implementing Agile best practices and conducting technical reviews.",
-        "Architected and deployed Serverless systems using AWS SAM, CloudFormation, and ECS, improving client time-to-market and reducing costs.",
-        "Guided projects from inception to delivery, including requirement gathering, system design, and implementation."
-      ],
-      "techStack": ["Python", "AWS", "Serverless (SAM)", "CloudFormation", "DocumentDB", "ECS", "GitHub Actions"]
-    },
-    {
-      "company": "Modus Create",
-      "position": "Senior Fullstack Engineer",
-      "location": "Remote",
-      "startDate": "2020-01",
-      "endDate": "2022-01",
-      "highlights": [
-        "Optimized legacy systems by identifying bottlenecks, refactoring code, and implementing performance enhancements, resulting in improved system efficiency and reduced maintenance costs.",
-        "Designed and built APIs using REST standards with Python/Django."
-      ],
-      "techStack": ["Python", "Django", "React", "FastAPI", "Celery", "Jenkins", "PostgreSQL"]
-    },
-    {
-      "company": "Modus Create",
-      "position": "Fullstack Engineer - PHP/Javascript",
-      "location": "Remote",
-      "startDate": "2017-07",
-      "endDate": "2019-12",
-      "highlights": [
-        "Created features that improved the relationship with 2 of the largest banks in the world.",
-        "Successfully migrated legacy systems to modern architectures, improving system stability, scalability, and maintainability.",
-        "Collaborated with cross-functional teams to develop and enhance backend systems for web applications using PHP / Laravel / Vue / React."
-      ],
-      "techStack": ["PHP", "Laravel", "Javascript", "Angular", "VueJS", "Docker", "PostgreSQL", "Jenkins"]
-    },
-    {
-      "company": "Stone Pagamentos",
-      "position": "Fullstack Engineer - Go/NodeJS/AngularJS",
-      "location": "Rio de Janeiro",
-      "startDate": "2016-11",
-      "endDate": "2017-07",
-      "website": "http://www.stone.com.br/",
-      "highlights": [
-        "Engineered high-performance RESTful APIs using Go that formed the backbone of the company's merchant services platform.",
-        "Developed and implemented crucial features accessed by over 100,000 clients monthly, directly supporting Stone's market expansion.",
-        "Created responsive frontend interfaces with AngularJS that significantly improved merchant user experience."
-      ],
-      "techStack": ["Go", "NodeJS", "AngularJS", "PostgreSQL", "Docker", "Redis", "Microservices"]
-    },
-    {
-      "company": "Anchor Loans LP",
-      "position": "Backend Engineer - Python/MongoDB",
-      "location": "Remote",
-      "startDate": "2015-08",
-      "endDate": "2016-11",
-      "website": "https://www.anchorloans.com/",
-      "highlights": [
-        "Created a crawler to get thousands of real state properties and use this information to help investors spot great opportunities.",
-        "Developed core product using Python / Django / Pyramid and MongoDB.",
-        "Made the sysadmin job easier with an integration with Amazon's EC2."
-      ],
-      "techStack": ["Python", "Django", "Pyramid", "MongoDB", "AWS EC2"]
-    },
-    {
-      "company": "Perspectiva.in",
-      "position": "Full Stack Engineer - PHP / Javascript",
-      "location": "Remote",
-      "startDate": "2015-01",
-      "endDate": "2015-11",
-      "website": "http://www.perspectiva.in/",
-      "highlights": [
-        "Integration with Instagram's API, allowing our customers to perform batch social operations.",
-        "Creation of maps with geolocalized data leading our customers to better meet their needs.",
-        "Development of a SaaS solution to automatize the social interaction between business and clients."
-      ],
-      "techStack": ["PHP", "Yii2", "PostgreSQL", "MongoDB", "Javascript"]
-    },
-    {
-      "company": "Fidelize",
-      "position": "Full Stack Engineer - PHP / Javascript",
-      "location": "Rio de Janeiro",
-      "startDate": "2013-06",
-      "endDate": "2015-08",
-      "website": "https://site.fidelize.com.br/",
-      "highlights": [
-        "Developed and delivered a crawler that boosts the client's productivity in dealing with orders.",
-        "Integration with SugarCRM, reducing response time of the client relationship team.",
-        "Development of EDI software to deal with our clients business needs."
-      ],
-      "techStack": ["PHP", "Yii", "PostgreSQL", "Javascript", "Ionic"]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Health Focused AI-powered Mobile App",
-      "description": "Helps users make sense of their health data",
-      "startDate": "2025",
-      "endDate": "Current",
-      "highlights": [
-        "Developed an application that interprets and makes sense of personal health data",
-        "Implemented natural language processing for health data analysis",
-        "Built secure data storage and processing pipelines"
-      ],
-      "techStack": ["NestJS", "Ionic", "ReactJS", "AWS", "Fargate", "CDK", "AWS Bedrock", "DynamoDB", "Tesseract", "Perplexity API"]
-    },
-    {
-      "name": "Auction House Management System",
-      "description": "AI-powered auction management platform",
-      "startDate": "2025",
-      "endDate": "Current",
-      "highlights": [
-        "Engineered system leveraging AI for inventory management and pricing optimization",
-        "Implemented automated document processing",
-        "Built secure and scalable backend infrastructure"
-      ],
-      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "RDS", "AWS Bedrock"]
-    }
-  ],
-  "education": [
-    {
-      "institution": "UERJ",
-      "area": "Computer Science",
-      "studyType": "Bachelor's Degree",
-      "startDate": "2011",
-      "endDate": "2015"
-    }
-  ],
-  "additionalInfo": {
-    "yearsOfExperience": "12 Years",
-    "yearsOfExperiencePython": "8 Years",
-    "yearsOfExperienceAWS": "6 Years",
-    "yearsOfExperiencePHP": "5 Years",
-    "yearsOfExperienceNodeJS": "3 Years",
-    "yearsOfExperienceGo": "1 Year",
-    "yearsOfExperienceCSharp": "1 Year"
-  },
-  "availability": {
-    "status": "Open to opportunities",
-    "preferredLocation": ["Remote", "Toronto"]
-  },
-  "publications": [
-  {
-    "name": "Improve Performance, Security, and SEO with JAMStack",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2023",
-    "url": "https://moduscreate.com/blog/performance-security-seo-jamstack/",
-    "type": "Blog Post"
-  },
-  {
-    "name": "The 15 Best New Features in Laravel 8",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2021",
-    "url": "https://moduscreate.com/blog/15-features-laravel-8/",
-    "type": "Blog Post"
-  },
-  {
-    "name": "Build Secure Web Applications with Laravel",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2021",
-    "url": "https://moduscreate.com/blog/build-secure-web-application-laravel/",
-    "type": "Blog Post"
-  },
-  {
-    "name": "How to Build a Serverless Application Using Laravel and Bref",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2021",
-    "url": "https://moduscreate.com/blog/serverless-application-laravel-bref/",
-    "type": "Blog Post"
-  }
-]
-                };
+            // Function to filter the resume data based on the selected version
+            function filterAndRenderResume(data, version) {
+                let filteredData = JSON.parse(JSON.stringify(data)); // Deep clone to avoid modifying original
                 
-                renderResume(resumeData);
+                if (version === 'python') {
+                    // Filter work experience to prioritize Python
+                    filteredData.work = filteredData.work.filter(job => {
+                        const techStack = Array.isArray(job.techStack) ? job.techStack.join(' ').toLowerCase() : '';
+                        return techStack.includes('python');
+                    });
+                    
+                    // Sort work experience to put Python-heavy roles first
+                    filteredData.work.sort((a, b) => {
+                        const aStack = Array.isArray(a.techStack) ? a.techStack.join(' ').toLowerCase() : '';
+                        const bStack = Array.isArray(b.techStack) ? b.techStack.join(' ').toLowerCase() : '';
+                        
+                        const aPythonScore = getPythonScore(aStack);
+                        const bPythonScore = getPythonScore(bStack);
+                        
+                        return bPythonScore - aPythonScore;
+                    });
+                    
+                    // Filter skills to focus on Python
+                    filteredData.technicalSkillsByCategory.languages = 
+                        filteredData.technicalSkillsByCategory.languages.filter(lang => 
+                            lang.toLowerCase() === 'python' || !['php', 'c#', 'go', 'javascript'].includes(lang.toLowerCase())
+                        );
+                    
+                    // Filter frameworks to Python-related
+                    filteredData.technicalSkillsByCategory.frameworks = 
+                        filteredData.technicalSkillsByCategory.frameworks.filter(framework => 
+                            ['django', 'flask', 'fastapi'].includes(framework.toLowerCase())
+                        );
+                    
+                    // Filter projects to Python-related
+                    filteredData.projects = filteredData.projects.filter(project => {
+                        const techStack = Array.isArray(project.techStack) ? project.techStack.join(' ').toLowerCase() : '';
+                        return techStack.includes('python');
+                    });
+                    
+                    // Update summary
+                    filteredData.summary = "Experienced Python backend engineer with 8 years of Python expertise, specializing in backend development and cloud. Extensive experience with Django, Flask, and FastAPI. Served as a tech lead on AWS Serverless projects utilizing Python.";
+                }
+                else if (version === 'php') {
+                    // Filter work experience to prioritize PHP
+                    filteredData.work = filteredData.work.filter(job => {
+                        const techStack = Array.isArray(job.techStack) ? job.techStack.join(' ').toLowerCase() : '';
+                        return techStack.includes('php') || techStack.includes('laravel');
+                    });
+                    
+                    // Sort work experience to put PHP-heavy roles first
+                    filteredData.work.sort((a, b) => {
+                        const aStack = Array.isArray(a.techStack) ? a.techStack.join(' ').toLowerCase() : '';
+                        const bStack = Array.isArray(b.techStack) ? b.techStack.join(' ').toLowerCase() : '';
+                        
+                        const aPHPScore = getPHPScore(aStack);
+                        const bPHPScore = getPHPScore(bStack);
+                        
+                        return bPHPScore - aPHPScore;
+                    });
+                    
+                    // Filter skills to focus on PHP
+                    filteredData.technicalSkillsByCategory.languages = 
+                        filteredData.technicalSkillsByCategory.languages.filter(lang => 
+                            lang.toLowerCase() === 'php' || !['python', 'c#', 'go'].includes(lang.toLowerCase())
+                        );
+                    
+                    // Filter frameworks to PHP-related
+                    filteredData.technicalSkillsByCategory.frameworks = 
+                        filteredData.technicalSkillsByCategory.frameworks.filter(framework => 
+                            ['laravel', 'react', 'vue.js'].includes(framework.toLowerCase())
+                        );
+                    
+                    // Filter projects to PHP-related (if any exist)
+                    filteredData.projects = filteredData.projects.filter(project => {
+                        const techStack = Array.isArray(project.techStack) ? project.techStack.join(' ').toLowerCase() : '';
+                        return techStack.includes('php') || techStack.includes('laravel');
+                    });
+                    
+                    // If no PHP projects remain, keep at least one project
+                    if (filteredData.projects.length === 0 && data.projects.length > 0) {
+                        filteredData.projects = [data.projects[0]];
+                    }
+                    
+                    // Update summary
+                    filteredData.summary = "Experienced PHP developer with 5 years of PHP expertise, specializing in Laravel development. Strong background in creating web applications using modern frameworks and best practices. Skilled in optimizing legacy PHP systems.";
+                }
+                
+                // Render the filtered data
+                renderResume(filteredData, version);
+            }
+            
+            // Helper functions for scoring job relevance
+            function getPythonScore(techStackStr) {
+                let score = 0;
+                if (techStackStr.includes('python')) score += 10;
+                if (techStackStr.includes('django')) score += 5;
+                if (techStackStr.includes('flask')) score += 5;
+                if (techStackStr.includes('fastapi')) score += 5;
+                if (techStackStr.includes('aws')) score += 3;
+                return score;
+            }
+            
+            function getPHPScore(techStackStr) {
+                let score = 0;
+                if (techStackStr.includes('php')) score += 10;
+                if (techStackStr.includes('laravel')) score += 8;
+                if (techStackStr.includes('yii')) score += 5;
+                return score;
+            }
+            
+            // Helper functions to check if a technology is relevant to a specific version
+            function isPythonTech(tech) {
+                const pythonTechs = ['python', 'django', 'flask', 'fastapi', 'celery', 'pyramid'];
+                return pythonTechs.some(pt => tech.toLowerCase().includes(pt));
+            }
+            
+            function isPHPTech(tech) {
+                const phpTechs = ['php', 'laravel', 'yii'];
+                return phpTechs.some(pt => tech.toLowerCase().includes(pt));
             }
             
             // Function to render the resume content
-            function renderResume(data) {
+            function renderResume(data, version) {
                 const container = document.getElementById('resume-container');
                 
                 // Clear loading indicator
                 container.innerHTML = '';
                 
-                // Add options bar with download JSON button
+                // Add options bar with version selector and download JSON button
                 const optionsBar = document.createElement('div');
                 optionsBar.className = 'options-bar';
                 optionsBar.innerHTML = `
-                    <button id="download-json" class="download-btn">
-                        <i class="fas fa-download"></i> Download Resume JSON
-                    </button>
-                    <span class="last-updated">
-                        <i class="fas fa-sync-alt"></i> Last fetched: ${new Date().toLocaleString()}
-                    </span>
+                    <div class="resume-filters">
+                        <span class="filter-label">Resume Version:</span>
+                        <select id="version-selector" class="version-selector">
+                            <option value="complete" ${version === 'complete' ? 'selected' : ''}>Complete Resume</option>
+                            <option value="python" ${version === 'python' ? 'selected' : ''}>Python Developer</option>
+                            <option value="php" ${version === 'php' ? 'selected' : ''}>PHP Developer</option>
+                        </select>
+                    </div>
+                    <div class="download-options">
+                        <button id="download-json" class="download-btn">
+                            <i class="fas fa-download"></i> Download JSON
+                        </button>
+                        <span class="last-updated">
+                            <i class="fas fa-sync-alt"></i> Last fetched: ${new Date().toLocaleString()}
+                        </span>
+                    </div>
                 `;
                 container.appendChild(optionsBar);
+                
+                // Add CORS notice if we're using fallback data
+                if (data._isLocalFallback) {
+                    const corsNotice = document.createElement('div');
+                    corsNotice.className = 'cors-notice';
+                    corsNotice.innerHTML = `
+                        <strong>Note:</strong> Using local resume data because of CORS restrictions. 
+                        This is expected in this environment. In a real deployment, the JSON would be served 
+                        from the same domain or with proper CORS headers.
+                    `;
+                    container.appendChild(corsNotice);
+                }
+                
+                // Setup version selector
+                document.getElementById('version-selector').addEventListener('change', function(e) {
+                    const selectedVersion = e.target.value;
+                    localStorage.setItem('resumeVersion', selectedVersion);
+                    filterAndRenderResume(resumeRawData, selectedVersion);
+                });
                 
                 // Setup download button
                 document.getElementById('download-json').addEventListener('click', function() {
                     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
                     const downloadAnchorNode = document.createElement('a');
                     downloadAnchorNode.setAttribute("href", dataStr);
-                    downloadAnchorNode.setAttribute("download", "resume.json");
+                    downloadAnchorNode.setAttribute("download", `resume_${version}.json`);
                     document.body.appendChild(downloadAnchorNode);
                     downloadAnchorNode.click();
                     downloadAnchorNode.remove();
@@ -1133,25 +1321,27 @@
                 `;
                 container.appendChild(educationSection);
                 
-                // Publications section
-                const publicationsSection = document.createElement('section');
-                publicationsSection.className = 'section publications';
-                publicationsSection.innerHTML = `
-                    <h3 class="section-title">Publications</h3>
-                    <div class="publications-list">
-                        ${data.publications.map(pub => `
-                            <div class="publication-item">
-                                <h4 class="publication-name">${pub.name}</h4>
-                                <div class="publication-details">
-                                    <div>${pub.publisher} | ${pub.releaseDate}</div>
-                                    <div>${pub.type}</div>
+                // Publications section - conditionally include based on resume version
+                if (version === 'complete' || version === 'php') { // Show publications for PHP or complete resume
+                    const publicationsSection = document.createElement('section');
+                    publicationsSection.className = 'section publications';
+                    publicationsSection.innerHTML = `
+                        <h3 class="section-title">Publications</h3>
+                        <div class="publications-list">
+                            ${data.publications.map(pub => `
+                                <div class="publication-item">
+                                    <h4 class="publication-name">${pub.name}</h4>
+                                    <div class="publication-details">
+                                        <div>${pub.publisher} | ${pub.releaseDate}</div>
+                                        <div>${pub.type}</div>
+                                    </div>
+                                    <a href="${pub.url}" target="_blank" class="publication-link">Read Article <i class="fas fa-external-link-alt"></i></a>
                                 </div>
-                                <a href="${pub.url}" target="_blank" class="publication-link">Read Article <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        `).join('')}
-                    </div>
-                `;
-                container.appendChild(publicationsSection);
+                            `).join('')}
+                        </div>
+                    `;
+                    container.appendChild(publicationsSection);
+                }
                 
                 // Additional Info section
                 const additionalInfoSection = document.createElement('section');
@@ -1159,12 +1349,21 @@
                 additionalInfoSection.innerHTML = `
                     <h3 class="section-title">Experience Summary</h3>
                     <div class="additional-info">
-                        ${Object.entries(data.additionalInfo).map(([key, value]) => `
-                            <div class="info-item">
-                                <div class="info-title">${formatInfoKey(key)}</div>
-                                <div class="info-value">${value}</div>
-                            </div>
-                        `).join('')}
+                        ${Object.entries(data.additionalInfo).map(([key, value]) => {
+                            // Filter info items based on version
+                            if (version === 'python' && !['yearsOfExperience', 'yearsOfExperiencePython', 'yearsOfExperienceAWS'].includes(key)) {
+                                return '';
+                            }
+                            if (version === 'php' && !['yearsOfExperience', 'yearsOfExperiencePHP', 'yearsOfExperienceNodeJS'].includes(key)) {
+                                return '';
+                            }
+                            return `
+                                <div class="info-item">
+                                    <div class="info-title">${formatInfoKey(key)}</div>
+                                    <div class="info-value">${value}</div>
+                                </div>
+                            `;
+                        }).join('')}
                     </div>
                 `;
                 container.appendChild(additionalInfoSection);
