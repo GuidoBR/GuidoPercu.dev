@@ -82,6 +82,40 @@
             background-color: var(--card-bg);
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .resume-filters {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .version-selector {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .version-selector option {
+            background-color: var(--card-bg);
+            color: var(--text);
+        }
+        
+        .filter-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .download-options {
+            display: flex;
+            gap: 10px;
         }
         
         .download-btn {
@@ -142,6 +176,16 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
             transition: background-color 0.3s ease;
+        }
+        
+        .resume-badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: inline-block;
         }
         
         .profile {
@@ -322,6 +366,12 @@
             padding: 3px 8px;
             border-radius: 4px;
             font-size: 0.85rem;
+        }
+        
+        .tech-highlight {
+            background-color: var(--primary);
+            color: white;
+            font-weight: bold;
         }
         
         .project-item {
@@ -573,6 +623,9 @@
                 </div>
             `;
             
+            // Store the raw data globally
+            let resumeRawData = null;
+            
             // Function to fetch and load JSON resume data
             function loadResumeData() {
                 // Fetch the resume data from the provided URL
@@ -584,7 +637,9 @@
                         return response.json();
                     })
                     .then(data => {
-                        renderResume(data);
+                        resumeRawData = data; // Store the raw data
+                        const version = localStorage.getItem('resumeVersion') || 'complete';
+                        filterAndRenderResume(data, version);
                     })
                     .catch(error => {
                         console.error('Error loading resume data:', error);
@@ -601,7 +656,7 @@
             // Fallback function to load the embedded data if the fetch fails
             function loadFallbackData() {
                 console.log('Loading fallback resume data...');
-                const resumeData = {
+                resumeRawData = {
   "basics": {
     "name": "Guido Luz Percú",
     "label": "Principal Backend Engineer",
@@ -902,6 +957,7 @@
                     <div class="profile">
                         <h1 class="name">${data.basics.name}</h1>
                         <h2 class="title">${data.basics.label}</h2>
+                        ${version !== 'complete' ? `<div class="resume-badge">${version === 'python' ? 'Python' : 'PHP'} Specialist</div>` : ''}
                         <div class="contact-info">
                             <div class="contact-item">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -960,7 +1016,16 @@
                                 <div class="tech-stack">
                                     <div class="tech-stack-title">Tech Stack:</div>
                                     <div class="tech-stack-list">
-                                        ${job.techStack.map(tech => `<span class="tech-item">${tech}</span>`).join('')}
+                                        ${job.techStack.map(tech => {
+                                            let classes = "tech-item";
+                                            // Add highlight class for relevant technologies based on version
+                                            if (version === 'python' && isPythonTech(tech)) {
+                                                classes += " tech-highlight";
+                                            } else if (version === 'php' && isPHPTech(tech)) {
+                                                classes += " tech-highlight";
+                                            }
+                                            return `<span class="${classes}">${tech}</span>`;
+                                        }).join('')}
                                     </div>
                                 </div>
                             </div>
@@ -985,7 +1050,16 @@
                             <div class="tech-stack">
                                 <div class="tech-stack-title">Tech Stack:</div>
                                 <div class="tech-stack-list">
-                                    ${project.techStack.map(tech => `<span class="tech-item">${tech}</span>`).join('')}
+                                    ${project.techStack.map(tech => {
+                                        let classes = "tech-item";
+                                        // Add highlight class for relevant technologies based on version
+                                        if (version === 'python' && isPythonTech(tech)) {
+                                            classes += " tech-highlight";
+                                        } else if (version === 'php' && isPHPTech(tech)) {
+                                            classes += " tech-highlight";
+                                        }
+                                        return `<span class="${classes}">${tech}</span>`;
+                                    }).join('')}
                                 </div>
                             </div>
                         </div>
@@ -1013,7 +1087,16 @@
                             <div class="skill-category">
                                 <h4>${capitalize(category)}</h4>
                                 <div class="skill-list">
-                                    ${skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+                                    ${skills.map(skill => {
+                                        let classes = "skill-tag";
+                                        // Add highlight class for relevant skills based on version
+                                        if (version === 'python' && isPythonTech(skill)) {
+                                            classes += " skill-highlight";
+                                        } else if (version === 'php' && isPHPTech(skill)) {
+                                            classes += " skill-highlight";
+                                        }
+                                        return `<span class="${classes}">${skill}</span>`;
+                                    }).join('')}
                                 </div>
                             </div>
                         `).join('')}
