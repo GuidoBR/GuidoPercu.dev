@@ -578,7 +578,8 @@
             body {
                 background-color: white;
                 color: black;
-                font-size: 12pt;
+                font-size: 10pt;
+                line-height: 1.4;
             }
             
             .container {
@@ -590,11 +591,17 @@
             
             header, .section {
                 box-shadow: none;
-                border: 1px solid #ddd;
-                break-inside: avoid;
-                margin-bottom: 15px;
+                border: none;
+                padding: 15px 0;
+                margin-bottom: 10px;
             }
             
+            /* Hide specified sections for print */
+            .education, .publications, .projects, .skills, .additional-info-section, .availability-section, footer {
+                display: none !important;
+            }
+            
+            /* Hide UI elements */
             .theme-switch {
                 display: none;
             }
@@ -603,33 +610,113 @@
                 display: none;
             }
             
-            .tech-stack-list, .skill-list {
-                display: block;
+            .cors-notice {
+                display: none;
             }
             
-            .tech-item, .skill-tag {
-                display: inline-block;
-                margin-right: 5px;
+            /* Make the header more compact */
+            .profile {
+                text-align: left;
+                align-items: flex-start;
+            }
+            
+            .name {
+                font-size: 20pt;
                 margin-bottom: 5px;
             }
             
-            .publications-list {
-                grid-template-columns: repeat(2, 1fr);
+            .title {
+                font-size: 14pt;
+                margin-bottom: 10px;
             }
             
+            .contact-info {
+                justify-content: flex-start;
+                gap: 15px;
+                margin-bottom: 10px;
+                font-size: 9pt;
+            }
+            
+            /* Optimize work experience section */
+            .section-title {
+                font-size: 14pt;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+            }
+            
+            .experience-item {
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .job-title {
+                font-size: 11pt;
+            }
+            
+            .job-header {
+                margin-bottom: 5px;
+            }
+            
+            .job-location {
+                margin-bottom: 5px;
+            }
+            
+            ul.highlights {
+                margin-bottom: 8px;
+            }
+            
+            ul.highlights li {
+                margin-bottom: 2px;
+            }
+            
+            /* Make tech stack more compact */
+            .tech-stack-list {
+                display: inline;
+                font-size: 8pt;
+            }
+            
+            .tech-item {
+                display: inline-block;
+                margin-right: 5px;
+                margin-bottom: 3px;
+                padding: 1px 4px;
+            }
+            
+            /* Remove hyperlink display for cleaner print */
             a {
                 text-decoration: none;
                 color: black;
             }
             
             a::after {
-                content: " (" attr(href) ")";
-                font-size: 80%;
-                color: #666;
+                content: "";
+                display: none;
             }
             
-            .social-links, footer {
+            .social-links {
                 display: none;
+            }
+            
+            /* Add page breaks to avoid cutting experience items */
+            .experience-item {
+                page-break-inside: avoid;
+            }
+            
+            /* Ensure proper spacing between items */
+            .section + .section {
+                margin-top: 10px;
+            }
+            
+            /* About Me section more compact */
+            .about-me p {
+                font-size: 10pt;
+                margin-bottom: 10px;
+            }
+            
+            .resume-badge {
+                font-size: 8pt;
+                padding: 2px 8px;
+                margin-bottom: 5px;
             }
         }
     </style>
