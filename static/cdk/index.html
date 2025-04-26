@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CDK Generator</title>
+    <style>
+        :root {
+            --primary: #ff9900;
+            --secondary: #232f3e;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+            --info: #17a2b8;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .logo-icon {
+            color: var(--primary);
+            font-size: 2rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        .hero {
+            background: linear-gradient(to right, var(--secondary), #2c3e50);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+        .btn-primary:hover {
+            background-color: #e68a00;
+            transform: translateY(-2px);
+        }
+        .main {
+            padding: 3rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 0.8rem auto 0;
+        }
+        .templates {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .template-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .template-card-header {
+            background: var(--secondary);
+            color: white;
+            padding: 1.5rem;
+        }
+        .template-card-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .template-content {
+            padding: 1.5rem;
+        }
+        .template-content p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        .aws-services {
+            background: #f8f9fa;
+            padding: 0.8rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        .aws-services h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .service-tag {
+            background: #e9ecef;
+            color: var(--dark);
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 8px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .modal-header {
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .modal-body {
+            padding: 1.5rem;
+        }
+        .close {
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .close:hover {
+            color: var(--primary);
+        }
+        pre {
+            background: #f0f3f7;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+        code {
+            color: #d63384;
+        }
+        .tab-container {
+            margin: 2rem 0;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 1rem;
+        }
+        .tab {
+            padding: 0.8rem 1.2rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        .tab.active {
+            border-bottom: 2px solid var(--primary);
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .steps {
+            margin: 2rem 0;
+            counter-reset: step;
+        }
+        .step {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .step-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex: 1;
+        }
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .diagram {
+            max-width: 100%;
+            margin: 1.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            background: white;
+        }
+        .features {
+            margin-top: 3rem;
+        }
+        .feature-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 260px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: #f0f7ff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        .config-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 1px solid #e9ecef;
+        }
+        .config-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--secondary);
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .checkbox-group input {
+            width: auto;
+        }
+        .generated-code {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f1f8ff;
+            border: 1px solid #d1e9ff;
+            border-radius: 4px;
+        }
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            .templates {
+                grid-template-columns: 1fr;
+            }
+            .feature-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">⟨⟩</div>
+                <h1>AWS CDK Generator</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#templates">Templates</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Infrastructure as Code Made Simple</h2>
+            <p>Generate production-ready AWS CDK code tailored to your specific requirements in minutes. Choose from a variety of pre-configured templates or customize your own solution.</p>
+            <a href="#templates" class="btn btn-primary">Browse Templates</a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <section id="templates">
+            <h2 class="section-title">Pre-configured Templates</h2>
+            <p class="text-center">Select the template that best matches your requirements:</p>
+
+            <div class="templates">
+                <!-- Static Website Template -->
+                <div class="template-card">
+                    <div class="template-card-header">
+                        <h3>Static Website</h3>
+                        <p>Simple, scalable and cost-effective hosting solution</p>
+                    </div>
+                    <div class="template-content">
+                        <p>Host static content with high availability and fault tolerance. Perfect for landing pages, SPAs, and documentation sites.</p>
+                        <div class="aws-services">
+                            <h4>AWS Services:</h4>
+                            <div class="service-list">
+                                <span class="service-tag">S3</span>
+                                <span class="service-tag">CloudFront</span>
+                                <span class="service-tag">Route53</span>
+                                <span class="service-tag">ACM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openModal('static-website')">Generate CDK</a>
+                    </div>
+                </div>
+
+                <!-- Full Stack 3-Tier Template -->
+                <div class="template-card">
+                    <div class="template-card-header">
+                        <h3>3-Tier Application</h3>
+                        <p>Complete web application architecture</p>
+                    </div>
+                    <div class="template-content">
+                        <p>Production-ready architecture with presentation, application and data layers. Suitable for most business applications.</p>
+                        <div class="aws-services">
+                            <h4>AWS Services:</h4>
+                            <div class="service-list">
+                                <span class="service-tag">VPC</span>
+                                <span class="service-tag">ECS/Fargate</span>
+                                <span class="service-tag">ALB</span>
+                                <span class="service-tag">RDS</span>
+                                <span class="service-tag">CloudFront</span>
+                                <span class="service-tag">S3</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openModal('three-tier')">Generate CDK</a>
+                    </div>
+                </div>
+
+                <!-- Serverless Event-driven Template -->
+                <div class="template-card">
+                    <div class="template-card-header">
+                        <h3>Serverless Event-driven</h3>
+                        <p>Modern serverless microservices architecture</p>
+                    </div>
+                    <div class="template-content">
+                        <p>Event-driven, serverless architecture for applications with variable workloads. Pay only for what you use.</p>
+                        <div class="aws-services">
+                            <h4>AWS Services:</h4>
+                            <div class="service-list">
+                                <span class="service-tag">Lambda</span>
+                                <span class="service-tag">API Gateway</span>
+                                <span class="service-tag">DynamoDB</span>
+                                <span class="service-tag">SQS</span>
+                                <span class="service-tag">EventBridge</span>
+                                <span class="service-tag">S3</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openModal('serverless')">Generate CDK</a>
+                    </div>
+                </div>
+
+                <!-- Containerized Microservices Template -->
+                <div class="template-card">
+                    <div class="template-card-header">
+                        <h3>Containerized Microservices</h3>
+                        <p>Scalable container orchestration platform</p>
+                    </div>
+                    <div class="template-content">
+                        <p>Deploy and manage containerized applications at scale with automated deployment pipelines.</p>
+                        <div class="aws-services">
+                            <h4>AWS Services:</h4>
+                            <div class="service-list">
+                                <span class="service-tag">ECS/Fargate</span>
+                                <span class="service-tag">ECR</span>
+                                <span class="service-tag">VPC</span>
+                                <span class="service-tag">ALB</span>
+                                <span class="service-tag">RDS</span>
+                                <span class="service-tag">CodePipeline</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openModal('containers')">Generate CDK</a>
+                    </div>
+                </div>
+
+                <!-- Data Pipeline Template -->
+                <div class="template-card">
+                    <div class="template-card-header">
+                        <h3>Data Pipeline</h3>
+                        <p>Big data processing solution</p>
+                    </div>
+                    <div class="template-content">
+                        <p>Process and analyze large datasets with a scalable data pipeline architecture.</p>
+                        <div class="aws-services">
+                            <h4>AWS Services:</h4>
+                            <div class="service-list">
+                                <span class="service-tag">Kinesis</span>
+                                <span class="service-tag">S3</span>
+                                <span class="service-tag">Glue</span>
+                                <span class="service-tag">Athena</span>
+                                <span class="service-tag">Lambda</span>
+                                <span class="service-tag">QuickSight</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openModal('data-pipeline')">Generate CDK</a>
+                    </div>
+                </div>
+
+                <!-- Machine Learning Template -->
+                <div class="template-card">
+                    <div class="template-card-header">
+                        <h3>Machine Learning Infrastructure</h3>
+                        <p>End-to-end ML workflow platform</p>
+                    </div>
+                    <div class="template-content">
+                        <p>Build, train, and deploy machine learning models with a comprehensive ML infrastructure.</p>
+                        <div class="aws-services">
+                            <h4>AWS Services:</h4>
+                            <div class="service-list">
+                                <span class="service-tag">SageMaker</span>
+                                <span class="service-tag">S3</span>
+                                <span class="service-tag">Lambda</span>
+                                <span class="service-tag">API Gateway</span>
+                                <span class="service-tag">Step Functions</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openModal('ml-template')">Generate CDK</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Key Features</h2>
+            
+            <div class="feature-row">
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Pre-configured Templates</h3>
+                    <p>Choose from a variety of battle-tested infrastructure patterns for common use cases</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Best Practices Built-in</h3>
+                    <p>Security, high availability, and scalability following AWS Well-Architected Framework</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rapid Deployment</h3>
+                    <p>Generate production-ready infrastructure in minutes instead of days or weeks</p>
+                </div>
+            </div>
+            
+            <div class="feature-row">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Security First</h3>
+                    <p>IAM roles, encryption, network security and more configured according to best practices</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Observability</h3>
+                    <p>Integrated metrics, logging, and alerting for comprehensive monitoring</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Cost Optimization</h3>
+                    <p>Resource configurations optimized for the best balance of performance and cost</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Select a Template</h3>
+                        <p>Choose from our pre-configured infrastructure templates that match your project requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Configure Options</h3>
+                        <p>Customize the template with your specific configuration options, resource sizes, and AWS regions.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Generate CDK Code</h3>
+                        <p>Our system automatically generates well-structured AWS CDK code implementing your infrastructure.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Deploy to AWS</h3>
+                        <p>Use the generated code with the AWS CDK CLI to deploy your infrastructure to your AWS account.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Templates -->
+    <div id="static-website-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Static Website CDK Template</h2>
+                <span class="close" onclick="closeModal('static-website')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>This template sets up a cost-effective static website hosting infrastructure with CloudFront distribution for global content delivery and S3 for storage.</p>
+                
+                <div class="diagram">
+                    <img src="/api/placeholder/700/350" alt="Static Website Architecture Diagram">
+                </div>
+                
+                <div class="config-section">
+                    <h3>Configuration Options</h3>
+                    <div class="config-form">
+                        <div class="form-group">
+                            <label for="website-name">Website Name:</label>
+                            <input type="text" id="website-name" value="my-static-website">
+                        </div>
+                        <div class="form-group">
+                            <label for="aws-region-web">AWS Region:</label>
+                            <select id="aws-region-web">
+                                <option value="us-east-1">US East (N. Virginia)</option>
+                                <option value="us-west-2">US West (Oregon)</option>
+                                <option value="eu-west-1">EU (Ireland)</option>
+                                <option value="ap-southeast-1">Asia Pacific (Singapore)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="domain-name">Custom Domain (Optional):</label>
+                            <input type="text" id="domain-name" placeholder="example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="spa-support">Single Page Application:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="spa-support" checked>
+                                <label for="spa-support">Enable SPA Support (Route all 404s to index.html)</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cache-ttl">Cache TTL (seconds):</label>
+                            <input type="number" id="cache-ttl" value="86400" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="price-class">CloudFront Price Class:</label>
+                            <select id="price-class">
+                                <option value="100" selected>Use Only North America and Europe (Lowest Cost)</option>
+                                <option value="200">Use North America, Europe, Asia, Middle East, and Africa</option>
+                                <option value="all">Use All Edge Locations (Best Performance)</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="generateCode('static-website')">Generate CDK Code</button>
+                    </div>
+                </div>
+                
+                <div class="tab-container">
+                    <div class="tabs">
+                        <div class="tab active" onclick="switchTab(this, 'stack-code')">Main Stack</div>
+                        <div class="tab" onclick="switchTab(this, 'bucket-code')">S3 Bucket</div>
+                        <div class="tab" onclick="switchTab(this, 'cloudfront-code')">CloudFront</div>
+                    </div>
+                    
+                    <div id="stack-code" class="tab-content active">
+                        <h3>Stack Definition (lib/static-website-stack.ts)</h3>
+                        <pre>
+import * as cdk from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
+import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
+import * as route53 from 'aws-cdk-lib/aws-route53';
+import * as targets from 'aws-cdk-lib/aws-route53-targets';
+import * as acm from 'aws-cdk-lib/aws-certificatemanager';
+
+export class StaticWebsiteStack extends cdk.Stack {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    // Create S3 bucket for website content
+    const websiteBucket = new s3.Bucket(this, 'WebsiteBucket', {
+      bucketName: 'my-static-website-content',
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+    });
+
+    // Create CloudFront origin access identity
+    const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'OAI', {
+      comment: 'Access to website bucket',
+    });
+    
+    websiteBucket.grantRead(originAccessIdentity);
+
+    // Create CloudFront distribution
+    const distribution = new cloudfront.Distribution(this, 'Distribution', {
+      defaultBehavior: {
+        origin: new origins.S3Origin(websiteBucket, {
+          originAccessIdentity,
+        }),
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+      },
+      defaultRootObject: 'index.html',
+      errorResponses: [
+        {
+          httpStatus: 404,
+          responseHttpStatus: 200,
+          responsePagePath: '/index.html',
+        },
+      ],
+      priceClass: cloudfront.PriceClass.PRICE_CLASS_100,
+    });
+
+    // Output the CloudFront URL
+    new cdk.CfnOutput(this, 'DistributionDomainName', {
+      value: distribution.distributionDomainName,
+      description: 'CloudFront Distribution Domain Name',
+    });
+  }
+}
+                        </pre>
+                    </div>
+                    
+                    <div id="bucket-code" class="tab-content">
+                        <h3>S3 Bucket Configuration</h3>
+                        <pre>
+const websiteBucket = new s3.Bucket(this, 'WebsiteBucket', {
+  bucketName: 'my-static-website-content',
+  blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+  removalPolicy: cdk.RemovalPolicy.DESTROY,
+  autoDeleteObjects: true,
+  encryption: s3.BucketEncryption.S3_MANAGED,
+  
+  // Optional: Enable server access logs
+  serverAccessLogsPrefix: 'access-logs/',
+  
+  // Optional: Define lifecycle rules for cost optimization
+  lifecycleRules: [
+    {
+      id: 'DeleteOldLogs',
+      enabled: true,
+      prefix: 'access-logs/',
+      expiration: cdk.Duration.days(90),
+    },
+  ],
+});
+
+// Grant read access to CloudFront
+websiteBucket.grantRead(originAccessIdentity);
+                        </pre>
+                    </div>
+                    
+                    <div id="cloudfront-code" class="tab-content">
+                        <h3>CloudFront Distribution</h3>
+                        <pre>
+const distribution = new cloudfront.Distribution(this, 'Distribution', {
+  defaultBehavior: {
+    origin: new origins.S3Origin(websiteBucket, {
+      originAccessIdentity,
+    }),
+    viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+    cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+    
+    // Optional: Enable compression
+    compress: true,
+    
+    // Optional: Define allowed HTTP methods
+    allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
+  },
+  
+  // Set default document
+  defaultRootObject: 'index.html',
+  
+  // For SPA routing - return index.html for 404 errors
+  errorResponses: [
+    {
+      httpStatus: 404,
+      responseHttpStatus: 200,
+      responsePagePath: '/index.html',
+    },
+  ],
+  
+  // Optimize for cost by limiting edge locations
+  priceClass: cloudfront.PriceClass.PRICE_CLASS_100,
+  
+  // Enable logging
+  enableLogging: true,
+  logBucket: new s3.Bucket(this, 'LogBucket', {
+    removalPolicy: cdk.RemovalPolicy.DESTROY,
+    autoDeleteObjects: true,
+  }),
+  logFilePrefix: 'cloudfront-logs/',
+});
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="three-tier-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>3-Tier Application CDK Template</h2>
+                <span class="close" onclick="closeModal('three-tier')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>This template creates a production-ready three-tier architecture with presentation, application, and data layers deployed in a custom VPC with proper security configurations.</p>
+                
+                <div class="diagram">
+                    <img src="/api/placeholder/700/400" alt="3-Tier Architecture Diagram">
+                </div>
+                
+                <div class="config-section">
+                    <h3>Configuration Options</h3>
+                    <div class="config-form">
+                        <div class="form-group">
+                            <label for="app-name">Application Name:</label>
+                            <input type="text" id="app-name" value="my-three-tier-app">
+                        </div>
+                        <div class="form-group">
+                            <label for="aws-region">AWS Region:</label>
+                            <select id="aws-region">
+                                <option value="us-east-1">US East (N. Virginia)</option>
+                                <option value="us-west-2">US West (Oregon)</option>
+                                <option value="eu-west-1">EU (Ireland)</option>
+                                <option value="ap-southeast-1">Asia Pacific (Singapore)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="container-size">Container Size:</label>
+                            <select id="container-size">
+                                <option value="small">Small (1 vCPU, 2GB RAM)</option>
+                                <option value="medium" selected>Medium (2 vCPU, 4GB RAM)</option>
+                                <option value="large">Large (4 vCPU, 8GB RAM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="db-engine">Database Engine:</label>
+                            <select id="db-engine">
+                                <option value="postgres">PostgreSQL</option>
+                                <option value="mysql">MySQL</option>
+                                <option value="aurora">Amazon Aurora</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="db-size">Database Size:</label>
+                            <select id="db-size">
+                                <option value="small">Small (t3.small)</option>
+                                <option value="medium" selected>Medium (t3.medium)</option>
+                                <option value="large">Large (t3.large)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="auto-scaling">Auto Scaling:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="auto-scaling" checked>
+                                <label for="auto-scaling">Enable Auto Scaling</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="min-capacity">Min Capacity:</label>
+                            <input type="number" id="min-capacity" value="2" min="1" max="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="max-capacity">Max Capacity:</label>
+                            <input type="number" id="max-capacity" value="6" min="1" max="20">
+                        </div>
+                        <button class="btn btn-primary" onclick="generateCode('three-tier')">Generate CDK Code</button>
+                    </div>
+                </div>
+                
+                <div class="tab-container">
+                    <div class="tabs">
+                        <div class="tab active" onclick="switchTab(this, 'tier-stack')">Main Stack</div>
+                        <div class="tab" onclick="switchTab(this, 'tier-vpc')">VPC</div>
+                        <div class="tab" onclick="switchTab(this, 'tier-ecs')">ECS/Fargate</div>
+                        <div class="tab" onclick="switchTab(this, 'tier-rds')">RDS</div>
+                    </div>
+                    
+                    <div id="tier-stack" class="tab-content active">
+                        <h3>Stack Definition (lib/three-tier-stack.ts)</h3>
+                        <pre>
+			</pre>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</body>
+</html>

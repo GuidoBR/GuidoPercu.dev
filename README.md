@@ -1,6 +1,8 @@
 ## Personal site and blog.
 
-[GuidoPercu.com.br](http://www.guidopercu.com.br/)
+[GuidoPercu.dev](http://www.guidopercu.dev/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8665e98-ca13-44c3-85e3-6bbf12d52dca/deploy-status)](https://app.netlify.com/sites/guidopercu/deploys)
 
 ---
 
