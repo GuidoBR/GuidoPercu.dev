@@ -24,15 +24,18 @@
     "certifications": [
       {
         "name": "AWS Certified Developer – Associate",
-        "url": "https://www.credly.com/badges/f4541607-79f3-4796-b6f8-9c6313550759"
+        "url": "https://www.credly.com/badges/f4541607-79f3-4796-b6f8-9c6313550759",
+        "badgeUrl": "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
       },
       {
         "name": "AWS Certified Cloud Practitioner",
-        "url": "https://www.credly.com/badges/6e77483a-493d-405b-91ce-d594c632a22b"
+        "url": "https://www.credly.com/badges/6e77483a-493d-405b-91ce-d594c632a22b",
+        "badgeUrl": "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
       },
       {
         "name": "TCF Canada",
-        "url": "https://exames.rioaliancafrancesa.com.br/pdfs/tcf_resultados/2df555ace3525aecd8cdcab7ad5dc989.pdf"
+        "url": "https://exames.rioaliancafrancesa.com.br/pdfs/tcf_resultados/2df555ace3525aecd8cdcab7ad5dc989.pdf",
+        "badgeUrl": "https://www.alliance-francaise.ca/images/articles/exm/tests/ICONES%20FOR%20TESTS%20MAIN%20PAGE/VERSION_CARR%C3%89E/TCF_CANADA_CARRE%CC%81.jpg"
       }
     ]
   },
