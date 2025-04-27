@@ -77,9 +77,14 @@
       "startDate": "2023-11",
       "endDate": "Current",
       "highlights": [
-        "Designed and deployed a backend system handling thousands of concurrent users, leveraging AWS Serverless architecture for cost-efficient scalability.",
-        "Implemented CI/CD pipelines using GitHub Actions, reducing deployment times and improving reliability.",
-        "Enhanced system reliability and performance through advanced AWS technologies, improving end-user experience."
+	      "As a Principal Software Engineer, I have successfully led and contributed to diverse projects with cutting-edge technology stacks. I specialize in building robust cloud-native applications using Python, AWS Lambda, and serverless architectures. My expertise includes:",
+	      "- Architected and implemented GenAI solutions leveraging AWS Bedrock for intelligent document processing and natural language understanding",
+	      "- Integrated computer vision capabilities with Tesseract OCR to automate data extraction from unstructured documents",
+	      "- Pioneered the adoption of AI coding assistants",
+	      "- Developed sophisticated Infrastructure as Code (IaC) using CloudFormation and CDK to ensure consistent, reproducible deployments",
+	      "- Implemented comprehensive CI/CD automation with GitHub Actions",
+	      "- Built scalable data pipelines utilizing AWS S3, API Gateway, and DynamoDB",
+	      "- Focused on delivering cost-effective, high-performance cloud solutions that maximize business value"
       ],
       "techStack": ["Python", "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)", "React", "Typescript", "Docker", "GitHub Actions", "PostgreSQL", "Django", "FastAPI"]
     },
