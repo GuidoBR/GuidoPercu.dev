@@ -7,18 +7,6 @@ draft: false
 ![Guido Percú](/images/guido.jpeg)
 
 Hi, I’m Guido Percú
-I'm a Full Stack Engineer at Modus Create, where I create software projects using Python, PHP and AWS solutions. In my free time I enjoy reading books, learning about stock markets and practicing Karate.
-
-- Web applications
-- REST APIs
-- Web crawlers
-- CLI scripts
-
-### Technologies
-- Python with Django, Pyramid and Flask
-- PHP with Yii or Laravel
-- C# .NET
-- JavaScript,  NodeJS,  Angular,  VueJS
-- MySQL, MS SQL, PostgresSQL, MongoDB
+Principal Backend Engineer with 12 years of expertise in cloud-native technologies and serverless architecture. I specialize in Python, AWS, and AI-powered systems that solve complex business challenges, having led technical teams and delivered scalable solutions for global companies. AWS certified and multilingual, I balance technical excellence with business value, whether optimizing legacy systems or architecting innovative applications.
 
 ---
