@@ -71,6 +71,19 @@
   },
   "work": [
     {
+      "company": "BidHound",
+      "position": "Principal Software Engineer",
+      "location": "Remote",
+      "startDate": "2025-01",
+      "endDate": "Current",
+      "highlights": [
+        "Leading the development of a cutting-edge auction management system, leveraging AI for inventory management and pricing optimization.",
+        "Architecting and implementing secure, scalable backend infrastructure using Python, FastAPI, and AWS services.",
+        "Integrating advanced document processing capabilities with Tesseract OCR and AWS Bedrock for automated data extraction."
+      ],
+      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "RDS", "AWS Serverless, Lambda, CloudFormation, API Gateway, S3, SQS)"]
+    },
+    {
       "company": "Modus Create",
       "position": "Principal Software Engineer",
       "location": "Remote",
