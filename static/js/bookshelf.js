@@ -1,7 +1,8 @@
-// Simple Skoob Bookshelf
+// Simple Skoob Bookshelf - Updated for New API
 document.addEventListener('DOMContentLoaded', function() {
   // Configuration
-  const userId = '133113'; // Your Skoob user ID
+  const userId = '67bd0307c8b5e482dd020cdb'; // Your Skoob user ID (new format)
+  const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmQwMzA3YzhiNWU0ODJkZDAyMGNkYiIsImlhdCI6MTc2NDYxNjQ3NiwiZXhwIjoxNzY1OTEyNDc2fQ.EHwi0MQtKwZhIFGKeGjNT7jNDjSkijZNfl-uO73y2eU';
   const useMockData = false; // Set to false to use actual API
 
   // DOM elements
@@ -108,8 +109,17 @@ document.addEventListener('DOMContentLoaded', function() {
   function renderStars(rating) {
     if (!rating) return '';
     let stars = '';
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+    
     for (let i = 1; i <= 5; i++) {
-      stars += `<span class="${i <= rating ? 'star-filled' : 'star-empty'}">★</span>`;
+      if (i <= fullStars) {
+        stars += `<span class="star-filled">★</span>`;
+      } else if (i === fullStars + 1 && hasHalfStar) {
+        stars += `<span class="star-half">★</span>`;
+      } else {
+        stars += `<span class="star-empty">★</span>`;
+      }
     }
     return stars;
   }
@@ -226,32 +236,43 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // Fetch books from Skoob API
-  async function fetchSkoobShelf(shelfId) {
+  // Fetch books from new Skoob API
+  async function fetchSkoobBookshelf(filter) {
     try {
-      const response = await fetch(`https://www.skoob.com.br/v1/bookcase/books/${userId}/shelf_id:${shelfId}/page:1/limit:10/`);
+      const url = `https://prd-api.skoob.com.br/api/v1/bookshelf?page=1&limit=30&bookshelf_type=book&user_id=${userId}&filter=${filter}&search_type=title`;
+      
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'accept': '*/*',
+          'authorization': authToken,
+          'content-type': 'application/json',
+          'origin': 'https://www.skoob.com.br',
+          'referer': 'https://www.skoob.com.br/'
+        }
+      });
       
       if (!response.ok) {
-        throw new Error(`Failed to fetch shelf ${shelfId}`);
+        throw new Error(`Failed to fetch ${filter} books`);
       }
       
       const data = await response.json();
-      return data.response || [];
+      return data.items || [];
     } catch (error) {
-      console.error(`Error fetching shelf ${shelfId}:`, error);
+      console.error(`Error fetching ${filter} books:`, error);
       throw error;
     }
   }
   
-  // Process books data from API
+  // Process books data from new API
   function processBooks(books) {
     return books.map(book => ({
-      id: book.edicao_id,
-      title: book.edicao?.titulo || "Unknown Title",
-      author: book.edicao?.autor || "Unknown Author",
-      pages: book.edicao?.paginas || null,
-      startDate: book.dt_leitura_ini || null,
-      finishDate: book.dt_leitura_fim || null,
+      id: book.book_id,
+      title: book.title || "Unknown Title",
+      author: book.author || "Unknown Author",
+      pages: book.pages || null,
+      startDate: null, // New API doesn't seem to provide start date for currently reading
+      finishDate: book.finished_at || null,
       rating: book.rating || null
     }));
   }
@@ -274,8 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Use mock data
         setTimeout(() => {
           currentlyReading = mockData.currentlyReading;
-          // Sort and limit to 7 most recently completed books
-          recentlyRead = sortByDate(mockData.recentlyRead);
+          recentlyRead = sortByDate(mockData.recentlyRead, 'finishDate').slice(0, 10);
           renderBooks();
           loadingIndicator.style.display = 'none';
         }, 700); // Simulate loading
@@ -283,22 +303,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       // Fetch real data
-      const readingData = await fetchSkoobShelf(2); // Currently reading
-      const readData = await fetchSkoobShelf(1); // Recently read
+      const readingData = await fetchSkoobBookshelf('reading'); // Currently reading
+      const readData = await fetchSkoobBookshelf('read'); // Read books
       
       currentlyReading = processBooks(readingData);
       const processedRead = processBooks(readData);
       
-      // Sort and limit to 7 most recently completed books
-      recentlyRead = sortByDate(processedRead);
+      // Sort by finish date and limit to 10 most recent
+      recentlyRead = sortByDate(processedRead, 'finishDate').slice(0, 10);
       
       renderBooks();
     } catch (error) {
       console.error('Error loading data:', error);
       // Fallback to mock data
       currentlyReading = mockData.currentlyReading;
-      // Sort and limit to 7 most recently completed books for fallback data too
-      recentlyRead = sortByDate(mockData.recentlyRead);
+      recentlyRead = sortByDate(mockData.recentlyRead, 'finishDate').slice(0, 10);
       renderBooks();
     } finally {
       loadingIndicator.style.display = 'none';
