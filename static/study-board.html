@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Engineering & Cyber Defense Study Plan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .board-header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .board-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #172b4d;
+            margin-bottom: 8px;
+        }
+
+        .board-description {
+            color: #5e6c84;
+            font-size: 14px;
+        }
+
+        .board-container {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .board-container::-webkit-scrollbar {
+            height: 12px;
+        }
+
+        .board-container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .board-container::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        .board-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .list {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            min-width: 300px;
+            max-width: 300px;
+            padding: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            max-height: calc(100vh - 200px);
+        }
+
+        .list-header {
+            font-weight: 600;
+            font-size: 14px;
+            color: #172b4d;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #e4e6ea;
+        }
+
+        .list-cards {
+            flex: 1;
+            overflow-y: auto;
+            padding: 4px;
+        }
+
+        .list-cards::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .list-cards::-webkit-scrollbar-track {
+            background: #f1f2f4;
+            border-radius: 10px;
+        }
+
+        .list-cards::-webkit-scrollbar-thumb {
+            background: #c1c7d0;
+            border-radius: 10px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #172b4d;
+            margin-bottom: 6px;
+        }
+
+        .card-description {
+            font-size: 12px;
+            color: #5e6c84;
+            margin-bottom: 8px;
+        }
+
+        .card-labels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .label {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .label-blue { background: #0079bf; }
+        .label-green { background: #61bd4f; }
+        .label-yellow { background: #f2d600; color: #172b4d; }
+        .label-orange { background: #ff9f1a; }
+        .label-red { background: #eb5a46; }
+        .label-purple { background: #c377e0; }
+        .label-pink { background: #ff78cb; }
+        .label-lime { background: #51e898; color: #172b4d; }
+        .label-sky { background: #00c2e0; }
+        .label-gray { background: #b3bac5; }
+        .label-teal { background: #14b8a6; }
+        .label-indigo { background: #6366f1; }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #5e6c84;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e4e6ea;
+        }
+
+        .checklist-progress {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .progress-bar {
+            width: 40px;
+            height: 6px;
+            background: #e4e6ea;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #61bd4f;
+            transition: width 0.3s;
+        }
+
+        .due-date {
+            font-size: 11px;
+            padding: 2px 6px;
+            background: #f4f5f7;
+            border-radius: 3px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid #e4e6ea;
+        }
+
+        .modal-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #172b4d;
+            margin-bottom: 8px;
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .checklist-section {
+            margin-top: 16px;
+        }
+
+        .checklist-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #172b4d;
+            margin-bottom: 12px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .checklist-item:hover {
+            background: #f4f5f7;
+        }
+
+        .checklist-checkbox {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            cursor: pointer;
+        }
+
+        .checklist-text {
+            flex: 1;
+            font-size: 14px;
+            color: #172b4d;
+            line-height: 1.5;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #5e6c84;
+            cursor: pointer;
+            background: none;
+            border: none;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .close-modal:hover {
+            background: #f4f5f7;
+        }
+
+        @media (max-width: 768px) {
+            .list {
+                min-width: 280px;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="board-header">
+        <div class="board-title" id="boardTitle"></div>
+        <div class="board-description" id="boardDescription"></div>
+    </div>
+
+    <div class="board-container" id="boardContainer"></div>
+
+    <div class="modal" id="cardModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle"></div>
+                <div class="card-description" id="modalDescription"></div>
+                <div class="card-labels" id="modalLabels"></div>
+            </div>
+            <div class="modal-body">
+                <div class="checklist-section">
+                    <div class="checklist-title">Checklist</div>
+                    <div id="modalChecklist"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // You can either embed the JSON data here or load it from a separate file
+        // For embedded JSON (easier for static sites):
+        const boardData = {
+  "name": "Privacy Engineering & Cyber Defense Study Plan",
+  "description": "2.5-year comprehensive learning roadmap",
+  "lists": [
+    {
+      "name": "📚 Semester 1 (Months 1-6) - Foundations",
+      "cards": [
+        {
+          "name": "Month 1-2: Network Fundamentals",
+          "description": "TCP/IP, Network Security Basics",
+          "checklist": [
+            "Study OSI and TCP/IP models",
+            "Learn IP addressing and subnetting",
+            "Practice with Wireshark",
+            "Set up home network lab",
+            "Read 'Computer Networking' Ch 1-3",
+            "Complete OverTheWire Bandit (0-15)",
+            "PROJECT: Secure Home Network Architecture"
+          ],
+          "labels": ["Study", "High Priority"],
+          "dueDate": "Month 2"
+        },
+        {
+          "name": "Month 3-4: Cyber Law & LGPD",
+          "description": "Brazilian Privacy Law, Compliance",
+          "checklist": [
+            "Read LGPD full text",
+            "Study LGPD Articles 5, 6, 7, 46, 48",
+            "Read 'Data Privacy' by Bhajaria (Ch 1-5)",
+            "Compare LGPD vs GDPR",
+            "Analyze ANPD cases",
+            "Create data mapping template",
+            "PROJECT: LGPD Compliance Toolkit"
+          ],
+          "labels": ["Study", "Compliance", "High Priority"],
+          "dueDate": "Month 4"
+        },
+        {
+          "name": "Month 5-6: Cryptography & Privacy Engineering",
+          "description": "Applied Crypto, Privacy by Design",
+          "checklist": [
+            "Study symmetric/asymmetric encryption",
+            "Complete Cryptopals Set 1-2",
+            "Learn privacy by design principles",
+            "Read 'Serious Cryptography' Ch 1-8",
+            "Implement encryption in Python",
+            "PROJECT: Encrypted File Storage System",
+            "PROJECT: Privacy-Preserving Registration"
+          ],
+          "labels": ["Study", "Cryptography", "High Priority"],
+          "dueDate": "Month 6"
+        },
+        {
+          "name": "OPTIONAL: CompTIA Security+ Exam",
+          "description": "Foundation certification",
+          "checklist": [
+            "Watch Professor Messer videos",
+            "Complete practice exams",
+            "Review weak areas",
+            "Schedule exam",
+            "Take Security+ exam"
+          ],
+          "labels": ["Certification", "Optional"],
+          "dueDate": "Month 6"
+        }
+      ]
+    },
+    {
+      "name": "🛡️ Semester 2 (Months 7-12) - Applied Security",
+      "cards": [
+        {
+          "name": "Month 7-8: Web Application Security",
+          "description": "OWASP Top 10, Web Hacking",
+          "checklist": [
+            "Complete PortSwigger Web Security Academy",
+            "Study OWASP Top 10 in depth",
+            "Practice with DVWA and WebGoat",
+            "Read 'Web Application Hacker's Handbook'",
+            "HackTheBox Easy web challenges",
+            "PROJECT: Vulnerable Web App + Assessment"
+          ],
+          "labels": ["Study", "Web Security", "High Priority"],
+          "dueDate": "Month 8"
+        },
+        {
+          "name": "Month 9-10: End-to-End Encryption",
+          "description": "Signal Protocol, E2EE Implementation",
+          "checklist": [
+            "Study Signal Protocol specification",
+            "Learn Double Ratchet Algorithm",
+            "Implement Diffie-Hellman key exchange",
+            "Read 'Real-World Cryptography'",
+            "Complete Cryptopals Set 3-4",
+            "PROJECT: E2EE Chat Application"
+          ],
+          "labels": ["Study", "Cryptography", "High Priority"],
+          "dueDate": "Month 10"
+        },
+        {
+          "name": "Month 11-12: Healthcare Privacy (HIPAA)",
+          "description": "HIPAA Compliance, Data Protection",
+          "checklist": [
+            "Study HIPAA Security Rule",
+            "Study HIPAA Privacy Rule",
+            "Learn de-identification techniques",
+            "Implement k-anonymity",
+            "Read NIST SP 800-66",
+            "PROJECT: HIPAA-Compliant Telemedicine Design",
+            "PROJECT: Privacy-Preserving Analytics Dashboard"
+          ],
+          "labels": ["Study", "Compliance", "High Priority"],
+          "dueDate": "Month 12"
+        },
+        {
+          "name": "IAPP CIPT Certification",
+          "description": "Privacy Technologist Certification",
+          "checklist": [
+            "Read 'Data Privacy' completely",
+            "Study IAPP Body of Knowledge",
+            "Take practice exams",
+            "Join IAPP (membership required)",
+            "Schedule exam",
+            "Take CIPT exam"
+          ],
+          "labels": ["Certification", "High Priority"],
+          "dueDate": "Month 12"
+        }
+      ]
+    },
+    {
+      "name": "🔬 Semester 3 (Months 13-18) - Advanced Cryptography",
+      "cards": [
+        {
+          "name": "Month 13-14: Zero-Knowledge Proofs Foundations",
+          "description": "ZKP Theory and Implementation",
+          "checklist": [
+            "Complete ZK MOOC (UC Berkeley)",
+            "Read 'Proofs, Arguments, and ZK' by Thaler",
+            "Study Schnorr protocol",
+            "Learn commitment schemes",
+            "Implement basic ZKP protocols",
+            "Complete Cryptopals Set 5-6",
+            "PROJECT: ZKP Demonstrations"
+          ],
+          "labels": ["Study", "Advanced Crypto", "High Priority"],
+          "dueDate": "Month 14"
+        },
+        {
+          "name": "Month 15-16: Applied ZKP Systems",
+          "description": "Circom, zk-SNARKs, Applications",
+          "checklist": [
+            "Learn Circom circuit design",
+            "Study zk-SNARKs and zk-STARKs",
+            "RareSkills ZKP bootcamp",
+            "Implement complex ZKP applications",
+            "Optimize circuit performance",
+            "PROJECT: Private Voting System"
+          ],
+          "labels": ["Study", "Advanced Crypto", "High Priority"],
+          "dueDate": "Month 16"
+        },
+        {
+          "name": "Month 17-18: Digital Identity & Credentials",
+          "description": "Decentralized Identity, Verifiable Credentials",
+          "checklist": [
+            "Study W3C DID specification",
+            "Learn W3C Verifiable Credentials",
+            "Implement DIDs (multiple methods)",
+            "Build selective disclosure",
+            "Study OAuth 2.0 and OIDC deeply",
+            "Implement WebAuthn",
+            "PROJECT: Decentralized Identity Wallet",
+            "PROJECT: Privacy-Preserving Authentication"
+          ],
+          "labels": ["Study", "Identity", "High Priority"],
+          "dueDate": "Month 18"
+        },
+        {
+          "name": "ZK MOOC Certificate",
+          "description": "Complete UC Berkeley course",
+          "checklist": [
+            "Complete all lectures",
+            "Complete all assignments",
+            "Earn certificate"
+          ],
+          "labels": ["Certification", "Free"],
+          "dueDate": "Month 14"
+        }
+      ]
+    },
+    {
+      "name": "☁️ Semester 4 (Months 19-24) - Enterprise & Cloud",
+      "cards": [
+        {
+          "name": "Month 19-20: Trusted Execution Environments",
+          "description": "Intel SGX, Confidential Computing",
+          "checklist": [
+            "Study Intel SGX architecture",
+            "Set up SGX development environment",
+            "Learn remote attestation",
+            "Study ARM TrustZone and AMD SEV",
+            "Implement enclave application",
+            "PROJECT: Confidential Computing Service"
+          ],
+          "labels": ["Study", "Hardware Security", "High Priority"],
+          "dueDate": "Month 20"
+        },
+        {
+          "name": "Month 21-22: Tokenization & Data Protection",
+          "description": "PCI DSS, Format-Preserving Encryption",
+          "checklist": [
+            "Study PCI DSS tokenization guidelines",
+            "Implement vault-based tokenization",
+            "Build format-preserving encryption",
+            "Study differential privacy (advanced)",
+            "Generate synthetic data",
+            "PROJECT: Payment Card Tokenization System"
+          ],
+          "labels": ["Study", "Compliance", "High Priority"],
+          "dueDate": "Month 22"
+        },
+        {
+          "name": "Month 23-24: Cloud Security & Architecture",
+          "description": "AWS/Azure, Multi-Cloud Privacy",
+          "checklist": [
+            "Study cloud security fundamentals",
+            "Learn AWS/Azure IAM and KMS",
+            "Kubernetes security hardening",
+            "Set up HashiCorp Vault",
+            "Multi-cloud architecture design",
+            "PROJECT: Multi-Cloud Privacy Architecture",
+            "PROJECT: Secrets Management Platform"
+          ],
+          "labels": ["Study", "Cloud Security", "High Priority"],
+          "dueDate": "Month 24"
+        },
+        {
+          "name": "OSCP Certification",
+          "description": "Offensive Security Certified Professional",
+          "checklist": [
+            "Purchase PEN-200 course (Month 19)",
+            "Complete course material (8 weeks)",
+            "Practice in PWK labs (6 weeks)",
+            "Complete 30+ lab machines",
+            "Mock 24-hour exams",
+            "Schedule exam",
+            "Take OSCP exam (24 hours)",
+            "Write professional report (24 hours)"
+          ],
+          "labels": ["Certification", "High Priority"],
+          "dueDate": "Month 24"
+        },
+        {
+          "name": "AWS Certified Security - Specialty",
+          "description": "Cloud Security Certification",
+          "checklist": [
+            "Complete A Cloud Guru course",
+            "Hands-on AWS labs",
+            "Practice exams (Tutorials Dojo)",
+            "Review AWS security whitepapers",
+            "Schedule exam",
+            "Take AWS Security Specialty exam"
+          ],
+          "labels": ["Certification", "High Priority"],
+          "dueDate": "Month 24"
+        }
+      ]
+    },
+    {
+      "name": "🎓 Semester 5 (Months 25-30) - Specialization & Capstone",
+      "cards": [
+        {
+          "name": "Month 25-26: Advanced Topics",
+          "description": "Privacy in AI/ML, Emerging Tech",
+          "checklist": [
+            "Study federated learning (advanced)",
+            "Implement differential privacy in ML",
+            "Test privacy attacks on models",
+            "Study quantum-resistant cryptography",
+            "Privacy in IoT systems",
+            "PROJECT: Privacy-Preserving ML Pipeline",
+            "PROJECT: LGPD Compliance Automation"
+          ],
+          "labels": ["Study", "Advanced", "High Priority"],
+          "dueDate": "Month 26"
+        },
+        {
+          "name": "Month 27-28: Incident Response & Forensics",
+          "description": "IR, Digital Forensics, Threat Detection",
+          "checklist": [
+            "Study NIST IR lifecycle",
+            "LGPD breach notification procedures",
+            "Memory forensics with Volatility",
+            "Set up SIEM (ELK stack)",
+            "Create threat detection rules",
+            "MITRE ATT&CK framework",
+            "PROJECT: Security Monitoring Platform"
+          ],
+          "labels": ["Study", "IR & Forensics", "High Priority"],
+          "dueDate": "Month 28"
+        },
+        {
+          "name": "Month 29-30: CAPSTONE PROJECT",
+          "description": "Comprehensive Final Project",
+          "checklist": [
+            "Choose capstone option (1 of 5)",
+            "Architecture design",
+            "Core implementation",
+            "Advanced features",
+            "Security testing",
+            "Compliance documentation",
+            "Technical whitepaper (20 pages)",
+            "Video demonstration (20 min)",
+            "Conference talk slides",
+            "Blog post series (5 articles)",
+            "GitHub repository (production-quality)"
+          ],
+          "labels": ["Project", "Capstone", "High Priority"],
+          "dueDate": "Month 30"
+        }
+      ]
+    },
+    {
+      "name": "📝 Continuous Activities",
+      "cards": [
+        {
+          "name": "Daily Security News",
+          "description": "Stay current with security landscape",
+          "checklist": [
+            "Krebs on Security",
+            "Schneier on Security",
+            "ANPD updates (Brazil)",
+            "The Hacker News",
+            "Brazilian sources (Convergência Digital)"
+          ],
+          "labels": ["Daily", "Reading"],
+          "dueDate": "Ongoing"
+        },
+        {
+          "name": "Weekly CTF Practice",
+          "description": "Hands-on security skills",
+          "checklist": [
+            "TryHackMe (3-4 hours/week)",
+            "HackTheBox (2-3 hours/week)",
+            "CryptoHack (2 hours/week)",
+            "Cryptopals (1-2 challenges/week)"
+          ],
+          "labels": ["Weekly", "Practice"],
+          "dueDate": "Ongoing"
+        },
+        {
+          "name": "Monthly Blog Posts",
+          "description": "Learning in public",
+          "checklist": [
+            "Choose topic aligned with current study",
+            "Draft blog post (1500-3000 words)",
+            "Include code snippets and diagrams",
+            "Publish on personal blog",
+            "Cross-post to Medium/Dev.to",
+            "Share on LinkedIn/Twitter"
+          ],
+          "labels": ["Monthly", "Writing"],
+          "dueDate": "Ongoing"
+        },
+        {
+          "name": "GitHub Contributions",
+          "description": "Build portfolio",
+          "checklist": [
+            "Daily commits (maintain streak)",
+            "Update project READMEs",
+            "Document code thoroughly",
+            "Add projects to portfolio",
+            "Contribute to open source"
+          ],
+          "labels": ["Weekly", "Coding"],
+          "dueDate": "Ongoing"
+        },
+        {
+          "name": "Community Engagement",
+          "description": "Networking and learning",
+          "checklist": [
+            "Attend 1-2 webinars/month",
+            "Participate in Discord communities",
+            "Engage in r/netsec, r/crypto discussions",
+            "Brazilian security meetups",
+            "OWASP chapter meetings"
+          ],
+          "labels": ["Monthly", "Networking"],
+          "dueDate": "Ongoing"
+        },
+        {
+          "name": "Spaced Repetition (Anki)",
+          "description": "Retain knowledge long-term",
+          "checklist": [
+            "Daily Anki reviews (15-20 min)",
+            "Add 10-15 new cards daily",
+            "Focus on: Crypto, LGPD, Security concepts",
+            "Review weak areas"
+          ],
+          "labels": ["Daily", "Study"],
+          "dueDate": "Ongoing"
+        }
+      ]
+    },
+    {
+      "name": "✅ Completed",
+      "cards": []
+    },
+    {
+      "name": "🔄 In Progress",
+      "cards": []
+    },
+    {
+      "name": "⏸️ Blocked / Waiting",
+      "cards": []
+    }
+  ],
+  "labels": [
+    {
+      "name": "Study",
+      "color": "blue"
+    },
+    {
+      "name": "Project",
+      "color": "green"
+    },
+    {
+      "name": "Certification",
+      "color": "yellow"
+    },
+    {
+      "name": "High Priority",
+      "color": "red"
+    },
+    {
+      "name": "Medium Priority",
+      "color": "orange"
+    },
+    {
+      "name": "Optional",
+      "color": "gray"
+    },
+    {
+      "name": "Cryptography",
+      "color": "purple"
+    },
+    {
+      "name": "Privacy",
+      "color": "pink"
+    },
+    {
+      "name": "Compliance",
+      "color": "lime"
+    },
+    {
+      "name": "Web Security",
+      "color": "sky"
+    },
+    {
+      "name": "Cloud Security",
+      "color": "teal"
+    },
+    {
+      "name": "Advanced Crypto",
+      "color": "indigo"
+    },
+    {
+      "name": "Daily",
+      "color": "yellow"
+    },
+    {
+      "name": "Weekly",
+      "color": "orange"
+    },
+    {
+      "name": "Monthly",
+      "color": "green"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-01-24",
+    "totalDuration": "30 months",
+    "focus": "Privacy Engineering & Cyber Defense"
+  }
+};
+
+        // Alternative: Load from external JSON file
+        // async function loadBoardData() {
+        //     const response = await fetch('05_trello_notion_board.json');
+        //     return await response.json();
+        // }
+
+        function getLabelColor(labelName) {
+            const label = boardData.labels.find(l => l.name === labelName);
+            return label ? label.color : 'gray';
+        }
+
+        function createCard(card) {
+            const cardEl = document.createElement('div');
+            cardEl.className = 'card';
+            
+            const completedItems = 0;
+            const totalItems = card.checklist ? card.checklist.length : 0;
+            const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
+            
+            cardEl.innerHTML = `
+                <div class="card-name">${card.name}</div>
+                ${card.description ? `<div class="card-description">${card.description}</div>` : ''}
+                ${card.labels ? `
+                    <div class="card-labels">
+                        ${card.labels.map(label => 
+                            `<span class="label label-${getLabelColor(label)}">${label}</span>`
+                        ).join('')}
+                    </div>
+                ` : ''}
+                ${totalItems > 0 || card.dueDate ? `
+                    <div class="card-footer">
+                        ${totalItems > 0 ? `
+                            <div class="checklist-progress">
+                                <span>☑</span>
+                                <span>${completedItems}/${totalItems}</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: ${progress}%"></div>
+                                </div>
+                            </div>
+                        ` : ''}
+                        ${card.dueDate ? `<div class="due-date">📅 ${card.dueDate}</div>` : ''}
+                    </div>
+                ` : ''}
+            `;
+            
+            cardEl.addEventListener('click', () => openCardModal(card));
+            return cardEl;
+        }
+
+        function createList(list) {
+            const listEl = document.createElement('div');
+            listEl.className = 'list';
+            
+            const headerEl = document.createElement('div');
+            headerEl.className = 'list-header';
+            headerEl.textContent = list.name;
+            
+            const cardsContainer = document.createElement('div');
+            cardsContainer.className = 'list-cards';
+            
+            list.cards.forEach(card => {
+                cardsContainer.appendChild(createCard(card));
+            });
+            
+            listEl.appendChild(headerEl);
+            listEl.appendChild(cardsContainer);
+            
+            return listEl;
+        }
+
+        function renderBoard() {
+            document.getElementById('boardTitle').textContent = boardData.name;
+            document.getElementById('boardDescription').textContent = boardData.description;
+            
+            const container = document.getElementById('boardContainer');
+            boardData.lists.forEach(list => {
+                container.appendChild(createList(list));
+            });
+        }
+
+        function openCardModal(card) {
+            const modal = document.getElementById('cardModal');
+            document.getElementById('modalTitle').textContent = card.name;
+            document.getElementById('modalDescription').textContent = card.description || '';
+            
+            const labelsContainer = document.getElementById('modalLabels');
+            labelsContainer.innerHTML = card.labels ? card.labels.map(label => 
+                `<span class="label label-${getLabelColor(label)}">${label}</span>`
+            ).join('') : '';
+            
+            const checklistContainer = document.getElementById('modalChecklist');
+            checklistContainer.innerHTML = card.checklist ? card.checklist.map((item, index) => `
+                <div class="checklist-item">
+                    <input type="checkbox" class="checklist-checkbox" id="check-${index}">
+                    <label class="checklist-text" for="check-${index}">${item}</label>
+                </div>
+            `).join('') : '<p style="color: #5e6c84;">No checklist items</p>';
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('cardModal').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('cardModal').addEventListener('click', (e) => {
+            if (e.target.id === 'cardModal') {
+                closeModal();
+            }
+        });
+
+        // Initialize board on page load
+        renderBoard();
+    </script>
+</body>
+</html>
