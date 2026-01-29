@@ -78,7 +78,7 @@
       "endDate": "Current",
       "highlights": [
       ],
-      "techStack": ["Python", "Django", "VueJS", "AWS", "Github Actions"]
+      "techStack": ["Python", "Django", "Vue.js", "AWS", "Github Actions"]
     },
     {
       "company": "BidHound",
