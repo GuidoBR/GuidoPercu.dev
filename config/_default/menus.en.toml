@@ -9,11 +9,11 @@
   weight = 2
 
 [[main]]
-  name = "Projects"
-  pageRef = "projects"
+  name = "Library"
+  pageRef = "library"
   weight = 3
 
 [[main]]
-  name = "Library"
-  pageRef = "library"
+  name = "Reviews"
+  pageRef = "revisao-tecnica"
   weight = 4

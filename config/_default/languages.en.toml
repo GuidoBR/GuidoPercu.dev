@@ -8,13 +8,13 @@ title = "Guido Percú"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "Guido Percú — Principal Backend Engineer specializing in Python, AWS, and AI-powered systems. I read widely; this is my corner of the web."
+  description = "Guido Percú — Senior Software Engineer (Python, AWS, AI) and technical reviewer for finance and economics books. Engineering rigor meets clear communication of complex ideas."
 
   [params.author]
     name = "Guido Percú"
     image = "img/guido.jpeg"
-    headline = "Principal Backend Engineer · Reader"
-    bio = "Python, AWS & AI-powered systems. When I'm not coding, I'm reading."
+    headline = "Senior Software Engineer · Python, AWS & AI · technical book reviewer"
+    bio = "Senior Software Engineer specializing in Python, AWS and AI — and a technical reviewer for finance and economics books."
     links = [
       { github = "https://github.com/GuidoBR" },
       { linkedin = "https://www.linkedin.com/in/guidopercu/" },
