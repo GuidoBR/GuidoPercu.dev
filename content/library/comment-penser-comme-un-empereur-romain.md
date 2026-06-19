@@ -1,7 +1,7 @@
 ---
 title: "Comment Penser Comme Un Empereur Romain"
 date: 2024-01-28T19:47:54-03:00
-draft: true
+draft: false
 ---
 
 ![](/images/livro-howtothinklikearomanemperor.jpg)

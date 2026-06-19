@@ -1,7 +1,7 @@
 ---
 title: "Resenha do livro: Leia para investir e prosperar"
 date: 2021-11-16T14:52:20-03:00
-draft: true
+draft: false
 ---
 
 [![Leia para investir e prosperar](/images/livro-leia-para-investir-e-prosperar.jpg)](https://www.amazon.com.br/Leia-para-Investir-Prosperar-Tosetto-ebook/dp/B097S872PC/)

@@ -1,7 +1,7 @@
 ---
 title: "Cavernas De Aço Isaac Asimov"
 date: 2014-05-18T14:04:52-03:00
-draft: true
+draft: false
 ---
 
 Resenha do livro As Cavernas de Aço

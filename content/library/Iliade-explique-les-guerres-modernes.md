@@ -1,7 +1,7 @@
 ---
 title: "L'Iliade explique les guerres modernes"
 date: 2023-10-11T18:29:19-03:00
-draft: true
+draft: false
 ---
 
 

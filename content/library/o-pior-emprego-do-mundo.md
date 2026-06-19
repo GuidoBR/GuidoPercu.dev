@@ -1,7 +1,7 @@
 ---
 title: "O Pior Emprego Do Mundo"
 date: 2021-09-10T10:34:59-03:00
-draft: true
+draft: false
 ---
 
 [![O Pior Emprego do Mundo - Thomas Traumann](/images/o-pior-emprego-do-mundo.jpg)](https://www.amazon.com.br/pior-emprego-mundo-ministros-decisões-ebook/dp/B07H2PQ8SK/)

@@ -1,7 +1,7 @@
 ---
 title: "Ética para Programadores - o caso TrateCOV"
 date: 2021-10-21T13:56:22-03:00
-draft: true
+draft: false
 categories: ["Engineering"]
 tags: ["ethics", "programming"]
 ---

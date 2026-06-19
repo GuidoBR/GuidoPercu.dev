@@ -1,7 +1,7 @@
 ---
 title: "Book Review: Noise a Flaw in Human Judgment"
 date: 2021-07-31T18:06:23-03:00
-draft: true
+draft: false
 
 ---
 [![Noise a Flaw in Human Judgment](/images/noise-book.jpg)](https://amzn.to/3ztD15o)

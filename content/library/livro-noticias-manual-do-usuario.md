@@ -1,7 +1,7 @@
 ---
 title: "Livro Noticias Manual Do Usuario"
 date: 2021-11-17T20:27:54-03:00
-draft: true
+draft: false
 ---
 
 Adquiri esse livro com quase nenhuma expectativa e me surpreendi positivamente com esta leitura. Não conhecia o autor e filósofo Alain de Botton e pra minha surpresa o seu texto é claro e de agradável leitura.

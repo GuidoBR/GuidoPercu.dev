@@ -1,7 +1,7 @@
 ---
 title: "Uma Breve Historia Da Riqueza"
 date: 2020-12-06
-draft: true
+draft: false
 ---
 
 ![uma-breve-historia-riqueza](/images/uma-breve-historia-riqueza.jpg)

@@ -1,7 +1,7 @@
 ---
 title: "A Amizade Em O Senhor Dos Aneis"
 date: 2021-02-03T14:04:12-03:00
-draft: true
+draft: false
 ---
 
 ![Lord of The Rings - Friendship](/images/lotr.jpg)

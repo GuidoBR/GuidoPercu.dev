@@ -1,7 +1,7 @@
 ---
 title: "Resenha de Lições Amargas: Uma História Provisória da Atualidade"
 date: 2021-05-29T17:17:22-03:00
-draft: true
+draft: false
 
 ---
 

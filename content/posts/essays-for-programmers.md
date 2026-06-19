@@ -1,7 +1,7 @@
 ---
 title: "Essays for Programmers"
 date: 2020-11-10T12:47:46-03:00
-draft: true
+draft: false
 description: "Essays are very powerful ways of transmitting profound ideas. Those are books, articles and essays that had the most impact on my career."
 image: "/images/essays-on-programming-large.png"
 categories: ["Engineering"]

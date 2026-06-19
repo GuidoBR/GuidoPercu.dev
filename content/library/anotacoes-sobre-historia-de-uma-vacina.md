@@ -1,7 +1,7 @@
 ---
 title: "Anotações sobre o livro: História De Uma Vacina"
 date: 2021-11-27T17:59:41-03:00
-draft: true
+draft: false
 ---
 
 > "**ajudando a preparar o mundo para as próximas epidemias. Pois elas virão.**"

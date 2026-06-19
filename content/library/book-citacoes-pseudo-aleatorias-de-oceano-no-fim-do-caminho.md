@@ -1,7 +1,7 @@
 ---
 title: "Citações Pseudo-aleatórias de Oceano no Fim do Caminho"
 date: 2021-08-27T14:10:28-03:00
-draft: true
+draft: false
 ---
 
 

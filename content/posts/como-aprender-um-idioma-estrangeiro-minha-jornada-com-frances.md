@@ -1,7 +1,7 @@
 ---
 title: "Como Aprender Um Idioma Estrangeiro Minha Jornada Com Frances"
 date: 2025-01-06T20:25:45-05:00
-draft: true
+draft: false
 categories: ["Languages"]
 tags: ["languages", "french", "learning"]
 ---

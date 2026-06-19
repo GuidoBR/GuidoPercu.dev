@@ -6,6 +6,10 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
+# Recent posts + "Posts" listings come from this section only
+# (otherwise Blowfish picks the largest section, which is the library).
+mainSections = ["posts"]
+
 fingerprintAlgorithm = "sha512"
 
 [header]

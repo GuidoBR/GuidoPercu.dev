@@ -1,7 +1,7 @@
 ---
 title: "Il n'y a pas  d'amour parfait"
 date: 2024-05-06T11:49:59-03:00
-draft: true
+draft: false
 ---
 
 L'amour, ce concept complexe et intemporel, a été le sujet de nombreux débats, œuvres d'art et analyses philosophiques à travers les âges. Dans son livre "Il n'y a pas d'amour parfait", Francis Wolff offre une exploration riche et perspicace de ce sujet fascinant, en se basant sur un éventail impressionnant de références littéraires, en décomposant les trois types d'amour selon les anciens Grecs, et en proposant une définition intrigante de l'amour comme une combinaison d'amitié, de désir et de passion. Dans cet essai, nous examinerons ces points clés et nous conclurons par une réflexion sur l'essence même de l'amour selon Wolff.

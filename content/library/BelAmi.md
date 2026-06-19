@@ -1,7 +1,7 @@
 ---
 title: "Bel-Ami"
 date: 2024-04-08T21:33:03-03:00
-draft: true
+draft: false
 ---
 
 ![](/images/livro-Bel-Ami.webp)

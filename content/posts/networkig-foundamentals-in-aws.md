@@ -1,7 +1,7 @@
 ---
 title: "AWS Networking: Key Concepts for Certifications and Real-World Projects"
 date: 2024-10-26T18:44:03-04:00
-draft: true
+draft: false
 categories: ["Engineering"]
 tags: ["aws", "networking", "certification"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Colecao Julio Verne"
 date: 2014-10-03T14:04:59-03:00
-draft: true
+draft: false
 ---
 
 ![Jules Verne photography](/images/jules_verne.jpg)

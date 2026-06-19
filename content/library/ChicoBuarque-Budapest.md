@@ -1,7 +1,7 @@
 ---
 title: "Budapest - Chico Buarque"
 date: 2024-01-28T20:29:48-03:00
-draft: true
+draft: false
 ---
 
 ![](/images/livro-budapest.jpg)

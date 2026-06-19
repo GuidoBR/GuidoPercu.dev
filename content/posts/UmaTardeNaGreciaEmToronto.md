@@ -1,7 +1,7 @@
 ---
 title: "Uma tarde na Grecia Antiga no coração de Toronto"
 date: 2022-06-26T18:00:55-03:00
-draft: true
+draft: false
 categories: ["Personal"]
 tags: ["books", "history"]
 ---

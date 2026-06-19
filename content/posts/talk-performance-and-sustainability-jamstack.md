@@ -1,7 +1,7 @@
 ---
 title: "Talk: Performance and Sustainability Jamstack"
 date: 2021-03-29T15:38:48-03:00
-draft: true
+draft: false
 categories: ["Engineering"]
 tags: ["jamstack", "performance", "web", "talk"]
 ---
