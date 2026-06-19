@@ -17,8 +17,3 @@
   name = "Library"
   pageRef = "library"
   weight = 4
-
-[[footer]]
-  name = "Technical Book Reviews"
-  pageRef = "revisao-tecnica"
-  weight = 1
