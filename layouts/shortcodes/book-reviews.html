@@ -1,0 +1,23 @@
+{{/* Renders the technical-review book list from data/reviews.yaml */}}
+{{- with hugo.Data.reviews.reviews }}
+{{ partial "book-grid-style.html" $ }}
+<style>
+  .book-pub { display: block; font-size: 0.7rem; opacity: 0.5; margin-top: 0.15rem; }
+</style>
+<ul class="book-showcase-grid">
+  {{- range . }}
+  <li class="book-card">
+    {{- if .link }}<a href="{{ .link }}" target="_blank" rel="noopener" class="book-card-link">{{ else }}<div class="book-card-link">{{ end }}
+      <span class="book-cover-wrap">
+        <img src="{{ .cover }}" alt="{{ .title }}" loading="lazy" class="book-cover">
+      </span>
+      <span class="book-meta">
+        <span class="book-title">{{ .title }}</span>
+        {{- with .author }}<span class="book-author">{{ . }}</span>{{ end }}
+        {{- if or .publisher .year }}<span class="book-pub">{{ .publisher }}{{ if and .publisher .year }} · {{ end }}{{ .year }}</span>{{ end }}
+      </span>
+    {{- if .link }}</a>{{ else }}</div>{{ end }}
+  </li>
+  {{- end }}
+</ul>
+{{- end }}

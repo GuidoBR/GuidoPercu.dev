@@ -1,0 +1,100 @@
+# Books I've worked on as technical reviewer (revisão técnica).
+# Extracted from the previous /revisao-tecnica page.
+reviews:
+  - title: "A Álgebra da Riqueza"
+    author: "Scott Galloway"
+    publisher: "Intrínseca"
+    year: "2024"
+    cover: "https://intrinseca.com.br/wp-content/uploads/2024/06/CAPA-SITE-3.png"
+    link: "https://intrinseca.com.br/livro/a-algebra-da-riqueza/"
+
+  - title: "A Lógica do Cisne Negro"
+    author: "Nassim Nicholas Taleb"
+    publisher: "Objetiva"
+    year: "2021"
+    cover: "https://m.media-amazon.com/images/I/714RNYWLXIS._SY522_.jpg"
+
+  - title: "Viver com risco"
+    author: "Allison Schrager"
+    publisher: "Portfolio-Penguin"
+    year: "2021"
+    cover: "https://m.media-amazon.com/images/I/619P1WkDItL._SY522_.jpg"
+
+  - title: "Antifrágil"
+    author: "Nassim Nicholas Taleb"
+    publisher: "Objetiva"
+    year: "2020"
+    cover: "https://m.media-amazon.com/images/I/8119xmkJ3IL._SY522_.jpg"
+
+  - title: "Iludidos pelo Acaso"
+    author: "Nassim Nicholas Taleb"
+    publisher: "Objetiva"
+    year: "2019"
+    cover: "https://m.media-amazon.com/images/I/81j15XZb34L._SY522_.jpg"
+
+  - title: "Como investir: Por quem mais entende do assunto"
+    author: "David M. Rubenstein"
+    publisher: "Intrínseca"
+    year: "2023"
+    cover: "https://m.media-amazon.com/images/I/41g1Ru4xVeL._SY445_SX342_.jpg"
+
+  - title: "Ruído: Uma falha no julgamento humano"
+    author: "Daniel Kahneman, Olivier Sibony, Cass R. Sunstein"
+    publisher: "Objetiva"
+    year: "2021"
+    cover: "https://m.media-amazon.com/images/I/81I6rfFOM-S._SY522_.jpg"
+
+  - title: "O Ciclo de Vida Corporativo"
+    author: "Aswath Damodaran"
+    publisher: "Íntrinseca"
+    year: "2025"
+    cover: "https://m.media-amazon.com/images/I/71VXluixrmL._SY522_.jpg"
+
+  - title: "Poder e Progresso"
+    author: "Daron Acemoglu"
+    publisher: "Objetiva"
+    year: "2023"
+    cover: "https://m.media-amazon.com/images/I/71kkntXKEnL._SY385_.jpg"
+
+  - title: "Reminiscências de um operador da bolsa: Lições de um dos maiores investidores de todos os tempos"
+    author: "Edwin Lefèvre"
+    publisher: "Portfolio-Penguin"
+    year: "2022"
+    cover: "https://m.media-amazon.com/images/I/71TbRnmQoGL._SY522_.jpg"
+
+  - title: "Obrigado pelo Atraso"
+    author: "Thomas L. Friedman"
+    publisher: "Objetiva"
+    year: "2017"
+    cover: "https://m.media-amazon.com/images/I/51-7GS6KXbL._SY445_SX342_.jpg"
+
+  - title: "Preparados para o risco: Como tomar boas decisões"
+    author: "Gerd Gigerenzer"
+    publisher: "Portfolio-Penguim"
+    year: "2022"
+    cover: "https://m.media-amazon.com/images/I/718HG+0l37L._SY522_.jpg"
+
+  - title: "O futuro é mais rápido do que você pensa: Como a convergência tecnológica está transformando as empresas, a economia e nossas vidas"
+    author: "Peter H. Diamandis, Steven Kotler"
+    publisher: "Objetiva"
+    year: "2021"
+    cover: "https://m.media-amazon.com/images/I/61aMSxNw91L._SY445_SX342_.jpg"
+
+  - title: "O trader vencedor: Como operar em flow e dominar o mercado com confiança"
+    author: "Mark Douglas"
+    publisher: "Portfolio-Penguim"
+    year: "2023"
+    cover: "https://m.media-amazon.com/images/I/71tlybuaafL._SY522_.jpg"
+
+  - title: "A República Tecnológica: Como a tecnologia molda a política e a sociedade no ocidente"
+    author: "Alexander C. Karp, Nicholas W. Zamiska"
+    publisher: "Intrínseca"
+    year: "2025"
+    cover: "https://m.media-amazon.com/images/I/81Il83gcIzL._SY522_.jpg"
+
+  - title: "Cointeligência: A vida e o trabalho com IA"
+    author: "Ethan Mollick"
+    publisher: "Intrínseca"
+    year: "2025"
+    cover: "https://m.media-amazon.com/images/I/81yCERgbtqL._SY522_.jpg"
+
