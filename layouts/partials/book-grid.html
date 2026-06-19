@@ -1,0 +1,18 @@
+{{/* Renders a grid of book cards. Context (.) is a slice of book maps. */}}
+{{- $flags := dict "en" "🇺🇸" "pt" "🇧🇷" "fr" "🇫🇷" }}
+<ul class="book-showcase-grid">
+  {{- range . }}
+  <li class="book-card">
+    {{- if .link }}<a href="{{ .link }}" class="book-card-link">{{ else }}<div class="book-card-link">{{ end }}
+      <span class="book-cover-wrap">
+        <img src="{{ .cover }}" alt="{{ .title }}" loading="lazy" class="book-cover">
+        {{- with .status }}<span class="book-status book-status--{{ . }}">{{ . }}</span>{{ end }}
+      </span>
+      <span class="book-meta">
+        <span class="book-title">{{ with index $flags .lang }}{{ . }} {{ end }}{{ .title }}</span>
+        {{- with .author }}<span class="book-author">{{ . }}</span>{{ end }}
+      </span>
+    {{- if .link }}</a>{{ else }}</div>{{ end }}
+  </li>
+  {{- end }}
+</ul>

@@ -1,92 +1,239 @@
-# Curated book showcase rendered on the homepage.
-# Add a book by appending an entry. Fields:
-#   title  (required) - book title
-#   author (required) - author name(s)
+# The library. One entry per book.
+#   title  (required)
+#   author (optional)
 #   cover  (required) - path under /images/
-#   link   (optional) - detail page or external URL
-#   lang   (optional) - flag emoji shown before the title (e.g. "🇫🇷", "🇧🇷")
-#   status (optional) - "reading" or "read"
+#   lang   (required) - language read: en | pt | fr  (drives flag + grouping)
+#   link   (optional) - review/notes page
+#   featured (optional) - true => also shown on the homepage shelf
+#   status (optional)  - "reading" or "read"
 books:
+  # ---- English ----
   - title: "The Almanack of Naval Ravikant"
     author: "Eric Jorgenson"
     cover: "/images/almanack-naval.jpg"
+    lang: "en"
     link: "/library/almanack-of-naval-ravikant/"
-    lang: "🇺🇸"
-    status: "read"
+    featured: true
 
   - title: "How to Think Like a Roman Emperor"
     author: "Donald Robertson"
     cover: "/images/livro-howtothinklikearomanemperor.jpg"
+    lang: "en"
     link: "/library/how-to-think-like-a-roman-emperor/"
-    lang: "🇺🇸"
-    status: "read"
+    featured: true
 
   - title: "Noise: A Flaw in Human Judgment"
     author: "Kahneman, Sibony & Sunstein"
     cover: "/images/noise-book.jpg"
+    lang: "en"
     link: "/library/book-review-noise-a-flaw-in-human-judgment/"
-    lang: "🇺🇸"
-    status: "read"
+    featured: true
 
   - title: "The Essential Hayek"
     author: "Donald J. Boudreaux"
     cover: "/images/book-essential-hayek.jpg"
+    lang: "en"
     link: "/library/essential-hayek/"
-    lang: "🇺🇸"
-    status: "read"
+    featured: true
 
+  - title: "Reminiscences of a Stock Operator"
+    author: "Edwin Lefèvre"
+    cover: "/images/ReminiscencesOfAStockOperator.jpg"
+    lang: "en"
+
+  - title: "A Mind for Numbers"
+    author: "Barbara Oakley"
+    cover: "/images/a-mind-for-numbers.jpg"
+    lang: "en"
+
+  - title: "How to Make a Vaccine"
+    author: "John Rhodes"
+    cover: "/images/book-how-to-make-a-vaccine.jpg"
+    lang: "en"
+    link: "/library/anotacoes-sobre-historia-de-uma-vacina/"
+
+  - title: "Superforecasting: The Art and Science of Prediction"
+    author: "Philip Tetlock & Dan Gardner"
+    cover: "/images/superforecastersting.jpg"
+    lang: "en"
+
+  - title: "The Far Side of the World"
+    author: "Patrick O'Brian"
+    cover: "/images/book-the-far-side-of-the-world.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "Business Model Generation"
+    author: "Osterwalder & Pigneur"
+    cover: "/images/book-businness-model-generation.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "The Innovators"
+    author: "Walter Isaacson"
+    cover: "/images/book-the-inovators.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "How to Create a Mind"
+    author: "Ray Kurzweil"
+    cover: "/images/book-how-to-create-a-mind.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "Maus: A Survivor's Tale"
+    author: "Art Spiegelman"
+    cover: "/images/book-maus.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "The Art of Asking"
+    author: "Amanda Palmer"
+    cover: "/images/book-the-art-of-asking.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "The Intelligent Investor"
+    author: "Benjamin Graham"
+    cover: "/images/book-the-intelligent-investor.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "Brazillionaires"
+    author: "Alex Cuadros"
+    cover: "/images/book-brazillionaires.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "Economic Policy: Thoughts for Today and Tomorrow"
+    author: "Ludwig von Mises"
+    cover: "/images/book-economic-policy.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "V for Vendetta"
+    author: "Alan Moore"
+    cover: "/images/book-v.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "The Art of Thinking Clearly"
+    author: "Rolf Dobelli"
+    cover: "/images/book-the-art-of-thinking-clearly.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  - title: "The Character of Physical Law"
+    author: "Richard Feynman"
+    cover: "/images/book-the-character-of-physical-law.jpg"
+    lang: "en"
+    link: "/library/2015/"
+
+  # ---- Português ----
   - title: "O Gene: Uma História Íntima"
     author: "Siddhartha Mukherjee"
     cover: "/images/livro-o-gene.jpg"
+    lang: "pt"
     link: "/library/livro-o-gene-uma-historia-intima/"
-    lang: "🇧🇷"
-    status: "read"
+    featured: true
 
   - title: "Cavernas de Aço"
     author: "Isaac Asimov"
     cover: "/images/book-cavernas-de-aco.jpg"
+    lang: "pt"
     link: "/library/caveras-de-aco-isaac-asimov/"
-    lang: "🇧🇷"
-    status: "read"
+    featured: true
 
   - title: "Ilíada"
     author: "Homero"
     cover: "/images/livro-iliada.jpg"
+    lang: "pt"
     link: "/library/iliada/"
-    lang: "🇧🇷"
-    status: "read"
-
-  - title: "L'Iliade ou le poème de la force"
-    author: "Simone Weil"
-    cover: "/images/livro-IliadeSimoneWeil.jpg"
-    link: "/library/iliade-explique-les-guerres-modernes/"
-    lang: "🇫🇷"
-    status: "read"
-
-  - title: "L'existentialisme est un humanisme"
-    author: "Jean-Paul Sartre"
-    cover: "/images/livro-Lexistentialisme-est-un-humanisme.jpg"
-    link: "/library/sartre-lexistentialisme-est-un-humanisme/"
-    lang: "🇫🇷"
-    status: "read"
-
-  - title: "Bel-Ami"
-    author: "Guy de Maupassant"
-    cover: "/images/livro-Bel-Ami.webp"
-    link: "/library/belami/"
-    lang: "🇫🇷"
-    status: "read"
-
-  - title: "Il n'y a pas d'amour parfait"
-    author: "Francis Wolff"
-    cover: "/images/Il-ny-a-pas-d-amour-parfait.jpg"
-    link: "/library/il-ny-a-pas-d-amour-parfait/"
-    lang: "🇫🇷"
-    status: "read"
+    featured: true
 
   - title: "Budapeste"
     author: "Chico Buarque"
     cover: "/images/livro-budapest.jpg"
+    lang: "pt"
     link: "/library/chicobuarque-budapest/"
-    lang: "🇧🇷"
-    status: "read"
+    featured: true
+
+  - title: "Leia para Investir e Prosperar"
+    author: "Jean Tosetto"
+    cover: "/images/livro-leia-para-investir-e-prosperar.jpg"
+    lang: "pt"
+    link: "/library/livro-leia-para-investir-e-prosperar/"
+
+  - title: "A História de uma Vacina"
+    author: "Sue Ann Costa Clemens"
+    cover: "/images/a-historia-de-uma-vacina.jpg"
+    lang: "pt"
+    link: "/library/anotacoes-sobre-historia-de-uma-vacina/"
+
+  - title: "O Pior Emprego do Mundo"
+    author: "Thomas Traumman"
+    cover: "/images/o-pior-emprego-do-mundo.jpg"
+    lang: "pt"
+    link: "/library/o-pior-emprego-do-mundo/"
+
+  - title: "Lições Amargas"
+    author: "Gustavo Franco"
+    cover: "/images/livros-gustavo-franco.jpg"
+    lang: "pt"
+    link: "/library/licoes-amargas/"
+
+  - title: "Notícias: Manual do Usuário"
+    author: "Alain de Botton"
+    cover: "/images/livro-noticias.jpg"
+    lang: "pt"
+    link: "/library/livro-noticias-manual-do-usuario/"
+
+  - title: "O Projeto Desfazer"
+    author: "Michael Lewis"
+    cover: "/images/o-projeto-desfazer.jpg"
+    lang: "pt"
+    link: "/library/o-projeto-desfazer/"
+
+  - title: "Uma Breve História da Riqueza"
+    cover: "/images/uma-breve-historia-riqueza.jpeg"
+    lang: "pt"
+
+  - title: "Coleção Júlio Verne"
+    author: "Júlio Verne"
+    cover: "/images/book-julio-verne.jpg"
+    lang: "pt"
+    link: "/library/colecao-julio-verne/"
+
+  - title: "A Amizade em Senhor dos Anéis"
+    cover: "/images/book-amizade-senhor-dos-aneis.jpg"
+    lang: "pt"
+    link: "/library/a-amizade-em-o-senhor-dos-aneis/"
+
+  # ---- Français ----
+  - title: "L'Iliade ou le poème de la force"
+    author: "Simone Weil"
+    cover: "/images/livro-IliadeSimoneWeil.jpg"
+    lang: "fr"
+    link: "/library/iliade-explique-les-guerres-modernes/"
+    featured: true
+
+  - title: "L'existentialisme est un humanisme"
+    author: "Jean-Paul Sartre"
+    cover: "/images/livro-Lexistentialisme-est-un-humanisme.jpg"
+    lang: "fr"
+    link: "/library/sartre-lexistentialisme-est-un-humanisme/"
+    featured: true
+
+  - title: "Bel-Ami"
+    author: "Guy de Maupassant"
+    cover: "/images/livro-Bel-Ami.webp"
+    lang: "fr"
+    link: "/library/belami/"
+    featured: true
+
+  - title: "Il n'y a pas d'amour parfait"
+    author: "Francis Wolff"
+    cover: "/images/Il-ny-a-pas-d-amour-parfait.jpg"
+    lang: "fr"
+    link: "/library/il-ny-a-pas-d-amour-parfait/"
+    featured: true

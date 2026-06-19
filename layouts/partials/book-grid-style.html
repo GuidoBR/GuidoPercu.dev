@@ -1,0 +1,39 @@
+<style>
+    .book-showcase { margin: 3rem 0; }
+    .book-showcase > header { margin-bottom: 1.5rem; }
+    .book-showcase-sub { opacity: 0.7; margin-top: -0.5rem; }
+    .book-group { margin: 2.5rem 0; }
+    .book-group-title { margin-bottom: 1.25rem; font-size: 1.4rem; }
+    .book-showcase-grid {
+        list-style: none; margin: 0; padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 1.75rem 1.25rem;
+    }
+    .book-card { margin: 0; }
+    .book-card-link { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+    .book-cover-wrap { position: relative; display: block; }
+    .book-cover {
+        width: 100%; aspect-ratio: 2 / 3; object-fit: cover;
+        border-radius: 4px; display: block;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    a.book-card-link:hover .book-cover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
+    }
+    .book-status {
+        position: absolute; top: 6px; right: 6px;
+        font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em;
+        padding: 2px 6px; border-radius: 999px; color: #fff;
+        background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(2px);
+    }
+    .book-status--reading { background: #dd587c; }
+    .book-meta { display: block; margin-top: 0.6rem; line-height: 1.3; }
+    .book-title { display: block; font-size: 0.85rem; font-weight: 600; }
+    .book-author { display: block; font-size: 0.75rem; opacity: 0.65; margin-top: 0.15rem; }
+    @media (max-width: 600px) {
+        .book-showcase-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 1.25rem 1rem; }
+    }
+</style>

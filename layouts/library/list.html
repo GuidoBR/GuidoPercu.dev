@@ -1,0 +1,46 @@
+{{ define "main" }}
+<header>
+  {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+  {{ end }}
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+</header>
+
+{{ with .Content }}
+<section class="prose dark:prose-invert max-w-full mt-2 mb-4">{{ . }}</section>
+{{ end }}
+
+{{ partial "book-grid-style.html" . }}
+
+{{ $all := hugo.Data.books.books }}
+{{ $langs := slice (dict "code" "en" "name" "🇺🇸 English") (dict "code" "pt" "name" "🇧🇷 Português") (dict "code" "fr" "name" "🇫🇷 Français") }}
+{{ range $langs }}
+  {{ $name := .name }}
+  {{ $group := where $all "lang" .code }}
+  {{ with $group }}
+  <section class="book-group">
+    <h2 class="book-group-title">{{ $name }} <span style="opacity:.5;font-size:1rem;font-weight:400">({{ len . }})</span></h2>
+    {{ partial "book-grid.html" . }}
+  </section>
+  {{ end }}
+{{ end }}
+
+{{/* Yearly reading roundups */}}
+{{ $years := slice }}
+{{ range where site.RegularPages "Section" "library" }}
+  {{ $p := . }}
+  {{ if and .File (findRE `^[0-9]{4}$` .File.ContentBaseName) }}
+    {{ $years = $years | append $p }}
+  {{ end }}
+{{ end }}
+{{ with $years }}
+<section class="book-group">
+  <h2 class="book-group-title">Yearly roundups</h2>
+  <p>
+    {{ range sort . "Title" "desc" }}
+      <a href="{{ .RelPermalink }}" class="mr-3">{{ .Title }}</a>
+    {{ end }}
+  </p>
+</section>
+{{ end }}
+{{ end }}
