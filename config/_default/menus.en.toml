@@ -9,6 +9,16 @@
   weight = 2
 
 [[main]]
+  name = "Projects"
+  pageRef = "projects"
+  weight = 3
+
+[[main]]
   name = "Library"
   pageRef = "library"
-  weight = 3
+  weight = 4
+
+[[footer]]
+  name = "Technical Book Reviews"
+  pageRef = "revisao-tecnica"
+  weight = 1

@@ -18,5 +18,6 @@ title = "Guido Percú"
     links = [
       { github = "https://github.com/GuidoBR" },
       { linkedin = "https://www.linkedin.com/in/guidopercu/" },
+      { x-twitter = "https://twitter.com/oumguido" },
       { email = "mailto:guidopercu@gmail.com" },
     ]
