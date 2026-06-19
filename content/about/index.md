@@ -23,4 +23,4 @@ Portuguese, French) and care as much about clarity as I do about correctness.
 
 - **Writing** — essays on [software, AI and more](/posts/)
 - **Reading** — my [library](/library/) and [technical reviews](/revisao-tecnica/)
-- **Elsewhere** — [GitHub](https://github.com/GuidoBR), [LinkedIn](https://www.linkedin.com/in/guidopercu/), [Twitter](https://twitter.com/oumguido)
+- **Elsewhere** — [GitHub](https://github.com/GuidoBR), [LinkedIn](https://www.linkedin.com/in/guidopercu/)
