@@ -3,6 +3,8 @@ title: "Python for Finance"
 date: 2017-07-08T12:21:56-03:00
 draft: false
 image: /images/python-for-finance-share.png
+categories: ["Finance"]
+tags: ["python", "finance"]
 ---
 
 [![Jupyter notebook showing plot of stock data](/images/python-for-finance.png)](https://github.com/GuidoBR/python-for-finance/blob/master/python-for-finance-investment-fundamentals-data-analytics/1%20-%20Calculating%20and%20Comparing%20Rates%20of%20Return%20in%20Python/Rate%20of%20Return%20-%20Portfolio.ipynb)

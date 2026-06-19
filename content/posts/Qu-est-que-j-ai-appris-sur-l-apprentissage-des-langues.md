@@ -2,6 +2,8 @@
 title: "Qu'est que j'ai appris sur l'apprentissage des langues"
 date: 2023-11-30T14:58:30-03:00
 draft: true
+categories: ["Languages"]
+tags: ["languages", "french", "learning"]
 ---
 
 ![](/images/amador-loureiro-BVyNlchWqzs-unsplash.jpg)

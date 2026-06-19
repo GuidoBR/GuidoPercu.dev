@@ -3,6 +3,8 @@ title: "Learning Go"
 date: 2016-11-20T13:39:10-03:00
 draft: false
 image: "/images/computer.png"
+categories: ["Engineering"]
+tags: ["go", "learning"]
 ---
 
 Why [Go][22d3c8cd]?

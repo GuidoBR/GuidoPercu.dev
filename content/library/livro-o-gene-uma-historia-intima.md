@@ -3,37 +3,6 @@ title: "Livro O Gene: Uma História Íntima"
 date: 2022-02-07T10:29:34-03:00
 ---
 
-{{< rawhtml >}}
-<style>
-article.books { width: 100% }
-.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
-.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
-.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
-/*.book-grid ul li {  padding-left: 1.5em; }*/
-.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
-.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1em; padding: 5px;}
-.book-description a { color: #fff; word-break: normal }
-.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
-.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
-  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
-}
-.book-grid ul li .book-description { display: none; }
-.book-grid ul li:hover img { display: none; }
-.book-grid ul li:hover { margin-bottom: -3em !important; }
-.book-grid ul li:hover .book-description { display: block; }
-@media screen and (max-width: 1024px) {
-​        .book-grid ul { grid-template-columns: repeat(3, 1fr); }
-        .book-grid ul li { padding-left: 1.0em; }
-}
-@media screen and (max-width: 800px) {
-​        .book-grid ul { grid-template-columns: repeat(1, 1fr); }
-​        .book-grid ul li {  padding-bottom*: 1.5em; }
-​        .shelf-shadows, .shelf { display: none;}
-​        article { margin-bottom: -5em !important; }
-}
-</style>
-{{< /rawhtml >}}
-
 [![O Gene](/images/livro-o-gene.jpg)](https://www.amazon.com.br/gene-Siddhartha-Mukherjee/dp/8535928073/)
 
 [O Gene: Uma história íntima](https://www.amazon.com.br/gene-Siddhartha-Mukherjee/dp/8535928073/)

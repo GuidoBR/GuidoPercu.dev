@@ -3,6 +3,8 @@ title: "Introduction to Programming"
 date: 2016-05-12T13:52:14-03:00
 draft: false
 image: "/images/computer.png"
+categories: ["Engineering"]
+tags: ["programming", "learning"]
 ---
 
 ### Introduction to Programming

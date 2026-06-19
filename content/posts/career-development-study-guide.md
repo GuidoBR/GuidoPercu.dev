@@ -2,6 +2,8 @@
 title: "Career Development Study Guide"
 date: 2021-05-09T00:36:48-03:00
 draft: false
+categories: ["Career"]
+tags: ["career", "learning"]
 ---
 
 -----

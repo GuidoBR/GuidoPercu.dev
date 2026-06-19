@@ -3,6 +3,8 @@ title: "Python collections.Counter"
 date: 2015-09-24T13:37:33-03:00
 draft: false
 image: "/images/computer.png"
+categories: ["Engineering"]
+tags: ["python"]
 ---
 
 From Luciano Ramalho ["Fluent Python"][0fc19ccf] book:

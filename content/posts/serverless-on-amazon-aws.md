@@ -4,6 +4,8 @@ date: 2020-07-08T12:31:40-03:00
 description: "AWS Serverless study notes for helping you build your Serverless app."
 draft: false
 image: "/images/amazon-aws-serverless.png"
+categories: ["Engineering"]
+tags: ["aws", "serverless"]
 ---
 
 ![amazon-aws-serverless](/images/amazon-aws-serverless.png)

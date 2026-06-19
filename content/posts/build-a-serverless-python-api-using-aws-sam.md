@@ -4,6 +4,8 @@ date: 2020-02-19T14:53:43-03:00
 draft: false
 image: /static/images/build-a-serverless-python-api-using-aws-sam.png
 description: Serverless architecture is becoming more and more popular. Amazon launched AWS Lambda, Microsoft has Azure Functions and Google has Cloud Functions. Now not only can you stop worrying about manually provisioning, managing and upgrading servers, but also pay only for what you use.
+categories: ["Engineering"]
+tags: ["aws", "serverless", "python", "api"]
 ---
 
 > ### As it’s used today, **serverless computing** means that the service provider manages the computing resources (e.g. keeps the firmware up to date)  and the resources scale up and down automagically (horizontally and/or  vertically to meet demand). No more; no less.

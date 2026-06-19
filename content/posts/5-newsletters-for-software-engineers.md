@@ -4,6 +4,8 @@ date: 2020-09-05T12:46:11-03:00
 draft: false
 image: "/images/newsletters.jpg"
 description: "Newsletter that always provide high value when it reaches my email box."
+categories: ["Career"]
+tags: ["career", "newsletters", "software-engineering"]
 ---
 
 ![Newsletters](/images/newsletters.jpg)

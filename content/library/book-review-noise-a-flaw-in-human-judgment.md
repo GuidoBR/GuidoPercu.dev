@@ -4,36 +4,6 @@ date: 2021-07-31T18:06:23-03:00
 draft: true
 
 ---
-{{< rawhtml >}}
-<style>
-article.books { width: 100% }
-.bookshelf { margin: 2rem auto; text-align: center; position: relative; }
-.book-grid { z-index: 2; position: relative; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
-.book-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
-/*.book-grid ul li {  padding-left: 1.5em; }*/
-.book-grid ul img { display: block; box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3); width: 200px; height: 300px; -o-object-fit: cover; object-fit: cover; }
-.book-description { width: 200px; background-color: #000; height: 300px; font-size: 1em; padding: 5px;}
-.book-description a { color: #fff; word-break: normal }
-.shelf { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background-color: #f9f9f9; border-radius: 2px; z-index: 3; }
-.shelf-shadows { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; border-radius: 2px; z-index: 1;
-  box-shadow: 0px -5px 3px 0px rgba(170, 170, 170, 0.2), 0px 15px 20px 0px rgba(170, 170, 170, 0.7), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
-}
-.book-grid ul li .book-description { display: none; }
-.book-grid ul li:hover img { display: none; }
-.book-grid ul li:hover { margin-bottom: -3em !important; }
-.book-grid ul li:hover .book-description { display: block; }
-@media screen and (max-width: 1024px) {
-​        .book-grid ul { grid-template-columns: repeat(3, 1fr); }
-        .book-grid ul li { padding-left: 1.0em; }
-}
-@media screen and (max-width: 800px) {
-​        .book-grid ul { grid-template-columns: repeat(1, 1fr); }
-​        .book-grid ul li {  padding-bottom*: 1.5em; }
-​        .shelf-shadows, .shelf { display: none;}
-​        article { margin-bottom: -5em !important; }
-}
-</style>
-{{< /rawhtml >}}
 [![Noise a Flaw in Human Judgment](/images/noise-book.jpg)](https://amzn.to/3ztD15o)
 
 > Measurement, in everyday life as in science, is the act of using an instrument to assign a value on a scale to an object or event. You measure the length of a carpet in inches, using a tape measure. You measure the temperature in degrees Fahrenheit or Celsius by consulting a thermometer. The act of making a judgment is similar. When judges determine the appropriate prison term for a crime, they assign a value on a scale. So do underwriters when they set a dollar value to insure a risk, or doctors when they make a diagnosis. (The scale need not be numerical: “guilty beyond a reasonable doubt,” “advanced melanoma,” and “surgery is recommended” are judgments, too.) **Judgment can therefore be described as measurement in which the instrument is a human mind.**

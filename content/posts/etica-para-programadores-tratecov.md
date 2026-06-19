@@ -2,6 +2,8 @@
 title: "Ética para Programadores - o caso TrateCOV"
 date: 2021-10-21T13:56:22-03:00
 draft: true
+categories: ["Engineering"]
+tags: ["ethics", "programming"]
 ---
 
 Se um desenvolvedor de software recebe uma demanda anti-ética e mesmo assim a cumpre, de quem é a culpa?

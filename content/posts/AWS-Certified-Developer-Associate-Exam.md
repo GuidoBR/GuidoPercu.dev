@@ -2,6 +2,8 @@
 title: "How I Passed the AWS Certified Developer Associate Exam"
 date: 2024-09-07T17:29:14-04:00
 draft: true
+categories: ["Career"]
+tags: ["aws", "certification", "career"]
 ---
 
 # My Study Strategy

@@ -2,6 +2,8 @@
 title: "Uma tarde na Grecia Antiga no coração de Toronto"
 date: 2022-06-26T18:00:55-03:00
 draft: true
+categories: ["Personal"]
+tags: ["books", "history"]
 ---
 
 Há [um maravilhoso rio que vem da Grécia Antiga](https://www.amazon.com.br/Um-Rio-Que-Vem-Grecia/dp/8525414131) e que tem banhado toda a humanidade com suas histórias fantásticas e inspiradoras. Seja através de afluentes como as histórias de [Percy Jackson](https://www.amazon.com.br/Box-Percy-Jackson-os-Olimpianos/dp/8580574625/), animações como [Hércules da Disney](https://en.wikipedia.org/wiki/Hercules_(1997_film)) ou até mesmo as [Aventuras do Sítio do Pica-Pau Amarelo](https://www.youtube.com/watch?v=yJGqeZj_iW0), você provavelmente já se banhou nas águas desse rio. Acontece que em Toronto há uma fonte que permite mergulhar profundamente.

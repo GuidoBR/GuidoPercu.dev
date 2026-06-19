@@ -4,6 +4,8 @@ date: 2020-06-07T12:37:54-03:00
 draft: false
 image: /images/dynamodb-using-aws-sam.png
 description: Resources on getting DynamoDB to work with your Serverless application.
+categories: ["Engineering"]
+tags: ["aws", "serverless", "dynamodb", "python"]
 ---
 
 ![sam-logo](/images/sam-logo.png)

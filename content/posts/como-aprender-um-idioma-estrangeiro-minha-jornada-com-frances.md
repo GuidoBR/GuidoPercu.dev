@@ -2,6 +2,8 @@
 title: "Como Aprender Um Idioma Estrangeiro Minha Jornada Com Frances"
 date: 2025-01-06T20:25:45-05:00
 draft: true
+categories: ["Languages"]
+tags: ["languages", "french", "learning"]
 ---
 
 Aprender uma nova língua pode parecer uma missão impossível para muitos brasileiros. Se você já tentou estudar francês várias vezes, apenas para abandonar os estudos e começar de novo, você não está sozinho. Essa era exatamente a minha situação. Mas no final de 2023, algo mudou. Eu decidi me comprometer seriamente, e dessa vez, deu certo. Vou compartilhar com você minha experiência, as estratégias que funcionaram (e as que não funcionaram), e algumas dicas práticas.

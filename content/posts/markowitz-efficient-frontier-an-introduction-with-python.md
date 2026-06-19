@@ -3,6 +3,8 @@ title: "Markowitz Efficient Frontier - An introduction with Python"
 date: 2017-07-23T13:41:00-03:00
 draft: false
 image: "/images/markowitz-python.png"
+categories: ["Finance"]
+tags: ["finance", "python", "investing"]
 ---
 
 According to Investopedia, [Efficient Frontier](http://www.investopedia.com/terms/e/efficientfrontier.asp#ixzz4nCcwvdHC) is:

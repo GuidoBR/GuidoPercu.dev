@@ -4,6 +4,8 @@ date: 2020-06-14T13:43:43-03:00
 draft: false
 image: "/images/bioinformatics-algorithms.png"
 description: "'Three profoundly destabilizing scientific ideas ricochet through the twentieth century, trisecting it into three unequal parts: the atom, the byte, the gene.'"
+categories: ["Engineering"]
+tags: ["bioinformatics", "algorithms", "python"]
 ---
 
 Bioinformatics is field that develops algorithms and software tools for understanding biological data. It combines computer science, biology, mathematics and statistics tools to analyze and interpret data.

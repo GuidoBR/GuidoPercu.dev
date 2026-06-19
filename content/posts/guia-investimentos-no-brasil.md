@@ -3,6 +3,8 @@ title: "Como começar a investir no Brasil"
 date: 2018-04-08T13:55:50-03:00
 draft: false
 image: "/images/investimentos.png"
+categories: ["Finance"]
+tags: ["finance", "investing", "brazil"]
 ---
 ---
 

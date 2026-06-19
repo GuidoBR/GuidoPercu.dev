@@ -2,6 +2,8 @@
 title: "Hidden Bugs in Simple Python Code"
 date: 2025-07-27T20:16:43-04:00
 draft: true
+categories: ["Engineering"]
+tags: ["python", "debugging"]
 ---
 
 # Hidden Bugs in Simple Python Code: A Learning Exercise

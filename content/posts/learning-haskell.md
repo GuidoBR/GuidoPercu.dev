@@ -3,6 +3,8 @@ title: "A Guide to Learnning Haskell"
 date: 2015-11-05T13:52:22-03:00
 draft: false
 image: "/images/computer.png"
+categories: ["Engineering"]
+tags: ["haskell", "learning", "functional-programming"]
 ---
 
 [Haskell][22d3c8cd] will change the way you think.
