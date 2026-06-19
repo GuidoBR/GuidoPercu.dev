@@ -1,0 +1,14 @@
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 1
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 2
+
+[[main]]
+  name = "Library"
+  pageRef = "library"
+  weight = 3

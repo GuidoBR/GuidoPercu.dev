@@ -1,0 +1,92 @@
+# Curated book showcase rendered on the homepage.
+# Add a book by appending an entry. Fields:
+#   title  (required) - book title
+#   author (required) - author name(s)
+#   cover  (required) - path under /images/
+#   link   (optional) - detail page or external URL
+#   lang   (optional) - flag emoji shown before the title (e.g. "🇫🇷", "🇧🇷")
+#   status (optional) - "reading" or "read"
+books:
+  - title: "The Almanack of Naval Ravikant"
+    author: "Eric Jorgenson"
+    cover: "/images/almanack-naval.jpg"
+    link: "/library/almanack-of-naval-ravikant/"
+    lang: "🇺🇸"
+    status: "read"
+
+  - title: "How to Think Like a Roman Emperor"
+    author: "Donald Robertson"
+    cover: "/images/livro-howtothinklikearomanemperor.jpg"
+    link: "/library/how-to-think-like-a-roman-emperor/"
+    lang: "🇺🇸"
+    status: "read"
+
+  - title: "Noise: A Flaw in Human Judgment"
+    author: "Kahneman, Sibony & Sunstein"
+    cover: "/images/noise-book.jpg"
+    link: "/library/book-review-noise-a-flaw-in-human-judgment/"
+    lang: "🇺🇸"
+    status: "read"
+
+  - title: "The Essential Hayek"
+    author: "Donald J. Boudreaux"
+    cover: "/images/book-essential-hayek.jpg"
+    link: "/library/essential-hayek/"
+    lang: "🇺🇸"
+    status: "read"
+
+  - title: "O Gene: Uma História Íntima"
+    author: "Siddhartha Mukherjee"
+    cover: "/images/livro-o-gene.jpg"
+    link: "/library/livro-o-gene-uma-historia-intima/"
+    lang: "🇧🇷"
+    status: "read"
+
+  - title: "Cavernas de Aço"
+    author: "Isaac Asimov"
+    cover: "/images/book-cavernas-de-aco.jpg"
+    link: "/library/caveras-de-aco-isaac-asimov/"
+    lang: "🇧🇷"
+    status: "read"
+
+  - title: "Ilíada"
+    author: "Homero"
+    cover: "/images/livro-iliada.jpg"
+    link: "/library/iliada/"
+    lang: "🇧🇷"
+    status: "read"
+
+  - title: "L'Iliade ou le poème de la force"
+    author: "Simone Weil"
+    cover: "/images/livro-IliadeSimoneWeil.jpg"
+    link: "/library/iliade-explique-les-guerres-modernes/"
+    lang: "🇫🇷"
+    status: "read"
+
+  - title: "L'existentialisme est un humanisme"
+    author: "Jean-Paul Sartre"
+    cover: "/images/livro-Lexistentialisme-est-un-humanisme.jpg"
+    link: "/library/sartre-lexistentialisme-est-un-humanisme/"
+    lang: "🇫🇷"
+    status: "read"
+
+  - title: "Bel-Ami"
+    author: "Guy de Maupassant"
+    cover: "/images/livro-Bel-Ami.webp"
+    link: "/library/belami/"
+    lang: "🇫🇷"
+    status: "read"
+
+  - title: "Il n'y a pas d'amour parfait"
+    author: "Francis Wolff"
+    cover: "/images/Il-ny-a-pas-d-amour-parfait.jpg"
+    link: "/library/il-ny-a-pas-d-amour-parfait/"
+    lang: "🇫🇷"
+    status: "read"
+
+  - title: "Budapeste"
+    author: "Chico Buarque"
+    cover: "/images/livro-budapest.jpg"
+    link: "/library/chicobuarque-budapest/"
+    lang: "🇧🇷"
+    status: "read"

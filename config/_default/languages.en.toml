@@ -1,0 +1,22 @@
+locale = "en"
+label = "English"
+weight = 1
+title = "Guido Percú"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Guido Percú — Principal Backend Engineer specializing in Python, AWS, and AI-powered systems. I read widely; this is my corner of the web."
+
+  [params.author]
+    name = "Guido Percú"
+    image = "img/guido.jpeg"
+    headline = "Principal Backend Engineer · Reader"
+    bio = "Python, AWS & AI-powered systems. When I'm not coding, I'm reading."
+    links = [
+      { github = "https://github.com/GuidoBR" },
+      { linkedin = "https://www.linkedin.com/in/guidopercu/" },
+      { email = "mailto:guidopercu@gmail.com" },
+    ]
