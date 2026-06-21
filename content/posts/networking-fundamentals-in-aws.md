@@ -4,6 +4,8 @@ date: 2024-10-26T18:44:03-04:00
 draft: false
 categories: ["Engineering"]
 tags: ["aws", "networking", "certification"]
+aliases:
+  - /posts/networkig-foundamentals-in-aws/
 ---
 
 ![](/images/network.jpg)
