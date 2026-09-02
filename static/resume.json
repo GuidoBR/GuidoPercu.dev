@@ -89,11 +89,15 @@
       "endDate": "2025-09",
       "highlights": [
         "Architected a multi-tenant SaaS auction platform with PostgreSQL schema-per-tenant isolation and automated tenant provisioning via AWS Lambda, enabling independent auction houses to onboard with zero manual infrastructure setup.",
-        "Built an event-driven data ingestion pipeline (S3 → Lambda → Aurora) processing auction imports, photo mapping, and invoice reconciliation across 5 external platforms (Invaluable, LiveAuctioneers, Hibid, iCollector, Proxibid).",
-        "Designed and deployed full AWS infrastructure using CDK (TypeScript) across 8 stacks — VPC, Aurora Serverless v2 (auto-scaling), ECS Fargate with Spot instances (~70% cost reduction), Cognito, and CloudWatch monitoring.",
-        "Implemented a role-based audit logging system using custom Python decorators capturing before/after snapshots of all entity changes, providing a full compliance trail across all tenant operations."
+        "Built an event-driven data ingestion pipeline (S3 → Lambda → Aurora) handling auction imports, photo mapping, invoice reconciliation, and buyer-identity resolution across six external auction marketplaces, backed by a reconciliation ledger that keeps merged multi-day auctions consistent.",
+        "Shipped an AI item-categorization and attribute-extraction pipeline on AWS Bedrock (Claude Haiku / Amazon Nova Lite), fanned out through SQS at controlled concurrency, with per-catalog cost benchmarking to keep inference spend predictable.",
+        "Built a comparable-sales search engine over historical auction data using PostgreSQL full-text search with a trigram fuzzy fallback, pgvector semantic embeddings (Bedrock Titan V2), and an LLM query-rewrite fallback for thin result sets — with search-quality telemetry that cut the zero-result rate to 2.7%.",
+        "Developed a computer-vision auto-crop service for lot photography (subject detection, rotation and scale-sweep correction), the product's most-used daily feature.",
+        "Designed and deployed full AWS infrastructure using CDK (TypeScript) across 8 stacks — VPC, Aurora Serverless v2 (auto-scaling), ECS Fargate with Spot instances (~70% cost reduction), Cognito, and CloudWatch monitoring — split into an auto-deployed staging environment and a tag-gated production environment.",
+        "Implemented a role-based audit logging system using custom Python decorators capturing before/after snapshots of all entity changes, providing a full compliance trail across all tenant operations.",
+        "Ran a privacy engineering audit spanning infrastructure, database schema, application logs, and API payloads — delivering a 5-tier data classification map with legal basis and retention periods, a Records of Processing Activity for GDPR/LGPD, a DPIA gap assessment that flagged stored signature images as biometric data, and a right-to-erasure workflow design that anonymizes PII while preserving legally-required financial records."
       ],
-      "techStack": ["Python", "FastAPI", "ReactJS", "TypeScript", "AWS CDK", "ECS Fargate", "Aurora Serverless", "Lambda", "S3", "SQS", "Cognito", "GitHub Actions"]
+      "techStack": ["Python", "FastAPI", "ReactJS", "TypeScript", "AWS CDK", "ECS Fargate", "Aurora Serverless", "Lambda", "S3", "SQS", "Cognito", "Amazon Bedrock", "pgvector", "PostgreSQL FTS", "GitHub Actions"]
     },
     {
       "company": "Modus Create",
@@ -239,11 +243,12 @@
       "startDate": "2025",
       "endDate": "Current",
       "highlights": [
-        "Engineered system leveraging AI for inventory management and pricing optimization",
-        "Implemented automated document processing",
-        "Built secure and scalable backend infrastructure"
+        "Engineered AI-assisted lot pricing with a comparable-sales search engine (Postgres FTS + pgvector embeddings + LLM query rewrite) and historical estimate calibration",
+        "Built AI item categorization and attribute extraction on AWS Bedrock, fanned out through SQS with per-catalog cost benchmarking",
+        "Shipped a computer-vision auto-crop pipeline for lot photography that became the product's most-used daily feature",
+        "Built multi-platform auction data ingestion and invoice reconciliation with buyer-identity resolution across six marketplaces"
       ],
-      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "RDS", "AWS Bedrock"]
+      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "Aurora Serverless", "AWS Bedrock", "pgvector", "SQS"]
     }
   ],
   "education": [
