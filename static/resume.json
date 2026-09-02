@@ -77,6 +77,7 @@
       "startDate": "2025-09",
       "endDate": "Current",
       "highlights": [
+        "Diagnosed and resolved a production database performance issue causing query time-outs, reducing P95 latency from 1800s to under 1ms."
       ],
       "techStack": ["Python", "Django", "Vue.js", "AWS", "Github Actions"]
     },
@@ -87,11 +88,12 @@
       "startDate": "2025-01",
       "endDate": "2025-09",
       "highlights": [
-        "Leading the development of a cutting-edge auction management system, leveraging AI for inventory management and pricing optimization.",
-        "Architecting and implementing secure, scalable backend infrastructure using Python, FastAPI, and AWS services.",
-        "Integrating advanced document processing capabilities with Tesseract OCR and AWS Bedrock for automated data extraction."
+        "Architected a multi-tenant SaaS auction platform with PostgreSQL schema-per-tenant isolation and automated tenant provisioning via AWS Lambda, enabling independent auction houses to onboard with zero manual infrastructure setup.",
+        "Built an event-driven data ingestion pipeline (S3 → Lambda → Aurora) processing auction imports, photo mapping, and invoice reconciliation across 5 external platforms (Invaluable, LiveAuctioneers, Hibid, iCollector, Proxibid).",
+        "Designed and deployed full AWS infrastructure using CDK (TypeScript) across 8 stacks — VPC, Aurora Serverless v2 (auto-scaling), ECS Fargate with Spot instances (~70% cost reduction), Cognito, and CloudWatch monitoring.",
+        "Implemented a role-based audit logging system using custom Python decorators capturing before/after snapshots of all entity changes, providing a full compliance trail across all tenant operations."
       ],
-      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "RDS", "AWS Serverless, Lambda, CloudFormation, API Gateway, S3, SQS)"]
+      "techStack": ["Python", "FastAPI", "ReactJS", "TypeScript", "AWS CDK", "ECS Fargate", "Aurora Serverless", "Lambda", "S3", "SQS", "Cognito", "GitHub Actions"]
     },
     {
       "company": "Modus Create",
