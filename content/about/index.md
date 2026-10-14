@@ -6,7 +6,7 @@ draft: false
 
 ![Guido Percú](/images/guido.jpeg)
 
-I'm a **Senior Software Engineer** with 12 years of experience building
+I'm a **Senior Software Engineer** with 13 years of experience building
 cloud-native, serverless systems in Python and AWS, with a growing focus on
 AI-powered applications. I've led technical work and delivered scalable solutions
 for global companies, and I'm AWS certified.

@@ -5,7 +5,7 @@
     "label": "Senior Software Engineer",
     "email": "guidopercu@gmail.com",
     "url": "https://www.guidopercu.dev/",
-    "summary": "Experienced backend engineer with 12 years of career expertise, specializing in backend development and cloud. Proven track record of successfully building projects from scratch and optimizing legacy systems. Served as a tech lead on a AWS Serverless project.",
+    "summary": "Senior Software Engineer with 13 years of experience building backend systems and cloud infrastructure with Python and AWS. I've led engineering teams and owned architecture end to end, designing multi-tenant SaaS platforms, serverless architectures, payment flows, and privacy and compliance systems (GDPR/LGPD). I'm currently leading the migration of a core guest-facing product used by more than 10,000 hotels to a modular architecture across the US, EU, and APAC regions. Recent work includes LLM-powered features on AWS Bedrock and AI-assisted developer tooling.",
     "location": {
       "city": "Toronto",
       "region": "Ontario",
@@ -469,7 +469,7 @@
       }
     ],
     "additionalInfo": {
-      "yearsOfExperience": "12 Years",
+      "yearsOfExperience": "13 Years",
       "yearsOfExperiencePython": "8 Years",
       "yearsOfExperienceAWS": "6 Years",
       "yearsOfExperiencePHP": "5 Years",

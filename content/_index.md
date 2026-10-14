@@ -3,7 +3,7 @@ title: "Guido Percú"
 description: "Senior Software Engineer and technical reviewer for finance and economics books."
 ---
 
-I'm Guido — a Senior Software Engineer with 12 years building cloud-native,
+I'm Guido — a Senior Software Engineer with 13 years building cloud-native,
 serverless systems in Python and AWS, with a growing focus on AI-powered
 applications.
 
