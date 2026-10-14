@@ -1,14 +1,16 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Guido Luz Percú",
-    "label": "Principal Backend Engineer",
+    "label": "Senior Software Engineer",
+    "email": "guidopercu@gmail.com",
+    "url": "https://www.guidopercu.dev/",
+    "summary": "Experienced backend engineer with 12 years of career expertise, specializing in backend development and cloud. Proven track record of successfully building projects from scratch and optimizing legacy systems. Served as a tech lead on a AWS Serverless project.",
     "location": {
       "city": "Toronto",
-      "countryCode": "Canada"
+      "region": "Ontario",
+      "countryCode": "CA"
     },
-    "languages": ["English", "French", "Portuguese"],
-    "email": "guidopercu@gmail.com",
-    "website": "https://www.guidopercu.dev/",
     "profiles": [
       {
         "network": "GitHub",
@@ -20,69 +22,34 @@
         "username": "guidopercu",
         "url": "https://www.linkedin.com/in/guidopercu/"
       }
-    ],
-    "certifications": [
-      {
-        "name": "AWS Certified Developer – Associate",
-        "url": "https://www.credly.com/badges/f4541607-79f3-4796-b6f8-9c6313550759",
-        "badgeUrl": "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
-      },
-      {
-        "name": "AWS Certified Cloud Practitioner",
-        "url": "https://www.credly.com/badges/6e77483a-493d-405b-91ce-d594c632a22b",
-        "badgeUrl": "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
-      },
-      {
-        "name": "TCF Canada",
-        "url": "https://exames.rioaliancafrancesa.com.br/pdfs/tcf_resultados/2df555ace3525aecd8cdcab7ad5dc989.pdf",
-        "badgeUrl": "https://www.alliance-francaise.ca/images/articles/exm/tests/ICONES%20FOR%20TESTS%20MAIN%20PAGE/VERSION_CARR%C3%89E/TCF_CANADA_CARRE%CC%81.jpg"
-      }
     ]
-  },
-  "summary": "Experienced backend engineer with 12 years of career expertise, specializing in backend development and cloud. Proven track record of successfully building projects from scratch and optimizing legacy systems. Served as a tech lead on a AWS Serverless project.",
-  "skills": [
-    {
-      "name": "Backend Development",
-      "description": "Proficient in Python, with a strong focus on developing efficient and scalable backend systems. Solid understanding of database management and query optimization."
-    },
-    {
-      "name": "Project Development",
-      "description": "Demonstrated ability to build projects from inception to completion, ensuring high-quality deliverables within specified timelines. Skilled in requirement analysis, system design, implementation, and testing."
-    },
-    {
-      "name": "Legacy System Enhancement",
-      "description": "Experienced in working with legacy systems, identifying pain points, and implementing improvements to enhance performance, maintainability, and scalability."
-    },
-    {
-      "name": "AWS Serverless",
-      "description": "Extensive knowledge of AWS services and expertise in developing serverless applications using Lambda, API Gateway, DynamoDB, and other related technologies. Strong understanding of cloud architecture and best practices."
-    },
-    {
-      "name": "Tech Leadership",
-      "description": "Successfully led a team as a tech lead, providing guidance, mentoring, and technical direction. Collaborated closely with cross-functional teams to achieve project objectives and ensure adherence to coding standards."
-    }
-  ],
-  "technicalSkillsByCategory": {
-    "languages": ["Python", "C#", "PHP", "JavaScript", "Go"],
-    "frameworks": ["Django", "Flask", "FastAPI", "ASP.NET Core", "Laravel", "React", "Vue.js"],
-    "cloud": ["AWS Lambda", "AWS SAM", "AWS CloudFormation", "Azure"],
-    "databases": ["PostgreSQL", "MongoDB", "DynamoDB"],
-    "tools": ["Docker", "GitHub Actions", "Jenkins"]
   },
   "work": [
     {
-      "company": "Canary Technologies",
+      "name": "Canary Technologies",
       "position": "Senior Software Engineer",
       "location": "Remote",
       "startDate": "2025-09",
-      "endDate": "Current",
       "highlights": [
+        "Leading the architecture of the migration of all customer accounts across three regions (US, EU, APAC).",
+        "Designed and built payment flows for card authorization and deposits.",
+        "Improved privacy and compliance by automating the removal of personal data and PII.",
+        "Built AI-assisted developer tooling with LLM agents to automate operational work.",
         "Diagnosed and resolved a production database performance issue causing query time-outs, reducing P95 latency from 1800s to under 1ms."
       ],
-      "techStack": ["Python", "Django", "Vue.js", "AWS", "Github Actions"]
+      "techStack": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Vue.js",
+        "TypeScript",
+        "AWS",
+        "GitHub Actions"
+      ],
+      "summary": "Senior Software Engineer at a hospitality SaaS company serving more than 10,000 hotels. Leading a large migration of a core guest-facing product from a legacy, configuration-heavy system to a modular, more flexible architecture. My work covers system design, payments, and data privacy using Python/Django, PostgreSQL, and Vue/TypeScript."
     },
     {
-      "company": "BidHound",
+      "name": "BidHound",
       "position": "Principal Software Engineer",
       "location": "Remote",
       "startDate": "2025-01",
@@ -97,28 +64,54 @@
         "Implemented a role-based audit logging system using custom Python decorators capturing before/after snapshots of all entity changes, providing a full compliance trail across all tenant operations.",
         "Ran a privacy engineering audit spanning infrastructure, database schema, application logs, and API payloads — delivering a 5-tier data classification map with legal basis and retention periods, a Records of Processing Activity for GDPR/LGPD, a DPIA gap assessment that flagged stored signature images as biometric data, and a right-to-erasure workflow design that anonymizes PII while preserving legally-required financial records."
       ],
-      "techStack": ["Python", "FastAPI", "ReactJS", "TypeScript", "AWS CDK", "ECS Fargate", "Aurora Serverless", "Lambda", "S3", "SQS", "Cognito", "Amazon Bedrock", "pgvector", "PostgreSQL FTS", "GitHub Actions"]
+      "techStack": [
+        "Python",
+        "FastAPI",
+        "ReactJS",
+        "TypeScript",
+        "AWS CDK",
+        "ECS Fargate",
+        "Aurora Serverless",
+        "Lambda",
+        "S3",
+        "SQS",
+        "Cognito",
+        "Amazon Bedrock",
+        "pgvector",
+        "PostgreSQL FTS",
+        "GitHub Actions"
+      ]
     },
     {
-      "company": "Modus Create",
+      "name": "Modus Create",
       "position": "Principal Software Engineer",
       "location": "Remote",
       "startDate": "2023-11",
       "endDate": "2025-01",
+      "summary": "As a Principal Software Engineer, I have successfully led and contributed to diverse projects with cutting-edge technology stacks. I specialize in building robust cloud-native applications using Python, AWS Lambda, and serverless architectures.",
       "highlights": [
-	      "As a Principal Software Engineer, I have successfully led and contributed to diverse projects with cutting-edge technology stacks. I specialize in building robust cloud-native applications using Python, AWS Lambda, and serverless architectures. My expertise includes:",
-	      "Architected and implemented GenAI solutions leveraging AWS Bedrock for intelligent document processing and natural language understanding",
-	      "Integrated computer vision capabilities with Tesseract OCR to automate data extraction from unstructured documents",
-	      "Pioneered the adoption of AI coding assistants",
-	      "Developed sophisticated Infrastructure as Code (IaC) using CloudFormation and CDK to ensure consistent, reproducible deployments",
-	      "Implemented comprehensive CI/CD automation with GitHub Actions",
-	      "Built scalable data pipelines utilizing AWS S3, API Gateway, and DynamoDB",
-	      "Focused on delivering cost-effective, high-performance cloud solutions that maximize business value"
+        "Architected and implemented GenAI solutions leveraging AWS Bedrock for intelligent document processing and natural language understanding",
+        "Integrated computer vision capabilities with Tesseract OCR to automate data extraction from unstructured documents",
+        "Pioneered the adoption of AI coding assistants",
+        "Developed sophisticated Infrastructure as Code (IaC) using CloudFormation and CDK to ensure consistent, reproducible deployments",
+        "Implemented comprehensive CI/CD automation with GitHub Actions",
+        "Built scalable data pipelines utilizing AWS S3, API Gateway, and DynamoDB",
+        "Focused on delivering cost-effective, high-performance cloud solutions that maximize business value"
       ],
-      "techStack": ["Python", "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)", "React", "Typescript", "Docker", "GitHub Actions", "PostgreSQL", "Django", "FastAPI"]
+      "techStack": [
+        "Python",
+        "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)",
+        "React",
+        "Typescript",
+        "Docker",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Django",
+        "FastAPI"
+      ]
     },
     {
-      "company": "Modus Create",
+      "name": "Modus Create",
       "position": "Senior Backend Engineer",
       "location": "Remote",
       "startDate": "2023-11",
@@ -127,10 +120,15 @@
         "Architected backend solutions, ensuring code quality through rigorous reviews and best practices adherence.",
         "Optimized system performance for enhanced efficiency, leveraging the power of C# .NET for maintainable and scalable solutions."
       ],
-      "techStack": ["C#", ".NET Framework", "ASP.NET Core", "Azure"]
+      "techStack": [
+        "C#",
+        ".NET Framework",
+        "ASP.NET Core",
+        "Azure"
+      ]
     },
     {
-      "company": "Modus Create",
+      "name": "Modus Create",
       "position": "Tech Lead",
       "location": "Remote",
       "startDate": "2022-01",
@@ -140,10 +138,18 @@
         "Architected and deployed Serverless systems using AWS SAM, CloudFormation, and ECS, improving client time-to-market and reducing costs.",
         "Guided projects from inception to delivery, including requirement gathering, system design, and implementation."
       ],
-      "techStack": ["Python", "AWS", "Serverless (SAM)", "CloudFormation", "DocumentDB", "ECS", "GitHub Actions"]
+      "techStack": [
+        "Python",
+        "AWS",
+        "Serverless (SAM)",
+        "CloudFormation",
+        "DocumentDB",
+        "ECS",
+        "GitHub Actions"
+      ]
     },
     {
-      "company": "Modus Create",
+      "name": "Modus Create",
       "position": "Senior Fullstack Engineer",
       "location": "Remote",
       "startDate": "2020-01",
@@ -152,10 +158,18 @@
         "Optimized legacy systems by identifying bottlenecks, refactoring code, and implementing performance enhancements, resulting in improved system efficiency and reduced maintenance costs.",
         "Designed and built APIs using REST standards with Python/Django."
       ],
-      "techStack": ["Python", "Django", "React", "FastAPI", "Celery", "Jenkins", "PostgreSQL"]
+      "techStack": [
+        "Python",
+        "Django",
+        "React",
+        "FastAPI",
+        "Celery",
+        "Jenkins",
+        "PostgreSQL"
+      ]
     },
     {
-      "company": "Modus Create",
+      "name": "Modus Create",
       "position": "Fullstack Engineer - PHP/Javascript",
       "location": "Remote",
       "startDate": "2017-07",
@@ -165,63 +179,98 @@
         "Successfully migrated legacy systems to modern architectures, improving system stability, scalability, and maintainability.",
         "Collaborated with cross-functional teams to develop and enhance backend systems for web applications using PHP / Laravel / Vue / React."
       ],
-      "techStack": ["PHP", "Laravel", "Javascript", "Angular", "VueJS", "Docker", "PostgreSQL", "Jenkins"]
+      "techStack": [
+        "PHP",
+        "Laravel",
+        "Javascript",
+        "Angular",
+        "VueJS",
+        "Docker",
+        "PostgreSQL",
+        "Jenkins"
+      ]
     },
     {
-      "company": "Stone Pagamentos",
+      "name": "Stone Pagamentos",
       "position": "Fullstack Engineer - Go/NodeJS/AngularJS",
       "location": "Rio de Janeiro",
+      "url": "http://www.stone.com.br/",
       "startDate": "2016-11",
       "endDate": "2017-07",
-      "website": "http://www.stone.com.br/",
       "highlights": [
         "Engineered high-performance RESTful APIs using Go that formed the backbone of the company's merchant services platform.",
         "Developed and implemented crucial features accessed by over 100,000 clients monthly, directly supporting Stone's market expansion.",
         "Created responsive frontend interfaces with AngularJS that significantly improved merchant user experience."
       ],
-      "techStack": ["Go", "NodeJS", "AngularJS", "PostgreSQL", "Docker", "Redis", "Microservices"]
+      "techStack": [
+        "Go",
+        "NodeJS",
+        "AngularJS",
+        "PostgreSQL",
+        "Docker",
+        "Redis",
+        "Microservices"
+      ]
     },
     {
-      "company": "Anchor Loans LP",
+      "name": "Anchor Loans LP",
       "position": "Backend Engineer - Python/MongoDB",
       "location": "Remote",
+      "url": "https://www.anchorloans.com/",
       "startDate": "2015-08",
       "endDate": "2016-11",
-      "website": "https://www.anchorloans.com/",
       "highlights": [
         "Created a crawler to get thousands of real state properties and use this information to help investors spot great opportunities.",
         "Developed core product using Python / Django / Pyramid and MongoDB.",
         "Made the sysadmin job easier with an integration with Amazon's EC2."
       ],
-      "techStack": ["Python", "Django", "Pyramid", "MongoDB", "AWS EC2"]
+      "techStack": [
+        "Python",
+        "Django",
+        "Pyramid",
+        "MongoDB",
+        "AWS EC2"
+      ]
     },
     {
-      "company": "Perspectiva.in",
+      "name": "Perspectiva.in",
       "position": "Full Stack Engineer - PHP / Javascript",
       "location": "Remote",
+      "url": "http://www.perspectiva.in/",
       "startDate": "2015-01",
       "endDate": "2015-11",
-      "website": "http://www.perspectiva.in/",
       "highlights": [
         "Integration with Instagram's API, allowing our customers to perform batch social operations.",
         "Creation of maps with geolocalized data leading our customers to better meet their needs.",
         "Development of a SaaS solution to automatize the social interaction between business and clients."
       ],
-      "techStack": ["PHP", "Yii2", "PostgreSQL", "MongoDB", "Javascript"]
+      "techStack": [
+        "PHP",
+        "Yii2",
+        "PostgreSQL",
+        "MongoDB",
+        "Javascript"
+      ]
     },
     {
-      "company": "Fidelize",
+      "name": "Fidelize",
       "position": "Full Stack Engineer - PHP / Javascript",
       "location": "Rio de Janeiro",
+      "url": "https://site.fidelize.com.br/",
       "startDate": "2013-06",
       "endDate": "2015-08",
-      "website": "https://site.fidelize.com.br/",
       "highlights": [
         "Developed and delivered a crawler that boosts the client's productivity in dealing with orders.",
         "Integration with SugarCRM, reducing response time of the client relationship team.",
         "Development of EDI software to deal with our clients business needs."
       ],
-      "techStack": ["PHP", "Yii", "PostgreSQL", "Javascript", "Ionic"]
+      "techStack": [
+        "PHP",
+        "Yii",
+        "PostgreSQL",
+        "Javascript",
+        "Ionic"
+      ]
     }
   ],
   "projects": [
@@ -229,26 +278,47 @@
       "name": "Health Focused AI-powered Mobile App",
       "description": "Helps users make sense of their health data",
       "startDate": "2025",
-      "endDate": "Current",
       "highlights": [
         "Developed an application that interprets and makes sense of personal health data",
         "Implemented natural language processing for health data analysis",
         "Built secure data storage and processing pipelines"
       ],
-      "techStack": ["NestJS", "Ionic", "ReactJS", "AWS", "Fargate", "CDK", "AWS Bedrock", "DynamoDB", "Tesseract", "Perplexity API"]
+      "techStack": [
+        "NestJS",
+        "Ionic",
+        "ReactJS",
+        "AWS",
+        "Fargate",
+        "CDK",
+        "AWS Bedrock",
+        "DynamoDB",
+        "Tesseract",
+        "Perplexity API"
+      ]
     },
     {
       "name": "Auction House Management System",
       "description": "AI-powered auction management platform",
       "startDate": "2025",
-      "endDate": "Current",
       "highlights": [
         "Engineered AI-assisted lot pricing with a comparable-sales search engine (Postgres FTS + pgvector embeddings + LLM query rewrite) and historical estimate calibration",
         "Built AI item categorization and attribute extraction on AWS Bedrock, fanned out through SQS with per-catalog cost benchmarking",
         "Shipped a computer-vision auto-crop pipeline for lot photography that became the product's most-used daily feature",
         "Built multi-platform auction data ingestion and invoice reconciliation with buyer-identity resolution across six marketplaces"
       ],
-      "techStack": ["Python", "FastAPI", "ReactJS", "AWS", "Github Actions", "CDK", "Fargate", "Aurora Serverless", "AWS Bedrock", "pgvector", "SQS"]
+      "techStack": [
+        "Python",
+        "FastAPI",
+        "ReactJS",
+        "AWS",
+        "Github Actions",
+        "CDK",
+        "Fargate",
+        "Aurora Serverless",
+        "AWS Bedrock",
+        "pgvector",
+        "SQS"
+      ]
     }
   ],
   "education": [
@@ -260,47 +330,152 @@
       "endDate": "2015"
     }
   ],
-  "additionalInfo": {
-    "yearsOfExperience": "12 Years",
-    "yearsOfExperiencePython": "8 Years",
-    "yearsOfExperienceAWS": "6 Years",
-    "yearsOfExperiencePHP": "5 Years",
-    "yearsOfExperienceNodeJS": "3 Years",
-    "yearsOfExperienceGo": "1 Year",
-    "yearsOfExperienceCSharp": "1 Year"
-  },
-  "availability": {
-    "status": "Open to opportunities",
-    "preferredLocation": ["Remote", "Toronto"]
-  },
+  "certificates": [
+    {
+      "name": "AWS Certified Developer – Associate",
+      "issuer": "Amazon Web Services",
+      "url": "https://www.credly.com/badges/f4541607-79f3-4796-b6f8-9c6313550759",
+      "badgeUrl": "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "url": "https://www.credly.com/badges/6e77483a-493d-405b-91ce-d594c632a22b",
+      "badgeUrl": "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+    },
+    {
+      "name": "TCF Canada: CEFR C1 listening, C2 reading, B2 speaking, B2 writing",
+      "date": "2024-08-08",
+      "issuer": "France Éducation international",
+      "badgeUrl": "https://www.alliance-francaise.ca/images/articles/exm/tests/ICONES%20FOR%20TESTS%20MAIN%20PAGE/VERSION_CARR%C3%89E/TCF_CANADA_CARRE%CC%81.jpg"
+    }
+  ],
   "publications": [
-  {
-    "name": "Improve Performance, Security, and SEO with JAMStack",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2023",
-    "url": "https://moduscreate.com/blog/performance-security-seo-jamstack/",
-    "type": "Blog Post"
-  },
-  {
-    "name": "The 15 Best New Features in Laravel 8",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2021",
-    "url": "https://moduscreate.com/blog/15-features-laravel-8/",
-    "type": "Blog Post"
-  },
-  {
-    "name": "Build Secure Web Applications with Laravel",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2021",
-    "url": "https://moduscreate.com/blog/build-secure-web-application-laravel/",
-    "type": "Blog Post"
-  },
-  {
-    "name": "How to Build a Serverless Application Using Laravel and Bref",
-    "publisher": "Modus Create Blog",
-    "releaseDate": "2021",
-    "url": "https://moduscreate.com/blog/serverless-application-laravel-bref/",
-    "type": "Blog Post"
+    {
+      "name": "Improve Performance, Security, and SEO with JAMStack",
+      "publisher": "Modus Create Blog",
+      "releaseDate": "2023",
+      "url": "https://moduscreate.com/blog/performance-security-seo-jamstack/",
+      "type": "Blog Post"
+    },
+    {
+      "name": "The 15 Best New Features in Laravel 8",
+      "publisher": "Modus Create Blog",
+      "releaseDate": "2021",
+      "url": "https://moduscreate.com/blog/15-features-laravel-8/",
+      "type": "Blog Post"
+    },
+    {
+      "name": "Build Secure Web Applications with Laravel",
+      "publisher": "Modus Create Blog",
+      "releaseDate": "2021",
+      "url": "https://moduscreate.com/blog/build-secure-web-application-laravel/",
+      "type": "Blog Post"
+    },
+    {
+      "name": "How to Build a Serverless Application Using Laravel and Bref",
+      "publisher": "Modus Create Blog",
+      "releaseDate": "2021",
+      "url": "https://moduscreate.com/blog/serverless-application-laravel-bref/",
+      "type": "Blog Post"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Python",
+        "C#",
+        "PHP",
+        "JavaScript",
+        "Go"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": [
+        "Django",
+        "Flask",
+        "FastAPI",
+        "ASP.NET Core",
+        "Laravel",
+        "React",
+        "Vue.js"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "keywords": [
+        "AWS Lambda",
+        "AWS SAM",
+        "AWS CloudFormation",
+        "Azure"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "PostgreSQL",
+        "MongoDB",
+        "DynamoDB"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Docker",
+        "GitHub Actions",
+        "Jenkins"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Professional"
+    }
+  ],
+  "meta": {
+    "canonical": "https://www.guidopercu.dev/resume.json",
+    "lastModified": "2026-10-14",
+    "coreCompetencies": [
+      {
+        "name": "Backend Development",
+        "description": "Proficient in Python, with a strong focus on developing efficient and scalable backend systems. Solid understanding of database management and query optimization."
+      },
+      {
+        "name": "Project Development",
+        "description": "Demonstrated ability to build projects from inception to completion, ensuring high-quality deliverables within specified timelines. Skilled in requirement analysis, system design, implementation, and testing."
+      },
+      {
+        "name": "Legacy System Enhancement",
+        "description": "Experienced in working with legacy systems, identifying pain points, and implementing improvements to enhance performance, maintainability, and scalability."
+      },
+      {
+        "name": "AWS Serverless",
+        "description": "Extensive knowledge of AWS services and expertise in developing serverless applications using Lambda, API Gateway, DynamoDB, and other related technologies. Strong understanding of cloud architecture and best practices."
+      },
+      {
+        "name": "Tech Leadership",
+        "description": "Successfully led a team as a tech lead, providing guidance, mentoring, and technical direction. Collaborated closely with cross-functional teams to achieve project objectives and ensure adherence to coding standards."
+      }
+    ],
+    "additionalInfo": {
+      "yearsOfExperience": "12 Years",
+      "yearsOfExperiencePython": "8 Years",
+      "yearsOfExperienceAWS": "6 Years",
+      "yearsOfExperiencePHP": "5 Years",
+      "yearsOfExperienceNodeJS": "3 Years",
+      "yearsOfExperienceGo": "1 Year",
+      "yearsOfExperienceCSharp": "1 Year"
+    }
   }
-]
 }
