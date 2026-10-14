@@ -32,6 +32,12 @@
         "Built AI-assisted developer tooling with LLM agents to automate operational work.",
         "Diagnosed and resolved a production database performance issue causing query time-outs, reducing P95 latency from 1800s to under 1ms."
       ],
+      "pdfHighlights": [
+        "Leading the architecture of the migration of all customer accounts across three regions (US, EU, APAC).",
+        "Designed and built payment flows for card authorization and deposits.",
+        "Improved privacy and compliance by automating the removal of personal data and PII.",
+        "Resolved a production database performance issue, reducing P95 latency from 1800s to under 1ms."
+      ],
       "techStack": [
         "Python",
         "Django",
@@ -59,6 +65,12 @@
         "Implemented a role-based audit logging system using custom Python decorators capturing before/after snapshots of all entity changes, providing a full compliance trail across all tenant operations.",
         "Ran a privacy engineering audit spanning infrastructure, database schema, application logs, and API payloads — delivering a 5-tier data classification map with legal basis and retention periods, a Records of Processing Activity for GDPR/LGPD, a DPIA gap assessment that flagged stored signature images as biometric data, and a right-to-erasure workflow design that anonymizes PII while preserving legally-required financial records."
       ],
+      "pdfHighlights": [
+        "Architected a multi-tenant SaaS auction platform with PostgreSQL schema-per-tenant isolation and automated tenant provisioning on AWS Lambda.",
+        "Shipped AI item categorization on AWS Bedrock and a comparable-sales search engine (PostgreSQL full-text search, pgvector, LLM query rewrite) that cut the zero-result rate to 2.7%.",
+        "Designed the full AWS infrastructure in CDK across 8 stacks (Aurora Serverless v2, ECS Fargate on Spot with ~70% cost reduction, Cognito).",
+        "Led a GDPR/LGPD privacy engineering audit: data classification, records of processing, DPIA gap assessment, and a right-to-erasure workflow."
+      ],
       "techStack": [
         "Python",
         "FastAPI",
@@ -80,6 +92,7 @@
     {
       "name": "Modus Create",
       "position": "Principal Software Engineer",
+      "description": "Software consultancy delivering projects for multiple clients",
       "location": "Remote",
       "startDate": "2023-11",
       "endDate": "2025-01",
@@ -92,6 +105,10 @@
         "Implemented comprehensive CI/CD automation with GitHub Actions",
         "Built scalable data pipelines utilizing AWS S3, API Gateway, and DynamoDB",
         "Focused on delivering cost-effective, high-performance cloud solutions that maximize business value"
+      ],
+      "pdfHighlights": [
+        "Architected GenAI document-processing solutions on AWS Bedrock, using Tesseract OCR to extract data from unstructured documents.",
+        "Built serverless data pipelines (Lambda, API Gateway, S3, DynamoDB) with infrastructure as code (CloudFormation, CDK) and GitHub Actions CI/CD."
       ],
       "techStack": [
         "Python",
@@ -108,12 +125,16 @@
     {
       "name": "Modus Create",
       "position": "Senior Backend Engineer",
+      "description": "Software consultancy delivering projects for multiple clients",
       "location": "Remote",
       "startDate": "2023-11",
       "endDate": "2024-06",
       "highlights": [
         "Architected backend solutions, ensuring code quality through rigorous reviews and best practices adherence.",
         "Optimized system performance for enhanced efficiency, leveraging the power of C# .NET for maintainable and scalable solutions."
+      ],
+      "pdfHighlights": [
+        "Architected and optimized C#/.NET backend services on Azure, leading code reviews and engineering best practices."
       ],
       "techStack": [
         "C#",
@@ -125,6 +146,7 @@
     {
       "name": "Modus Create",
       "position": "Tech Lead",
+      "description": "Software consultancy delivering projects for multiple clients",
       "location": "Remote",
       "startDate": "2022-01",
       "endDate": "2023-11",
@@ -132,6 +154,10 @@
         "Led a team of 5 developers, ensuring on-time project delivery by implementing Agile best practices and conducting technical reviews.",
         "Architected and deployed Serverless systems using AWS SAM, CloudFormation, and ECS, improving client time-to-market and reducing costs.",
         "Guided projects from inception to delivery, including requirement gathering, system design, and implementation."
+      ],
+      "pdfHighlights": [
+        "Led a team of 5 developers, delivering on time with Agile practices and technical reviews.",
+        "Architected and deployed serverless systems with AWS SAM, CloudFormation, and ECS, improving client time-to-market and reducing costs."
       ],
       "techStack": [
         "Python",
@@ -146,12 +172,16 @@
     {
       "name": "Modus Create",
       "position": "Senior Fullstack Engineer",
+      "description": "Software consultancy delivering projects for multiple clients",
       "location": "Remote",
       "startDate": "2020-01",
       "endDate": "2022-01",
       "highlights": [
         "Optimized legacy systems by identifying bottlenecks, refactoring code, and implementing performance enhancements, resulting in improved system efficiency and reduced maintenance costs.",
         "Designed and built APIs using REST standards with Python/Django."
+      ],
+      "pdfHighlights": [
+        "Optimized legacy systems and built REST APIs with Python/Django, improving performance and reducing maintenance costs."
       ],
       "techStack": [
         "Python",
@@ -166,6 +196,7 @@
     {
       "name": "Modus Create",
       "position": "Fullstack Engineer - PHP/Javascript",
+      "description": "Software consultancy delivering projects for multiple clients",
       "location": "Remote",
       "startDate": "2017-07",
       "endDate": "2019-12",
@@ -173,6 +204,9 @@
         "Created features that improved the relationship with 2 of the largest banks in the world.",
         "Successfully migrated legacy systems to modern architectures, improving system stability, scalability, and maintainability.",
         "Collaborated with cross-functional teams to develop and enhance backend systems for web applications using PHP / Laravel / Vue / React."
+      ],
+      "pdfHighlights": [
+        "Built features for two of the world's largest banks and migrated legacy systems to modern architectures with PHP/Laravel, Vue, and React."
       ],
       "techStack": [
         "PHP",
@@ -197,6 +231,9 @@
         "Developed and implemented crucial features accessed by over 100,000 clients monthly, directly supporting Stone's market expansion.",
         "Created responsive frontend interfaces with AngularJS that significantly improved merchant user experience."
       ],
+      "pdfHighlights": [
+        "Built Go REST APIs for the merchant services platform, shipping features used by over 100,000 clients monthly."
+      ],
       "techStack": [
         "Go",
         "NodeJS",
@@ -219,6 +256,9 @@
         "Developed core product using Python / Django / Pyramid and MongoDB.",
         "Made the sysadmin job easier with an integration with Amazon's EC2."
       ],
+      "pdfHighlights": [
+        "Built the core product and a real-estate crawler with Python (Django, Pyramid) and MongoDB to help investors spot opportunities."
+      ],
       "techStack": [
         "Python",
         "Django",
@@ -239,6 +279,9 @@
         "Creation of maps with geolocalized data leading our customers to better meet their needs.",
         "Development of a SaaS solution to automatize the social interaction between business and clients."
       ],
+      "pdfHighlights": [
+        "Built a SaaS that automates social interaction between businesses and clients, including Instagram API integration."
+      ],
       "techStack": [
         "PHP",
         "Yii2",
@@ -258,6 +301,9 @@
         "Developed and delivered a crawler that boosts the client's productivity in dealing with orders.",
         "Integration with SugarCRM, reducing response time of the client relationship team.",
         "Development of EDI software to deal with our clients business needs."
+      ],
+      "pdfHighlights": [
+        "Built order-processing crawlers, a SugarCRM integration, and EDI software with PHP/Yii."
       ],
       "techStack": [
         "PHP",

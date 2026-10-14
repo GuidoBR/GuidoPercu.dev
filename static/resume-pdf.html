@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guido Luz Percú - Resume</title>
+    <!--
+        Concise, print-first version of resume.html, used to generate the downloadable PDF.
+        It renders static/resume.json; rebuild the PDF with scripts/build-resume-pdf.sh.
+    -->
+    <style>
+        @page {
+            size: Letter;
+            margin: 0.5in 0.6in;
+        }
+
+        :root {
+            --text: #1f2933;
+            --heading: #111827;
+            --muted: #5b6472;
+            --accent: #1f5f8b;
+            --border: #d5dae0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: var(--text);
+            font-family: Helvetica, Arial, 'Liberation Sans', sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.35;
+        }
+
+        .page {
+            max-width: 7.3in;
+            margin: 0 auto;
+        }
+
+        @media screen {
+            body {
+                background-color: #eef0f3;
+            }
+
+            .page {
+                background-color: #ffffff;
+                margin: 24px auto;
+                padding: 0.5in 0.6in;
+                max-width: 8.5in;
+                box-shadow: 0 1px 3px rgba(17, 24, 39, 0.12);
+            }
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        header {
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 20pt;
+            color: var(--heading);
+            line-height: 1.1;
+        }
+
+        .label {
+            font-size: 11pt;
+            color: var(--muted);
+            font-weight: normal;
+            margin: 2px 0 6px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 14px;
+            font-size: 9pt;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 10.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+        }
+
+        .company {
+            margin-bottom: 8px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        .company-name {
+            font-size: 10.5pt;
+            color: var(--heading);
+        }
+
+        .dates {
+            color: var(--muted);
+            white-space: nowrap;
+            font-size: 9pt;
+        }
+
+        .company-note {
+            color: var(--muted);
+            font-style: italic;
+            font-size: 9pt;
+        }
+
+        .role {
+            margin-top: 4px;
+            break-inside: avoid;
+        }
+
+        .company.multi .role {
+            border-left: 2px solid var(--border);
+            padding-left: 8px;
+        }
+
+        .role-title {
+            font-weight: bold;
+            color: var(--heading);
+        }
+
+        .project {
+            margin: 3px 0 0 10px;
+        }
+
+        .project-title {
+            font-style: italic;
+            color: var(--heading);
+        }
+
+        ul {
+            padding-left: 14px;
+            margin-top: 2px;
+        }
+
+        li {
+            margin-bottom: 1px;
+        }
+
+        .stack {
+            color: var(--muted);
+            font-size: 8.5pt;
+            margin-top: 1px;
+        }
+
+        .compact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .compact-list strong {
+            color: var(--heading);
+        }
+    </style>
+</head>
+<body>
+    <main class="page" id="resume"></main>
+
+    <script>
+        const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        function formatDate(dateStr) {
+            if (!dateStr) return 'Present';
+            const [year, month] = dateStr.split('-');
+            return month ? `${MONTHS[parseInt(month) - 1]} ${year}` : year;
+        }
+
+        function period(item) {
+            return `${formatDate(item.startDate)} – ${formatDate(item.endDate)}`;
+        }
+
+        // Drop the stack suffix from titles like "Fullstack Engineer - PHP/Javascript"
+        function cleanTitle(position) {
+            return position.split(' - ')[0];
+        }
+
+        // Compare ISO-like dates; a missing end date means "current"
+        function endKey(item) {
+            return item.endDate || '9999';
+        }
+
+        // Group consecutive entries of the same company. Within a company, an entry
+        // whose dates fall inside another role is a client project of that role,
+        // not a separate position.
+        function groupWork(work) {
+            const groups = [];
+            for (const job of work) {
+                const last = groups[groups.length - 1];
+                if (last && last.name === job.name) {
+                    last.entries.push(job);
+                } else {
+                    groups.push({ name: job.name, entries: [job] });
+                }
+            }
+
+            return groups.map(group => {
+                const roles = [];
+                for (const job of group.entries) {
+                    const parent = roles.find(role =>
+                        role.job.startDate <= job.startDate && endKey(job) <= endKey(role.job));
+                    if (parent) {
+                        parent.projects.push(job);
+                    } else {
+                        roles.push({ job, projects: [] });
+                    }
+                }
+                const first = group.entries[group.entries.length - 1];
+                return {
+                    name: group.name,
+                    description: group.entries.find(job => job.description)?.description,
+                    location: group.entries[0].location,
+                    startDate: first.startDate,
+                    endDate: group.entries[0].endDate,
+                    roles,
+                };
+            });
+        }
+
+        function highlightList(job) {
+            const items = job.pdfHighlights || job.highlights.slice(0, 2);
+            return items.length ? `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>` : '';
+        }
+
+        function stackLine(job) {
+            return job.techStack && job.techStack.length
+                ? `<div class="stack">${job.techStack.join(' · ')}</div>`
+                : '';
+        }
+
+        function renderCompany(company) {
+            if (company.roles.length === 1 && company.roles[0].projects.length === 0) {
+                const job = company.roles[0].job;
+                return `
+                    <div class="company">
+                        <div class="row">
+                            <div><strong class="company-name">${company.name}</strong> · <span class="role-title">${cleanTitle(job.position)}</span></div>
+                            <span class="dates">${period(job)} · ${job.location}</span>
+                        </div>
+                        ${highlightList(job)}
+                        ${stackLine(job)}
+                    </div>
+                `;
+            }
+
+            // Several roles at one company: show the promotion path explicitly
+            const path = company.roles.map(role => cleanTitle(role.job.position)).reverse();
+            const notes = [company.description, `Promoted ${path.length - 1} times: ${path.join(' → ')}`]
+                .filter(Boolean).join('. ');
+
+            return `
+                <div class="company multi">
+                    <div class="row">
+                        <strong class="company-name">${company.name}</strong>
+                        <span class="dates">${period(company)} · ${company.location}</span>
+                    </div>
+                    <div class="company-note">${notes}</div>
+                    ${company.roles.map(({ job, projects }) => `
+                        <div class="role">
+                            <div class="row">
+                                <span class="role-title">${cleanTitle(job.position)}</span>
+                                <span class="dates">${period(job)}</span>
+                            </div>
+                            ${highlightList(job)}
+                            ${stackLine(job)}
+                            ${projects.map(project => `
+                                <div class="project">
+                                    <div class="row">
+                                        <span class="project-title">Client project · ${project.techStack.join(', ')}</span>
+                                        <span class="dates">${period(project)}</span>
+                                    </div>
+                                    ${highlightList(project)}
+                                </div>
+                            `).join('')}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function render(data) {
+            const basics = data.basics;
+            const profiles = basics.profiles.map(profile =>
+                `<a href="${profile.url}">${profile.url.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, '')}</a>`);
+            const languages = (data.languages || []).map(lang =>
+                lang.fluency ? `${lang.language} (${lang.fluency})` : lang.language).join(', ');
+
+            document.getElementById('resume').innerHTML = `
+                <header>
+                    <h1 class="name">${basics.name}</h1>
+                    <div class="label">${basics.label}</div>
+                    <div class="contact">
+                        <a href="mailto:${basics.email}">${basics.email}</a>
+                        <a href="${basics.url}">${basics.url.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, '')}</a>
+                        ${profiles.join('')}
+                        ${languages ? `<span>${languages}</span>` : ''}
+                    </div>
+                </header>
+
+                <section>
+                    <h2>Summary</h2>
+                    <p>${basics.summary}</p>
+                </section>
+
+                <section>
+                    <h2>Experience</h2>
+                    ${groupWork(data.work).map(renderCompany).join('')}
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <ul class="compact-list">
+                        ${data.skills.map(skill => `<li><strong>${skill.name}:</strong> ${skill.keywords.join(', ')}</li>`).join('')}
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Education &amp; Certifications</h2>
+                    <ul class="compact-list">
+                        ${data.education.map(edu => `
+                            <li><strong>${edu.studyType} in ${edu.area}</strong>, ${edu.institution} (${edu.startDate} – ${edu.endDate})</li>
+                        `).join('')}
+                        <li>${data.certificates.map(cert => cert.name).join(' · ')}</li>
+                    </ul>
+                </section>
+            `;
+            document.body.dataset.ready = 'true';
+        }
+
+        fetch('resume.json', { cache: 'no-cache' })
+            .then(response => {
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return response.json();
+            })
+            .then(render)
+            .catch(error => {
+                document.getElementById('resume').textContent = `Could not load resume.json: ${error.message}`;
+            });
+    </script>
+</body>
+</html>
