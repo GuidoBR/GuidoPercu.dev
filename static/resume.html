@@ -16,29 +16,41 @@
     </script>
     <style>
         :root {
-            --primary: #0077B5;
-            --secondary: #0e76a8;
-            --dark: #283747;
-            --light: #f5f5f5;
-            --gray: #6c757d;
-            --success: #28a745;
-            --border: #dee2e6;
-            --background: #f8f9fa;
+            --primary: #1f5f8b;       /* accent: links, company, highlights */
+            --secondary: #174a6d;     /* accent hover */
+            --on-primary: #ffffff;    /* text on accent backgrounds */
+            --primary-soft: #e8f0f6;  /* tinted accent background */
+            --dark: #111827;          /* headings */
+            --light: #f1f3f5;         /* tags and tiles */
+            --gray: #5b6472;          /* secondary text */
+            --success: #2f7d4f;
+            --border: #e3e6ea;
+            --background: #f6f7f9;
             --card-bg: #ffffff;
-            --text: #283747;
+            --text: #1f2933;
+            --shadow: 0 1px 3px rgba(17, 24, 39, 0.06);
+            --notice-bg: #fff8e1;
+            --notice-text: #6b4e00;
+            --notice-border: #e9c46a;
         }
         
         [data-theme="dark"] {
-            --primary: #4dabf5;
-            --secondary: #5bbcff;
-            --dark: #e1e1e1;
-            --light: #2c3e50;
-            --gray: #a0aec0;
-            --success: #48bb78;
-            --border: #4a5568;
-            --background: #1a202c;
-            --card-bg: #2d3748;
-            --text: #e2e8f0;
+            --primary: #7cb7e0;
+            --secondary: #a3cdea;
+            --on-primary: #0f1419;
+            --primary-soft: #1c2b38;
+            --dark: #f3f5f7;
+            --light: #222a33;
+            --gray: #9aa4b1;
+            --success: #6cc08b;
+            --border: #2a323c;
+            --background: #0f1419;
+            --card-bg: #171d24;
+            --text: #d6dbe1;
+            --shadow: none;
+            --notice-bg: #2b2410;
+            --notice-text: #e8cf8a;
+            --notice-border: #8a6d1f;
         }
         
         * {
@@ -69,7 +81,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
             transition: all 0.3s ease;
         }
         
@@ -90,7 +102,8 @@
             padding: 10px 15px;
             background-color: var(--card-bg);
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
             flex-wrap: wrap;
             gap: 10px;
         }
@@ -129,7 +142,7 @@
         
         .download-btn {
             background-color: var(--primary);
-            color: white;
+            color: var(--on-primary);
             border: none;
             padding: 8px 15px;
             border-radius: 5px;
@@ -182,14 +195,15 @@
             background-color: var(--card-bg);
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
             margin-bottom: 30px;
             transition: background-color 0.3s ease;
         }
         
         .resume-badge {
             background-color: var(--primary);
-            color: white;
+            color: var(--on-primary);
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -207,7 +221,7 @@
         .name {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            color: var(--primary);
+            color: var(--dark);
         }
         
         .title {
@@ -234,6 +248,15 @@
             color: var(--primary);
         }
         
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
         .social-links {
             display: flex;
             gap: 15px;
@@ -254,16 +277,17 @@
             background-color: var(--card-bg);
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
             margin-bottom: 30px;
             transition: background-color 0.3s ease;
         }
         
         .section-title {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             margin-bottom: 20px;
-            color: var(--primary);
-            border-bottom: 2px solid var(--border);
+            color: var(--dark);
+            border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
         }
         
@@ -296,7 +320,8 @@
         
         .skill-tag {
             background-color: var(--light);
-            color: var(--dark);
+            color: var(--text);
+            border: 1px solid var(--border);
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -304,7 +329,7 @@
         
         .skill-highlight {
             background-color: var(--primary);
-            color: white;
+            color: var(--on-primary);
             font-weight: bold;
         }
         
@@ -376,8 +401,9 @@
         }
         
         .tech-item {
-            background-color: #e9ecef;
-            color: var(--dark);
+            background-color: var(--light);
+            color: var(--text);
+            border: 1px solid var(--border);
             padding: 3px 8px;
             border-radius: 4px;
             font-size: 0.85rem;
@@ -385,7 +411,7 @@
         
         .tech-highlight {
             background-color: var(--primary);
-            color: white;
+            color: var(--on-primary);
             font-weight: bold;
         }
         
@@ -480,7 +506,7 @@
         
         .publication-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
         }
         
         .publication-name {
@@ -531,7 +557,7 @@
         }
         
         .availability {
-            background-color: #e8f4fc;
+            background-color: var(--primary-soft);
             color: var(--primary);
             padding: 15px;
             border-radius: 8px;
@@ -555,17 +581,17 @@
         }
         
         .cors-notice {
-            background-color: #fff3cd;
-            color: #856404;
+            background-color: var(--notice-bg);
+            color: var(--notice-text);
             padding: 10px 15px;
             border-radius: 5px;
             margin-bottom: 20px;
             font-size: 0.9rem;
-            border-left: 4px solid #ffeeba;
+            border-left: 4px solid var(--notice-border);
         }
         
         .cors-notice a {
-            color: #0056b3;
+            color: inherit;
             text-decoration: underline;
         }
         
@@ -1763,9 +1789,11 @@
                 
                 // Footer
                 const footer = document.createElement('footer');
-                footer.innerHTML = `
-                    <p>Last updated: April 2025</p>
-                `;
+                if (data.meta && data.meta.lastModified) {
+                    footer.innerHTML = `
+                        <p>Last updated: ${formatMonthYear(data.meta.lastModified)}</p>
+                    `;
+                }
                 container.appendChild(footer);
             }
             
@@ -1786,11 +1814,18 @@
             function formatInfoKey(key) {
                 if (key === 'yearsOfExperience') return 'Total Experience';
                 
-                // Convert camelCase to words and capitalize
-                return key
-                    .replace('yearsOfExperience', '')
-                    .replace(/([A-Z])/g, ' $1')
-                    .trim() || 'Total Experience';
+                const names = { NodeJS: 'Node.js', CSharp: 'C#' };
+                const name = key.replace('yearsOfExperience', '');
+                
+                // Split camelCase words but keep acronyms like AWS and PHP intact
+                return names[name] || name.replace(/([a-z])([A-Z])/g, '$1 $2') || 'Total Experience';
+            }
+            
+            function formatMonthYear(dateStr) {
+                const [year, month] = dateStr.split('-');
+                return month
+                    ? new Date(year, month - 1).toLocaleString('en-US', { month: 'long', year: 'numeric' })
+                    : year;
             }
             
             // Theme toggle functionality
