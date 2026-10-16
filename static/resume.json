@@ -5,7 +5,7 @@
     "label": "Senior Software Engineer",
     "email": "guidopercu@gmail.com",
     "url": "https://www.guidopercu.dev/",
-    "summary": "Senior Software Engineer with 13 years of experience building backend systems and cloud infrastructure with Python and AWS. I've led engineering teams and owned architecture end to end, designing multi-tenant SaaS platforms, serverless architectures, payment flows, and privacy and compliance systems (GDPR/LGPD). I'm currently leading the migration of a core guest-facing product used by more than 10,000 hotels to a modular architecture across the US, EU, and APAC regions. Recent work includes LLM-powered features on AWS Bedrock and AI-assisted developer tooling.",
+    "summary": "Senior Software Engineer with 13 years of experience building backend systems and cloud infrastructure with Python and AWS. Led engineering teams and owned architecture end to end, designing multi-tenant SaaS platforms, serverless architectures, payment flows, and privacy and compliance systems (GDPR/LGPD). Currently leading the migration of a core guest-facing product used by more than 10,000 hotels to a modular architecture across the US, EU, and APAC regions. Recent work includes LLM-powered features on AWS Bedrock and AI-assisted developer tooling.",
     "profiles": [
       {
         "network": "GitHub",
@@ -26,17 +26,18 @@
       "location": "Remote",
       "startDate": "2025-09",
       "highlights": [
-        "Leading the architecture of the migration of all customer accounts across three regions (US, EU, APAC).",
+        "Leading the architecture for migrating a core guest-facing product used by more than 10,000 hotels to a modular architecture, moving all customer accounts across three regions (US, EU, APAC).",
         "Designed and built payment flows for card authorization and deposits.",
         "Improved privacy and compliance by automating the removal of personal data and PII.",
         "Built AI-assisted developer tooling with LLM agents to automate operational work.",
-        "Diagnosed and resolved a production database performance issue causing query time-outs, reducing P95 latency from 1800s to under 1ms."
+        "Diagnosed and resolved a production database performance issue that was causing query time-outs."
       ],
       "pdfHighlights": [
-        "Leading the architecture of the migration of all customer accounts across three regions (US, EU, APAC).",
+        "Leading the architecture for migrating a core guest-facing product used by more than 10,000 hotels to a modular architecture, moving all customer accounts across three regions (US, EU, APAC).",
         "Designed and built payment flows for card authorization and deposits.",
         "Improved privacy and compliance by automating the removal of personal data and PII.",
-        "Resolved a production database performance issue, reducing P95 latency from 1800s to under 1ms."
+        "Built AI-assisted developer tooling with LLM agents to automate operational work.",
+        "Diagnosed and resolved a production database performance issue that was causing query time-outs."
       ],
       "techStack": [
         "Python",
@@ -74,7 +75,7 @@
       "techStack": [
         "Python",
         "FastAPI",
-        "ReactJS",
+        "React",
         "TypeScript",
         "AWS CDK",
         "ECS Fargate",
@@ -114,7 +115,7 @@
         "Python",
         "AWS (Serverless, Lambda, CloudFormation, API Gateway, DynamoDB, S3, SNS, SQS)",
         "React",
-        "Typescript",
+        "TypeScript",
         "Docker",
         "GitHub Actions",
         "PostgreSQL",
@@ -156,8 +157,8 @@
         "Guided projects from inception to delivery, including requirement gathering, system design, and implementation."
       ],
       "pdfHighlights": [
-        "Led a team of 5 developers, delivering on time with Agile practices and technical reviews.",
-        "Architected and deployed serverless systems with AWS SAM, CloudFormation, and ECS, improving client time-to-market and reducing costs."
+        "Led a team of 5 developers, taking client projects from requirements and system design through delivery.",
+        "Architected and deployed serverless systems on AWS with SAM, CloudFormation, and ECS."
       ],
       "techStack": [
         "Python",
@@ -181,7 +182,8 @@
         "Designed and built APIs using REST standards with Python/Django."
       ],
       "pdfHighlights": [
-        "Optimized legacy systems and built REST APIs with Python/Django, improving performance and reducing maintenance costs."
+        "Profiled and refactored legacy systems to remove performance bottlenecks and cut maintenance costs.",
+        "Designed and built REST APIs with Python/Django."
       ],
       "techStack": [
         "Python",
@@ -195,7 +197,7 @@
     },
     {
       "name": "Modus Create",
-      "position": "Fullstack Engineer - PHP/Javascript",
+      "position": "Fullstack Engineer - PHP/JavaScript",
       "description": "Software consultancy delivering projects for multiple clients",
       "location": "Remote",
       "startDate": "2017-07",
@@ -211,9 +213,9 @@
       "techStack": [
         "PHP",
         "Laravel",
-        "Javascript",
+        "JavaScript",
         "Angular",
-        "VueJS",
+        "Vue.js",
         "Docker",
         "PostgreSQL",
         "Jenkins"
@@ -221,7 +223,7 @@
     },
     {
       "name": "Stone Pagamentos",
-      "position": "Fullstack Engineer - Go/NodeJS/AngularJS",
+      "position": "Fullstack Engineer - Go/Node.js/AngularJS",
       "location": "Rio de Janeiro",
       "url": "http://www.stone.com.br/",
       "startDate": "2016-11",
@@ -236,7 +238,7 @@
       ],
       "techStack": [
         "Go",
-        "NodeJS",
+        "Node.js",
         "AngularJS",
         "PostgreSQL",
         "Docker",
@@ -269,7 +271,7 @@
     },
     {
       "name": "Perspectiva.in",
-      "position": "Full Stack Engineer - PHP / Javascript",
+      "position": "Fullstack Engineer (Contract) - PHP/JavaScript",
       "location": "Remote",
       "url": "http://www.perspectiva.in/",
       "startDate": "2015-01",
@@ -287,12 +289,12 @@
         "Yii2",
         "PostgreSQL",
         "MongoDB",
-        "Javascript"
+        "JavaScript"
       ]
     },
     {
       "name": "Fidelize",
-      "position": "Full Stack Engineer - PHP / Javascript",
+      "position": "Fullstack Engineer - PHP/JavaScript",
       "location": "Rio de Janeiro",
       "url": "https://site.fidelize.com.br/",
       "startDate": "2013-06",
@@ -309,7 +311,7 @@
         "PHP",
         "Yii",
         "PostgreSQL",
-        "Javascript",
+        "JavaScript",
         "Ionic"
       ]
     }
@@ -327,7 +329,7 @@
       "techStack": [
         "NestJS",
         "Ionic",
-        "ReactJS",
+        "React",
         "AWS",
         "Fargate",
         "CDK",
@@ -350,9 +352,9 @@
       "techStack": [
         "Python",
         "FastAPI",
-        "ReactJS",
+        "React",
         "AWS",
-        "Github Actions",
+        "GitHub Actions",
         "CDK",
         "Fargate",
         "Aurora Serverless",
@@ -426,9 +428,11 @@
       "name": "Languages",
       "keywords": [
         "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
         "C#",
         "PHP",
-        "JavaScript",
         "Go"
       ]
     },
@@ -436,21 +440,28 @@
       "name": "Frameworks",
       "keywords": [
         "Django",
-        "Flask",
         "FastAPI",
-        "ASP.NET Core",
-        "Laravel",
+        "Flask",
         "React",
-        "Vue.js"
+        "Vue.js",
+        "ASP.NET Core",
+        "Laravel"
       ]
     },
     {
       "name": "Cloud",
       "keywords": [
-        "AWS Lambda",
-        "AWS SAM",
-        "AWS CloudFormation",
+        "AWS (CDK, CloudFormation, SAM, Lambda, ECS Fargate, Aurora Serverless, S3, SQS, API Gateway, Cognito)",
         "Azure"
+      ]
+    },
+    {
+      "name": "AI",
+      "keywords": [
+        "Amazon Bedrock",
+        "LLM agents",
+        "semantic search (pgvector)",
+        "Tesseract OCR"
       ]
     },
     {
@@ -458,7 +469,8 @@
       "keywords": [
         "PostgreSQL",
         "MongoDB",
-        "DynamoDB"
+        "DynamoDB",
+        "Redis"
       ]
     },
     {
@@ -486,7 +498,7 @@
   ],
   "meta": {
     "canonical": "https://www.guidopercu.dev/resume.json",
-    "lastModified": "2026-10-14",
+    "lastModified": "2026-10-16",
     "coreCompetencies": [
       {
         "name": "Backend Development",
