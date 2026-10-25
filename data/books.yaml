@@ -2,7 +2,7 @@
 #   title  (required)
 #   author (optional)
 #   cover  (required) - path under /images/
-#   class  (optional) - shelf class mark shown on the homepage spine (featured books)
+#   class  (optional) - shelf class mark shown on the homepage spine and library card
 #   lang   (required) - language read: en | pt | fr  (drives flag + grouping)
 #   link   (optional) - review/notes page
 #   featured (optional) - true => also shown on the homepage shelf
@@ -45,93 +45,109 @@ books:
     author: "Edwin Lefèvre"
     cover: "/images/ReminiscencesOfAStockOperator.jpg"
     lang: "en"
+    class: "332.6"
 
   - title: "A Mind for Numbers"
     author: "Barbara Oakley"
     cover: "/images/a-mind-for-numbers.jpg"
     lang: "en"
+    class: "153.1"
 
   - title: "How to Make a Vaccine"
     author: "John Rhodes"
     cover: "/images/book-how-to-make-a-vaccine.jpg"
     lang: "en"
+    class: "615.3"
     link: "/library/anotacoes-sobre-historia-de-uma-vacina/"
 
   - title: "Superforecasting: The Art and Science of Prediction"
     author: "Philip Tetlock & Dan Gardner"
     cover: "/images/superforecastersting.jpg"
     lang: "en"
+    class: "303.49"
 
   - title: "The Far Side of the World"
     author: "Patrick O'Brian"
     cover: "/images/book-the-far-side-of-the-world.jpg"
     lang: "en"
+    class: "823"
     link: "/library/2015/"
 
   - title: "Business Model Generation"
     author: "Osterwalder & Pigneur"
     cover: "/images/book-businness-model-generation.jpg"
     lang: "en"
+    class: "658.4"
     link: "/library/2015/"
 
   - title: "The Innovators"
     author: "Walter Isaacson"
     cover: "/images/book-the-inovators.jpg"
     lang: "en"
+    class: "004"
     link: "/library/2015/"
 
   - title: "How to Create a Mind"
     author: "Ray Kurzweil"
     cover: "/images/book-how-to-create-a-mind.jpg"
     lang: "en"
+    class: "006.3"
     link: "/library/2015/"
 
   - title: "Maus: A Survivor's Tale"
     author: "Art Spiegelman"
     cover: "/images/book-maus.jpg"
     lang: "en"
+    class: "741.5"
     link: "/library/2015/"
 
   - title: "The Art of Asking"
     author: "Amanda Palmer"
     cover: "/images/book-the-art-of-asking.jpg"
     lang: "en"
+    class: "780"
     link: "/library/2015/"
 
   - title: "The Intelligent Investor"
     author: "Benjamin Graham"
     cover: "/images/book-the-intelligent-investor.jpg"
     lang: "en"
+    class: "332.6"
     link: "/library/2015/"
 
   - title: "Brazillionaires"
     author: "Alex Cuadros"
     cover: "/images/book-brazillionaires.jpg"
     lang: "en"
+    class: "338.098"
     link: "/library/2015/"
 
   - title: "Economic Policy: Thoughts for Today and Tomorrow"
     author: "Ludwig von Mises"
     cover: "/images/book-economic-policy.jpg"
     lang: "en"
+    class: "330.15"
     link: "/library/2015/"
 
   - title: "V for Vendetta"
     author: "Alan Moore"
     cover: "/images/book-v.jpg"
     lang: "en"
+    class: "741.5"
     link: "/library/2015/"
 
   - title: "The Art of Thinking Clearly"
     author: "Rolf Dobelli"
     cover: "/images/book-the-art-of-thinking-clearly.jpg"
     lang: "en"
+    class: "153.4"
     link: "/library/2015/"
 
   - title: "The Character of Physical Law"
     author: "Richard Feynman"
     cover: "/images/book-the-character-of-physical-law.jpg"
     lang: "en"
+    class: "530"
     link: "/library/2015/"
 
   # ---- Português ----
@@ -171,51 +187,60 @@ books:
     author: "Jean Tosetto"
     cover: "/images/livro-leia-para-investir-e-prosperar.jpg"
     lang: "pt"
+    class: "332.6"
     link: "/library/livro-leia-para-investir-e-prosperar/"
 
   - title: "A História de uma Vacina"
     author: "Sue Ann Costa Clemens"
     cover: "/images/a-historia-de-uma-vacina.jpg"
     lang: "pt"
+    class: "615.3"
     link: "/library/anotacoes-sobre-historia-de-uma-vacina/"
 
   - title: "O Pior Emprego do Mundo"
     author: "Thomas Traumman"
     cover: "/images/o-pior-emprego-do-mundo.jpg"
     lang: "pt"
+    class: "320.981"
     link: "/library/o-pior-emprego-do-mundo/"
 
   - title: "Lições Amargas"
     author: "Gustavo Franco"
     cover: "/images/livros-gustavo-franco.jpg"
     lang: "pt"
+    class: "330.981"
     link: "/library/licoes-amargas/"
 
   - title: "Notícias: Manual do Usuário"
     author: "Alain de Botton"
     cover: "/images/livro-noticias.jpg"
     lang: "pt"
+    class: "302.23"
     link: "/library/livro-noticias-manual-do-usuario/"
 
   - title: "O Projeto Desfazer"
     author: "Michael Lewis"
     cover: "/images/o-projeto-desfazer.jpg"
     lang: "pt"
+    class: "153.8"
     link: "/library/o-projeto-desfazer/"
 
   - title: "Uma Breve História da Riqueza"
     cover: "/images/uma-breve-historia-riqueza.jpeg"
     lang: "pt"
+    class: "330.9"
 
   - title: "Coleção Júlio Verne"
     author: "Júlio Verne"
     cover: "/images/book-julio-verne.jpg"
     lang: "pt"
+    class: "843"
     link: "/library/colecao-julio-verne/"
 
   - title: "A Amizade em Senhor dos Anéis"
     cover: "/images/book-amizade-senhor-dos-aneis.jpg"
     lang: "pt"
+    class: "823"
     link: "/library/a-amizade-em-o-senhor-dos-aneis/"
 
   # ---- Français ----

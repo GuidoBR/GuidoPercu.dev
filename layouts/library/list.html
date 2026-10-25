@@ -12,18 +12,7 @@
 
 {{ partial "book-grid-style.html" . }}
 
-{{ $all := hugo.Data.books.books }}
-{{ $langs := slice (dict "code" "en" "name" "🇺🇸 English") (dict "code" "pt" "name" "🇧🇷 Português") (dict "code" "fr" "name" "🇫🇷 Français") }}
-{{ range $langs }}
-  {{ $name := .name }}
-  {{ $group := where $all "lang" .code }}
-  {{ with $group }}
-  <section class="book-group">
-    <h2 class="book-group-title">{{ $name }} <span style="opacity:.5;font-size:1rem;font-weight:400">({{ len . }})</span></h2>
-    {{ partial "book-grid.html" . }}
-  </section>
-  {{ end }}
-{{ end }}
+{{ partial "book-catalogue.html" hugo.Data.books.books }}
 
 {{/* Yearly reading roundups */}}
 {{ $years := slice }}
