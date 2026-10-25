@@ -5,7 +5,7 @@ reviews:
     author: "Scott Galloway"
     publisher: "Intrínseca"
     year: "2024"
-    cover: "https://intrinseca.com.br/wp-content/uploads/2024/06/CAPA-SITE-3.png"
+    cover: "/images/a-algebra-da-riqueza.jpg"
     link: "https://intrinseca.com.br/livro/a-algebra-da-riqueza/"
 
   - title: "A Lógica do Cisne Negro"
