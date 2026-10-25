@@ -1,0 +1,85 @@
+{{/* Library "Card Catalogue": every book as an index card, with brass drawer
+     labels to filter by language. Context (.) is a slice of book maps from
+     data/books.yaml. Without JavaScript all cards show and the labels stay hidden. */}}
+{{- $flags := dict "en" "🇺🇸" "pt" "🇧🇷" "fr" "🇫🇷" }}
+{{- $drawers := slice (dict "code" "all" "name" "All") (dict "code" "en" "name" "English") (dict "code" "pt" "name" "Português") (dict "code" "fr" "name" "Français") }}
+<style>
+    .catalogue { margin: 2rem 0 3rem; }
+    .catalogue-drawers { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .catalogue-drawers[hidden] { display: none; }
+    .catalogue-drawers-label { font: 400 0.7rem/1 ui-monospace, Menlo, monospace; letter-spacing: 0.09em; text-transform: uppercase; opacity: 0.6; margin-right: 0.3rem; }
+    .catalogue-drawer {
+        font: 600 1rem/1.4 Georgia, "Iowan Old Style", serif; letter-spacing: 0.04em; color: #2b1d08; cursor: pointer;
+        padding: 0.1rem 1.1rem; opacity: 0.6;
+        background: linear-gradient(135deg, #e3c882, #b88f3f 60%, #d9b867);
+        border: 1px solid #7a5a1c; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+    }
+    .catalogue-drawer[aria-pressed="true"] { opacity: 1; outline: 2px solid currentColor; outline-offset: 2px; }
+    .catalogue-drawer:focus-visible { outline: 2px solid #e3c882; outline-offset: 2px; }
+
+    .catalogue-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 1rem; }
+    .catalogue-card[hidden] { display: none; }
+    .catalogue-card { margin: 0; }
+    .catalogue-card-link {
+        display: flex; flex-direction: column; height: 100%; min-height: 9.5rem; position: relative;
+        padding: 0.55rem 0.9rem 1.5rem; color: #2a1f18; text-decoration: none; background-color: #f6efdc;
+        background-image: repeating-linear-gradient(180deg, transparent 0 1.45rem, #bcd0d6 1.45rem calc(1.45rem + 1px));
+        background-position: 0 2.2rem;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.25);
+        transition: translate 0.15s;
+    }
+    a.catalogue-card-link:hover { translate: 0 -3px; }
+    .catalogue-card-link::before { content: ""; position: absolute; left: 0; right: 0; top: 1.7rem; border-top: 1.5px solid #c8574f; }
+    .catalogue-card-link::after { content: ""; position: absolute; left: 50%; bottom: 0.4rem; width: 0.6rem; height: 0.6rem; margin-left: -0.3rem; border-radius: 50%; background: rgba(0, 0, 0, 0.35); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .catalogue-card-head { display: flex; justify-content: space-between; gap: 0.5rem; height: 1.1rem; margin-bottom: 0.7rem; font: 400 0.68rem/1.1rem ui-monospace, Menlo, monospace; letter-spacing: 0.06em; text-transform: uppercase; color: #9b2d28; }
+    .catalogue-card-body { display: flex; gap: 0.8rem; align-items: flex-start; }
+    .catalogue-card-cover { width: 3.4rem; flex: none; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 2px; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35); }
+    .catalogue-card-text { min-width: 0; line-height: 1.3; }
+    .catalogue-card-title { display: block; font: italic 600 1rem/1.25 Georgia, "Iowan Old Style", serif; }
+    .catalogue-card-author { display: block; margin-top: 0.2rem; font-size: 0.82rem; color: #5b4a3a; }
+    .catalogue-card-stamp { display: inline-block; margin-top: 0.4rem; padding: 0 0.4rem; transform: rotate(-3deg); font: 400 0.65rem/1.2 ui-monospace, Menlo, monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #9b2d28; border: 1.5px solid #9b2d28; }
+    @media (prefers-reduced-motion: reduce) { .catalogue-card-link { transition: none; } }
+</style>
+<div class="catalogue">
+    <div class="catalogue-drawers" role="group" aria-label="Filter books by language" hidden>
+        <span class="catalogue-drawers-label">Drawer</span>
+        {{- range $drawers }}
+        <button type="button" class="catalogue-drawer" data-lang="{{ .code }}" aria-pressed="{{ if eq .code "all" }}true{{ else }}false{{ end }}">{{ .name }}</button>
+        {{- end }}
+    </div>
+    <ul class="catalogue-cards">
+        {{- range . }}
+        <li class="catalogue-card" data-lang="{{ .lang }}">
+            {{- if .link }}<a href="{{ .link }}" class="catalogue-card-link">{{ else }}<div class="catalogue-card-link">{{ end }}
+                <span class="catalogue-card-head">
+                    <span>{{ with .class }}{{ . }}{{ else }}Unclassed{{ end }}</span>
+                    <span>{{ with index $flags .lang }}{{ . }} {{ end }}{{ .lang }}</span>
+                </span>
+                <span class="catalogue-card-body">
+                    <img src="{{ .cover }}" alt="Cover of {{ .title }}" loading="lazy" class="catalogue-card-cover">
+                    <span class="catalogue-card-text">
+                        <span class="catalogue-card-title">{{ .title }}</span>
+                        {{- with .author }}<span class="catalogue-card-author">{{ . }}</span>{{ end }}
+                        {{- with .status }}{{ if eq . "reading" }}<span class="catalogue-card-stamp">Reading</span>{{ end }}{{ end }}
+                    </span>
+                </span>
+            {{- if .link }}</a>{{ else }}</div>{{ end }}
+        </li>
+        {{- end }}
+    </ul>
+</div>
+<script>
+    (function () {
+        var bar = document.querySelector(".catalogue-drawers");
+        var buttons = bar.querySelectorAll(".catalogue-drawer");
+        var cards = document.querySelectorAll(".catalogue-card");
+        bar.hidden = false;
+        buttons.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                var lang = btn.dataset.lang;
+                buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
+                cards.forEach(function (c) { c.hidden = lang !== "all" && c.dataset.lang !== lang; });
+            });
+        });
+    })();
+</script>
