@@ -1,10 +1,23 @@
 ---
 title: "Technical Book Reviews"
-description: "Revisão técnica de publicações técnicas e científicas — integridade conceitual e clareza expositiva."
+description: "Freelance technical review of finance, economics and technology books for Brazilian publishers."
 showDate: false
 showReadingTime: false
 showTableOfContents: false
 ---
+
+I'm a freelance technical reviewer for finance, economics and technology books,
+working with Brazilian publishers (Objetiva, Intrínseca, Portfolio-Penguin). My work
+goes beyond checking terminology. I check that theories are consistent, that
+formulas and calculations are right, and that complex methods stay rigorous without
+losing accessibility. In translations, I make sure technical nuance survives
+between languages. If you're a publisher, [work with me](/work-with-me/).
+
+## Books reviewed
+
+{{< book-reviews >}}
+
+## Em português
 
 Como revisor técnico, atuo na interseção entre conhecimento especializado e
 comunicação precisa, assegurando que publicações técnicas e científicas mantenham
@@ -17,7 +30,3 @@ especializados. Com experiência em economia, finanças e tecnologia, contribuo 
 que cada publicação não apenas transmita informações corretas, mas também
 estabeleça um diálogo efetivo com seu público-alvo, mantendo o equilíbrio perfeito
 entre profundidade técnica e clareza narrativa.
-
-## Livros revisados
-
-{{< book-reviews >}}
