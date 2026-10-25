@@ -1,5 +1,6 @@
 ---
 title: "Um guia para quem quer trabalhar com programação"
+postLanguage: "pt"
 date: 2022-01-14T09:43:13-03:00
 thumbnail: "/images/desenvolvedora-de-software.jpg"
 description: "Tenho visto muitos amigos interessados em uma carreira na área de tecnologia como desenvolvedores de software. Preparei esse guia para ajudá-los a dar os primeiros passos, ter uma noção das dificuldades e das possibilidades que essa área oferece, e quem sabe motivá-los a encarar esse desafio."

@@ -1,5 +1,6 @@
 ---
 title: "Qu'est que j'ai appris sur l'apprentissage des langues"
+postLanguage: "fr"
 date: 2023-11-30T14:58:30-03:00
 draft: false
 categories: ["Languages"]

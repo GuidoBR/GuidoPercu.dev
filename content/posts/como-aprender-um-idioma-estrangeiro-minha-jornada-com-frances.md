@@ -1,5 +1,6 @@
 ---
 title: "Como Aprender Um Idioma Estrangeiro Minha Jornada Com Frances"
+postLanguage: "pt"
 date: 2025-01-06T20:25:45-05:00
 draft: false
 categories: ["Languages"]

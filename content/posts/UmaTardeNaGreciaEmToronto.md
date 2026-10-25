@@ -1,5 +1,6 @@
 ---
 title: "Uma tarde na Grecia Antiga no coração de Toronto"
+postLanguage: "pt"
 date: 2022-06-26T18:00:55-03:00
 draft: false
 categories: ["Personal"]
