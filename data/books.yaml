@@ -2,6 +2,7 @@
 #   title  (required)
 #   author (optional)
 #   cover  (required) - path under /images/
+#   class  (optional) - shelf class mark shown on the homepage spine (featured books)
 #   lang   (required) - language read: en | pt | fr  (drives flag + grouping)
 #   link   (optional) - review/notes page
 #   featured (optional) - true => also shown on the homepage shelf
@@ -12,6 +13,7 @@ books:
     author: "Eric Jorgenson"
     cover: "/images/almanack-naval.jpg"
     lang: "en"
+    class: "158"
     link: "/library/almanack-of-naval-ravikant/"
     featured: true
 
@@ -19,6 +21,7 @@ books:
     author: "Donald Robertson"
     cover: "/images/livro-howtothinklikearomanemperor.jpg"
     lang: "en"
+    class: "188"
     link: "/library/how-to-think-like-a-roman-emperor/"
     featured: true
 
@@ -26,6 +29,7 @@ books:
     author: "Kahneman, Sibony & Sunstein"
     cover: "/images/noise-book.jpg"
     lang: "en"
+    class: "153.8"
     link: "/library/book-review-noise-a-flaw-in-human-judgment/"
     featured: true
 
@@ -33,6 +37,7 @@ books:
     author: "Donald J. Boudreaux"
     cover: "/images/book-essential-hayek.jpg"
     lang: "en"
+    class: "330.15"
     link: "/library/essential-hayek/"
     featured: true
 
@@ -134,6 +139,7 @@ books:
     author: "Siddhartha Mukherjee"
     cover: "/images/livro-o-gene.jpg"
     lang: "pt"
+    class: "576.5"
     link: "/library/livro-o-gene-uma-historia-intima/"
     featured: true
 
@@ -141,6 +147,7 @@ books:
     author: "Isaac Asimov"
     cover: "/images/book-cavernas-de-aco.jpg"
     lang: "pt"
+    class: "813"
     link: "/library/caveras-de-aco-isaac-asimov/"
     featured: true
 
@@ -148,6 +155,7 @@ books:
     author: "Homero"
     cover: "/images/livro-iliada.jpg"
     lang: "pt"
+    class: "883"
     link: "/library/iliada/"
     featured: true
 
@@ -155,6 +163,7 @@ books:
     author: "Chico Buarque"
     cover: "/images/livro-budapest.jpg"
     lang: "pt"
+    class: "869.3"
     link: "/library/chicobuarque-budapest/"
     featured: true
 
@@ -214,6 +223,7 @@ books:
     author: "Simone Weil"
     cover: "/images/livro-IliadeSimoneWeil.jpg"
     lang: "fr"
+    class: "883"
     link: "/library/iliade-explique-les-guerres-modernes/"
     featured: true
 
@@ -221,6 +231,7 @@ books:
     author: "Jean-Paul Sartre"
     cover: "/images/livro-Lexistentialisme-est-un-humanisme.jpg"
     lang: "fr"
+    class: "193"
     link: "/library/sartre-lexistentialisme-est-un-humanisme/"
     featured: true
 
@@ -228,6 +239,7 @@ books:
     author: "Guy de Maupassant"
     cover: "/images/livro-Bel-Ami.webp"
     lang: "fr"
+    class: "843"
     link: "/library/belami/"
     featured: true
 
@@ -235,5 +247,6 @@ books:
     author: "Francis Wolff"
     cover: "/images/Il-ny-a-pas-d-amour-parfait.jpg"
     lang: "fr"
+    class: "306.7"
     link: "/library/il-ny-a-pas-d-amour-parfait/"
     featured: true

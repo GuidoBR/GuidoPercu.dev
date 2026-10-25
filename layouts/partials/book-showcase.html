@@ -1,11 +1,140 @@
+{{/* Homepage "Reading Room": a bookcase of featured books. Selecting a spine
+     pulls out its index card. Without JavaScript the spines are plain links
+     to each book's notes. Data comes from data/books.yaml (featured: true). */}}
+{{- $flags := dict "en" "🇺🇸" "pt" "🇧🇷" "fr" "🇫🇷" }}
+{{- $langs := dict "en" "English" "pt" "Português" "fr" "Français" }}
 {{- $featured := where hugo.Data.books.books "featured" true }}
 {{- with $featured }}
-{{ partial "book-grid-style.html" . }}
-<section class="book-showcase">
+<style>
+    .reading-room { margin: 3rem 0; text-align: left; }
+    .reading-room > header { margin-bottom: 1.25rem; }
+    .reading-room-sub { opacity: 0.7; margin-top: -0.5rem; }
+
+    .bookcase {
+        border: 12px solid #2a190d;
+        border-image: linear-gradient(135deg, #5b3a26, #2a190d 50%, #4a2e1d) 1;
+        background: #170c05;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+        position: relative;
+    }
+    .bookcase::after {
+        content: ""; position: absolute; inset: 0; pointer-events: none;
+        background: radial-gradient(ellipse at 50% -10%, rgba(255, 214, 140, 0.15), transparent 60%);
+    }
+    .bookcase-shelf {
+        overflow-x: auto; padding: 2rem 1rem 0;
+        background: linear-gradient(180deg, #120a04, #25150b);
+        box-shadow: inset 0 10px 24px rgba(0, 0, 0, 0.65);
+    }
+    .bookcase-row { display: flex; align-items: flex-end; gap: 3px; min-width: max-content; }
+    .bookcase-plank {
+        height: 1.1rem; display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(180deg, #6a4328, #3d2412 70%, #2a170a);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    }
+    .bookcase-plank span {
+        font: 600 0.6rem/0.95rem Georgia, serif; letter-spacing: 0.3em; text-transform: uppercase;
+        color: #2b1d08; padding: 0 0.9rem;
+        background: linear-gradient(135deg, #e3c882, #b88f3f);
+    }
+
+    .spine {
+        --c: #24463b;
+        height: var(--h); min-width: var(--w);
+        writing-mode: vertical-rl; transform: rotate(180deg);
+        display: flex; align-items: center; justify-content: space-between; gap: 0.9rem;
+        padding: 1.5rem 0.5rem; border-radius: 2px 2px 0 0;
+        font: 600 0.95rem/1 Georgia, "Iowan Old Style", serif; color: #f1e6c8; text-decoration: none;
+        background:
+            linear-gradient(#d9b867 0 0) 0 0.8rem / 100% 2px no-repeat,
+            linear-gradient(#d9b867 0 0) 0 calc(100% - 0.8rem) / 100% 2px no-repeat,
+            linear-gradient(90deg, rgba(255, 255, 255, 0.14), transparent 22%, transparent 70%, rgba(0, 0, 0, 0.28)),
+            var(--c);
+        transition: translate 0.15s;
+    }
+    .spine:nth-child(6n + 2) { --c: #6e2f2b; }
+    .spine:nth-child(6n + 3) { --c: #2f3f66; }
+    .spine:nth-child(6n + 4) { --c: #7c6330; }
+    .spine:nth-child(6n + 5) { --c: #4b3659; }
+    .spine:nth-child(6n + 6) { --c: #2f5a5c; }
+    .spine-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-height: 0; }
+    .spine small { flex: none; white-space: nowrap; font: 400 0.58rem/1 ui-monospace, Menlo, monospace; letter-spacing: 0.08em; color: #d9b867; }
+    .spine:hover, .spine[aria-current="true"] { translate: 0 -8px; }
+    .spine[aria-current="true"] { box-shadow: 0 0 0 2px #e3c882; }
+    .spine:focus-visible { outline: 2px solid #e3c882; outline-offset: 3px; }
+
+    .shelf-card {
+        display: flex; gap: 1rem; align-items: flex-start; margin-top: 1.5rem; max-width: 26rem;
+        padding: 1rem 1.25rem 1.2rem; color: #2a1f18; background-color: #f6efdc; position: relative;
+        background-image: repeating-linear-gradient(180deg, transparent 0 1.7rem, #bcd0d6 1.7rem calc(1.7rem + 1px));
+        background-position: 0 2.8rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
+    .shelf-card[hidden] { display: none; }
+    .shelf-card::before { content: ""; position: absolute; left: 0; right: 0; top: 2.55rem; border-top: 2px solid #c8574f; }
+    .shelf-card-cover { width: 5.5rem; flex: none; margin-top: 2.2rem; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 2px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35); }
+    .shelf-card-body { min-width: 0; flex: 1; }
+    .shelf-card-head {
+        display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem;
+        font: 400 0.72rem/1 ui-monospace, Menlo, monospace; letter-spacing: 0.09em; text-transform: uppercase; color: #9b2d28;
+    }
+    .shelf-card-title { margin: 0; font: italic 600 1.35rem/1.15 Georgia, "Iowan Old Style", serif; color: #2a1f18; }
+    .shelf-card-author { margin: 0.4rem 0 0; font-size: 0.95rem; color: #5b4a3a; }
+    .shelf-card-link { display: inline-block; margin-top: 0.7rem; font-size: 0.85rem; font-weight: 600; color: #9b2d28; text-decoration: underline; text-underline-offset: 3px; }
+    .shelf-card-none { display: inline-block; margin-top: 0.7rem; font: 400 0.7rem/1 ui-monospace, Menlo, monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #6a5a4b; }
+    @media (prefers-reduced-motion: reduce) { .spine { transition: none; } }
+</style>
+<section class="reading-room">
     <header>
-        <h2>📚 The Shelf</h2>
-        <p class="book-showcase-sub">A few recent favorites — <a href="/library/">browse the full library →</a></p>
+        <h2>📚 The Reading Room</h2>
+        <p class="reading-room-sub">A few recent favorites — take one down, or <a href="/library/">browse the full library →</a></p>
     </header>
-    {{ partial "book-grid.html" . }}
+    <div class="bookcase">
+        <div class="bookcase-shelf" tabindex="0" role="region" aria-label="Shelf of recent favorite books">
+            <div class="bookcase-row">
+                {{- range $i, $b := . }}
+                {{- $name := index (split $b.title ":") 0 | strings.TrimPrefix "The " | strings.Truncate 30 }}
+                <a class="spine" href="{{ $b.link | default "#" }}" data-card="shelf-card-{{ $i }}" title="{{ $b.title }}"
+                   style="--h: {{ printf "%.1f" (add 16.0 (mul (mod (mul $i 7) 5) 1.2)) | safeCSS }}rem; --w: {{ printf "%.1f" (add 2.3 (mul (mod (mul $i 3) 4) 0.3)) | safeCSS }}rem"
+                   {{- if eq $i 0 }} aria-current="true"{{ end }}>
+                    <span class="spine-title">{{ $name }}</span>
+                    {{- with $b.class }}<small>{{ . }}</small>{{ end }}
+                </a>
+                {{- end }}
+            </div>
+        </div>
+        <div class="bookcase-plank"><span>Recent favorites</span></div>
+    </div>
+    <div aria-live="polite">
+        {{- range $i, $b := . }}
+        <article class="shelf-card" id="shelf-card-{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
+            <img class="shelf-card-cover" src="{{ $b.cover }}" alt="Cover of {{ $b.title }}" loading="lazy">
+            <div class="shelf-card-body">
+                <div class="shelf-card-head">
+                    <span>{{ with $b.class }}Class {{ . }}{{ else }}Unclassed{{ end }}</span>
+                    <span>{{ with index $flags $b.lang }}{{ . }} {{ end }}{{ index $langs $b.lang }}</span>
+                </div>
+                <h3 class="shelf-card-title">{{ $b.title }}</h3>
+                {{- with $b.author }}<p class="shelf-card-author">{{ . }}</p>{{ end }}
+                {{- if $b.link }}<a class="shelf-card-link" href="{{ $b.link }}">Read my notes →</a>
+                {{- else }}<span class="shelf-card-none">No notes yet</span>{{ end }}
+            </div>
+        </article>
+        {{- end }}
+    </div>
 </section>
+<script>
+    (function () {
+        var spines = document.querySelectorAll(".reading-room .spine");
+        var cards = document.querySelectorAll(".reading-room .shelf-card");
+        spines.forEach(function (spine) {
+            spine.addEventListener("click", function (e) {
+                e.preventDefault();
+                spines.forEach(function (s) { s.removeAttribute("aria-current"); });
+                spine.setAttribute("aria-current", "true");
+                cards.forEach(function (c) { c.hidden = c.id !== spine.dataset.card; });
+            });
+        });
+    })();
+</script>
 {{- end }}
