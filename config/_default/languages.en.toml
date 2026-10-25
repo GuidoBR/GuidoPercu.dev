@@ -8,15 +8,15 @@ title = "Guido Percú"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "Guido Percú — Senior Software Engineer (Python, AWS, AI) and technical reviewer for finance and economics books. Engineering rigor meets clear communication of complex ideas."
+  description = "Guido Percú — Senior Software Engineer working with Python, AWS, AI and privacy engineering. Also a freelance technical reviewer for finance and economics books."
 
   [params.author]
     name = "Guido Percú"
     image = "img/guido.jpeg"
-    headline = "Senior Software Engineer · Python, AWS & AI · technical book reviewer"
-    bio = "Senior Software Engineer specializing in Python, AWS and AI — and a technical reviewer for finance and economics books."
+    headline = "Senior Software Engineer · Python, AWS, AI & privacy engineering"
+    bio = "Senior Software Engineer working with Python, AWS, AI and privacy engineering."
     links = [
       { github = "https://github.com/GuidoBR" },
       { linkedin = "https://www.linkedin.com/in/guidopercu/" },
-      { email = "mailto:guidopercu@gmail.com" },
+      { envelope = "/contact/" },
     ]

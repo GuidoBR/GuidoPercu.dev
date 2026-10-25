@@ -31,12 +31,59 @@
     </div>
   </header>
   <section class="prose dark:prose-invert">{{ .Content }}</section>
+  <p class="home-actions">
+    <a class="home-btn home-btn--primary" href="/work-with-me/">Work with me</a>
+    <a class="home-btn" href="/posts/">Read my writing</a>
+  </p>
 </article>
 
-{{ partial "book-showcase.html" . }}
+<style>
+  .home-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin: 1.25rem 0 0; }
+  .home-btn { display: inline-block; padding: 0.55rem 1.3rem; border-radius: 6px; font-weight: 600; text-decoration: none; border: 1px solid rgba(128, 128, 128, 0.55); color: inherit; }
+  .home-btn:hover { border-color: rgb(var(--color-primary-500)); }
+  .home-btn--primary { color: #fff; background: rgb(var(--color-primary-600)); border-color: transparent; }
+  .home-btn--primary:hover { background: rgb(var(--color-primary-700)); border-color: transparent; }
+</style>
 
-{{ if .Site.Params.homepage.showRecent }}
-<section class="mt-10">
-  {{ partial "recent-articles/main.html" . }}
+{{/* Latest writing: English Engineering and Books posts only. Posts in other
+     languages set postLanguage in front matter and are left out here. */}}
+{{ $latest := slice }}
+{{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+  {{ if and (gt (len (intersect (.Params.categories | default slice) (slice "Engineering" "Books"))) 0) (eq (.Params.postlanguage | default "en") "en") }}
+    {{ $latest = $latest | append . }}
+  {{ end }}
+{{ end }}
+{{ with first 3 $latest }}
+<style>
+  .home-writing { margin: 3rem 0; text-align: left; }
+  .home-writing h2 { margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; }
+  .home-writing ul { list-style: none; margin: 0; padding: 0; }
+  .home-writing li { padding: 0.8rem 0; border-bottom: 1px solid rgba(128, 128, 128, 0.3); }
+  .home-writing a.post { font-size: 1.15rem; font-weight: 600; text-decoration: none; }
+  .home-writing a.post:hover { text-decoration: underline; }
+  .home-writing .meta { display: block; margin-top: 0.15rem; font-size: 0.8rem; opacity: 0.65; }
+  .home-writing .all { display: inline-block; margin-top: 1rem; }
+  .home-beyond { margin: 3rem 0 0; text-align: left; }
+  .home-beyond p { opacity: 0.8; max-width: 38rem; margin: 0; }
+</style>
+<section class="home-writing">
+  <h2>Latest writing</h2>
+  <ul>
+    {{ range . }}
+    <li>
+      <a class="post" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="meta">{{ .Date.Format "2 January 2006" }} · {{ index .Params.categories 0 }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  <a class="all" href="/posts/">All writing →</a>
 </section>
 {{ end }}
+
+<section class="home-beyond">
+  <p>Beyond engineering, I read a lot and work as a freelance technical reviewer for
+  finance and economics books. See the <a href="/revisao-tecnica/">reviews</a> or the
+  shelf below.</p>
+</section>
+
+{{ partial "book-showcase.html" . }}

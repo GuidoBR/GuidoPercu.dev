@@ -1,0 +1,44 @@
+{{/* Contact form handled by Netlify Forms, so no address is published.
+     Submissions appear under Site configuration > Forms in Netlify; add a
+     notification there to receive them by email. ?topic= preselects a topic. */}}
+<style>
+    .contact-form { display: grid; gap: 1rem; max-width: 36rem; margin: 1.5rem 0; }
+    .contact-form label { display: grid; gap: 0.3rem; font-size: 0.9rem; font-weight: 600; }
+    .contact-form input, .contact-form select, .contact-form textarea {
+        font: inherit; font-weight: 400; color: inherit; background: transparent;
+        padding: 0.55rem 0.7rem; border: 1px solid rgba(128, 128, 128, 0.55); border-radius: 6px;
+    }
+    .contact-form select option { color: #1e293b; }
+    .contact-form textarea { min-height: 9rem; resize: vertical; }
+    .contact-form input:focus-visible, .contact-form select:focus-visible, .contact-form textarea:focus-visible,
+    .contact-form button:focus-visible { outline: 2px solid rgb(var(--color-primary-500)); outline-offset: 2px; }
+    .contact-form button {
+        justify-self: start; font: inherit; font-weight: 600; cursor: pointer; border: 0; border-radius: 6px;
+        padding: 0.6rem 1.4rem; color: #fff; background: rgb(var(--color-primary-600));
+    }
+    .contact-form button:hover { background: rgb(var(--color-primary-700)); }
+    .contact-form .contact-trap { position: absolute; left: -9999px; }
+</style>
+<form class="contact-form" name="contact" method="POST" action="/contact/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <p class="contact-trap"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <label>Name <input type="text" name="name" required autocomplete="name"></label>
+    <label>Email <input type="email" name="email" required autocomplete="email"></label>
+    <label>Topic
+        <select name="topic" id="contact-topic">
+            <option value="engineering">Engineering role or project</option>
+            <option value="review">Technical review for a publisher</option>
+            <option value="finance">Personal finance</option>
+            <option value="other">Something else</option>
+        </select>
+    </label>
+    <label>Message <textarea name="message" required></textarea></label>
+    <button type="submit">Send message</button>
+</form>
+<script>
+    (function () {
+        var topic = new URLSearchParams(location.search).get("topic");
+        var select = document.getElementById("contact-topic");
+        if (topic && select && select.querySelector('option[value="' + topic + '"]')) select.value = topic;
+    })();
+</script>

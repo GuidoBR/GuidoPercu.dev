@@ -1,0 +1,25 @@
+{{/* Overrides Blowfish's partial so internal links (the contact page) open in
+     the same tab and the envelope icon reads as "Contact". */}}
+{{ with .Site.Params.Author.links }}
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500 space-x-2">
+    {{ range $links := . }}
+      {{ range $name, $url := $links }}
+        {{ $isEmail := eq $name "email" }}
+        {{ $external := strings.HasPrefix $url "http" }}
+        {{ $label := cond (eq $name "envelope") "Contact" ($name | title) }}
+        <a
+          class="{{ cond $isEmail "email-link" "" }} hover:text-primary-700 dark:hover:text-primary-400"
+          href="{{ cond $isEmail "#" ($url | safeURL) }}"
+          {{ if $isEmail }}
+            data-email="{{ $url | base64Encode }}"
+          {{ end }}
+          {{ if or $external $isEmail }}target="_blank"{{ end }}
+          aria-label="{{ $label }}"
+          title="{{ $label }}"
+          rel="{{ cond (or $external $isEmail) "me noopener noreferrer" "me" }}"
+          ><span class="inline-block align-text-bottom">{{ partial "icon.html" $name }}</span></a
+        >
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

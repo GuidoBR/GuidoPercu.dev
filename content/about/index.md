@@ -2,25 +2,45 @@
 title: "Hi, I’m Guido Percú"
 date: 2021-03-01T13:57:29-03:00
 draft: false
+showPagination: false
 ---
 
-![Guido Percú](/images/guido.jpeg)
+I'm a **Senior Software Engineer** with 13 years of experience. Most of what's on
+this site is about that work, and a smaller part is about the books I read and
+review.
 
-I'm a **Senior Software Engineer** with 13 years of experience building
-cloud-native, serverless systems in Python and AWS, with a growing focus on
-AI-powered applications. I've led technical work and delivered scalable solutions
-for global companies, and I'm AWS certified.
+## Engineering
 
-What sets my work apart is a habit I take seriously: reading. I read widely across
-software, finance, economics and behavioral science — and I put that to work as a
-**technical reviewer** for Brazilian publishers (Objetiva, Intrínseca,
-Portfolio-Penguin), checking the technical and conceptual accuracy of books by
-authors such as Nassim Taleb, Daniel Kahneman, Aswath Damodaran and Scott Galloway.
+I build cloud-native, serverless systems in Python and AWS. My focus is
+increasingly on AI-powered applications and privacy engineering. I've led technical
+work and delivered scalable solutions for global companies, and I'm AWS certified.
 
-That intersection — engineering rigor and the clear communication of complex
-ideas — is the thread through everything I do. I'm multilingual (English,
-Portuguese, French) and care as much about clarity as I do about correctness.
+I write about it in [Writing](/posts/), and the [Engineering posts](/categories/engineering/)
+are a good place to start.
 
-- **Writing** — essays on [software, AI and more](/posts/)
-- **Reading** — my [library](/library/) and [technical reviews](/revisao-tecnica/)
-- **Elsewhere** — [GitHub](https://github.com/GuidoBR), [LinkedIn](https://www.linkedin.com/in/guidopercu/)
+## Technical review
+
+On the side, I work as a freelance technical reviewer for Brazilian publishers
+(Objetiva, Intrínseca, Portfolio-Penguin). I check the technical and conceptual
+accuracy of finance and economics books by authors such as Nassim Taleb, Daniel
+Kahneman, Aswath Damodaran and Scott Galloway.
+
+See the [books I've reviewed](/revisao-tecnica/), or [work with me](/work-with-me/)
+if you're a publisher looking for a reviewer.
+
+## Reading
+
+I read widely across software, finance, economics and behavioral science. My
+[library](/library/) lists the books I've read, and links to my notes where I wrote
+some.
+
+## Beyond work
+
+Outside work I enjoy photography, philosophy and ping-pong. I read and write in
+English, Portuguese and French. My writing in Portuguese and French, including
+what I've learned about learning languages, lives in
+[Languages](/categories/languages/).
+
+## Elsewhere
+
+[GitHub](https://github.com/GuidoBR) · [LinkedIn](https://www.linkedin.com/in/guidopercu/) · [Contact](/contact/)

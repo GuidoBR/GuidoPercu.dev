@@ -1,5 +1,6 @@
 ---
 title: "Como começar a investir no Brasil"
+postLanguage: "pt"
 date: 2018-04-08T13:55:50-03:00
 draft: false
 image: "/images/investimentos.png"

@@ -4,16 +4,21 @@
   weight = 1
 
 [[main]]
-  name = "Posts"
+  name = "Writing"
   pageRef = "posts"
   weight = 2
 
 [[main]]
-  name = "Library"
-  pageRef = "library"
+  name = "Reviews"
+  pageRef = "revisao-tecnica"
   weight = 3
 
 [[main]]
-  name = "Reviews"
-  pageRef = "revisao-tecnica"
+  name = "Library"
+  pageRef = "library"
   weight = 4
+
+[[main]]
+  name = "Work with me"
+  pageRef = "work-with-me"
+  weight = 5
